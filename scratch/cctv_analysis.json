@@ -1,0 +1,314 @@
+{
+  "totalHardcoded": 1220,
+  "regions": [],
+  "files": [
+    {
+      "file": "arizona.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 929
+    },
+    {
+      "file": "asfinag.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 2699
+    },
+    {
+      "file": "asia-live.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 496
+    },
+    {
+      "file": "asia-skyline.generated.ts",
+      "hardcodedCount": 260,
+      "externalFetches": [],
+      "codeLength": 77951
+    },
+    {
+      "file": "australia.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [
+        "https://www.livetraffic.com/datajson/all-feeds-web.json"
+      ],
+      "codeLength": 1140
+    },
+    {
+      "file": "bulgaria-fwcbg.generated.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 100
+    },
+    {
+      "file": "bulgaria.ts",
+      "hardcodedCount": 3,
+      "externalFetches": [],
+      "codeLength": 1562
+    },
+    {
+      "file": "czechia.ts",
+      "hardcodedCount": 3,
+      "externalFetches": [],
+      "codeLength": 1095
+    },
+    {
+      "file": "edmonton.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 3921
+    },
+    {
+      "file": "finland.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [
+        "https://tie.digitraffic.fi/api/weathercam/v1/stations"
+      ],
+      "codeLength": 1455
+    },
+    {
+      "file": "florida.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 1075
+    },
+    {
+      "file": "france.ts",
+      "hardcodedCount": 40,
+      "externalFetches": [],
+      "codeLength": 10854
+    },
+    {
+      "file": "georgia.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 963
+    },
+    {
+      "file": "germany.ts",
+      "hardcodedCount": 2,
+      "externalFetches": [],
+      "codeLength": 793
+    },
+    {
+      "file": "greece.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 889
+    },
+    {
+      "file": "hongkong.ts",
+      "hardcodedCount": 12,
+      "externalFetches": [],
+      "codeLength": 4657
+    },
+    {
+      "file": "ibi511.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 10124
+    },
+    {
+      "file": "iceland.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [
+        "https://gagnaveita.vegagerdin.is/api/vefmyndavelar2014_1"
+      ],
+      "codeLength": 1897
+    },
+    {
+      "file": "indiana.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 5881
+    },
+    {
+      "file": "italy.ts",
+      "hardcodedCount": 16,
+      "externalFetches": [],
+      "codeLength": 4884
+    },
+    {
+      "file": "japan.ts",
+      "hardcodedCount": 51,
+      "externalFetches": [],
+      "codeLength": 13300
+    },
+    {
+      "file": "lithuania.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 6108
+    },
+    {
+      "file": "louisiana.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 5546
+    },
+    {
+      "file": "macedonia.ts",
+      "hardcodedCount": 2,
+      "externalFetches": [],
+      "codeLength": 815
+    },
+    {
+      "file": "michigan.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 3048
+    },
+    {
+      "file": "netherlands.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 3227
+    },
+    {
+      "file": "nevada.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 4948
+    },
+    {
+      "file": "newzealand.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 3356
+    },
+    {
+      "file": "northcarolina.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 989
+    },
+    {
+      "file": "opencctv.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 9309
+    },
+    {
+      "file": "oregon.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 2535
+    },
+    {
+      "file": "poland.ts",
+      "hardcodedCount": 73,
+      "externalFetches": [],
+      "codeLength": 24753
+    },
+    {
+      "file": "public-webcams.generated.ts",
+      "hardcodedCount": 300,
+      "externalFetches": [],
+      "codeLength": 82050
+    },
+    {
+      "file": "public-webcams.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 1752
+    },
+    {
+      "file": "romania.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 478
+    },
+    {
+      "file": "route.ts",
+      "hardcodedCount": 23,
+      "externalFetches": [
+        "https://api.tfl.gov.uk/Place/Type/JamCam",
+        "https://data.wsdot.wa.gov/log/public/cameras.json",
+        "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHhighway/CCTV/FeatureServer/0/query?where=1%3D1&outFields=*&f=json"
+      ],
+      "codeLength": 45734
+    },
+    {
+      "file": "serbia.ts",
+      "hardcodedCount": 2,
+      "externalFetches": [],
+      "codeLength": 753
+    },
+    {
+      "file": "slovakia.ts",
+      "hardcodedCount": 2,
+      "externalFetches": [],
+      "codeLength": 816
+    },
+    {
+      "file": "spain.ts",
+      "hardcodedCount": 54,
+      "externalFetches": [
+        "https://www.dgt.es/.content/.assets/json/camaras.json"
+      ],
+      "codeLength": 22828
+    },
+    {
+      "file": "sweden.ts",
+      "hardcodedCount": 2,
+      "externalFetches": [],
+      "codeLength": 9852
+    },
+    {
+      "file": "switzerland.ts",
+      "hardcodedCount": 6,
+      "externalFetches": [],
+      "codeLength": 1970
+    },
+    {
+      "file": "taiwan.ts",
+      "hardcodedCount": 5,
+      "externalFetches": [
+        "https://thbapp.thb.gov.tw/services/cctv/thb"
+      ],
+      "codeLength": 3968
+    },
+    {
+      "file": "texas.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 3029
+    },
+    {
+      "file": "thailand.ts",
+      "hardcodedCount": 6,
+      "externalFetches": [],
+      "codeLength": 3604
+    },
+    {
+      "file": "turkey.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 320
+    },
+    {
+      "file": "types.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 1775
+    },
+    {
+      "file": "utah.ts",
+      "hardcodedCount": 1,
+      "externalFetches": [],
+      "codeLength": 3905
+    },
+    {
+      "file": "world-live.ts",
+      "hardcodedCount": 0,
+      "externalFetches": [],
+      "codeLength": 785
+    },
+    {
+      "file": "world-skyline.generated.ts",
+      "hardcodedCount": 341,
+      "externalFetches": [],
+      "codeLength": 115086
+    }
+  ]
+}

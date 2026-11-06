@@ -1,0 +1,758 @@
+{
+  "routes": [
+    {
+      "path": "/api/ai/analyze",
+      "file": "ai\\analyze\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 6616
+    },
+    {
+      "path": "/api/ai/briefing",
+      "file": "ai\\briefing\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 5975
+    },
+    {
+      "path": "/api/ai/overview",
+      "file": "ai\\overview\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 14790
+    },
+    {
+      "path": "/api/air-quality",
+      "file": "air-quality\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2375
+    },
+    {
+      "path": "/api/aircraft",
+      "file": "aircraft\\route.test.ts",
+      "methods": [],
+      "length": 8742
+    },
+    {
+      "path": "/api/aircraft",
+      "file": "aircraft\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 9848
+    },
+    {
+      "path": "/api/arcgis",
+      "file": "arcgis\\route.test.ts",
+      "methods": [],
+      "length": 3931
+    },
+    {
+      "path": "/api/arcgis",
+      "file": "arcgis\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 12342
+    },
+    {
+      "path": "/api/cctv/proxy",
+      "file": "cctv\\proxy\\route.test.ts",
+      "methods": [],
+      "length": 1103
+    },
+    {
+      "path": "/api/cctv/proxy",
+      "file": "cctv\\proxy\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 7681
+    },
+    {
+      "path": "/api/cctv/resolve",
+      "file": "cctv\\resolve\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 5834
+    },
+    {
+      "path": "/api/cctv",
+      "file": "cctv\\route.test.ts",
+      "methods": [],
+      "length": 5362
+    },
+    {
+      "path": "/api/cctv",
+      "file": "cctv\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 45734
+    },
+    {
+      "path": "/api/cctv/stream-status",
+      "file": "cctv\\stream-status\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1836
+    },
+    {
+      "path": "/api/cctv/texas/snapshot",
+      "file": "cctv\\texas\\snapshot\\route.test.ts",
+      "methods": [],
+      "length": 1870
+    },
+    {
+      "path": "/api/cctv/texas/snapshot",
+      "file": "cctv\\texas\\snapshot\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1638
+    },
+    {
+      "path": "/api/chain/daily",
+      "file": "chain\\daily\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1255
+    },
+    {
+      "path": "/api/cloudflare-radar",
+      "file": "cloudflare-radar\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 6735
+    },
+    {
+      "path": "/api/conflicts",
+      "file": "conflicts\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 14684
+    },
+    {
+      "path": "/api/country-risk",
+      "file": "country-risk\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3939
+    },
+    {
+      "path": "/api/crypto",
+      "file": "crypto\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 942
+    },
+    {
+      "path": "/api/cyber-attacks",
+      "file": "cyber-attacks\\route.test.ts",
+      "methods": [],
+      "length": 2599
+    },
+    {
+      "path": "/api/cyber-attacks",
+      "file": "cyber-attacks\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2270
+    },
+    {
+      "path": "/api/cyber-threats",
+      "file": "cyber-threats\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2246
+    },
+    {
+      "path": "/api/directions",
+      "file": "directions\\route.test.ts",
+      "methods": [],
+      "length": 7159
+    },
+    {
+      "path": "/api/directions",
+      "file": "directions\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 15099
+    },
+    {
+      "path": "/api/earthquakes",
+      "file": "earthquakes\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1562
+    },
+    {
+      "path": "/api/entity/expand",
+      "file": "entity\\expand\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2494
+    },
+    {
+      "path": "/api/fires",
+      "file": "fires\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 4266
+    },
+    {
+      "path": "/api/flight-route",
+      "file": "flight-route\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 14039
+    },
+    {
+      "path": "/api/flights",
+      "file": "flights\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 21489
+    },
+    {
+      "path": "/api/frontlines",
+      "file": "frontlines\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 936
+    },
+    {
+      "path": "/api/gdelt",
+      "file": "gdelt\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3890
+    },
+    {
+      "path": "/api/gdelt-events",
+      "file": "gdelt-events\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1765
+    },
+    {
+      "path": "/api/geo/reverse",
+      "file": "geo\\reverse\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1954
+    },
+    {
+      "path": "/api/geo",
+      "file": "geo\\route.test.ts",
+      "methods": [],
+      "length": 2021
+    },
+    {
+      "path": "/api/geo",
+      "file": "geo\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3735
+    },
+    {
+      "path": "/api/geosearch",
+      "file": "geosearch\\route.test.ts",
+      "methods": [],
+      "length": 4771
+    },
+    {
+      "path": "/api/geosearch",
+      "file": "geosearch\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 7742
+    },
+    {
+      "path": "/api/github-webhook",
+      "file": "github-webhook\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 2126
+    },
+    {
+      "path": "/api/health",
+      "file": "health\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1800
+    },
+    {
+      "path": "/api/infrastructure",
+      "file": "infrastructure\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 15630
+    },
+    {
+      "path": "/api/live-news",
+      "file": "live-news\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 4865
+    },
+    {
+      "path": "/api/malware",
+      "file": "malware\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1680
+    },
+    {
+      "path": "/api/malware/stream",
+      "file": "malware\\stream\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3588
+    },
+    {
+      "path": "/api/maritime",
+      "file": "maritime\\route.test.ts",
+      "methods": [],
+      "length": 2473
+    },
+    {
+      "path": "/api/maritime",
+      "file": "maritime\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 16109
+    },
+    {
+      "path": "/api/markets/history",
+      "file": "markets\\history\\route.test.ts",
+      "methods": [],
+      "length": 3574
+    },
+    {
+      "path": "/api/markets/history",
+      "file": "markets\\history\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 4215
+    },
+    {
+      "path": "/api/markets",
+      "file": "markets\\route.test.ts",
+      "methods": [],
+      "length": 7556
+    },
+    {
+      "path": "/api/markets",
+      "file": "markets\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 11526
+    },
+    {
+      "path": "/api/mcp",
+      "file": "mcp\\route.ts",
+      "methods": [
+        "GET",
+        "POST",
+        "DELETE"
+      ],
+      "length": 6211
+    },
+    {
+      "path": "/api/news",
+      "file": "news\\route.test.ts",
+      "methods": [],
+      "length": 7499
+    },
+    {
+      "path": "/api/news",
+      "file": "news\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 21706
+    },
+    {
+      "path": "/api/oi/assist",
+      "file": "oi\\assist\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 1329
+    },
+    {
+      "path": "/api/oi/models",
+      "file": "oi\\models\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 1592
+    },
+    {
+      "path": "/api/oi",
+      "file": "oi\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 365
+    },
+    {
+      "path": "/api/oi/runs",
+      "file": "oi\\runs\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 1488
+    },
+    {
+      "path": "/api/oi/runs/[id]/ask",
+      "file": "oi\\runs\\[id]\\ask\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 1278
+    },
+    {
+      "path": "/api/oi/runs/[id]/events",
+      "file": "oi\\runs\\[id]\\events\\route.test.ts",
+      "methods": [],
+      "length": 3046
+    },
+    {
+      "path": "/api/oi/runs/[id]/events",
+      "file": "oi\\runs\\[id]\\events\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3479
+    },
+    {
+      "path": "/api/oi/runs/[id]/inject",
+      "file": "oi\\runs\\[id]\\inject\\route.ts",
+      "methods": [
+        "POST"
+      ],
+      "length": 1172
+    },
+    {
+      "path": "/api/oi/runs/[id]",
+      "file": "oi\\runs\\[id]\\route.ts",
+      "methods": [
+        "GET",
+        "DELETE"
+      ],
+      "length": 1925
+    },
+    {
+      "path": "/api/oi/trending",
+      "file": "oi\\trending\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 768
+    },
+    {
+      "path": "/api/osint/bgp",
+      "file": "osint\\bgp\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3700
+    },
+    {
+      "path": "/api/osint/certs",
+      "file": "osint\\certs\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2412
+    },
+    {
+      "path": "/api/osint/crypto",
+      "file": "osint\\crypto\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2297
+    },
+    {
+      "path": "/api/osint/cve",
+      "file": "osint\\cve\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 4377
+    },
+    {
+      "path": "/api/osint/dns",
+      "file": "osint\\dns\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2376
+    },
+    {
+      "path": "/api/osint/fingerprint",
+      "file": "osint\\fingerprint\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3056
+    },
+    {
+      "path": "/api/osint/github",
+      "file": "osint\\github\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1712
+    },
+    {
+      "path": "/api/osint/hudsonrock",
+      "file": "osint\\hudsonrock\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 4267
+    },
+    {
+      "path": "/api/osint/ip",
+      "file": "osint\\ip\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3407
+    },
+    {
+      "path": "/api/osint/leaks",
+      "file": "osint\\leaks\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1837
+    },
+    {
+      "path": "/api/osint/mac",
+      "file": "osint\\mac\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1186
+    },
+    {
+      "path": "/api/osint/phone",
+      "file": "osint\\phone\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 6972
+    },
+    {
+      "path": "/api/osint/sanctions",
+      "file": "osint\\sanctions\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1909
+    },
+    {
+      "path": "/api/osint/shodan",
+      "file": "osint\\shodan\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 967
+    },
+    {
+      "path": "/api/osint/sweep",
+      "file": "osint\\sweep\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3391
+    },
+    {
+      "path": "/api/osint/threats",
+      "file": "osint\\threats\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 4110
+    },
+    {
+      "path": "/api/osint/username",
+      "file": "osint\\username\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2317
+    },
+    {
+      "path": "/api/osint/whois",
+      "file": "osint\\whois\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 5074
+    },
+    {
+      "path": "/api/proxy-tiles",
+      "file": "proxy-tiles\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 1653
+    },
+    {
+      "path": "/api/radar",
+      "file": "radar\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3737
+    },
+    {
+      "path": "/api/region-dossier",
+      "file": "region-dossier\\route.test.ts",
+      "methods": [],
+      "length": 4401
+    },
+    {
+      "path": "/api/region-dossier",
+      "file": "region-dossier\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 11796
+    },
+    {
+      "path": "/api/satellites/orbit",
+      "file": "satellites\\orbit\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 4664
+    },
+    {
+      "path": "/api/satellites",
+      "file": "satellites\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 13950
+    },
+    {
+      "path": "/api/scanner",
+      "file": "scanner\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3990
+    },
+    {
+      "path": "/api/scm-suppliers",
+      "file": "scm-suppliers\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 5416
+    },
+    {
+      "path": "/api/sdk/ingest",
+      "file": "sdk\\ingest\\route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "length": 5027
+    },
+    {
+      "path": "/api/sdk/stream",
+      "file": "sdk\\stream\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 2974
+    },
+    {
+      "path": "/api/sentinel",
+      "file": "sentinel\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 5120
+    },
+    {
+      "path": "/api/space-weather",
+      "file": "space-weather\\route.test.ts",
+      "methods": [],
+      "length": 1896
+    },
+    {
+      "path": "/api/space-weather",
+      "file": "space-weather\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 3793
+    },
+    {
+      "path": "/api/stats",
+      "file": "stats\\route.test.ts",
+      "methods": [],
+      "length": 5246
+    },
+    {
+      "path": "/api/stats",
+      "file": "stats\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 5652
+    },
+    {
+      "path": "/api/weather",
+      "file": "weather\\route.ts",
+      "methods": [
+        "GET"
+      ],
+      "length": 10329
+    }
+  ]
+}

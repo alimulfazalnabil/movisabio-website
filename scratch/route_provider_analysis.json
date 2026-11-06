@@ -1,0 +1,837 @@
+[
+  {
+    "route": "/api/ai/analyze",
+    "file": "ai\\analyze\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 6616
+  },
+  {
+    "route": "/api/ai/briefing",
+    "file": "ai\\briefing\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 5975
+  },
+  {
+    "route": "/api/ai/overview",
+    "file": "ai\\overview\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 14790
+  },
+  {
+    "route": "/api/air-quality",
+    "file": "air-quality\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 2375
+  },
+  {
+    "route": "/api/aircraft",
+    "file": "aircraft\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 9848
+  },
+  {
+    "route": "/api/arcgis",
+    "file": "arcgis\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 12342
+  },
+  {
+    "route": "/api/cctv/proxy",
+    "file": "cctv\\proxy\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 7681
+  },
+  {
+    "route": "/api/cctv/resolve",
+    "file": "cctv\\resolve\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 5834
+  },
+  {
+    "route": "/api/cctv",
+    "file": "cctv\\route.ts",
+    "classification": "STATIC",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 45734
+  },
+  {
+    "route": "/api/cctv/stream-status",
+    "file": "cctv\\stream-status\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1836
+  },
+  {
+    "route": "/api/cctv/texas/snapshot",
+    "file": "cctv\\texas\\snapshot\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`${TXDOT_BASE}GetCctvSnapshotByIcdId?${query}`"
+    ],
+    "codeLength": 1638
+  },
+  {
+    "route": "/api/chain/daily",
+    "file": "chain\\daily\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1255
+  },
+  {
+    "route": "/api/cloudflare-radar",
+    "file": "cloudflare-radar\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [
+      "CLOUDFLARE_API_TOKEN"
+    ],
+    "fetches": [
+      "`${RADAR_BASE}${path}`"
+    ],
+    "codeLength": 6735
+  },
+  {
+    "route": "/api/conflicts",
+    "file": "conflicts\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 14684
+  },
+  {
+    "route": "/api/country-risk",
+    "file": "country-risk\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson'"
+    ],
+    "codeLength": 3939
+  },
+  {
+    "route": "/api/crypto",
+    "file": "crypto\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd'"
+    ],
+    "codeLength": 942
+  },
+  {
+    "route": "/api/cyber-attacks",
+    "file": "cyber-attacks\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://feodotracker.abuse.ch/downloads/ipblocklist.json'"
+    ],
+    "codeLength": 2270
+  },
+  {
+    "route": "/api/cyber-threats",
+    "file": "cyber-threats\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'",
+      "'https://dashboard.shadowserver.org/statistics/combined/map/'"
+    ],
+    "codeLength": 2246
+  },
+  {
+    "route": "/api/directions",
+    "file": "directions\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 15099
+  },
+  {
+    "route": "/api/earthquakes",
+    "file": "earthquakes\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1562
+  },
+  {
+    "route": "/api/entity/expand",
+    "file": "entity\\expand\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [
+      "INTEL_URL",
+      "NODE_ENV"
+    ],
+    "fetches": [
+      "`${INTEL_URL}/resolve?${params}`"
+    ],
+    "codeLength": 2494
+  },
+  {
+    "route": "/api/fires",
+    "file": "fires\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=volcanoes&limit=50'"
+    ],
+    "codeLength": 4266
+  },
+  {
+    "route": "/api/flight-route",
+    "file": "flight-route\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 14039
+  },
+  {
+    "route": "/api/flights",
+    "file": "flights\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [
+      "OPENSKY_CLIENT_ID",
+      "OPENSKY_CLIENT_SECRET"
+    ],
+    "fetches": [
+      "'https://auth.opensky-network.org/auth/realms/opensky-network/protocol/openid-connect/token'"
+    ],
+    "codeLength": 21489
+  },
+  {
+    "route": "/api/frontlines",
+    "file": "frontlines\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 936
+  },
+  {
+    "route": "/api/gdelt",
+    "file": "gdelt\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://www.gdacs.org/xml/rss.xml'"
+    ],
+    "codeLength": 3890
+  },
+  {
+    "route": "/api/gdelt-events",
+    "file": "gdelt-events\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1765
+  },
+  {
+    "route": "/api/geo/reverse",
+    "file": "geo\\reverse\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1954
+  },
+  {
+    "route": "/api/geo",
+    "file": "geo\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [
+      "NODE_ENV"
+    ],
+    "fetches": [],
+    "codeLength": 3735
+  },
+  {
+    "route": "/api/geosearch",
+    "file": "geosearch\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 7742
+  },
+  {
+    "route": "/api/github-webhook",
+    "file": "github-webhook\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": false,
+    "envVars": [
+      "GITHUB_WEBHOOK_SECRET",
+      "GITHUB_WEBHOOK_FORWARD_URL"
+    ],
+    "fetches": [],
+    "codeLength": 2126
+  },
+  {
+    "route": "/api/health",
+    "file": "health\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1800
+  },
+  {
+    "route": "/api/infrastructure",
+    "file": "infrastructure\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson'"
+    ],
+    "codeLength": 15630
+  },
+  {
+    "route": "/api/live-news",
+    "file": "live-news\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 4865
+  },
+  {
+    "route": "/api/malware",
+    "file": "malware\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1680
+  },
+  {
+    "route": "/api/malware/stream",
+    "file": "malware\\stream\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 3588
+  },
+  {
+    "route": "/api/maritime",
+    "file": "maritime\\route.ts",
+    "classification": "STATIC",
+    "usesCache": true,
+    "envVars": [
+      "AIS_API_KEY"
+    ],
+    "fetches": [],
+    "codeLength": 16109
+  },
+  {
+    "route": "/api/markets/history",
+    "file": "markets\\history\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 4215
+  },
+  {
+    "route": "/api/markets",
+    "file": "markets\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`${origin}/api/maritime`"
+    ],
+    "codeLength": 11526
+  },
+  {
+    "route": "/api/mcp",
+    "file": "mcp\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [
+      "OI_MCP_ORIGINS"
+    ],
+    "fetches": [],
+    "codeLength": 6211
+  },
+  {
+    "route": "/api/news",
+    "file": "news\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`https://t.me/s/${channel.handle}`"
+    ],
+    "codeLength": 21706
+  },
+  {
+    "route": "/api/oi/assist",
+    "file": "oi\\assist\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1329
+  },
+  {
+    "route": "/api/oi/models",
+    "file": "oi\\models\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1592
+  },
+  {
+    "route": "/api/oi",
+    "file": "oi\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 365
+  },
+  {
+    "route": "/api/oi/runs",
+    "file": "oi\\runs\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1488
+  },
+  {
+    "route": "/api/oi/runs/[id]/ask",
+    "file": "oi\\runs\\[id]\\ask\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1278
+  },
+  {
+    "route": "/api/oi/runs/[id]/events",
+    "file": "oi\\runs\\[id]\\events\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 3479
+  },
+  {
+    "route": "/api/oi/runs/[id]/inject",
+    "file": "oi\\runs\\[id]\\inject\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1172
+  },
+  {
+    "route": "/api/oi/runs/[id]",
+    "file": "oi\\runs\\[id]\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1925
+  },
+  {
+    "route": "/api/oi/trending",
+    "file": "oi\\trending\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 768
+  },
+  {
+    "route": "/api/osint/bgp",
+    "file": "osint\\bgp\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`http://ip-api.com/json/${query}?fields=status,country,countryCode,region,regionName,city,as,org,isp,reverse,query`",
+      "`https://stat.ripe.net/data/as-overview/data.json?resource=AS${asn}`",
+      "`https://stat.ripe.net/data/as-overview/data.json?resource=AS${asnNum}`"
+    ],
+    "codeLength": 3700
+  },
+  {
+    "route": "/api/osint/certs",
+    "file": "osint\\certs\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`https://crt.sh/?q=%25.${encodeURIComponent(domain)}&output=json`"
+    ],
+    "codeLength": 2412
+  },
+  {
+    "route": "/api/osint/crypto",
+    "file": "osint\\crypto\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 2297
+  },
+  {
+    "route": "/api/osint/cve",
+    "file": "osint\\cve\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`https://cveawg.mitre.org/api/cve/${encodeURIComponent(cve.toUpperCase())}`",
+      "`https://cve.circl.lu/api/cve/${encodeURIComponent(cve.toUpperCase())}`"
+    ],
+    "codeLength": 4377
+  },
+  {
+    "route": "/api/osint/dns",
+    "file": "osint\\dns\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`https://dns.google/resolve?name=${encodeURIComponent(domain)}&type=${type}`"
+    ],
+    "codeLength": 2376
+  },
+  {
+    "route": "/api/osint/fingerprint",
+    "file": "osint\\fingerprint\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 3056
+  },
+  {
+    "route": "/api/osint/github",
+    "file": "osint\\github\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`https://api.github.com/users/${encodeURIComponent(username)}`",
+      "`https://api.github.com/users/${encodeURIComponent(username)}/repos?sort=updated&per_page=5`"
+    ],
+    "codeLength": 1712
+  },
+  {
+    "route": "/api/osint/hudsonrock",
+    "file": "osint\\hudsonrock\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 4267
+  },
+  {
+    "route": "/api/osint/ip",
+    "file": "osint\\ip\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`http://ip-api.com/json/${ip}?fields=status,message,continent,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,asname,mobile,proxy,hosting,query`"
+    ],
+    "codeLength": 3407
+  },
+  {
+    "route": "/api/osint/leaks",
+    "file": "osint\\leaks\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`https://api.xposedornot.com/v1/breach-analytics?email=${encodeURIComponent(email)}`"
+    ],
+    "codeLength": 1837
+  },
+  {
+    "route": "/api/osint/mac",
+    "file": "osint\\mac\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`https://api.maclookup.app/v2/macs/${encodeURIComponent(cleanMac)}`"
+    ],
+    "codeLength": 1186
+  },
+  {
+    "route": "/api/osint/phone",
+    "file": "osint\\phone\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 6972
+  },
+  {
+    "route": "/api/osint/sanctions",
+    "file": "osint\\sanctions\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1909
+  },
+  {
+    "route": "/api/osint/shodan",
+    "file": "osint\\shodan\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`https://internetdb.shodan.io/${encodeURIComponent(ip)}`"
+    ],
+    "codeLength": 967
+  },
+  {
+    "route": "/api/osint/sweep",
+    "file": "osint\\sweep\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`http://ip-api.com/json/${ip}?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,as,proxy,hosting`"
+    ],
+    "codeLength": 3391
+  },
+  {
+    "route": "/api/osint/threats",
+    "file": "osint\\threats\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "'https://otx.alienvault.com/api/v1/pulses/subscribed?limit=10&page=1'",
+      "'https://otx.alienvault.com/api/v1/pulses/activity?limit=10'",
+      "'https://check.torproject.org/torbulkexitlist'",
+      "`https://otx.alienvault.com/api/v1/indicators/IPv4/${query}/general`",
+      "`https://otx.alienvault.com/api/v1/indicators/domain/${encodeURIComponent(query)}/general`"
+    ],
+    "codeLength": 4110
+  },
+  {
+    "route": "/api/osint/username",
+    "file": "osint\\username\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 2317
+  },
+  {
+    "route": "/api/osint/whois",
+    "file": "osint\\whois\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": false,
+    "envVars": [],
+    "fetches": [
+      "`https://rdap.org/domain/${encodeURIComponent(domain)}`"
+    ],
+    "codeLength": 5074
+  },
+  {
+    "route": "/api/proxy-tiles",
+    "file": "proxy-tiles\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 1653
+  },
+  {
+    "route": "/api/radar",
+    "file": "radar\\route.ts",
+    "classification": "SIMULATED",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 3737
+  },
+  {
+    "route": "/api/region-dossier",
+    "file": "region-dossier\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiQuery)}`"
+    ],
+    "codeLength": 11796
+  },
+  {
+    "route": "/api/satellites/orbit",
+    "file": "satellites\\orbit\\route.ts",
+    "classification": "STATIC",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 4664
+  },
+  {
+    "route": "/api/satellites",
+    "file": "satellites\\route.ts",
+    "classification": "STATIC",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 13950
+  },
+  {
+    "route": "/api/scanner",
+    "file": "scanner\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": false,
+    "envVars": [
+      "SCANNER_URL",
+      "SCANNER_KEY"
+    ],
+    "fetches": [
+      "`${SCANNER_URL}${scanConfig.endpoint}?${params.toString()}`"
+    ],
+    "codeLength": 3990
+  },
+  {
+    "route": "/api/scm-suppliers",
+    "file": "scm-suppliers\\route.ts",
+    "classification": "LIVE_WITH_FALLBACK_MOCK",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson'",
+      "'http://127.0.0.1:3000/api/fires'",
+      "'http://127.0.0.1:3000/api/gdelt'"
+    ],
+    "codeLength": 5416
+  },
+  {
+    "route": "/api/sdk/ingest",
+    "file": "sdk\\ingest\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": false,
+    "envVars": [
+      "SDK_INGEST_KEY"
+    ],
+    "fetches": [],
+    "codeLength": 5027
+  },
+  {
+    "route": "/api/sdk/stream",
+    "file": "sdk\\stream\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [],
+    "codeLength": 2974
+  },
+  {
+    "route": "/api/sentinel",
+    "file": "sentinel\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://earth-search.aws.element84.com/v1/search'",
+      "'https://earth-search.aws.element84.com/v1/search'",
+      "'https://catalogue.dataspace.copernicus.eu/stac/search'"
+    ],
+    "codeLength": 5120
+  },
+  {
+    "route": "/api/space-weather",
+    "file": "space-weather\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://services.swpc.noaa.gov/json/planetary_k_index_1m.json'",
+      "'https://services.swpc.noaa.gov/json/alerts.json'",
+      "'https://services.swpc.noaa.gov/json/goes/primary/xray-flares-latest.json'"
+    ],
+    "codeLength": 3793
+  },
+  {
+    "route": "/api/stats",
+    "file": "stats\\route.ts",
+    "classification": "UNKNOWN",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "`${origin}/api/flights`",
+      "`${origin}/api/satellites`",
+      "`${origin}/api/cctv`",
+      "`${origin}/api/weather`",
+      "`${origin}/api/infrastructure`",
+      "`${origin}/api/gdelt`"
+    ],
+    "codeLength": 5652
+  },
+  {
+    "route": "/api/weather",
+    "file": "weather\\route.ts",
+    "classification": "LIVE_STRICT",
+    "usesCache": true,
+    "envVars": [],
+    "fetches": [
+      "'https://api.weather.gov/alerts/active?status=actual&message_type=alert'"
+    ],
+    "codeLength": 10329
+  }
+]

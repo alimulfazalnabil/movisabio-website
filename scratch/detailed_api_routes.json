@@ -1,0 +1,1661 @@
+{
+  "totalRouteFiles": 98,
+  "totalHandlers": 85,
+  "routes": [
+    {
+      "file": "ai\\analyze\\route.ts",
+      "path": "/api/ai/analyze",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 6616
+    },
+    {
+      "file": "ai\\briefing\\route.ts",
+      "path": "/api/ai/briefing",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 5975
+    },
+    {
+      "file": "ai\\overview\\route.ts",
+      "path": "/api/ai/overview",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 14790
+    },
+    {
+      "file": "air-quality\\route.ts",
+      "path": "/api/air-quality",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2375
+    },
+    {
+      "file": "aircraft\\route.test.ts",
+      "path": "/api/aircraft",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 8742
+    },
+    {
+      "file": "aircraft\\route.ts",
+      "path": "/api/aircraft",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 9848
+    },
+    {
+      "file": "arcgis\\route.test.ts",
+      "path": "/api/arcgis",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 3931
+    },
+    {
+      "file": "arcgis\\route.ts",
+      "path": "/api/arcgis",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 12342
+    },
+    {
+      "file": "cctv\\proxy\\route.test.ts",
+      "path": "/api/cctv/proxy",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1103
+    },
+    {
+      "file": "cctv\\proxy\\route.ts",
+      "path": "/api/cctv/proxy",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 7681
+    },
+    {
+      "file": "cctv\\resolve\\route.ts",
+      "path": "/api/cctv/resolve",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 5834
+    },
+    {
+      "file": "cctv\\route.test.ts",
+      "path": "/api/cctv",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 5362
+    },
+    {
+      "file": "cctv\\route.ts",
+      "path": "/api/cctv",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 45734
+    },
+    {
+      "file": "cctv\\stream-status\\route.ts",
+      "path": "/api/cctv/stream-status",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1836
+    },
+    {
+      "file": "cctv\\texas\\snapshot\\route.test.ts",
+      "path": "/api/cctv/texas/snapshot",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1870
+    },
+    {
+      "file": "cctv\\texas\\snapshot\\route.ts",
+      "path": "/api/cctv/texas/snapshot",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [
+        "${TXDOT_BASE}GetCctvSnapshotByIcdId?${query}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1638
+    },
+    {
+      "file": "chain\\daily\\route.ts",
+      "path": "/api/chain/daily",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1255
+    },
+    {
+      "file": "cloudflare-radar\\route.ts",
+      "path": "/api/cloudflare-radar",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [
+        "${RADAR_BASE}${path}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 6735
+    },
+    {
+      "file": "conflicts\\route.ts",
+      "path": "/api/conflicts",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 14684
+    },
+    {
+      "file": "country-risk\\route.ts",
+      "path": "/api/country-risk",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 3939
+    },
+    {
+      "file": "crypto\\route.ts",
+      "path": "/api/crypto",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 942
+    },
+    {
+      "file": "cyber-attacks\\route.test.ts",
+      "path": "/api/cyber-attacks",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2599
+    },
+    {
+      "file": "cyber-attacks\\route.ts",
+      "path": "/api/cyber-attacks",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://feodotracker.abuse.ch/downloads/ipblocklist.json"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2270
+    },
+    {
+      "file": "cyber-threats\\route.ts",
+      "path": "/api/cyber-threats",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+        "https://dashboard.shadowserver.org/statistics/combined/map/"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 2246
+    },
+    {
+      "file": "directions\\route.test.ts",
+      "path": "/api/directions",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 7159
+    },
+    {
+      "file": "directions\\route.ts",
+      "path": "/api/directions",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 15099
+    },
+    {
+      "file": "earthquakes\\route.ts",
+      "path": "/api/earthquakes",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1562
+    },
+    {
+      "file": "entity\\expand\\route.ts",
+      "path": "/api/entity/expand",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [
+        "${INTEL_URL}/resolve?${params}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2494
+    },
+    {
+      "file": "fires\\route.ts",
+      "path": "/api/fires",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=volcanoes&limit=50"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 4266
+    },
+    {
+      "file": "flight-route\\route.ts",
+      "path": "/api/flight-route",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 14039
+    },
+    {
+      "file": "flights\\route.ts",
+      "path": "/api/flights",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://auth.opensky-network.org/auth/realms/opensky-network/protocol/openid-connect/token"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 21489
+    },
+    {
+      "file": "frontlines\\route.ts",
+      "path": "/api/frontlines",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 936
+    },
+    {
+      "file": "gdelt\\route.ts",
+      "path": "/api/gdelt",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://www.gdacs.org/xml/rss.xml"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3890
+    },
+    {
+      "file": "gdelt-events\\route.ts",
+      "path": "/api/gdelt-events",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1765
+    },
+    {
+      "file": "geo\\reverse\\route.ts",
+      "path": "/api/geo/reverse",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1954
+    },
+    {
+      "file": "geo\\route.test.ts",
+      "path": "/api/geo",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2021
+    },
+    {
+      "file": "geo\\route.ts",
+      "path": "/api/geo",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3735
+    },
+    {
+      "file": "geosearch\\route.test.ts",
+      "path": "/api/geosearch",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 4771
+    },
+    {
+      "file": "geosearch\\route.ts",
+      "path": "/api/geosearch",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 7742
+    },
+    {
+      "file": "github-webhook\\route.ts",
+      "path": "/api/github-webhook",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 2126
+    },
+    {
+      "file": "health\\route.ts",
+      "path": "/api/health",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1800
+    },
+    {
+      "file": "infrastructure\\route.ts",
+      "path": "/api/infrastructure",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 15630
+    },
+    {
+      "file": "live-news\\route.ts",
+      "path": "/api/live-news",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 4865
+    },
+    {
+      "file": "malware\\route.ts",
+      "path": "/api/malware",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1680
+    },
+    {
+      "file": "malware\\stream\\route.ts",
+      "path": "/api/malware/stream",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3588
+    },
+    {
+      "file": "maritime\\route.test.ts",
+      "path": "/api/maritime",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2473
+    },
+    {
+      "file": "maritime\\route.ts",
+      "path": "/api/maritime",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 16109
+    },
+    {
+      "file": "markets\\history\\route.test.ts",
+      "path": "/api/markets/history",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 3574
+    },
+    {
+      "file": "markets\\history\\route.ts",
+      "path": "/api/markets/history",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 4215
+    },
+    {
+      "file": "markets\\route.test.ts",
+      "path": "/api/markets",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 7556
+    },
+    {
+      "file": "markets\\route.ts",
+      "path": "/api/markets",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [
+        "${origin}/api/maritime"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 11526
+    },
+    {
+      "file": "mcp\\route.ts",
+      "path": "/api/mcp",
+      "methods": [
+        "GET",
+        "POST",
+        "DELETE"
+      ],
+      "handlerCount": 3,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 6211
+    },
+    {
+      "file": "news\\route.test.ts",
+      "path": "/api/news",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 7499
+    },
+    {
+      "file": "news\\route.ts",
+      "path": "/api/news",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://t.me/s/${channel.handle}"
+      ],
+      "dynamicFetches": [
+        "https://t.me/s/${channel.handle}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 21706
+    },
+    {
+      "file": "oi\\assist\\route.ts",
+      "path": "/api/oi/assist",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1329
+    },
+    {
+      "file": "oi\\models\\route.ts",
+      "path": "/api/oi/models",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1592
+    },
+    {
+      "file": "oi\\route.ts",
+      "path": "/api/oi",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 365
+    },
+    {
+      "file": "oi\\runs\\route.ts",
+      "path": "/api/oi/runs",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1488
+    },
+    {
+      "file": "oi\\runs\\[id]\\ask\\route.ts",
+      "path": "/api/oi/runs/[id]/ask",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1278
+    },
+    {
+      "file": "oi\\runs\\[id]\\events\\route.test.ts",
+      "path": "/api/oi/runs/[id]/events",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3046
+    },
+    {
+      "file": "oi\\runs\\[id]\\events\\route.ts",
+      "path": "/api/oi/runs/[id]/events",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3479
+    },
+    {
+      "file": "oi\\runs\\[id]\\inject\\route.ts",
+      "path": "/api/oi/runs/[id]/inject",
+      "methods": [
+        "POST"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1172
+    },
+    {
+      "file": "oi\\runs\\[id]\\route.ts",
+      "path": "/api/oi/runs/[id]",
+      "methods": [
+        "GET",
+        "DELETE"
+      ],
+      "handlerCount": 2,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1925
+    },
+    {
+      "file": "oi\\trending\\route.ts",
+      "path": "/api/oi/trending",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 768
+    },
+    {
+      "file": "osint\\bgp\\route.ts",
+      "path": "/api/osint/bgp",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "http://ip-api.com/json/${query}?fields=status,country,countryCode,region,regionName,city,as,org,isp,reverse,query",
+        "https://stat.ripe.net/data/as-overview/data.json?resource=AS${asn}",
+        "https://stat.ripe.net/data/as-overview/data.json?resource=AS${asnNum}"
+      ],
+      "dynamicFetches": [
+        "http://ip-api.com/json/${query}?fields=status,country,countryCode,region,regionName,city,as,org,isp,reverse,query",
+        "https://stat.ripe.net/data/as-overview/data.json?resource=AS${asn}",
+        "https://stat.ripe.net/data/as-overview/data.json?resource=AS${asnNum}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 3700
+    },
+    {
+      "file": "osint\\certs\\route.ts",
+      "path": "/api/osint/certs",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://crt.sh/?q=%25.${encodeURIComponent(domain)}&output=json"
+      ],
+      "dynamicFetches": [
+        "https://crt.sh/?q=%25.${encodeURIComponent(domain)}&output=json"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 2412
+    },
+    {
+      "file": "osint\\crypto\\route.ts",
+      "path": "/api/osint/crypto",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2297
+    },
+    {
+      "file": "osint\\cve\\route.ts",
+      "path": "/api/osint/cve",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://cveawg.mitre.org/api/cve/${encodeURIComponent(cve.toUpperCase())}",
+        "https://cve.circl.lu/api/cve/${encodeURIComponent(cve.toUpperCase())}"
+      ],
+      "dynamicFetches": [
+        "https://cveawg.mitre.org/api/cve/${encodeURIComponent(cve.toUpperCase())}",
+        "https://cve.circl.lu/api/cve/${encodeURIComponent(cve.toUpperCase())}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 4377
+    },
+    {
+      "file": "osint\\dns\\route.ts",
+      "path": "/api/osint/dns",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://dns.google/resolve?name=${encodeURIComponent(domain)}&type=${type}"
+      ],
+      "dynamicFetches": [
+        "https://dns.google/resolve?name=${encodeURIComponent(domain)}&type=${type}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2376
+    },
+    {
+      "file": "osint\\fingerprint\\route.ts",
+      "path": "/api/osint/fingerprint",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3056
+    },
+    {
+      "file": "osint\\github\\route.ts",
+      "path": "/api/osint/github",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://api.github.com/users/${encodeURIComponent(username)}",
+        "https://api.github.com/users/${encodeURIComponent(username)}/repos?sort=updated&per_page=5"
+      ],
+      "dynamicFetches": [
+        "https://api.github.com/users/${encodeURIComponent(username)}",
+        "https://api.github.com/users/${encodeURIComponent(username)}/repos?sort=updated&per_page=5"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1712
+    },
+    {
+      "file": "osint\\hudsonrock\\route.ts",
+      "path": "/api/osint/hudsonrock",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 4267
+    },
+    {
+      "file": "osint\\ip\\route.ts",
+      "path": "/api/osint/ip",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "http://ip-api.com/json/${ip}?fields=status,message,continent,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,asname,mobile,proxy,hosting,query"
+      ],
+      "dynamicFetches": [
+        "http://ip-api.com/json/${ip}?fields=status,message,continent,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,asname,mobile,proxy,hosting,query"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 3407
+    },
+    {
+      "file": "osint\\leaks\\route.ts",
+      "path": "/api/osint/leaks",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://api.xposedornot.com/v1/breach-analytics?email=${encodeURIComponent(email)}"
+      ],
+      "dynamicFetches": [
+        "https://api.xposedornot.com/v1/breach-analytics?email=${encodeURIComponent(email)}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1837
+    },
+    {
+      "file": "osint\\mac\\route.ts",
+      "path": "/api/osint/mac",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://api.maclookup.app/v2/macs/${encodeURIComponent(cleanMac)}"
+      ],
+      "dynamicFetches": [
+        "https://api.maclookup.app/v2/macs/${encodeURIComponent(cleanMac)}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1186
+    },
+    {
+      "file": "osint\\phone\\route.ts",
+      "path": "/api/osint/phone",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 6972
+    },
+    {
+      "file": "osint\\sanctions\\route.ts",
+      "path": "/api/osint/sanctions",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1909
+    },
+    {
+      "file": "osint\\shodan\\route.ts",
+      "path": "/api/osint/shodan",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://internetdb.shodan.io/${encodeURIComponent(ip)}"
+      ],
+      "dynamicFetches": [
+        "https://internetdb.shodan.io/${encodeURIComponent(ip)}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 967
+    },
+    {
+      "file": "osint\\sweep\\route.ts",
+      "path": "/api/osint/sweep",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "http://ip-api.com/json/${ip}?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,as,proxy,hosting"
+      ],
+      "dynamicFetches": [
+        "http://ip-api.com/json/${ip}?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,as,proxy,hosting"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3391
+    },
+    {
+      "file": "osint\\threats\\route.ts",
+      "path": "/api/osint/threats",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://otx.alienvault.com/api/v1/pulses/subscribed?limit=10&page=1",
+        "https://otx.alienvault.com/api/v1/pulses/activity?limit=10",
+        "https://check.torproject.org/torbulkexitlist",
+        "https://otx.alienvault.com/api/v1/indicators/IPv4/${query}/general",
+        "https://otx.alienvault.com/api/v1/indicators/domain/${encodeURIComponent(query)}/general"
+      ],
+      "dynamicFetches": [
+        "https://otx.alienvault.com/api/v1/indicators/IPv4/${query}/general",
+        "https://otx.alienvault.com/api/v1/indicators/domain/${encodeURIComponent(query)}/general"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 4110
+    },
+    {
+      "file": "osint\\username\\route.ts",
+      "path": "/api/osint/username",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2317
+    },
+    {
+      "file": "osint\\whois\\route.ts",
+      "path": "/api/osint/whois",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://rdap.org/domain/${encodeURIComponent(domain)}"
+      ],
+      "dynamicFetches": [
+        "https://rdap.org/domain/${encodeURIComponent(domain)}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 5074
+    },
+    {
+      "file": "proxy-tiles\\route.ts",
+      "path": "/api/proxy-tiles",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 1653
+    },
+    {
+      "file": "radar\\route.ts",
+      "path": "/api/radar",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3737
+    },
+    {
+      "file": "region-dossier\\route.test.ts",
+      "path": "/api/region-dossier",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 4401
+    },
+    {
+      "file": "region-dossier\\route.ts",
+      "path": "/api/region-dossier",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiQuery)}"
+      ],
+      "dynamicFetches": [
+        "https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiQuery)}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 11796
+    },
+    {
+      "file": "satellites\\orbit\\route.ts",
+      "path": "/api/satellites/orbit",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 4664
+    },
+    {
+      "file": "satellites\\route.ts",
+      "path": "/api/satellites",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 13950
+    },
+    {
+      "file": "scanner\\route.ts",
+      "path": "/api/scanner",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [
+        "${SCANNER_URL}${scanConfig.endpoint}?${params.toString()}"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 3990
+    },
+    {
+      "file": "scm-suppliers\\route.ts",
+      "path": "/api/scm-suppliers",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
+        "http://127.0.0.1:3000/api/fires",
+        "http://127.0.0.1:3000/api/gdelt"
+      ],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 5416
+    },
+    {
+      "file": "sdk\\ingest\\route.ts",
+      "path": "/api/sdk/ingest",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "handlerCount": 2,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 5027
+    },
+    {
+      "file": "sdk\\stream\\route.ts",
+      "path": "/api/sdk/stream",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 2974
+    },
+    {
+      "file": "sentinel\\route.ts",
+      "path": "/api/sentinel",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://earth-search.aws.element84.com/v1/search",
+        "https://earth-search.aws.element84.com/v1/search",
+        "https://catalogue.dataspace.copernicus.eu/stac/search"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 5120
+    },
+    {
+      "file": "space-weather\\route.test.ts",
+      "path": "/api/space-weather",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": false,
+      "hasStaticImport": false,
+      "codeLength": 1896
+    },
+    {
+      "file": "space-weather\\route.ts",
+      "path": "/api/space-weather",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://services.swpc.noaa.gov/json/planetary_k_index_1m.json",
+        "https://services.swpc.noaa.gov/json/alerts.json",
+        "https://services.swpc.noaa.gov/json/goes/primary/xray-flares-latest.json"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 3793
+    },
+    {
+      "file": "stats\\route.test.ts",
+      "path": "/api/stats",
+      "methods": [],
+      "handlerCount": 0,
+      "externalUrls": [],
+      "dynamicFetches": [],
+      "hasMock": true,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 5246
+    },
+    {
+      "file": "stats\\route.ts",
+      "path": "/api/stats",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [],
+      "dynamicFetches": [
+        "${origin}/api/flights",
+        "${origin}/api/satellites",
+        "${origin}/api/cctv",
+        "${origin}/api/weather",
+        "${origin}/api/infrastructure",
+        "${origin}/api/gdelt"
+      ],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": false,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 5652
+    },
+    {
+      "file": "weather\\route.ts",
+      "path": "/api/weather",
+      "methods": [
+        "GET"
+      ],
+      "handlerCount": 1,
+      "externalUrls": [
+        "https://api.weather.gov/alerts/active?status=actual&message_type=alert"
+      ],
+      "dynamicFetches": [],
+      "hasMock": false,
+      "hasRandom": false,
+      "hasSimulation": true,
+      "hasCache": true,
+      "hasStaticImport": false,
+      "codeLength": 10329
+    }
+  ]
+}
