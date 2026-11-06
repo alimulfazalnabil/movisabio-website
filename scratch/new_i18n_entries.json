@@ -1,0 +1,890 @@
+{
+  "tag_flagship_platform": {
+    "en": "Flagship Product Specification",
+    "de": "Spezifikation des Flaggschiff-Produkts",
+    "pt": "Especificação do Produto Principal",
+    "es": "Especificación del Producto Insignia",
+    "it": "Specifiche del Prodotto di Punta",
+    "zh": "旗舰产品技术规范"
+  },
+  "platform_hero_title": {
+    "en": "MoviSabio Enterprise Smart City",
+    "de": "MoviSabio Enterprise Smart City",
+    "pt": "MoviSabio Enterprise Smart City",
+    "es": "MoviSabio Enterprise Smart City",
+    "it": "MoviSabio Enterprise Smart City",
+    "zh": "MoviSabio 企业级智慧城市平台"
+  },
+  "platform_hero_subtitle": {
+    "en": "The intelligent neural backbone for modern urban ecosystems. Unifying real-time adaptive traffic signal coordination, edge computer vision, 3D digital twin simulation, and environmental monitoring into an enterprise-grade platform.",
+    "de": "Das intelligente neuronale Rückgrat für moderne städtische Ökosysteme. Vereinheitlicht adaptive Echtzeit-Verkehrssignalkoordination, Edge-Computer-Vision, 3D-Digital-Twin-Simulation und Umweltüberwachung in einer Plattform für Großunternehmen.",
+    "pt": "A espinha dorsal neural inteligente para ecossistemas urbanos modernos. Unificando coordenação semafórica adaptativa em tempo real, visão computacional de borda, gêmeos digitais 3D e monitoramento ambiental em uma plataforma corporativa.",
+    "es": "La columna vertebral neural inteligente para ecosistemas urbanos modernos. Unificando coordinación semafórica adaptativa en tiempo real, visión por computadora en el borde, gemelos digitales 3D y monitoreo ambiental en una plataforma empresarial.",
+    "it": "La spina dorsale neurale intelligente per gli ecosistemi urbani moderni. Unifica il coordinamento semaforico adattivo in tempo reale, computer vision edge, gemelli digitali 3D e monitoraggio ambientale in una piattaforma di livello aziendale.",
+    "zh": "现代城市生态系统的智能神经中枢。将实时自适应交通信号协调、边缘计算机视觉、三维数字孪生仿真和环境监测统一融入企业级平台。"
+  },
+  "btn_explore_modules": {
+    "en": "Explore 12 Technical Modules ↓",
+    "de": "12 Technische Module Erkunden ↓",
+    "pt": "Explorar 12 Módulos Técnicos ↓",
+    "es": "Explorar 12 Módulos Técnicos ↓",
+    "it": "Esplora 12 Moduli Tecnici ↓",
+    "zh": "探索12个技术模块 ↓"
+  },
+  "btn_view_specs": {
+    "en": "Technical Specifications Table",
+    "de": "Technische Spezifikationstabelle",
+    "pt": "Tabela de Especificações Técnicas",
+    "es": "Tabla de Especificaciones Técnicas",
+    "it": "Tabella Specifiche Tecniche",
+    "zh": "技术规范参数表"
+  },
+  "btn_view_architecture": {
+    "en": "6-Layer Architecture Diagram",
+    "de": "6-Schichten-Architekturdiagramm",
+    "pt": "Diagrama de Arquitetura em 6 Camadas",
+    "es": "Diagrama de Arquitectura de 6 Capas",
+    "it": "Diagramma di Architettura a 6 Livelli",
+    "zh": "6层系统架构全景图"
+  },
+  "caption_hero_image": {
+    "en": "MoviSabio Enterprise Smart City: Centralized territorial operations dashboard integrating traffic corridors, transit networks, and environmental sensors.",
+    "de": "MoviSabio Enterprise Smart City: Zentrales territoriales Betriebs-Dashboard für Verkehrskorridore, Nahverkehrsnetze und Umweltsensoren.",
+    "pt": "MoviSabio Enterprise Smart City: Painel centralizado de operações territoriais integrando corredores de tráfego, redes de transporte e sensores ambientais.",
+    "es": "MoviSabio Enterprise Smart City: Panel centralizado de operaciones territoriales que integra corredores de tráfico, redes de transporte y sensores ambientales.",
+    "it": "MoviSabio Enterprise Smart City: Dashboard operativa territoriale centralizzata che integra corridoi di traffico, reti di trasporto e sensori ambientali.",
+    "zh": "MoviSabio 企业级智慧城市：集中式空间运营控制台，整合城市交通走廊、公交网络和环境物联传感。"
+  },
+  "tag_section_a": {
+    "en": "Section A • Executive Product Overview",
+    "de": "Abschnitt A • Produktübersicht für Führungskräfte",
+    "pt": "Seção A • Visão Geral Executiva do Produto",
+    "es": "Sección A • Resumen Ejecutivo del Producto",
+    "it": "Sezione A • Panoramica Esecutiva del Prodotto",
+    "zh": "A部分 • 平台总体概述与定位"
+  },
+  "heading_section_a": {
+    "en": "Purpose, Operational Value & Target Stakeholders",
+    "de": "Zweck, Operativer Wert & Zielgruppen",
+    "pt": "Propósito, Valor Operacional e Partes Interessadas",
+    "es": "Propósito, Valor Operativo y Partes Interesadas",
+    "it": "Scopo, Valore Operativo e Stakeholder di Riferimento",
+    "zh": "建设宗旨、运营价值与目标客户群体"
+  },
+  "sub_section_a": {
+    "en": "MoviSabio Enterprise Smart City transforms reactive municipal management into proactive, self-optimizing urban ecosystems. Designed specifically for mid-sized and large metropolitan regions without requiring costly hardware retrofits.",
+    "de": "MoviSabio Enterprise Smart City verwandelt reaktives städtisches Management in proaktive, selbstoptimierende Ökosysteme – entwickelt für Metropolregionen ohne teure Hardware-Nachrüstungen.",
+    "pt": "O MoviSabio Enterprise Smart City transforma a gestão municipal reativa em ecossistemas urbanos proativos e auto-otimizáveis. Projetado especificamente para regiões metropolitanas sem retrofits dispendiosos.",
+    "es": "MoviSabio Enterprise Smart City transforma la gestión municipal reactiva en ecosistemas urbanos proactivos y autooptimizables. Diseñado para regiones metropolitanas sin costosas modificaciones de hardware.",
+    "it": "MoviSabio Enterprise Smart City trasforma la gestione municipale reattiva in ecosistemi urbani proattivi e auto-ottimizzanti. Progettato per aree metropolitane senza costosi ammodernamenti hardware.",
+    "zh": "MoviSabio 企业级智慧城市将传统被动的市政管理转变为主动式、自主优化的智慧城市生态系统。专为中大型大都市区量身打造，无需昂贵的路侧硬件改造成本。"
+  },
+  "card_stakeholders_title": {
+    "en": "Target Stakeholders & Customers",
+    "de": "Zielgruppen & Kunden",
+    "pt": "Partes Interessadas e Clientes Alvo",
+    "es": "Clientes y Partes Interesadas Objetivo",
+    "it": "Stakeholder e Clienti Target",
+    "zh": "服务对象与目标合作机构"
+  },
+  "card_stakeholders_desc": {
+    "en": "Tailored for municipal transportation secretariats, smart-city operators, port and logistics authorities, civil engineering firms, research universities, and infrastructure investment funds seeking measurable territorial optimization.",
+    "de": "Maßgeschneidert für städtische Verkehrsministerien, Smart-City-Betreiber, Hafenbehörden, Ingenieurbüros, Universitäten und Infrastrukturfonds.",
+    "pt": "Adaptado para secretarias municipais de transporte, operadores de cidades inteligentes, autoridades portuárias, empresas de engenharia e fundos de infraestrutura.",
+    "es": "Diseñado para secretarías municipales de transporte, operadores de ciudades inteligentes, autoridades portuarias, consultoras de ingeniería y fondos de infraestructura.",
+    "it": "Progettato per assessorati municipali ai trasporti, operatori di smart city, autorità portuali, società di ingegneria civile e fondi infrastrutturali.",
+    "zh": "专为市政交通主管部门、智慧城市运营商、港口物流枢纽、交通工程设计院、科研高校及基础设施绿色投资基金打造。"
+  },
+  "card_challenges_title": {
+    "en": "Core Operational Challenges Solved",
+    "de": "Gelöste Operative Herausforderungen",
+    "pt": "Desafios Operacionais Fundamentais Resolvidos",
+    "es": "Desafíos Operativos Clave Resueltos",
+    "it": "Principali Sfide Operative Risolte",
+    "zh": "解决的核心城市运营痛点"
+  },
+  "card_challenges_desc": {
+    "en": "Eliminates the three primary bottlenecks of traditional traffic systems: isolated pre-programmed signal controllers that cannot adapt to real-time traffic surges, multi-million-dollar proprietary sensor lock-in, and delayed emergency response routes.",
+    "de": "Beseitigt isolierte Festzeit-Signalsteuerungen, teure proprietäre Sensor-Abhängigkeiten und Verzögerungen von Einsatzfahrzeugen.",
+    "pt": "Elimina controladores semafóricos isolados com tempos fixos, dependência de sensores proprietários caros e atrasos em rotas de emergência.",
+    "es": "Elimina controladores aislados de tiempo fijo, la dependencia de sensores patentados de alto costo y las demoras en rutas de emergencia.",
+    "it": "Elimina controllori semaforici isolati a tempi fissi, costosi vincoli hardware proprietari e ritardi nei percorsi dei mezzi di soccorso.",
+    "zh": "攻克传统交通系统的三大核心症结：无法应对突发车流的孤岛定时信号机、数百万美元专有传感器捆绑，以及应急救援车辆通行受阻。"
+  },
+  "card_valueprop_title": {
+    "en": "The MoviSabio Value Proposition",
+    "de": "Das MoviSabio Wertversprechen",
+    "pt": "A Proposta de Valor MoviSabio",
+    "es": "La Propuesta de Valor MoviSabio",
+    "it": "La Proposta di Valore MoviSabio",
+    "zh": "MoviSabio 核心商业与技术价值"
+  },
+  "card_valueprop_desc": {
+    "en": "A zero-sensor retrofit, cloud-native platform that taps into existing municipal CCTV cameras via standard RTSP streams and interfaces with standard signal controllers (NTCIP 1202) under strict classical safety boundaries.",
+    "de": "Eine cloud-native Plattform ohne Sensor-Nachrüstung, die bestehende CCTV-Kameras über RTSP nutzt und NTCIP 1202-Signalsteuerungen sicher ansteuert.",
+    "pt": "Uma plataforma em nuvem sem necessidade de novos sensores, conectando câmeras CFTV existentes via RTSP e controladores NTCIP 1202 sob limites estritos de segurança.",
+    "es": "Una plataforma en la nube sin nuevos sensores, conectando cámaras CCTV existentes mediante RTSP y controladores NTCIP 1202 bajo límites estrictos de seguridad.",
+    "it": "Una piattaforma cloud-native senza nuovi sensori che sfrutta telecamere TVCC esistenti via RTSP e controllori NTCIP 1202 con limiti di sicurezza deterministici.",
+    "zh": "零新增传感器、云原生架构，直接复用市政既有监控摄像头（RTSP流），并在严格经典安全边界下与NTCIP 1202标准信号机双向交互。"
+  },
+  "cta_demo_title": {
+    "en": "Request a Technical Demonstration & Municipal Scoping Call",
+    "de": "Fordern Sie eine Technische Demonstration & Scoping-Anruf an",
+    "pt": "Solicite uma Demonstração Técnica e Reunião de Escopo",
+    "es": "Solicite una Demostración Técnica y Reunión de Alcance",
+    "it": "Richiedi una Dimostrazione Tecnica e Incontro di Fattibilità",
+    "zh": "预约技术演示与市政试点评估研讨"
+  },
+  "cta_demo_desc": {
+    "en": "Our engineering team models your city corridor in the SUMO simulation sandbox to calculate baseline delay reductions before physical deployment.",
+    "de": "Unser Ingenieurteam modelliert Ihren Korridor in der SUMO-Sandbox, um Verzögerungsreduktionen vor der Bereitstellung zu quantifizieren.",
+    "pt": "Nossa equipe de engenharia modela o corredor da sua cidade no simulador SUMO para calcular reduções de atraso antes da implantação.",
+    "es": "Nuestro equipo de ingeniería modela el corredor de su ciudad en SUMO para calcular reducciones de demoras antes de la implementación física.",
+    "it": "Il nostro team di ingegneria modella il corridoio urbano in SUMO per stimare le riduzioni di ritardo prima dell'implementazione reale.",
+    "zh": "我们的工程团队将在SUMO微观仿真沙盒中建模您的城市道路，在现场部署前精确预测车流通行延误降低幅度。"
+  },
+  "btn_request_scoping": {
+    "en": "Initiate Municipal Pilot Inquiry →",
+    "de": "Kommunale Pilotanfrage Starten →",
+    "pt": "Iniciar Consulta de Piloto Municipal →",
+    "es": "Iniciar Consulta de Piloto Municipal →",
+    "it": "Avvia Richiesta di Progetto Pilota →",
+    "zh": "发起市政试点合作咨询 →"
+  },
+  "tag_section_b": {
+    "en": "Section B • Core Engine",
+    "de": "Abschnitt B • Kern-Engine",
+    "pt": "Seção B • Motor Central",
+    "es": "Sección B • Motor Principal",
+    "it": "Sezione B • Motore Principale",
+    "zh": "B部分 • 核心引擎"
+  },
+  "heading_section_b": {
+    "en": "Traffic Intelligence & Signal Coordination",
+    "de": "Verkehrsintelligenz & Signalkoordination",
+    "pt": "Inteligência de Tráfego e Coordenação Semafórica",
+    "es": "Inteligencia de Tráfico y Coordinación Semafórica",
+    "it": "Intelligenza del Traffico e Coordinamento Semaforico",
+    "zh": "交通智能分析与全域信号协调控制"
+  },
+  "sub_section_b": {
+    "en": "Combining classical traffic engineering mathematics with modern artificial intelligence to deliver adaptive, multi-intersection signal timing that guarantees vehicular safety and maximizes arterial progression.",
+    "de": "Kombiniert klassische Verkehrsmathematik mit moderner KI für adaptive Signalzeiten, die Sicherheit garantieren und den Durchfluss maximieren.",
+    "pt": "Combinando matemática clássica de engenharia de tráfego com IA moderna para tempos semafóricos adaptativos que garantem segurança e progressão arterial.",
+    "es": "Combinando matemáticas de ingeniería de tráfico clásica con IA moderna para tiempos adaptativos que garantizan seguridad y progresión arterial.",
+    "it": "Combina la matematica ingegneristica classica con l'intelligenza artificiale moderna per garantire sicurezza e fluidità semaforica.",
+    "zh": "将经典交通工程学运筹数学与现代人工智能深度融合，实现自适应多路口信号配时，在保证绝对安全边界的前提下最大化干线通行绿波。"
+  },
+  "caption_traffic_image": {
+    "en": "Multi-intersection corridor coordination: Dynamic green-wave synchronization adjusting phase splits based on real-time vehicle approach velocities.",
+    "de": "Multi-Kreuzungs-Korridorkoordination: Dynamische Grüne-Welle-Synchronisation basierend auf Echtzeit-Fahrzeuggeschwindigkeiten.",
+    "pt": "Coordenação de corredores com múltiplos cruzamentos: Sincronização de onda verde ajustando fases com base em velocidades reais de aproximação.",
+    "es": "Coordinación de corredores con múltiples intersecciones: Sincronización de onda verde ajustando fases según velocidades de aproximación en tiempo real.",
+    "it": "Coordinamento di corridoi a più incroci: Sincronizzazione dell'onda verde adattata alle velocità di avvicinamento in tempo reale.",
+    "zh": "多交叉路口走廊协同：基于车辆实时到达车速与排队长度，动态自适应优化双向绿波带与相位配时。"
+  },
+  "b1_title": {
+    "en": "1. AI Traffic Control System (AITCS)",
+    "de": "1. KI-Verkehrssteuerungssystem (AITCS)",
+    "pt": "1. Sistema de Controle de Tráfego por IA (AITCS)",
+    "es": "1. Sistema de Control de Tráfico por IA (AITCS)",
+    "it": "1. Sistema di Controllo del Traffico basato su IA (AITCS)",
+    "zh": "1. 人工智能交通自适应控制系统 (AITCS)"
+  },
+  "b1_desc": {
+    "en": "Dynamically allocates green time to traffic movements exhibiting the highest cumulative delay and queue density. Operates continuously without requiring manual re-timing schedules.",
+    "de": "Weist Grünzeiten dynamisch Verkehrsströmen mit der höchsten Verzögerung und Warteschlangendichte zu – ganz ohne manuelle Umprogrammierung.",
+    "pt": "Aloca dinamicamente o tempo de verde para movimentos com maior atraso acumulado e densidade de filas, operando sem reprogramações manuais.",
+    "es": "Asigna dinámicamente el tiempo verde a los movimientos con mayor demora y densidad de colas, funcionando sin reprogramaciones manuales.",
+    "it": "Assegna dinamicamente il tempo verde ai flussi con il maggior ritardo accumulato e densità di coda, senza riprogrammazione manuale.",
+    "zh": "根据各车道排队积压与延误指数动态延长或截断绿灯时间，全天候自主运行，彻底摆脱人工反复制定时钟配时表的繁琐流程。"
+  },
+  "b2_title": {
+    "en": "2. Hierarchical Hybrid Framework (MAXBAND + AI)",
+    "de": "2. Hierarchisches Hybrid-Framework (MAXBAND + KI)",
+    "pt": "2. Estrutura Híbrida Hierárquica (MAXBAND + IA)",
+    "es": "2. Marco Híbrido Jerárquico (MAXBAND + IA)",
+    "it": "2. Framework Ibrido Gerarchico (MAXBAND + IA)",
+    "zh": "2. 分层混合架构 (MAXBAND 线性运筹 + 深度强化学习)"
+  },
+  "b2_desc": {
+    "en": "Our core algorithmic innovation: classical MAXBAND linear programming calculates deterministic arterial green waves, while Deep Reinforcement Learning agents adjust local splits within certified safety bounds.",
+    "de": "Unsere Kerninnovation: Klassische MAXBAND-Optimierung liefert deterministische Grüne Wellen, während Deep-RL-Agenten Phasen innerhalb von Sicherheitsgrenzen anpassen.",
+    "pt": "Nossa inovação central: O algoritmo clássico MAXBAND calcula ondas verdes arteriais determinísticas, enquanto agentes de Deep RL ajustam fases dentro de limites seguros.",
+    "es": "Nuestra innovación central: El algoritmo clásico MAXBAND calcula ondas verdes deterministas, mientras agentes de Deep RL ajustan fases dentro de límites de seguridad.",
+    "it": "La nostra innovazione: L'algoritmo classico MAXBAND genera onde verdi deterministiche, mentre agenti di Deep RL ottimizzano le fasi entro margini certificati.",
+    "zh": "核心运筹技术突破：通过经典MAXBAND混合整数线性规划保障确定性干线基础绿波带，由多智能体强化学习在安全约束阈值内进行微秒级动态微调。"
+  },
+  "b3_title": {
+    "en": "3. Multi-Intersection Corridor Coordination",
+    "de": "3. Multi-Kreuzungs-Korridorkoordination",
+    "pt": "3. Coordenação de Corredores com Múltiplos Cruzamentos",
+    "es": "3. Coordinación de Corredores con Múltiples Intersecciones",
+    "it": "3. Coordinamento di Corridoi a Più Incroci",
+    "zh": "3. 多交叉口走廊干线级协同控制"
+  },
+  "b3_desc": {
+    "en": "Coordinates a chain of 5 to 20 consecutive signalized intersections to create bi-directional green waves along primary arterial routes, mitigating shockwaves caused by mid-block queue spillovers.",
+    "de": "Koordiniert 5 bis 20 aufeinanderfolgende Kreuzungen für bidirektionale Grüne Wellen und verhindert Rückstaubildung.",
+    "pt": "Coordena de 5 a 20 cruzamentos consecutivos para criar ondas verdes bidirecionais e eliminar o refluxo de filas.",
+    "es": "Coordina de 5 a 20 intersecciones consecutivas para generar ondas verdes bidireccionales y evitar desbordes de colas.",
+    "it": "Coordina da 5 a 20 incroci consecutivi per creare onde verdi bidirezionali e mitigare onde d'urto del traffico.",
+    "zh": "协同控制干线上连续5至20个信号化交叉路口，打造双向绿波带，有效消解下游路口排队溢流引发的反向交通冲击波。"
+  },
+  "b4_title": {
+    "en": "4. Emergency Vehicle Preemption (EVP)",
+    "de": "4. Vorrangschaltung für Einsatzfahrzeuge (EVP)",
+    "pt": "4. Priorização de Veículos de Emergência (EVP)",
+    "es": "4. Priorización de Vehículos de Emergencia (EVP)",
+    "it": "4. Priorità per Veicoli di Soccorso (EVP)",
+    "zh": "4. 应急救援特种车辆动态优先通行 (EVP)"
+  },
+  "b4_desc": {
+    "en": "Interfaces with emergency dispatch Computer-Aided Dispatch (CAD) systems. Preemptively clears downstream vehicular queues and provides a continuous green wave for ambulances and fire engines.",
+    "de": "Verbindet sich mit städtischen Leitstellen (CAD), räumt vorausliegende Rückstaus und garantiert eine Grüne Welle für Krankenwagen und Feuerwehr.",
+    "pt": "Conecta-se com sistemas CAD de despacho de emergência, limpando filas à frente e garantindo rota verde contínua para ambulâncias e bombeiros.",
+    "es": "Se conecta con sistemas CAD de despacho de emergencia, despejando colas aguas abajo y asegurando una ola verde continua para ambulancias y bomberos.",
+    "it": "Si interfaccia con i sistemi CAD di emergenza, liberando le code a valle e garantendo un'onda verde continua per ambulanze e vigili del fuoco.",
+    "zh": "直连市政120/119指挥调度系统，沿急救与消防路线提前清空下游排队积压，实现全程无缝秒级绿灯保畅通。"
+  },
+  "tag_section_c": {
+    "en": "Section C • Visual Sensor Network",
+    "de": "Abschnitt C • Visuelles Sensornetzwerk",
+    "pt": "Seção C • Rede de Sensores Visuais",
+    "es": "Sección C • Red de Sensores Visuales",
+    "it": "Sezione C • Rete di Sensori Visivi",
+    "zh": "C部分 • 视觉传感网络"
+  },
+  "heading_section_c": {
+    "en": "Computer Vision & Edge AI Processing",
+    "de": "Computer Vision & Edge-KI-Verarbeitung",
+    "pt": "Visão Computacional e Processamento Edge AI",
+    "es": "Visión por Computadora y Procesamiento Edge AI",
+    "it": "Computer Vision ed Elaborazione Edge AI",
+    "zh": "计算机视觉与边缘端人工智能推理"
+  },
+  "sub_section_c": {
+    "en": "Transforming existing municipal CCTV and traffic camera feeds into structured, real-time vehicular and pedestrian telemetry without purchasing new physical road sensors.",
+    "de": "Verwandelt bestehende städtische CCTV-Kamerastreams in strukturierte Fahrzeug- und Fußgängertelemetrie ohne neue Sensoren.",
+    "pt": "Transformando câmeras de CFTV e tráfego existentes em telemetria estruturada de veículos e pedestres sem compra de novos sensores físicos.",
+    "es": "Convierte las transmisiones de cámaras de tráfico existentes en telemetría estructurada sin adquirir nuevos sensores físicos.",
+    "it": "Trasforma i flussi video TVCC esistenti in telemetria strutturata per veicoli e pedoni senza acquistare nuovi sensori su strada.",
+    "zh": "直接将市政现有交通监控与治安摄像头视频流转换为结构化车流与行人数据，彻底免除高昂的路面地磁和雷达采购成本。"
+  },
+  "caption_vision_image": {
+    "en": "YOLOv8 Edge Computer Vision: Multi-class vehicle detection, lane-wise spatial counting, and pedestrian crosswalk occupancy tracking.",
+    "de": "YOLOv8 Edge Computer Vision: Multiklassen-Fahrzeugerkennung, fahrstreifengenaue Zählung und Fußgängererkennung.",
+    "pt": "YOLOv8 Edge Computer Vision: Detecção veicular multiclasse, contagem por faixas e monitoramento de pedestres.",
+    "es": "YOLOv8 Edge Computer Vision: Detección vehicular multiclase, conteo por carriles y seguimiento de peatones en pasos de cebra.",
+    "it": "Computer Vision YOLOv8 su Edge: Rilevamento veicoli multiclasse, conteggio per corsia e tracciamento pedoni.",
+    "zh": "YOLOv8 边缘计算机视觉：多类别车型识别、车道级时空流量统计与斑马线行人驻留追踪。"
+  },
+  "c1_title": {
+    "en": "YOLOv8 Real-Time Vehicle Detection",
+    "de": "YOLOv8 Echtzeit-Fahrzeugerkennung",
+    "pt": "Detecção Veicular em Tempo Real YOLOv8",
+    "es": "Detección Vehicular en Tiempo Real YOLOv8",
+    "it": "Rilevamento Veicoli in Tempo Reale YOLOv8",
+    "zh": "YOLOv8 实时多类别车型检测"
+  },
+  "c1_desc": {
+    "en": "Processes H.264 / H.265 RTSP streams from city cameras. Detects and tracks vehicles with high precision across diverse lighting and weather conditions (sun glare, rain, nighttime).",
+    "de": "Verarbeitet H.264/H.265 RTSP-Streams städtischer Kameras und erkennt Fahrzeuge präzise bei Tag, Nacht und Regen.",
+    "pt": "Processa transmissões RTSP H.264/H.265 de câmeras da cidade, rastreando veículos com precisão sob qualquer clima.",
+    "es": "Procesa flujos RTSP H.264/H.265 de cámaras urbanas, rastreando vehículos con precisión en diversas condiciones climáticas.",
+    "it": "Elabora flussi RTSP H.264/H.265 di telecamere cittadine, rilevando veicoli con alta precisione giorno e notte.",
+    "zh": "实时解码城市监控H.264/H.265 RTSP视频流，在逆光、暴雨和夜间等复杂环境下稳定识别轿车、货车、公交车及摩托车。"
+  },
+  "c2_title": {
+    "en": "Lane-Wise Spatial Counting & Speed Tracking",
+    "de": "Fahrstreifengenaue Zählung & Geschwindigkeitsmessung",
+    "pt": "Contagem Espacial por Faixa e Rastreamento de Velocidade",
+    "es": "Conteo Espacial por Carril y Estimación de Velocidad",
+    "it": "Conteggio per Corsia e Tracciamento Velocità",
+    "zh": "车道级时空过车统计与车速估计"
+  },
+  "c2_desc": {
+    "en": "Defines virtual polygon detection zones and directional tripwires across approach lanes to compute vehicle density, approach speed, queue dwell time, and Level of Service (LOS).",
+    "de": "Definiert virtuelle Polygon-Zonen und Messlinien für Fahrzeugdichte, Anfahrtsgeschwindigkeit und Service-Level (LOS).",
+    "pt": "Define zonas poligonais virtuais e linhas de detecção por faixa para calcular densidade, velocidade e Nível de Serviço (LOS).",
+    "es": "Define zonas poligonales virtuales y líneas de paso para calcular densidad, velocidad y Nivel de Servicio (LOS).",
+    "it": "Definisce zone poligonali virtuali e varchi direzionali per calcolare densità, velocità e Livello di Servizio (LOS).",
+    "zh": "在各车道划定虚拟多边形ROI检测区域与电子绊线，精准计算车道占有率、到达速度、排队驻留时间以及服务水平等级（LOS A-F）。"
+  },
+  "c3_title": {
+    "en": "Edge Deployment & Zero Hardware Upgrade",
+    "de": "Edge-Bereitstellung & Keine Hardware-Nachrüstung",
+    "pt": "Implantação em Borda e Zero Upgrade de Hardware",
+    "es": "Implementación en el Borde y Cero Actualización de Hardware",
+    "it": "Distribuzione su Edge e Zero Aggiornamenti Hardware",
+    "zh": "边缘端就地推理与零硬件升级"
+  },
+  "c3_desc": {
+    "en": "Inference runs locally on ruggedized edge micro-servers installed in signal cabinets, eliminating the cost of streaming gigabytes of raw video to the cloud and ensuring resilience during network outages.",
+    "de": "Inferenz läuft lokal in Steuerschränken auf Industrie-Edge-Servern, spart Cloud-Bandbreite und arbeitet auch bei Netzausfall autonom.",
+    "pt": "A inferência é executada localmente em micro-servidores de borda em armários semafóricos, economizando banda e operando mesmo sem internet.",
+    "es": "La inferencia se ejecuta localmente en microservidores de borde dentro de gabinetes de señales, operando incluso sin conexión a internet.",
+    "it": "L'inferenza viene eseguita localmente in micro-server all'interno degli armadi semaforici, funzionando anche in assenza di rete.",
+    "zh": "AI推理直接运行于部署在信号控制箱内的工业级边缘计算机（NVIDIA Jetson等），大幅节省带宽上行成本，且断网时维持本地自主运行。"
+  },
+  "c4_title": {
+    "en": "Automatic Number Plate Recognition (ANPR) Roadmap",
+    "de": "Roadmap für Automatische Kennzeichenerkennung (ANPR)",
+    "pt": "Roteiro de Reconhecimento Automático de Placas (ANPR)",
+    "es": "Hoja de Ruta de Reconocimiento Automático de Matrículas (ANPR)",
+    "it": "Roadmap per il Riconoscimento Targhe (ANPR)",
+    "zh": "车牌自动识别规划 (ANPR，配备严格隐私保护)"
+  },
+  "c4_desc": {
+    "en": "Planned capability for point-to-point travel time estimation and municipal security. Strictly engineered with cryptographic hashing and local redaction to ensure GDPR and LGPD compliance.",
+    "de": "Geplante Funktion für Fahrzeitzählungen und Sicherheit, streng geschützt durch kryptografische Hashes gemäß DSGVO.",
+    "pt": "Recurso planejado para estimativa de tempos de viagem com hashing criptográfico e proteção estrita conforme LGPD/GDPR.",
+    "es": "Capacidad planificada para estimar tiempos de viaje y seguridad, con hash criptográfico unidireccional y cumplimiento GDPR/LGPD.",
+    "it": "Funzionalità pianificata per la stima dei tempi di percorrenza, con hashing crittografico e conformità al GDPR.",
+    "zh": "规划中的点对点区间行程时间测量模块，严格搭载不可逆加盐哈希加密与实时面部车牌边缘模糊脱敏，确保完全符合GDPR与LGPD隐私合规标准。"
+  },
+  "tag_section_d": {
+    "en": "Section D • Spatial Modeling & Simulation",
+    "de": "Abschnitt D • Raummodellierung & Simulation",
+    "pt": "Seção D • Modelagem Espacial e Simulação",
+    "es": "Sección D • Modelado Espacial y Simulación",
+    "it": "Sezione D • Modellazione Spaziale e Simulazione",
+    "zh": "D部分 • 空间建模与数字孪生"
+  },
+  "heading_section_d": {
+    "en": "Territorial Intelligence & Digital Twins",
+    "de": "Territoriale Intelligenz & Digitale Zwillinge",
+    "pt": "Inteligência Territorial e Gêmeos Digitais",
+    "es": "Inteligencia Territorial y Gemelos Digitales",
+    "it": "Intelligenza Territoriale e Gemelli Digitali",
+    "zh": "空间地域情报与三维城市数字孪生"
+  },
+  "sub_section_d": {
+    "en": "Constructing high-fidelity digital replicas of urban road networks from open geospatial data to validate optimization strategies before physical field deployment.",
+    "de": "Erstellt detailgetreue digitale Nachbildungen städtischer Straßennetze aus offenen Geodaten zur sicheren Vorab-Validierung.",
+    "pt": "Construindo réplicas digitais de alta fidelidade de redes viárias a partir de dados abertos para validação antes da implantação.",
+    "es": "Construyendo réplicas digitales de alta fidelidad de redes viales urbanas para validar estrategias antes de la implementación real.",
+    "it": "Costruzione di repliche digitali ad alta fedeltà delle reti stradali da dati aperti per validare strategie prima della messa in opera.",
+    "zh": "基于开放空间地理信息构建高精度城市路网数字双胞胎，在物理信号机真实下发前全面完成策略虚拟沙盒推演与验证。"
+  },
+  "caption_gis_image": {
+    "en": "Territorial Digital Twin: Integrating OpenStreetMap road geometry, elevation contours, and land-use data into the SUMO microscopic simulation environment.",
+    "de": "Territorialer Digitaler Zwilling: Integration von OpenStreetMap-Geometrie, Höhendaten und Flächennutzung in SUMO.",
+    "pt": "Gêmeo Digital Territorial: Integrando geometria viária do OpenStreetMap, relevo e uso do solo no ambiente de simulação SUMO.",
+    "es": "Gemelo Digital Territorial: Integrando geometría de OpenStreetMap, topografía y uso del suelo en el simulador SUMO.",
+    "it": "Gemello Digitale Territoriale: Integrazione della geometria stradale OpenStreetMap e dati di uso del suolo in ambiente SUMO.",
+    "zh": "空间地域数字孪生：将OpenStreetMap真实路网拓扑、高程与用地规划数据深度融合至SUMO微观交通仿真系统中。"
+  },
+  "d1_title": {
+    "en": "GIS Integration & OpenStreetMap Extraction",
+    "de": "GIS-Integration & OpenStreetMap-Extraktion",
+    "pt": "Integração GIS e Extração OpenStreetMap",
+    "es": "Integración GIS y Extracción OpenStreetMap",
+    "it": "Integrazione GIS ed Estrazione OpenStreetMap",
+    "zh": "GIS空间集成与OpenStreetMap路网自动化提取"
+  },
+  "d1_desc": {
+    "en": "Automated spatial ingestion pipeline parses OpenStreetMap (OSM) vector data, extracting road hierarchies, intersection geometries, speed limits, and pedestrian sidewalks into GeoPandas DataFrames.",
+    "de": "Automatische Geodaten-Pipeline parst OpenStreetMap-Vektordaten und extrahiert Straßenhierarchien und Kreuzungsgeometrien.",
+    "pt": "Pipeline geoespacial automatizado processa vetores do OpenStreetMap, extraindo hierarquias viárias e cruzamentos para GeoPandas.",
+    "es": "El procesamiento geoespacial automatizado analiza datos de OpenStreetMap, extrayendo jerarquías viales e intersecciones para GeoPandas.",
+    "it": "Pipeline geospaziale automatizzata per estrarre gerarchie stradali, geometrie di incrocio e limiti da OpenStreetMap.",
+    "zh": "自动化空间解析管道解析OpenStreetMap矢量路网，将道路等级、交叉口几何拓扑、限速与人行道无缝转化为GeoPandas空间数据表。"
+  },
+  "d2_title": {
+    "en": "SUMO & TraCI Closed-Loop Simulation",
+    "de": "SUMO & TraCI Closed-Loop Simulation",
+    "pt": "Simulação em Loop Fechado com SUMO e TraCI",
+    "es": "Simulación en Bucle Cerrado con SUMO y TraCI",
+    "it": "Simulazione a Ciclo Chiuso con SUMO e TraCI",
+    "zh": "SUMO 与 TraCI 闭环微观在线仿真"
+  },
+  "d2_desc": {
+    "en": "Microscopic traffic simulator (SUMO) connected via the TraCI Python API. Enables our AI models to step through virtual seconds, observe simulated vehicle queues, and execute phase timing changes.",
+    "de": "Mikroskopischer Verkehrssimulator (SUMO) über TraCI-Python-Schnittstelle verbunden zur virtuellen Steuerungsauswertung.",
+    "pt": "Simulador microscópico de tráfego (SUMO) conectado via API TraCI em Python, permitindo que a IA teste mudanças de fase a cada segundo.",
+    "es": "Simulador microscópico de tráfico (SUMO) conectado mediante la API TraCI en Python para probar cambios de fase en tiempo real.",
+    "it": "Simulatore di traffico microscopico (SUMO) collegato tramite API Python TraCI per testare le politiche di controllo in tempo reale.",
+    "zh": "SUMO微观仿真核心通过TraCI Python接口双向直连，允许AI算法在虚拟毫秒间感知实时排队变化并闭环验证配时决策。"
+  },
+  "d3_title": {
+    "en": "CARLA 3D Photorealistic Simulation",
+    "de": "CARLA 3D Photorealistische Simulation",
+    "pt": "Simulação Fotorealista 3D com CARLA",
+    "es": "Simulación Fotorrealista 3D con CARLA",
+    "it": "Simulazione Fotorealistica 3D con CARLA",
+    "zh": "CARLA 3D 照片级逼真环境仿真"
+  },
+  "d3_desc": {
+    "en": "Exploratory integration with the Unreal Engine-based CARLA simulator to test edge computer vision models against synthetic video feeds rendered under extreme fog, blinding sun, and nighttime conditions.",
+    "de": "Forschungsintegration mit CARLA zur Überprüfung von Computer-Vision-Modellen bei extremem Nebel, Regen und Nacht.",
+    "pt": "Integração exploratória com o simulador CARLA para testar visão computacional sob neblina densa, chuva forte e escuridão.",
+    "es": "Integración exploratoria con el simulador CARLA para probar visión por computadora bajo niebla densa, deslumbramiento y lluvia.",
+    "it": "Integrazione esplorativa con CARLA per testare algoritmi di computer vision in condizioni meteo estreme e di scarsa visibilità.",
+    "zh": "基于虚幻引擎的CARLA仿真系统探索性研发，针对暴雨、大雾及强光眩目等极端气候生成合成视觉数据，压测边缘模型泛化极限。"
+  },
+  "tag_section_e": {
+    "en": "Section E • Multimodal Transit",
+    "de": "Abschnitt E • Multimodaler Verkehr",
+    "pt": "Seção E • Transporte Multimodal",
+    "es": "Sección E • Tránsito Multimodal",
+    "it": "Sezione E • Mobilità Multimodale",
+    "zh": "E部分 • 多模式综合智慧出行"
+  },
+  "heading_section_e": {
+    "en": "Intelligent Mobility & Public Transit Priority",
+    "de": "Intelligente Mobilität & ÖPNV-Priorisierung",
+    "pt": "Mobilidade Inteligente e Prioridade ao Transporte Público",
+    "es": "Movilidad Inteligente y Prioridad al Transporte Público",
+    "it": "Mobilità Intelligente e Priorità al Trasporto Pubblico",
+    "zh": "公交信号优先 (TSP) 与智慧出行体系"
+  },
+  "sub_section_e": {
+    "en": "Enhancing mass transit punctuality, parking efficiency, and pedestrian safety to incentivize sustainable, shared urban mobility over single-occupancy vehicles.",
+    "de": "Verbessert Pünktlichkeit von Bussen, Parkplatzsuche und Fußgängersicherheit zur Förderung nachhaltiger Mobilität.",
+    "pt": "Aumentando a pontualidade do transporte público, a eficiência do estacionamento e a segurança dos pedestres.",
+    "es": "Mejora la puntualidad del transporte masivo, la eficiencia del estacionamiento y la seguridad peatonal.",
+    "it": "Migliora la puntualità dei mezzi pubblici, l'efficienza dei parcheggi e la sicurezza pedonale.",
+    "zh": "大幅提升大容量公共交通准点率、智慧停车巡游流效率与弱势行人过街安全性，引导市民从私家车向低碳绿色公共交通转移。"
+  },
+  "caption_transit_image": {
+    "en": "Public transit telemetry monitoring: Bus Rapid Transit (BRT) schedule adherence and GPS-triggered signal priority at key municipal junctions.",
+    "de": "ÖPNV-Telemetrieüberwachung: Einhaltung von BRT-Fahrplänen und GPS-basierte Priorisierung an Kreuzungen.",
+    "pt": "Monitoramento de telemetria de transporte público: Pontualidade de BRT e priorização por GPS em cruzamentos principais.",
+    "es": "Monitoreo de telemetría de transporte público: Cumplimiento de horarios BRT y prioridad semafórica activada por GPS.",
+    "it": "Monitoraggio della telemetria dei trasporti pubblici: Rispetto degli orari BRT e priorità semaforica GPS.",
+    "zh": "公共交通运营监控：BRT快速公交准点率监控及基于车载GPS的主干道交叉口毫秒级信号优先触发。"
+  },
+  "e1_title": {
+    "en": "Transit Signal Priority (TSP)",
+    "de": "ÖPNV-Signalpriorisierung (TSP)",
+    "pt": "Prioridade Semafórica para Transporte Público (TSP)",
+    "es": "Prioridad Semafórica para Transporte Público (TSP)",
+    "it": "Priorità Semaforica per il Trasporto Pubblico (TSP)",
+    "zh": "公交动态绿灯信号优先 (TSP)"
+  },
+  "e1_desc": {
+    "en": "Ingests real-time GPS coordinates from municipal transit fleets. Extends green lights or truncates red lights when a delayed bus approaches, targeting a 20–40% improvement in public transit punctuality.",
+    "de": "Verarbeitet GPS-Daten städtischer Busflotten. Verlängert Grünzeiten für verspätete Busse und verbessert Pünktlichkeit um 20–40%.",
+    "pt": "Processa GPS em tempo real da frota de ônibus. Estende verdes ou encurta vermelhos quando um ônibus atrasado se aproxima, visando 20–40% de pontualidade.",
+    "es": "Ingiere coordenadas GPS en tiempo real de flotas de autobuses para extender verdes y recortar rojos, mejorando la puntualidad en un 20–40%.",
+    "it": "Elabora le coordinate GPS dei bus per estendere il verde quando un mezzo è in ritardo, puntando a un miglioramento del 20-40% nella puntualità.",
+    "zh": "实时接入公交车载GPS定位流，在晚点公交驶入路口时自动延长绿灯或早断红灯，旨在实现公交准点率显著提升20%至40%。"
+  },
+  "e2_title": {
+    "en": "Smart Parking Guidance",
+    "de": "Intelligente Parkleitsysteme",
+    "pt": "Orientação Inteligente de Estacionamento",
+    "es": "Orientación Inteligente de Estacionamiento",
+    "it": "Guida Intelligente ai Parcheggi",
+    "zh": "全域智慧停车诱导与寻位优化"
+  },
+  "e2_desc": {
+    "en": "Monitors on-street and garage parking space occupancy using computer vision feeds. Directs drivers to open spaces via digital variable message signs (VMS) to eliminate block-circling traffic.",
+    "de": "Überwacht Parkplätze per Videoanalyse und leitet Fahrer gezielt zu freien Lücken, um Parksuchverkehr um bis zu 30% zu senken.",
+    "pt": "Monitora vagas de estacionamento nas ruas e garagens via visão computacional, direcionando motoristas para vagas abertas.",
+    "es": "Monitorea la ocupación de estacionamientos mediante visión por computadora y guía a los conductores para reducir el tráfico parásito.",
+    "it": "Monitora l'occupazione dei parcheggi tramite video e guida gli automobilisti verso gli stalli liberi per eliminare il traffico da ricerca.",
+    "zh": "基于监控视频流实时解析路侧泊位与停车场空余状态，通过诱导屏与API引导驾驶员精准停车，减少30%商业区寻位巡游拥堵。"
+  },
+  "e3_title": {
+    "en": "Pedestrian Intelligence & Adaptive Crosswalks",
+    "de": "Fußgängerintelligenz & Adaptive Zebrastreifen",
+    "pt": "Inteligência para Pedestres e Faixas Adaptativas",
+    "es": "Inteligencia Peatonal y Pasos Adaptativos",
+    "it": "Intelligenza Pedonale e Attraversamenti Adattivi",
+    "zh": "行人过街智能保护与自适应斑马线"
+  },
+  "e3_desc": {
+    "en": "Detects pedestrian crowds, school children, and elderly citizens waiting at crosswalks. Dynamically extends pedestrian clearance phases, ensuring vulnerable citizens cross safely without causing unnecessary vehicle delays.",
+    "de": "Erkennt Fußgängergruppen, Kinder und Senioren und verlängert bei Bedarf die Fußgänger-Grünphasen für maximale Sicherheit.",
+    "pt": "Detecta grupos de pedestres, crianças e idosos na calçada, estendendo dinamicamente o tempo de travessia com total segurança.",
+    "es": "Detecta grupos de peatones, niños y adultos mayores, extendiendo dinámicamente las fases de cruce para garantizar la seguridad de los más vulnerables.",
+    "it": "Rileva gruppi di pedoni, bambini e anziani, prolungando dinamicamente il tempo di verde pedonale per una sicurezza senza compromessi.",
+    "zh": "通过视觉智能感知斑马线两端等待的学童、长者及人群积压规模，自适应智能延长行人绿灯过街时间，兼顾安全与车流通行效率。"
+  },
+  "tag_section_f": {
+    "en": "Section F • Sustainability & Climate Resilience",
+    "de": "Abschnitt F • Nachhaltigkeit & Klimaresilienz",
+    "pt": "Seção F • Sustentabilidade e Resiliência Climática",
+    "es": "Sección F • Sostenibilidad y Resiliencia Climática",
+    "it": "Sezione F • Sostenibilità e Resilienza Climatica",
+    "zh": "F部分 • 绿色低碳与气候韧性"
+  },
+  "heading_section_f": {
+    "en": "Environmental Intelligence & Climate Resilience",
+    "de": "Umweltintelligenz & Klimaresilienz",
+    "pt": "Inteligência Ambiental e Resiliência Climática",
+    "es": "Inteligencia Ambiental y Resiliencia Climática",
+    "it": "Intelligenza Ambientale e Resilienza Climatica",
+    "zh": "环境智能监测与城市气候适应韧性"
+  },
+  "sub_section_f": {
+    "en": "Tracking vehicular emissions, ingesting weather station feeds, and optimizing territorial traffic flows to meet United Nations Sustainable Development Goals (SDG 11 & 13).",
+    "de": "Überwacht Fahrzeugemissionen und Wetterdaten, um städtischen Verkehr im Einklang mit den UN-Nachhaltigkeitszielen (SDG 11 & 13) zu optimieren.",
+    "pt": "Monitorando emissões veiculares e dados meteorológicos para otimizar o tráfego alinhado aos Objetivos de Desenvolvimento Sustentável da ONU (ODS 11 e 13).",
+    "es": "Monitorea emisiones vehiculares y datos meteorológicos para optimizar el tráfico según los Objetivos de Desarrollo Sostenible de la ONU (ODS 11 y 13).",
+    "it": "Monitora le emissioni dei veicoli e dati meteo per ottimizzare i flussi nel rispetto degli Obiettivi di Sviluppo Sostenibile ONU (SDG 11 e 13).",
+    "zh": "实时测算交通怠速排放，汇聚气象水文物联数据，以科学交通优化手段全面践行联合国可持续发展目标（UN SDG 11 与 13）。"
+  },
+  "caption_env_image": {
+    "en": "Environmental monitoring dashboard: Tracking CO2 and PM2.5 emissions curves correlated directly with intersection vehicle idling times.",
+    "de": "Umweltüberwachungs-Dashboard: Verfolgung von CO2- und PM2.5-Emissionen in direkter Korrelation zu Leerlaufzeiten an Kreuzungen.",
+    "pt": "Painel de monitoramento ambiental: Rastreamento de emissões de CO2 e PM2.5 correlacionadas com tempos de marcha lenta em cruzamentos.",
+    "es": "Panel de monitoreo ambiental: Seguimiento de curvas de CO2 y PM2.5 correlacionadas con tiempos de ralentí vehicular en intersecciones.",
+    "it": "Dashboard ambientale: Tracciamento delle emissioni di CO2 e PM2.5 correlate direttamente ai tempi di sosta a motore acceso negli incroci.",
+    "zh": "环境监测控制台：精准跟踪与交叉口机动车怠速排队时间高度相关的碳排放（CO2）与PM2.5扩散动态曲线。"
+  },
+  "f1_title": {
+    "en": "CO2 & PM2.5 Emissions Modeling",
+    "de": "CO2- & PM2.5-Emissionsmodellierung",
+    "pt": "Modelagem de Emissões de CO2 e PM2.5",
+    "es": "Modelado de Emisiones de CO2 y PM2.5",
+    "it": "Modellazione delle Emissioni di CO2 e PM2.5",
+    "zh": "碳足迹 (CO2) 与 PM2.5 尾气怠速排放测算"
+  },
+  "f1_desc": {
+    "en": "Estimates real-time greenhouse gas and particulate emissions at congested intersections using vehicular delay logs and vehicle classification ratios (cars vs. heavy diesel trucks).",
+    "de": "Schätzt Treibhausgas- und Partikelemissionen an Kreuzungen anhand von Verzögerungsdaten und Fahrzeugtypen ab.",
+    "pt": "Estima emissões de gases e partículas em cruzamentos usando atrasos e classificação veicular (carros vs caminhões a diesel).",
+    "es": "Estima en tiempo real emisiones de gases y partículas usando retrasos vehiculares y ratios de clasificación de flotas.",
+    "it": "Stima in tempo reale le emissioni di gas serra e particolato negli incroci combinando tempi di attesa e classificazione dei mezzi.",
+    "zh": "根据交叉口车辆排队滞留时间与重型柴油货车/小型乘用车车型配比，动态估算路口温室气体及颗粒物瞬时排放总量。"
+  },
+  "f2_title": {
+    "en": "Weather-Adaptive Signal Adjustment",
+    "de": "Wetteradaptive Signalanpassung",
+    "pt": "Ajuste Semafórico Adaptativo ao Clima",
+    "es": "Ajuste Semafórico Adaptativo al Clima",
+    "it": "Adattamento Semaforico alle Condizioni Meteo",
+    "zh": "恶劣天气自适应安全配时调优"
+  },
+  "f2_desc": {
+    "en": "Ingests hyper-local precipitation, road surface temperature, and visibility telemetry. Automatically increases yellow and all-red clearance intervals during rain, snow, or fog to prevent intersection collisions.",
+    "de": "Verarbeitet Niederschlags- und Sichtdaten und verlängert Gelb- und All-Red-Phasen bei Regen, Schnee oder Nebel zur Unfallvermeidung.",
+    "pt": "Processa precipitação e visibilidade em tempo real, aumentando intervalos de amarelo e vermelho total em dias de chuva ou neblina.",
+    "es": "Procesa telemetría de lluvia y visibilidad, aumentando automáticamente intervalos de despeje amarillo y todo-rojo durante tormentas o niebla.",
+    "it": "Elabora dati su pioggia e visibilità aumentando gli intervalli di sicurezza (giallo e rosso totale) in caso di pioggia o nebbia.",
+    "zh": "接入路段降雨、路面结冰指数及能见度遥测数据，在雨雪湿滑与重雾天气自动延长黄灯与全红安全清空时间，严防交叉口追尾侧撞事故。"
+  },
+  "f3_title": {
+    "en": "Flood Risk & Microgrid Resilience",
+    "de": "Hochwasserrisiko & Microgrid-Resilienz",
+    "pt": "Risco de Inundações e Resiliência de Microredes",
+    "es": "Riesgo de Inundaciones y Resiliencia de Microredes",
+    "it": "Rischio Allagamenti e Resilienza delle Microreti",
+    "zh": "城市内涝风险避险与微电网韧性协同"
+  },
+  "f3_desc": {
+    "en": "Correlates territorial drainage topography with stormwater runoff sensors to dynamically route vehicles away from flash-flood corridors and monitor EV charging microgrid loads.",
+    "de": "Verbindet topografische Daten mit Regensensoren, um Fahrzeuge bei Starkregen umzuleiten und Stromnetze zu überwachen.",
+    "pt": "Cruza topografia de drenagem com sensores pluviais para desviar veículos de áreas com risco de alagamento.",
+    "es": "Correlaciona topografía de drenaje con sensores pluviales para desviar el tráfico de zonas inundables y monitorear cargas EV.",
+    "it": "Correla la topografia del drenaggio con sensori di deflusso per deviare i veicoli da corridoi allagati e monitorare carichi EV.",
+    "zh": "融合城市地势标高、地下排水管网负荷与积水物联传感器，在极端暴雨内涝时主动引导车流规避淹浸路段，并协同电动汽车充电负荷调度。"
+  },
+  "tag_section_g": {
+    "en": "Section G • Deep Learning Architecture",
+    "de": "Abschnitt G • Deep Learning Architektur",
+    "pt": "Seção G • Arquitetura de Deep Learning",
+    "es": "Sección G • Arquitectura de Deep Learning",
+    "it": "Sezione G • Architettura di Deep Learning",
+    "zh": "G部分 • 深度学习与运筹优化"
+  },
+  "heading_section_g": {
+    "en": "AI Prediction & Reinforcement Learning",
+    "de": "KI-Vorhersage & Bestärkendes Lernen",
+    "pt": "Predição por IA e Aprendizado por Reforço",
+    "es": "Predicción con IA y Aprendizaje por Refuerzo",
+    "it": "Predizione con IA e Apprendimento per Rinforzo",
+    "zh": "人工智能流量预测与强化学习决策"
+  },
+  "sub_section_g": {
+    "en": "Harnessing sequential deep learning for multi-horizon traffic forecasting and multi-agent reinforcement learning for continuous signal timing optimization.",
+    "de": "Nutzt sequentielle Deep-Learning-Modelle für Verkehrsprognosen und Multi-Agenten-RL für kontinuierliche Signaloptimierung.",
+    "pt": "Utilizando deep learning sequencial para previsão de tráfego e aprendizado por reforço multiagente para otimização contínua.",
+    "es": "Aprovecha el aprendizaje profundo secuencial para predecir el tráfico y el aprendizaje por refuerzo multiagente para optimizar señales.",
+    "it": "Sfrutta il deep learning sequenziale per la previsione del traffico e il reinforcement learning multi-agente per l'ottimizzazione continua.",
+    "zh": "采用长短期记忆网络实现多时间跨度路网流量趋势预测，依托多智能体强化学习机制驱动交通信号灯全天候自主适应优化。"
+  },
+  "caption_ai_image": {
+    "en": "AI Analytics Dashboard: Multi-horizon LSTM traffic demand predictions, corridor travel time distributions, and reinforcement learning policy convergence metrics.",
+    "de": "KI-Analyse-Dashboard: LSTM-Verkehrsprognosen über mehrere Zeithorizonte und Konvergenzkurven des bestärkenden Lernens.",
+    "pt": "Painel de IA e Analytics: Previsões de tráfego LSTM multihorizonte e métricas de convergência de aprendizado por reforço.",
+    "es": "Panel de Analítica con IA: Predicciones de demanda con LSTM multihorizonte y métricas de convergencia de políticas de refuerzo.",
+    "it": "Dashboard di Analisi IA: Previsioni di traffico multiorizzonte con LSTM e metriche di convergenza degli agenti di rinforzo.",
+    "zh": "人工智能数据中台：多时域LSTM交通需求精准预测曲线、干线通行耗时概率分布与强化学习策略收敛监控。"
+  },
+  "g1_title": {
+    "en": "LSTM / GRU Multi-Horizon Forecasting",
+    "de": "LSTM / GRU Mehrhorizont-Vorhersage",
+    "pt": "Previsão Multihorizonte com LSTM / GRU",
+    "es": "Pronóstico Multihorizonte con LSTM / GRU",
+    "it": "Previsione Multiorizzonte con LSTM / GRU",
+    "zh": "LSTM / GRU 循环神经网络多时域流量预测"
+  },
+  "g1_desc": {
+    "en": "Recurrent neural networks ingest historical and rolling traffic time-series to forecast corridor congestion levels 10, 30, and 60 minutes in advance, enabling preemptive signal offset adjustments.",
+    "de": "Rezidive neuronale Netze prognostizieren Staus 10, 30 und 60 Minuten im Voraus für präventive Signalplananpassungen.",
+    "pt": "Redes neurais recorrentes processam séries temporais para prever níveis de congestionamento com 10, 30 e 60 minutos de antecedência.",
+    "es": "Redes neuronales recurrentes pronostican congestión con 10, 30 y 60 minutos de anticipación para ajustar desfases preventivamente.",
+    "it": "Reti neurali ricorrenti analizzano le serie temporali per prevedere la congestione a 10, 30 e 60 minuti, abilitando interventi preventivi.",
+    "zh": "双层双向门控循环神经网络（LSTM/GRU）实时吞吐时序流量特征，提前10分钟、30分钟和60分钟预判走廊拥堵积聚，驱动系统提前主动分流。"
+  },
+  "g2_title": {
+    "en": "Multi-Agent Deep Reinforcement Learning (DQN / PPO)",
+    "de": "Multi-Agenten Deep Reinforcement Learning (DQN / PPO)",
+    "pt": "Aprendizado por Reforço Profundo Multiagente (DQN / PPO)",
+    "es": "Aprendizaje por Refuerzo Profundo Multiagente (DQN / PPO)",
+    "it": "Deep Reinforcement Learning Multi-Agente (DQN / PPO)",
+    "zh": "多智能体深度强化学习决策网络 (DQN / PPO)"
+  },
+  "g2_desc": {
+    "en": "Each intersection operates an autonomous reinforcement learning agent. The state space captures approach queue lengths and waiting times; the reward function penalizes aggregate intersection delay and phase-switching overhead.",
+    "de": "Jede Kreuzung wird von einem autonomen RL-Agenten gesteuert, der Wartezeiten minimiert und Schaltverzögerungen bestraft.",
+    "pt": "Cada cruzamento opera um agente autônomo cujo espaço de recompensa penaliza atrasos acumulados e trocas desnecessárias de fase.",
+    "es": "Cada intersección ejecuta un agente autónomo donde la función de recompensa penaliza el retraso acumulado y los cambios bruscos de fase.",
+    "it": "Ogni incrocio ospita un agente autonomo la cui funzione di ricompensa penalizza i ritardi aggregati e l'overhead di commutazione.",
+    "zh": "每个信号交叉口运行独立的强化学习智能体，以排队总长与等待时间为状态空间输入，以全路口总延误最小化与相位切换平滑度为联合奖励函数。"
+  },
+  "tag_section_h": {
+    "en": "Section H • Engineering Reference",
+    "de": "Abschnitt H • Technische Referenz",
+    "pt": "Seção H • Referência de Engenharia",
+    "es": "Sección H • Referencia de Ingeniería",
+    "it": "Sezione H • Riferimento Tecnico",
+    "zh": "H部分 • 软件工程与技术参数规范"
+  },
+  "heading_section_h": {
+    "en": "Technical Specifications & Technology Stack",
+    "de": "Technische Spezifikationen & Technologie-Stack",
+    "pt": "Especificações Técnicas e Pilha Tecnológica",
+    "es": "Especificaciones Técnicas y Pila Tecnológica",
+    "it": "Specifiche Tecniche e Stack Tecnologico",
+    "zh": "技术规范参数表与底层技术选型栈"
+  },
+  "sub_section_h": {
+    "en": "An exhaustive, transparent engineering matrix detailing every technology, input data source, processing algorithm, and verified development status.",
+    "de": "Eine umfassende, transparente Matrix mit allen Technologien, Datenquellen, Algorithmen und Entwicklungsschritten.",
+    "pt": "Uma matriz de engenharia detalhada e transparente cobrindo todas as tecnologias, fontes de dados e status de desenvolvimento.",
+    "es": "Una matriz técnica exhaustiva y transparente que detalla tecnologías, datos de entrada, algoritmos y estado de desarrollo.",
+    "it": "Una matrice ingegneristica esaustiva che documenta ogni tecnologia, sorgente dati, algoritmo e stato di verifica.",
+    "zh": "全透明、工业级工程规格参数矩阵，详尽披露每一项组件、输入数据流、核心算法模型与客观验证状态。"
+  },
+  "tag_section_i": {
+    "en": "Section I • System Topology",
+    "de": "Abschnitt I • Systemtopologie",
+    "pt": "Seção I • Topologia do Sistema",
+    "es": "Sección I • Topología del Sistema",
+    "it": "Sezione I • Topologia di Sistema",
+    "zh": "I部分 • 系统全景拓扑架构"
+  },
+  "heading_section_i": {
+    "en": "6-Layer Enterprise System Architecture",
+    "de": "6-Schichten Enterprise Systemarchitektur",
+    "pt": "Arquitetura do Sistema Enterprise em 6 Camadas",
+    "es": "Arquitectura del Sistema Enterprise en 6 Capas",
+    "it": "Architettura di Sistema Enterprise a 6 Livelli",
+    "zh": "六层企业级全栈系统拓扑架构"
+  },
+  "sub_section_i": {
+    "en": "Visualizing the end-to-end data flow: from physical edge cameras and road sensors up through spatial ingestion, deep learning, digital twin simulation, and operator command actuation.",
+    "de": "Visualisiert den Datenfluss: Von Kameras und Sensoren über räumliche Ingestion bis hin zu KI-Modellen und Leitstellen-Aktuierung.",
+    "pt": "Visualizando o fluxo de ponta a ponta: desde câmeras e sensores físicos até ingestão espacial, IA, gêmeo digital e atuação.",
+    "es": "Visualización del flujo de datos de extremo a extremo: desde cámaras y sensores de campo hasta ingesta, IA, simulación y actuación.",
+    "it": "Visualizzazione del flusso dati end-to-end: dai sensori fisici su strada all'ingestione spaziale, deep learning e attuazione.",
+    "zh": "端到端数据流向全景透视：从路面实体摄像头与传感器，贯穿空间流计算、深度学习预测、数字孪生推演至指挥调度中心安全下发。"
+  },
+  "tag_section_j": {
+    "en": "Section J • Enterprise Operations",
+    "de": "Abschnitt J • Unternehmensbetrieb",
+    "pt": "Seção J • Operações Corporativas",
+    "es": "Sección J • Operaciones Empresariales",
+    "it": "Sezione J • Operatività Enterprise",
+    "zh": "J部分 • 部署模式与信号机安全接入"
+  },
+  "heading_section_j": {
+    "en": "Deployment Models & Controller Integration",
+    "de": "Bereitstellungsmodelle & Signalsteuerungs-Integration",
+    "pt": "Modelos de Implantação e Integração de Controladores",
+    "es": "Modelos de Implementación e Integración de Controladores",
+    "it": "Modelli di Distribuzione e Integrazione Controllori",
+    "zh": "系统交付部署模型与信号机安全硬隔离接入"
+  },
+  "sub_section_j": {
+    "en": "Flexible hosting options designed to satisfy municipal data sovereignty requirements while maintaining deterministic fail-safe physical signal actuation.",
+    "de": "Flexible Hosting-Optionen für kommunale Datensouveränität bei gleichzeitig ausfallsicherer Steuerung der Straßeninfrastruktur.",
+    "pt": "Opções flexíveis de hospedagem projetadas para atender à soberania de dados municipais, garantindo atuação física à prova de falhas.",
+    "es": "Opciones de hospedaje flexibles para cumplir con la soberanía de datos municipales, manteniendo una actuación física a prueba de fallos.",
+    "it": "Opzioni di hosting flessibili per garantire la sovranità dei dati municipali con sicurezza fisica a prova di guasto.",
+    "zh": "兼顾市政数据主权与物理安全的弹性交付架构，在确保机房与云端自由选址的同时，构筑确定性故障弱化保护安全机制。"
+  },
+  "j1_title": {
+    "en": "Cloud & On-Premises Flexibility",
+    "de": "Cloud- & On-Premises-Flexibilität",
+    "pt": "Flexibilidade em Nuvem e On-Premises",
+    "es": "Flexibilidad en la Nube y On-Premises",
+    "it": "Flessibilità Cloud e On-Premises",
+    "zh": "公有云、本地私有化与完全气隙隔离部署"
+  },
+  "j1_desc": {
+    "en": "Deployable on public cloud clusters (Microsoft Azure AKS / AWS EKS), private municipal data centers, or air-gapped on-premises servers to comply with government privacy regulations.",
+    "de": "Bereitstellung in Azure AKS, privaten städtischen Rechenzentren oder vollständig isolierten On-Premises-Servern.",
+    "pt": "Implantável no Microsoft Azure AKS, data centers municipais privados ou servidores locais isolados sem conexão externa.",
+    "es": "Implementable en Microsoft Azure AKS, centros de datos municipales privados o servidores locales sin conexión externa.",
+    "it": "Distribuibile su Azure AKS, data center municipali privati o server air-gapped on-premises per la massima privacy.",
+    "zh": "全面支持部署于微软Azure AKS云原生集群、市政自有政务数据中心，或完全物理断网的气隙隔离服务器，严格遵循政府保密安全法规。"
+  },
+  "j2_title": {
+    "en": "Edge Synchronization & Offline Autonomy",
+    "de": "Edge-Synchronisation & Offline-Autonomie",
+    "pt": "Sincronização em Borda e Autonomia Offline",
+    "es": "Sincronización en el Borde y Autonomía Offline",
+    "it": "Sincronizzazione Edge e Autonomia Offline",
+    "zh": "边缘就地同步与离网安全自主巡航"
+  },
+  "j2_desc": {
+    "en": "Edge devices run local inference and retain baseline timing configurations. If wide-area network connectivity drops, edge controllers operate independently without interruption.",
+    "de": "Edge-Geräte führen lokale Inferenz durch. Bei Ausfall der Internetverbindung steuern lokale Boxen Kreuzungen unterbrechungsfrei weiter.",
+    "pt": "Dispositivos de borda executam inferência local e mantêm planos seguros. Se a conexão cair, os controladores operam de forma autônoma.",
+    "es": "Los dispositivos de borde ejecutan inferencia local; si se pierde la conexión de red, operan de forma independiente y segura.",
+    "it": "I dispositivi edge eseguono l'inferenza localmente; in caso di interruzione della rete, operano in totale autonomia senza rischi.",
+    "zh": "边缘就地计算单元持续执行视觉识别并常驻基础绿波时钟，遭遇城域网故障断联时自主接管路口，保障信号绝对不瘫痪、不熄灯。"
+  },
+  "j3_title": {
+    "en": "Controller Integration & Fail-Safe Air-Gap",
+    "de": "Steuerungs-Integration & Fail-Safe-Absicherung",
+    "pt": "Integração com Controladores e Isolamento Fail-Safe",
+    "es": "Integración con Controladores y Aislamiento Fail-Safe",
+    "it": "Integrazione Controllori e Isolamento Fail-Safe",
+    "zh": "信号机协议对接与硬件物理冲突保护器安全隔离"
+  },
+  "j3_desc": {
+    "en": "Signal cabinet actuation is executed strictly through authorized NTCIP 1202 protocols. The local controller conflict monitor retains absolute hardware priority; any anomalous command reverts immediately to fixed fallback timings.",
+    "de": "Befehle laufen über NTCIP 1202. Der Conflict Monitor der Ampel hat absolute Priorität – fehlerhafte Befehle fallen sofort auf sichere Festzeit zurück.",
+    "pt": "A atuação nos armários segue protocolos NTCIP 1202. O monitor de conflitos de hardware retém prioridade absoluta, revertendo falhas para planos fixos seguros.",
+    "es": "La actuación sigue estrictamente el protocolo NTCIP 1202. El monitor de conflictos de hardware tiene prioridad absoluta ante anomalías.",
+    "it": "L'attuazione segue protocolli NTCIP 1202; l'unità di monitoraggio conflitti hardware mantiene priorità assoluta di sicurezza.",
+    "zh": "所有下发控制指令严格遵循NTCIP 1202标准，硬件冲突监测单元（CMU）享有最高硬件熔断权，任何异常或冲突指令瞬间回退至经典黄闪或固定配时。"
+  },
+  "tag_section_k": {
+    "en": "Section K • Enterprise Compliance",
+    "de": "Abschnitt K • Unternehmens-Compliance",
+    "pt": "Seção K • Conformidade Corporativa",
+    "es": "Sección K • Cumplimiento Empresarial",
+    "it": "Sezione K • Conformità Aziendale",
+    "zh": "K部分 • 企业级安全合规"
+  },
+  "heading_section_k": {
+    "en": "Security, Data Governance & Privacy",
+    "de": "Sicherheit, Daten-Governance & Datenschutz",
+    "pt": "Segurança, Governança de Dados e Privacidade",
+    "es": "Seguridad, Gobernanza de Datos y Privacidad",
+    "it": "Sicurezza, Governance dei Dati e Privacy",
+    "zh": "数据安全治理、隐私合规与全流程审计"
+  },
+  "sub_section_k": {
+    "en": "Built from the ground up for strict regulatory compliance, data sovereignty, and human-in-the-loop operational oversight.",
+    "de": "Entwickelt für strenge behördliche Compliance, Datensouveränität und menschliche Überwachung (Human-in-the-Loop).",
+    "pt": "Construído desde o início para estrita conformidade regulatória, soberania de dados e supervisão humana contínua.",
+    "es": "Construido desde cero para cumplir normativas estrictas, soberanía de datos y supervisión humana continua.",
+    "it": "Costruito da zero per garantire conformità normativa, sovranità dei dati e supervisione umana (Human-in-the-Loop).",
+    "zh": "底层原生践行严格监管合规，确保主权数据不出域，坚持“人在回路”（Human-in-the-Loop）的安全运营底线。"
+  },
+  "k1_title": {
+    "en": "Authentication, Encryption & RBAC",
+    "de": "Authentifizierung, Verschlüsselung & RBAC",
+    "pt": "Autenticação, Criptografia e RBAC",
+    "es": "Autenticación, Cifrado y RBAC",
+    "it": "Autenticazione, Crittografia e RBAC",
+    "zh": "双向传输加密与细粒度角色权限管理 (RBAC)"
+  },
+  "k1_desc": {
+    "en": "All communications are encrypted using TLS 1.3 in transit and AES-256 at rest. Fine-grained Role-Based Access Control (RBAC) separates viewer permissions (analysts) from actuation privileges (authorized dispatchers).",
+    "de": "Verschlüsselung per TLS 1.3 und AES-256. Rollenbasierte Zugriffskontrolle (RBAC) trennt Lese- von Steuerungsrechten strikt.",
+    "pt": "Criptografia TLS 1.3 em trânsito e AES-256 em repouso. O RBAC separa visualizadores (analistas) de permissões de comando (despachantes).",
+    "es": "Cifrado con TLS 1.3 en tránsito y AES-256 en reposo. El control de acceso RBAC separa permisos de lectura de los de control físico.",
+    "it": "Crittografia TLS 1.3 e AES-256; il controllo accessi RBAC separa nettamente i diritti di sola lettura da quelli di controllo operativo.",
+    "zh": "通信全链路应用TLS 1.3传输加密与AES-256静态数据加密，基于细粒度RBAC机制严格隔离普通分析人员查看权与授权调度员下发权。"
+  },
+  "k2_title": {
+    "en": "Privacy-by-Design & GDPR/LGPD Compliance",
+    "de": "Privacy-by-Design & DSGVO/LGPD-Konformität",
+    "pt": "Privacidade por Design e Conformidade LGPD/GDPR",
+    "es": "Privacidad por Diseño y Cumplimiento GDPR/LGPD",
+    "it": "Privacy-by-Design e Conformità GDPR/LGPD",
+    "zh": "源头隐私保护设计与 GDPR / LGPD 严格合规"
+  },
+  "k2_desc": {
+    "en": "CCTV video streams are processed exclusively in volatile memory at edge nodes. Video frames are discarded immediately after object detection; no private identities or raw citizen faces are transmitted to central servers.",
+    "de": "Kamerastreams werden nur im flüchtigen RAM verarbeitet und sofort gelöscht; es werden keine Gesichter oder Kennzeichen gespeichert.",
+    "pt": "Vídeos são processados apenas na memória volátil da borda e descartados imediatamente; nenhuma imagem facial de cidadãos é enviada à nuvem.",
+    "es": "Los flujos de video se procesan únicamente en la memoria RAM del borde y se descartan de inmediato; no se transmiten rostros ni identidades.",
+    "it": "I video vengono elaborati solo nella memoria volatile dei nodi edge e subito eliminati; nessun dato personale o volto viene inviato al cloud.",
+    "zh": "监控视频流仅在边缘设备内存中瞬时完成特征提取并即刻销毁，中心服务器不存储、不回传任何市民面部或隐私敏感像素信息。"
+  },
+  "tag_section_l": {
+    "en": "Section L • Strategic Horizon",
+    "de": "Abschnitt L • Strategischer Horizont",
+    "pt": "Seção L • Horizonte Estratégico",
+    "es": "Sección L • Horizonte Estratégico",
+    "it": "Sezione L • Orizzonte Strategico",
+    "zh": "L部分 • 战略演进与路线图"
+  },
+  "heading_section_l": {
+    "en": "Research Direction & 4-Phase Municipal Roadmap",
+    "de": "Forschungsrichtung & 4-Phasen-Roadmap",
+    "pt": "Direção de Pesquisa e Roteiro Municipal em 4 Fases",
+    "es": "Dirección de Investigación y Hoja de Ruta en 4 Fases",
+    "it": "Direzione della Ricerca e Roadmap Municipale in 4 Fasi",
+    "zh": "前沿科研演进方向与四阶段市政落地路线图"
+  },
+  "sub_section_l": {
+    "en": "A structured progression demonstrating current technical capabilities, near-term development milestones, and long-term quantum-ready territorial research.",
+    "de": "Ein strukturierter Weg von aktuellen Fähigkeiten über mittelfristige Ziele bis hin zur quantenbereiten territorialen Forschung.",
+    "pt": "Uma progressão estruturada demonstrando capacidades atuais, marcos de curto prazo e pesquisa territorial quântica de longo prazo.",
+    "es": "Una progresión estructurada que abarca capacidades actuales, hitos a corto plazo e investigación territorial cuántica a largo plazo.",
+    "it": "Un percorso strutturato dalle capacità attuali alle tappe a breve termine fino alla ricerca territoriale quantistica.",
+    "zh": "清晰呈现系统从当前已闭环技术能力、近期工程迭代目标，到远期量子混合计算空间宏观规划的前沿科研蓝图。"
+  },
+  "cta_final_title": {
+    "en": "Ready to Model Your Municipality in our Digital Twin?",
+    "de": "Bereit, Ihre Kommune im Digitalen Zwilling zu modellieren?",
+    "pt": "Pronto para Modelar seu Município em nosso Gêmeo Digital?",
+    "es": "¿Listo para Modelar su Municipio en nuestro Gemelo Digital?",
+    "it": "Pronto a Modellare il tuo Comune nel nostro Gemello Digitale?",
+    "zh": "准备好在数字孪生沙盒中为您的城市建模了吗？"
+  },
+  "cta_final_desc": {
+    "en": "We collaborate with municipal transport departments, university researchers, and smart-city operators to deploy low-risk, high-impact corridor pilots.",
+    "de": "Wir arbeiten mit Verkehrsbehörden, Universitäten und Smart-City-Betreibern zusammen, um risikoarme, wirkungsstarke Pilotkorridore zu starten.",
+    "pt": "Colaboramos com secretarias de transporte, universidades e operadores para implantar pilotos de baixo risco e alto impacto.",
+    "es": "Colaboramos con secretarías de transporte, universidades y operadores para desplegar pilotos de bajo riesgo y alto impacto.",
+    "it": "Collaboriamo con assessorati ai trasporti, università e operatori per realizzare progetti pilota a basso rischio e alto impatto.",
+    "zh": "我们与各级市政交通主管部门、交通规划院及高校科研团队携手，以极低试错风险启动第一条智能化示范走廊。"
+  },
+  "btn_schedule_scoping": {
+    "en": "Schedule a Scoping Call →",
+    "de": "Scoping-Gespräch Vereinbaren →",
+    "pt": "Agendar Reunião de Escopo →",
+    "es": "Programar Reunión de Alcance →",
+    "it": "Pianifica Incontro di Fattibilità →",
+    "zh": "预约方案论证研讨 →"
+  },
+  "btn_view_tech": {
+    "en": "Inspect Technology Architecture",
+    "de": "Technologiearchitektur Einsehen",
+    "pt": "Inspecionar Arquitetura Tecnológica",
+    "es": "Inspeccionar Arquitectura Tecnológica",
+    "it": "Consulta Architettura Tecnologica",
+    "zh": "查看系统整体技术架构"
+  },
+  "btn_submit_pitch": {
+    "en": "Submit Open Innovation Pitch",
+    "de": "Open-Innovation-Idee Einreichen",
+    "pt": "Submeter Ideia de Inovação Aberta",
+    "es": "Enviar Propuesta de Innovación Abierta",
+    "it": "Invia Proposta di Innovazione Aperta",
+    "zh": "提交开放创新合作提案"
+  }
+}
