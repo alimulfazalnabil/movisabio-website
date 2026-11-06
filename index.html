@@ -44,6 +44,10 @@
 
     <!-- Browser Tab Favicon -->
     <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Leaflet Map CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     
     <style>
         /* --- SLACK-INSPIRED COLOR PALETTE --- */
@@ -71,8 +75,8 @@
         .logo::before { content: ""; display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-red); box-shadow: 16px 0 0 var(--accent-blue), 0 16px 0 var(--accent-green), 16px 16px 0 var(--accent-yellow); margin-right: 20px; margin-bottom: 16px; animation: rotate 8s linear infinite; }
         @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         
-        .nav-right { display: flex; align-items: center; gap: 30px; }
-        .nav-links { list-style: none; display: flex; gap: 25px; }
+        .nav-right { display: flex; align-items: center; gap: 20px; }
+        .nav-links { list-style: none; display: flex; gap: 22px; }
         .nav-links li { cursor: pointer; font-weight: 600; transition: all 0.3s ease; position: relative; }
         .nav-links li::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background: var(--accent-yellow); transition: width 0.3s ease; }
         .nav-links li:hover { color: var(--accent-yellow); transform: translateY(-2px); }
@@ -80,11 +84,156 @@
         
         /* Language Selector Styles */
         .lang-selector { display: flex; align-items: center; }
-        .lang-dropdown { font-family: inherit; font-size: 0.95rem; font-weight: 700; color: var(--text-dark); background: rgba(255,255,255,0.95); border: 1px solid rgba(74, 21, 75, 0.25); border-radius: 10px; padding: 10px 12px; min-width: 140px; cursor: pointer; transition: all 0.25s ease; }
+        .lang-dropdown { font-family: inherit; font-size: 0.95rem; font-weight: 700; color: var(--text-dark); background: rgba(255,255,255,0.95); border: 1px solid rgba(74, 21, 75, 0.25); border-radius: 10px; padding: 9px 12px; min-width: 135px; cursor: pointer; transition: all 0.25s ease; }
         .lang-dropdown:hover, .lang-dropdown:focus { border-color: var(--accent-yellow); box-shadow: 0 0 0 4px rgba(236, 178, 46, 0.08); outline: none; }
 
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: var(--white);
+            font-size: 1.4rem;
+            line-height: 1;
+            padding: 7px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .mobile-menu-btn:hover { background: rgba(255, 255, 255, 0.25); border-color: var(--accent-yellow); color: var(--accent-yellow); }
+
         @media screen and (max-width: 900px) {
-            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #4A154B 0%, #2c0a3b 100%);
+                flex-direction: column;
+                padding: 20px 8%;
+                gap: 15px;
+                box-shadow: 0 16px 36px rgba(0,0,0,0.35);
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+            .nav-links.mobile-open {
+                display: flex;
+            }
+            .nav-links li {
+                padding: 8px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+        }
+
+        /* --- INTERACTIVE MAP STYLES --- */
+        .map-card-wrapper {
+            background: linear-gradient(135deg, var(--white) 0%, #fafbfc 100%);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 10px 40px rgba(74, 21, 75, 0.08), 0 2px 10px rgba(54, 197, 240, 0.05);
+            margin: 40px auto 30px;
+            border-top: 6px solid var(--accent-blue);
+        }
+        .map-filter-group { display: flex; gap: 10px; flex-wrap: wrap; }
+        .map-filter-btn {
+            background: rgba(74, 21, 75, 0.06);
+            border: 1px solid rgba(74, 21, 75, 0.18);
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-family: inherit;
+        }
+        .map-filter-btn:hover, .map-filter-btn.active {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(74, 21, 75, 0.25);
+            border-color: var(--primary-color);
+        }
+        .map-metric-card {
+            transition: all 0.3s ease;
+        }
+        .map-metric-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(74, 21, 75, 0.12);
+        }
+        .custom-pin {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            border: 3px solid #ffffff;
+            cursor: pointer;
+            position: relative;
+        }
+        .custom-pin::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 50%;
+            border: 2px solid currentColor;
+            animation: pin-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            pointer-events: none;
+        }
+        @keyframes pin-pulse {
+            0% { transform: scale(1); opacity: 0.85; }
+            100% { transform: scale(2.3); opacity: 0; }
+        }
+        .leaflet-popup-content-wrapper {
+            border-radius: 14px !important;
+            box-shadow: 0 16px 36px rgba(74, 21, 75, 0.25) !important;
+            font-family: inherit !important;
+            padding: 6px !important;
+        }
+        .leaflet-popup-content {
+            margin: 14px 18px !important;
+            line-height: 1.5 !important;
+        }
+        .map-popup-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .map-popup-title {
+            color: var(--primary-color);
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin: 0;
+        }
+        .map-popup-status {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .map-popup-desc {
+            color: var(--text-dark);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .map-popup-metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            background: var(--bg-light);
+            padding: 10px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
         }
 
         /* Hero */
@@ -252,6 +401,7 @@
             <ul class="nav-links" id="nav-links">
                 <li onclick="scrollToSection('projects')" data-i18n="nav_solutions">Our Solutions</li>
                 <li onclick="scrollToSection('company')" data-i18n="nav_about">About Us</li> 
+                <li onclick="scrollToSection('impact')" data-i18n="nav_impact">Pilots & Map</li> 
                 <li onclick="scrollToSection('economics')" data-i18n="nav_economics">Economics</li>
                 <li onclick="scrollToSection('submit-idea')" data-i18n="nav_submit_idea" style="color: var(--accent-green); font-weight: 800;">💡 Submit Idea</li>
                 <li onclick="scrollToSection('videos')" data-i18n="nav_videos">Videos</li>
@@ -268,6 +418,7 @@
                     <option value="zh">ZH - 中文</option>
                 </select>
             </div>
+            <button type="button" class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation">☰</button>
         </div>
     </nav>
 
@@ -291,7 +442,7 @@
                 <h2 class="section-title" data-i18n="sec_about">About MoviSabio</h2>
                 <div class="company-grid">
                     <div class="company-card" style="border-left-color: var(--accent-blue);">
-                        <div class="icon">�</div>
+                        <div class="icon">🎯</div>
                         <h3 data-i18n="card_mission_title">Global Vision & Mission</h3>
                         <p data-i18n="card_mission_text">We are building the world's leading Territorial Intelligence Platform. Our mission is to scale AI, IoT, and quantum-ready digital ecosystems globally, empowering governments, enterprises, and communities across all continents to make evidence-based, sustainable decisions.</p>
                     </div>
@@ -314,15 +465,71 @@
                 <h2 class="section-title" data-i18n="sec_impact">Global Impact & Pilot Programs</h2>
                 
                 <div class="impact-grid">
-                    <div class="pilot-card" style="border-top-color: var(--accent-green);">
+                    <div class="pilot-card" style="border-top-color: var(--accent-green);" onclick="flyToTerritory(-22.9099, -47.0626, 12)">
                         <div style="font-size: 3rem; margin-bottom: 10px;">🇧🇷</div>
                         <h3 data-i18n="pilot_br_title">Campinas, Brazil</h3>
                         <p data-i18n="pilot_br_text">Our flagship pilot region testing AI-coordinated traffic signaling against traditional fixed-time models in mid-sized urban corridors.</p>
+                        <span style="display:inline-block; margin-top: 10px; font-size: 0.82rem; font-weight: bold; color: var(--accent-green);">📍 Focus on Map →</span>
                     </div>
-                    <div class="pilot-card" style="border-top-color: var(--accent-blue);">
+                    <div class="pilot-card" style="border-top-color: var(--accent-blue);" onclick="flyToTerritory(-34.9011, -56.1645, 12)">
                         <div style="font-size: 3rem; margin-bottom: 10px;">🇺🇾</div>
                         <h3 data-i18n="pilot_uy_title">Montevideo, Uruguay</h3>
                         <p data-i18n="pilot_uy_text">Utilizing OpenStreetMap data and municipal traffic sensors to build highly accurate digital twins for traffic flow prediction.</p>
+                        <span style="display:inline-block; margin-top: 10px; font-size: 0.82rem; font-weight: bold; color: var(--accent-blue);">📍 Focus on Map →</span>
+                    </div>
+                </div>
+
+                <!-- INTERACTIVE TERRITORIAL INTELLIGENCE MAP -->
+                <div class="map-card-wrapper">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 22px;">
+                        <div>
+                            <h3 style="color: var(--primary-color); font-size: 1.55rem; font-weight: 800; display: flex; align-items: center; gap: 10px; margin: 0 0 6px 0;">
+                                🗺️ Live Operations & Territorial Digital Twin Map
+                            </h3>
+                            <p style="color: var(--text-light); font-size: 0.95rem; margin: 0;">
+                                Real-time pilot corridors, digital twin simulations, and European expansion nodes.
+                            </p>
+                        </div>
+                        <div class="map-filter-group">
+                            <button type="button" class="map-filter-btn active" onclick="filterMap('all', this)">🌍 All Territories</button>
+                            <button type="button" class="map-filter-btn" onclick="filterMap('latam', this)">🇧🇷 🇺🇾 Active Pilots (LATAM)</button>
+                            <button type="button" class="map-filter-btn" onclick="filterMap('europe', this)">🇩🇪 🇮🇹 Expansion Hubs (Europe)</button>
+                        </div>
+                    </div>
+
+                    <!-- Leaflet Map Container -->
+                    <div id="territorial-map" style="height: 520px; width: 100%; border-radius: 12px; border: 2px solid rgba(54, 197, 240, 0.25); position: relative; z-index: 1;"></div>
+
+                    <!-- Territory Interactive Quick-Cards -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 25px;">
+                        <div class="map-metric-card" onclick="flyToTerritory(-22.9099, -47.0626, 12)" style="cursor: pointer; background: linear-gradient(135deg, rgba(46, 182, 125, 0.08), rgba(255,255,255,0.95)); padding: 18px 20px; border-radius: 10px; border-left: 5px solid var(--accent-green); box-shadow: 0 3px 12px rgba(0,0,0,0.04);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <strong style="color: var(--text-dark); font-size: 0.95rem;">🇧🇷 Campinas, Brazil</strong>
+                                <span class="badge" style="background: var(--accent-green); color: var(--white); margin: 0; padding: 3px 8px; font-size: 0.7rem;">Active Pilot</span>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-light); margin: 0; line-height: 1.5;">10 Corridors • DQN Signal Coordination • -45% Delay Goal</p>
+                        </div>
+                        <div class="map-metric-card" onclick="flyToTerritory(-34.9011, -56.1645, 12)" style="cursor: pointer; background: linear-gradient(135deg, rgba(54, 197, 240, 0.08), rgba(255,255,255,0.95)); padding: 18px 20px; border-radius: 10px; border-left: 5px solid var(--accent-blue); box-shadow: 0 3px 12px rgba(0,0,0,0.04);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <strong style="color: var(--text-dark); font-size: 0.95rem;">🇺🇾 Montevideo, Uruguay</strong>
+                                <span class="badge" style="background: var(--accent-blue); color: var(--white); margin: 0; padding: 3px 8px; font-size: 0.7rem;">Digital Twin</span>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-light); margin: 0; line-height: 1.5;">OpenStreetMap Digital Twin • SUMO Traffic Simulation</p>
+                        </div>
+                        <div class="map-metric-card" onclick="flyToTerritory(48.1351, 11.5820, 10)" style="cursor: pointer; background: linear-gradient(135deg, rgba(236, 178, 46, 0.08), rgba(255,255,255,0.95)); padding: 18px 20px; border-radius: 10px; border-left: 5px solid var(--accent-yellow); box-shadow: 0 3px 12px rgba(0,0,0,0.04);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <strong style="color: var(--text-dark); font-size: 0.95rem;">🇩🇪 Munich & Berlin, DE</strong>
+                                <span class="badge" style="background: var(--accent-yellow); color: var(--text-dark); margin: 0; padding: 3px 8px; font-size: 0.7rem;">EU Target</span>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-light); margin: 0; line-height: 1.5;">EIT Urban Mobility & Horizon Europe Grant Pipeline</p>
+                        </div>
+                        <div class="map-metric-card" onclick="flyToTerritory(45.4642, 9.1900, 10)" style="cursor: pointer; background: linear-gradient(135deg, rgba(224, 30, 90, 0.08), rgba(255,255,255,0.95)); padding: 18px 20px; border-radius: 10px; border-left: 5px solid var(--accent-red); box-shadow: 0 3px 12px rgba(0,0,0,0.04);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <strong style="color: var(--text-dark); font-size: 0.95rem;">🇮🇹 Milan, Italy</strong>
+                                <span class="badge" style="background: var(--accent-red); color: var(--white); margin: 0; padding: 3px 8px; font-size: 0.7rem;">Expansion Hub</span>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-light); margin: 0; line-height: 1.5;">Territorial Intelligence SaaS • LEZ & ESG Analytics</p>
+                        </div>
                     </div>
                 </div>
 
@@ -672,7 +879,16 @@
                 <span class="close-modal" onclick="closeVideoModal()">&times;</span>
             </div>
             <div class="modal-body">
-                <iframe class="video-iframe" id="modal-video-iframe" src="" allowfullscreen allow="autoplay"></iframe>
+                <div id="modal-video-player-wrapper">
+                    <iframe class="video-iframe" id="modal-video-iframe" src="" allowfullscreen allow="autoplay" style="display:none; width: 100%; height: 480px; border: none; border-radius: 8px;"></iframe>
+                    <video id="modal-local-video" controls style="display:none; width: 100%; max-height: 480px; border-radius: 8px; background: #000;"></video>
+                    <div id="modal-placeholder" style="display:none; text-align: center; padding: 60px 20px; background: var(--bg-light); border-radius: 8px; border: 2px dashed rgba(74, 21, 75, 0.2);">
+                        <div style="font-size: 3rem; margin-bottom: 12px;">🎬</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 8px;">Pilot Footage in Post-Production</h3>
+                        <p style="color: var(--text-light); max-width: 500px; margin: 0 auto;">High-definition CCTV and simulation telemetry recordings for this initiative are currently being processed by the MoviSabio engineering team.</p>
+                    </div>
+                </div>
+                <div id="video-source-switcher" style="display: flex; gap: 10px; margin-top: 15px;"></div>
                 <p class="modal-video-desc" id="modal-video-description"></p>
             </div>
         </div>
@@ -850,6 +1066,7 @@
                 date: "March 2026",
                 thumbnail: "🎥",
                 youtubeId: "4Gexo2-tHFs",
+                localVideo: "AI Traffic Signal.mp4",
                 description: "Watch our AI-powered traffic signal system in action at Campinas, Brazil. The system reduces intersection wait times by up to 45% using deep reinforcement learning while maintaining safety constraints."
             },
             {
@@ -912,14 +1129,81 @@
 
         function openVideoModal(videoId) {
             const video = projectVideos.find(v => v.id === videoId);
+            if (!video) return;
+
             document.getElementById('modal-video-title').innerText = video.title;
-            document.getElementById('modal-video-iframe').src = `https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&loop=1&playlist=${video.youtubeId}`;
             document.getElementById('modal-video-description').innerText = video.description;
+
+            const iframe = document.getElementById('modal-video-iframe');
+            const localVideo = document.getElementById('modal-local-video');
+            const placeholder = document.getElementById('modal-placeholder');
+            const switcher = document.getElementById('video-source-switcher');
+
+            // Reset player states
+            iframe.style.display = 'none';
+            iframe.src = '';
+            localVideo.style.display = 'none';
+            localVideo.pause();
+            localVideo.src = '';
+            placeholder.style.display = 'none';
+            switcher.innerHTML = '';
+
+            if (video.localVideo) {
+                localVideo.src = encodeURI(video.localVideo);
+                localVideo.style.display = 'block';
+
+                if (video.youtubeId) {
+                    switcher.style.display = 'flex';
+                    switcher.innerHTML = `
+                        <button type="button" class="map-filter-btn active" onclick="switchVideoSource('local', '${encodeURI(video.localVideo)}', '${video.youtubeId}', this)">📼 Local HD Video</button>
+                        <button type="button" class="map-filter-btn" onclick="switchVideoSource('youtube', '${encodeURI(video.localVideo)}', '${video.youtubeId}', this)">▶️ YouTube Stream</button>
+                    `;
+                }
+            } else if (video.youtubeId && video.youtubeId.trim() !== '') {
+                iframe.src = `https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&rel=0`;
+                iframe.style.display = 'block';
+            } else {
+                placeholder.style.display = 'block';
+            }
+
             document.getElementById('video-modal').style.display = 'block';
             document.body.style.overflow = 'hidden';
         }
 
+        function switchVideoSource(source, localPath, ytId, btn) {
+            const iframe = document.getElementById('modal-video-iframe');
+            const localVideo = document.getElementById('modal-local-video');
+            const buttons = document.querySelectorAll('#video-source-switcher .map-filter-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+
+            if (source === 'local') {
+                iframe.style.display = 'none';
+                iframe.src = '';
+                localVideo.src = localPath;
+                localVideo.style.display = 'block';
+                localVideo.play().catch(() => {});
+            } else {
+                localVideo.pause();
+                localVideo.style.display = 'none';
+                localVideo.src = '';
+                iframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0`;
+                iframe.style.display = 'block';
+            }
+        }
+
         function closeVideoModal() {
+            const iframe = document.getElementById('modal-video-iframe');
+            const localVideo = document.getElementById('modal-local-video');
+            if (iframe) {
+                iframe.src = '';
+                iframe.style.display = 'none';
+            }
+            if (localVideo) {
+                localVideo.pause();
+                localVideo.src = '';
+                localVideo.style.display = 'none';
+            }
             document.getElementById('video-modal').style.display = 'none';
             document.body.style.overflow = 'auto';
         }
@@ -1068,7 +1352,7 @@
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🌱</div>
                         <h4>12. Environmental Intelligence</h4>
-                        <p><strong>Emissions Tracking:</strong> Estimates $CO_2$ and $PM_{2.5}$ pollution around busy junctions based on vehicle idling times.</p>
+                        <p><strong>Emissions Tracking:</strong> Estimates CO₂ and PM₂.₅ pollution around busy junctions based on vehicle idling times.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🌧️</div>
@@ -1179,57 +1463,57 @@
                 <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🚀</div>
-                        <h4> 1 --> Title & Vision</h4>
+                        <h4>Slide 1: Title & Vision</h4>
                         <p><strong>Transforming Urban Mobility with AI:</strong> Introducing movisabio-enterprise-smart-city as the intelligent neural backbone for modern cities, shifting from reactive management to proactive ecosystems.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">💸</div>
-                        <h4> 2 --> The Urban Dilemma</h4>
-                        <p><strong>The Cost of Gridlock:</strong> Billions lost in wasted fuel, heightened carbon footprints ($CO_2$, $PM_{2.5}$), emergency delays, and fragmented legacy municipal silos.</p>
+                        <h4>Slide 2: The Urban Dilemma</h4>
+                        <p><strong>The Cost of Gridlock:</strong> Billions lost in wasted fuel, heightened carbon footprints (CO₂, PM₂.₅), emergency delays, and fragmented legacy municipal silos.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🧠</div>
-                        <h4>3 --> Solution Overview</h4>
+                        <h4>Slide 3: Solution Overview</h4>
                         <p><strong>Meet MoviSabio Enterprise:</strong> An enterprise-grade, cloud-native platform acting as the central nervous system and brain of the city, unifying traffic, vision, and utilities.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">☁️</div>
-                        <h4>4 --> Enterprise Architecture</h4>
+                        <h4>Slide 4: Enterprise Architecture</h4>
                         <p><strong>Built for Scale & Reliability:</strong> Powered by Microsoft Azure AKS, PostgreSQL/PostGIS spatial repository, Redis caching, and secure MQTT/WebSocket edge IoT nodes.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🚦</div>
-                        <h4>5 --> Core Adaptive Control</h4>
+                        <h4>Slide 5: Core Adaptive Control</h4>
                         <p><strong>Traffic That Thinks:</strong> Features dynamic green splits, green-wave corridor coordination, and deep reinforcement learning trained via digital twin simulations.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🚑</div>
-                        <h4>6 --> Life Safety & Incidents</h4>
+                        <h4>Slide 6: Life Safety & Incidents</h4>
                         <p><strong>Saving Lives:</strong> Automated emergency green corridors for first responders and computer vision incident detection for immediate hazard alerting.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🌱</div>
-                        <h4>7 --> Sustainability & Weather</h4>
-                        <p><strong>Eco-Resilient Infrastructure:</strong> Real-time emissions tracking (CO2, PM2.5) and weather-aware speed limit and signal adjustments during rain or snow.</p>
+                        <h4>Slide 7: Sustainability & Weather</h4>
+                        <p><strong>Eco-Resilient Infrastructure:</strong> Real-time emissions tracking (CO₂, PM₂.₅) and weather-aware speed limit and signal adjustments during rain or snow.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🖥️</div>
-                        <h4>8 --> City Hall Command Center</h4>
+                        <h4>Slide 8: City Hall Command Center</h4>
                         <p><strong>3D Digital Twin Dashboard:</strong> Interactive React-based situational awareness platform enabling unified monitoring and virtual "what-if" scenario simulations.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">📈</div>
-                        <h4>9 --> Measurable ROI</h4>
+                        <h4>Slide 9: Measurable ROI</h4>
                         <p><strong>Tangible Impact:</strong> Up to 25% reduction in travel times, 30% faster emergency response, lower carbon emissions, and data-driven planning via Explainable AI.</p>
                     </div>
                     <div class="slide-item">
                         <div class="icon" style="font-size: 2rem;">🗺️</div>
-                        <h4>10 --> Implementation Roadmap</h4>
+                        <h4>Slide 10: Implementation Roadmap</h4>
                         <p><strong>Phased Rollout:</strong> Sandbox corridor selection, shadow mode baseline calibration, active go-live with emergency preemption, and full city-wide expansion.</p>
                     </div>
                     <div class="slide-item" style="grid-column: 1 / -1;">
                         <div class="icon" style="font-size: 2rem;">🎯</div>
-                        <h4> 11 --> Conclusion & Call to Action</h4>
+                        <h4>Slide 11: Conclusion & Call to Action</h4>
                         <p><strong>Shaping the Future:</strong> Transforming the vision of a sustainable, efficient metropolis into a deployed reality. Partner with us to pilot movisabio-enterprise-smart-city today.</p>
                     </div>
                 </div>
@@ -1678,19 +1962,224 @@
             window.scrollTo(0, 0);
         }
 
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) section.scrollIntoView({ behavior: 'smooth' });
+        function toggleMobileNav() {
+            const navLinks = document.getElementById('nav-links');
+            if (navLinks) {
+                navLinks.classList.toggle('mobile-open');
+            }
         }
 
+        function scrollToSection(sectionId) {
+            const navLinks = document.getElementById('nav-links');
+            if (navLinks && navLinks.classList.contains('mobile-open')) {
+                navLinks.classList.remove('mobile-open');
+            }
+            if (projectView && projectView.style.display === 'block') {
+                showHome();
+            }
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+                if (sectionId === 'impact' && territorialMap) {
+                    setTimeout(() => territorialMap.invalidateSize(), 400);
+                }
+            }
+        }
+
+        // --- 4. TERRITORIAL INTELLIGENCE MAP SYSTEM ---
+        let territorialMap = null;
+        let mapMarkers = [];
+
+        const territoryData = [
+            {
+                id: 'campinas',
+                region: 'latam',
+                city: 'Campinas',
+                country: 'Brazil 🇧🇷',
+                coords: [-22.9099, -47.0626],
+                status: 'Active Pilot (Corridor A)',
+                badgeBg: 'var(--accent-green)',
+                badgeColor: '#fff',
+                title: 'Flagship AI Traffic Signal Pilot',
+                description: 'Deploying multi-agent Deep Q-Networks (DQN) with MAXBAND safety bounds across 10 interconnected signalized intersections. Dynamic signal timing and automated emergency vehicle green wave preemption.',
+                metrics: [
+                    { label: 'Pilot Corridors', value: '10 Intersections' },
+                    { label: 'Delay Reduction', value: 'Up to 45%' },
+                    { label: 'CO₂ Mitigation', value: 'Target 15–30%' },
+                    { label: 'AI Architecture', value: 'MAXBAND + Deep RL' }
+                ],
+                icon: '🚦',
+                color: '#2EB67D'
+            },
+            {
+                id: 'montevideo',
+                region: 'latam',
+                city: 'Montevideo',
+                country: 'Uruguay 🇺🇾',
+                coords: [-34.9011, -56.1645],
+                status: 'Active Digital Twin',
+                badgeBg: 'var(--accent-blue)',
+                badgeColor: '#fff',
+                title: 'OpenStreetMap Digital Twin & Sensor Mesh',
+                description: 'Leveraging OpenStreetMap topology and municipal loop sensors to construct high-fidelity digital twin corridors in SUMO. Powers predictive traffic forecasting (LSTM/GRU) and public transit signal priority.',
+                metrics: [
+                    { label: 'Network Data', value: 'OpenStreetMap' },
+                    { label: 'Simulator', value: 'SUMO & TraCI' },
+                    { label: 'Focus', value: 'Bus Transit Priority' },
+                    { label: 'Telemetry', value: 'CCTV + Loop Mesh' }
+                ],
+                icon: '🌐',
+                color: '#36C5F0'
+            },
+            {
+                id: 'germany',
+                region: 'europe',
+                city: 'Munich & Berlin',
+                country: 'Germany 🇩🇪',
+                coords: [48.1351, 11.5820],
+                status: 'Target Pilot Hub (2026–2028)',
+                badgeBg: 'var(--accent-yellow)',
+                badgeColor: '#1D1C1D',
+                title: 'EU Grant & Horizon Europe Pipeline',
+                description: 'Strategic European expansion corridor targeting EIT Urban Mobility and Horizon Europe non-dilutive climate tech grants for urban digital twin deployments and cross-border SaaS validation.',
+                metrics: [
+                    { label: 'Funding Pipeline', value: 'Horizon Europe / EIC' },
+                    { label: 'Target Valuation', value: '€400M–€750M Y10' },
+                    { label: 'Ecosystem', value: 'EIT Urban Mobility' },
+                    { label: 'Scope', value: 'Anchor Pilot MVP' }
+                ],
+                icon: '🇩🇪',
+                color: '#ECB22E'
+            },
+            {
+                id: 'italy',
+                region: 'europe',
+                city: 'Milan',
+                country: 'Italy 🇮🇹',
+                coords: [45.4642, 9.1900],
+                status: 'Expansion Corridor',
+                badgeBg: 'var(--accent-red)',
+                badgeColor: '#fff',
+                title: 'Territorial SaaS & Low-Emission Zone Analytics',
+                description: 'Evaluating urban Low-Emission Zone (LEZ) monitoring, multi-sensor air quality telemetry, and cross-border SaaS decision infrastructure for municipal climate compliance and ESG reporting.',
+                metrics: [
+                    { label: 'Platform Layer', value: 'Territorial SaaS' },
+                    { label: 'Urban Focus', value: 'LEZ & Air Quality' },
+                    { label: 'ESG Standard', value: 'UN SDGs 11 & 13' },
+                    { label: 'Gross Margin', value: '81% B2B SaaS' }
+                ],
+                icon: '🇮🇹',
+                color: '#E01E5A'
+            }
+        ];
+
+        function initTerritorialMap() {
+            const mapContainer = document.getElementById('territorial-map');
+            if (!mapContainer || territorialMap) return;
+
+            territorialMap = L.map('territorial-map', {
+                center: [10.0, -25.0],
+                zoom: 3,
+                minZoom: 2,
+                maxZoom: 18,
+                scrollWheelZoom: false
+            });
+
+            // Modern CartoDB Voyager Map Tiles
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(territorialMap);
+
+            renderMapMarkers('all');
+        }
+
+        function renderMapMarkers(filter) {
+            if (!territorialMap) return;
+
+            // Clear previous markers
+            mapMarkers.forEach(m => territorialMap.removeLayer(m));
+            mapMarkers = [];
+
+            const filtered = filter === 'all' 
+                ? territoryData 
+                : territoryData.filter(t => t.region === filter);
+
+            filtered.forEach(item => {
+                const customIcon = L.divIcon({
+                    className: 'custom-pin-wrapper',
+                    html: `<div class="custom-pin" style="background:${item.color}; width:44px; height:44px; font-size:1.3rem;">${item.icon}</div>`,
+                    iconSize: [44, 44],
+                    iconAnchor: [22, 22],
+                    popupAnchor: [0, -24]
+                });
+
+                const metricsHTML = item.metrics.map(m => `
+                    <div>
+                        <div style="font-size:0.72rem; color:var(--text-light); text-transform:uppercase; font-weight:700;">${m.label}</div>
+                        <div style="font-size:0.85rem; color:var(--primary-color); font-weight:bold;">${m.value}</div>
+                    </div>
+                `).join('');
+
+                const popupHTML = `
+                    <div style="min-width: 270px; max-width: 320px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                            <h4 style="margin:0; color:var(--primary-color); font-size:1.15rem; font-weight:800;">${item.city}</h4>
+                            <span style="background:${item.badgeBg}; color:${item.badgeColor}; font-size:0.7rem; font-weight:bold; padding:2px 8px; border-radius:12px;">${item.status}</span>
+                        </div>
+                        <div style="font-size:0.82rem; font-weight:700; color:var(--accent-blue); margin-bottom:8px;">${item.country}</div>
+                        <p style="font-size:0.85rem; color:var(--text-dark); line-height:1.5; margin-bottom:12px;">${item.description}</p>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; background:var(--bg-light); padding:10px; border-radius:8px; border-left:3px solid ${item.color};">
+                            ${metricsHTML}
+                        </div>
+                    </div>
+                `;
+
+                const marker = L.marker(item.coords, { icon: customIcon })
+                    .bindPopup(popupHTML)
+                    .addTo(territorialMap);
+
+                marker.territoryId = item.id;
+                marker.territoryCoords = item.coords;
+                mapMarkers.push(marker);
+            });
+
+            if (mapMarkers.length > 0) {
+                const group = L.featureGroup(mapMarkers);
+                territorialMap.fitBounds(group.getBounds().pad(0.3));
+            }
+        }
+
+        function filterMap(region, btn) {
+            document.querySelectorAll('.map-filter-group .map-filter-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            renderMapMarkers(region);
+        }
+
+        function flyToTerritory(lat, lng, zoom) {
+            if (!territorialMap) return;
+            const mapCard = document.querySelector('.map-card-wrapper');
+            if (mapCard) {
+                mapCard.scrollIntoView({ behavior: 'smooth' });
+            }
+            territorialMap.flyTo([lat, lng], zoom || 11, { duration: 1.5 });
+            setTimeout(() => {
+                const marker = mapMarkers.find(m => m.territoryCoords && Math.abs(m.territoryCoords[0] - lat) < 0.01 && Math.abs(m.territoryCoords[1] - lng) < 0.01);
+                if (marker) marker.openPopup();
+            }, 1200);
+        }
+
+        // --- 5. FIXED SECTION MINIMIZERS ---
         function initializeSectionMinimizers() {
             document.querySelectorAll('section.section-padding').forEach(section => {
                 const title = section.querySelector('.section-title');
                 if (!title) return;
 
+                const container = title.parentNode;
                 const wrapper = document.createElement('div');
                 wrapper.className = 'section-title-wrapper';
-                title.parentNode.insertBefore(wrapper, title);
+                container.insertBefore(wrapper, title);
                 wrapper.appendChild(title);
 
                 const toggle = document.createElement('button');
@@ -1699,27 +2188,42 @@
                 toggle.innerText = '−';
                 toggle.setAttribute('aria-expanded', 'true');
                 toggle.title = 'Minimize this section';
+                wrapper.appendChild(toggle);
+
+                const contentWrapper = document.createElement('div');
+                contentWrapper.className = 'section-collapse-content';
+
+                // Move all container children that were after the title into contentWrapper
+                let next = wrapper.nextSibling;
+                while (next) {
+                    const sibling = next;
+                    next = sibling.nextSibling;
+                    contentWrapper.appendChild(sibling);
+                }
+                container.appendChild(contentWrapper);
+
                 toggle.addEventListener('click', () => {
                     const isCollapsed = section.classList.toggle('collapsed');
                     toggle.innerText = isCollapsed ? '+' : '−';
                     toggle.setAttribute('aria-expanded', String(!isCollapsed));
                     toggle.title = isCollapsed ? 'Expand this section' : 'Minimize this section';
+                    if (!isCollapsed && territorialMap) {
+                        setTimeout(() => territorialMap.invalidateSize(), 300);
+                    }
                 });
-                wrapper.appendChild(toggle);
-
-                const contentWrapper = document.createElement('div');
-                contentWrapper.className = 'section-collapse-content';
-                let next = title.nextElementSibling;
-                while (next) {
-                    const sibling = next;
-                    next = sibling.nextElementSibling;
-                    contentWrapper.appendChild(sibling);
-                }
-                wrapper.parentNode.appendChild(contentWrapper);
             });
         }
 
-        initializeSectionMinimizers();
+        window.addEventListener('DOMContentLoaded', () => {
+            initializeSectionMinimizers();
+            initTerritorialMap();
+        });
+
+        window.addEventListener('load', () => {
+            if (territorialMap) {
+                territorialMap.invalidateSize();
+            }
+        });
     </script>
 </body>
 </html>
