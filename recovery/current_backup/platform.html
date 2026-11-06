@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviSabio Enterprise Smart City | Flagship Territorial Intelligence Platform</title>
+
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Detailed architecture, simulation telemetry, and technical specifications for MoviSabio Enterprise Smart City — the central nervous system for urban environments.">
+    <link rel="canonical" href="https://www.movisabio.com/platform.html">
+
+    <!-- International SEO hreflang Annotations (6 Languages) -->
+    <link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/platform.html">
+    <link rel="alternate" hreflang="en" href="https://www.movisabio.com/platform.html?lang=en">
+    <link rel="alternate" hreflang="de" href="https://www.movisabio.com/platform.html?lang=de">
+    <link rel="alternate" hreflang="pt" href="https://www.movisabio.com/platform.html?lang=pt">
+    <link rel="alternate" hreflang="es" href="https://www.movisabio.com/platform.html?lang=es">
+    <link rel="alternate" hreflang="it" href="https://www.movisabio.com/platform.html?lang=it">
+    <link rel="alternate" hreflang="zh" href="https://www.movisabio.com/platform.html?lang=zh">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.movisabio.com/platform.html">
+    <meta property="og:title" content="MoviSabio Enterprise Smart City | Flagship Platform">
+    <meta property="og:description" content="Cloud-native, AI-driven adaptive traffic signal coordination, edge computer vision, and 3D digital twins.">
+    <meta property="og:image" content="https://www.movisabio.com/logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <!-- Twitter / X Previews -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.movisabio.com/platform.html">
+    <meta name="twitter:title" content="MoviSabio Enterprise Smart City | Flagship Platform">
+    <meta name="twitter:description" content="Cloud-native, AI-driven adaptive traffic signal coordination, edge computer vision, and 3D digital twins.">
+    <meta name="twitter:image" content="https://www.movisabio.com/logo.png">
+
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- JSON-LD Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MoviSabio Enterprise Smart City",
+      "applicationCategory": "Smart City Software",
+      "operatingSystem": "Linux, Kubernetes, Edge Microservices",
+      "description": "Enterprise territorial intelligence platform unifying adaptive signal timing, computer vision, digital twins, and climate analytics.",
+      "url": "https://www.movisabio.com/platform.html",
+      "author": {
+        "@type": "Organization",
+        "name": "MoviSabio Tech Solutions",
+        "url": "https://www.movisabio.com/"
+      }
+    }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-to-content" data-i18n="skip_to_content">Skip to main content</a>
+
+    <!-- ====================================================================== -->
+    <!-- ENTERPRISE NAVBAR                                                      -->
+    <!-- ====================================================================== -->
+    <header class="navbar-enterprise" role="banner">
+        <div class="navbar-container">
+            <a href="index.html" class="brand-logo" aria-label="MoviSabio Home">
+                <span class="brand-dot"></span>
+                <span>MoviSabio</span>
+                <span class="brand-tag">Enterprise</span>
+            </a>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="platform.html" class="nav-link" style="color: var(--accent-primary);" data-i18n="nav_platform">Platform</a></li>
+                    <li><a href="solutions.html" class="nav-link" data-i18n="nav_solutions">Solutions</a></li>
+                    <li><a href="technology.html" class="nav-link" data-i18n="nav_architecture">Technology</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav_research">Research & ESG</a></li>
+                    <li><a href="global.html" class="nav-link" data-i18n="nav_map">Global Map</a></li>
+                    <li><a href="leadership.html" class="nav-link" data-i18n="nav_leadership">Leadership</a></li>
+                    <li><a href="partners.html" class="nav-link" style="color: var(--accent-success); font-weight: 700;" data-i18n="nav_submit_idea">Partners & Pitch</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" class="lang-dropdown-enterprise" onchange="MoviSabioI18n.setLanguage(this.value)" aria-label="Select Language">
+                        <option value="en">EN • English</option>
+                        <option value="de">DE • Deutsch</option>
+                        <option value="pt">PT • Português</option>
+                        <option value="es">ES • Español</option>
+                        <option value="it">IT • Italiano</option>
+                        <option value="zh">ZH • 中文</option>
+                    </select>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_cta">Partner With Us</a>
+                <button type="button" class="mobile-toggle-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ================================================================== -->
+        <!-- PLATFORM HERO SECTION                                              -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="padding-top: var(--space-4xl); padding-bottom: var(--space-3xl); background: radial-gradient(circle at 80% 20%, rgba(85, 215, 232, 0.08) 0%, transparent 60%);">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <div class="section-tag">Flagship Product Specification</div>
+                    <h1 class="section-title" style="font-size: clamp(2.4rem, 5vw, 3.8rem); margin-bottom: var(--space-lg);">
+                        MoviSabio Enterprise Smart City
+                    </h1>
+                    <p class="section-subtitle" style="font-size: var(--font-size-md); margin-bottom: var(--space-2xl);">
+                        The central nervous system for modern urban environments. A cloud-native, edge-integrated operating platform that standardizes fragmented municipal traffic, computer vision feeds, and digital twin simulations into coordinated, predictive actuation.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; gap: var(--space-md); flex-wrap: wrap; margin-bottom: var(--space-3xl);">
+                        <a href="#architecture" class="btn btn-primary btn-lg">Explore 4-Layer Architecture ↓</a>
+                        <a href="#roadmap" class="btn btn-secondary btn-lg">Deployment Roadmap</a>
+                        <a href="solutions.html" class="btn btn-outline btn-lg">Browse 15 Modules →</a>
+                    </div>
+                </div>
+
+                <!-- High-Resolution Visual Collage -->
+                <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg), 0 0 40px rgba(85, 215, 232, 0.1); margin-top: var(--space-xl);">
+                    <img src="Smart City Mobility Collage.png" alt="MoviSabio Enterprise Smart City Integrated Command and Simulation Collage" style="width: 100%; max-height: 520px; object-fit: cover;" fetchpriority="high" decoding="async" width="1200" height="520">
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- PRODUCT OVERVIEW & CORE PROBLEM ADDRESSED                          -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Problem & Solution</div>
+                    <h2 class="section-title">The Urban Gridlock Dilemma</h2>
+                    <p class="section-subtitle">
+                        Mid-sized and growing metropolitan areas lose millions annually in wasted fuel, extended emergency response times, and heightened emissions due to obsolete, hardware-locked traffic management.
+                    </p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="color: var(--accent-danger); background: rgba(255, 107, 139, 0.1); border-color: rgba(255, 107, 139, 0.3);">⚠️</div>
+                        <h3 class="card-title">Legacy Isolated Controllers</h3>
+                        <p class="card-desc">
+                            Traditional traffic signals operate on pre-programmed fixed timers or isolated magnetic loops, unable to coordinate dynamically across an entire corridor when sudden congestion spikes occur.
+                        </p>
+                        <span class="status-pill status-pipeline">30–40% Urban Delay Cause</span>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="color: var(--accent-warning); background: rgba(245, 184, 66, 0.1); border-color: rgba(245, 184, 66, 0.3);">💰</div>
+                        <h3 class="card-title">Costly Hardware Lock-in</h3>
+                        <p class="card-desc">
+                            Industrial legacy vendors demand multi-million-dollar retrofits of specialized sensors, proprietary cabling, and closed signal cabinets, pricing out medium-sized municipalities.
+                        </p>
+                        <span class="status-pill status-pipeline">High Barrier to Entry</span>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="color: var(--accent-primary); background: rgba(85, 215, 232, 0.1); border-color: rgba(85, 215, 232, 0.3);">💡</div>
+                        <h3 class="card-title">The MoviSabio Approach</h3>
+                        <p class="card-desc">
+                            A software-driven, hardware-agnostic platform. Taps existing municipal CCTV via RTSP and standard NTCIP 1202 protocols, leveraging Deep Reinforcement Learning within classical safety limits.
+                        </p>
+                        <span class="status-pill status-live">Zero Sensor Retrofit</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 4-LAYER PRODUCT ARCHITECTURE                                       -->
+        <!-- ================================================================== -->
+        <section id="architecture" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">System Blueprint</div>
+                    <h2 class="section-title">4-Layer Enterprise Architecture</h2>
+                    <p class="section-subtitle">
+                        Engineered for sub-second telemetry ingestion, deterministic fail-safe actuation, and high-availability spatial modeling on Kubernetes.
+                    </p>
+                </div>
+
+                <div class="arch-stack">
+                    <!-- Layer 4 -->
+                    <div class="arch-layer" style="border-left: 4px solid var(--accent-primary);">
+                        <div class="arch-layer-label">
+                            <span class="arch-layer-number">Layer 04</span>
+                            <span class="arch-layer-name">Command & Actuation</span>
+                        </div>
+                        <div>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
+                                Centralized operator interface providing 3D spatial awareness, manual override controls, and automated emergency vehicle preemption dispatching.
+                            </p>
+                            <div class="arch-layer-tags">
+                                <span class="arch-tag">3D Digital Twin Command Center</span>
+                                <span class="arch-tag">City Hall Operations Dashboard</span>
+                                <span class="arch-tag">Emergency Dispatch Preemption</span>
+                                <span class="arch-tag">REST & WebSocket APIs</span>
+                                <span class="arch-tag">Role-Based Access Control (RBAC)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layer 3 -->
+                    <div class="arch-layer" style="border-left: 4px solid var(--accent-secondary);">
+                        <div class="arch-layer-label">
+                            <span class="arch-layer-number">Layer 03</span>
+                            <span class="arch-layer-name">AI & Simulation Engine</span>
+                        </div>
+                        <div>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
+                                Hierarchical intelligence combining multi-agent Deep Reinforcement Learning (DQN / PPO) with deterministic MAXBAND green-wave bounds to ensure safety compliance.
+                            </p>
+                            <div class="arch-layer-tags">
+                                <span class="arch-tag">Multi-Agent Deep Q-Networks (DQN)</span>
+                                <span class="arch-tag">MAXBAND Safety Envelopes</span>
+                                <span class="arch-tag">SUMO & TraCI Digital Twin Simulator</span>
+                                <span class="arch-tag">LSTM / GRU Multi-Horizon Forecasting</span>
+                                <span class="arch-tag">Explainable AI (XAI) Safety Scoring</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layer 2 -->
+                    <div class="arch-layer" style="border-left: 4px solid var(--accent-success);">
+                        <div class="arch-layer-label">
+                            <span class="arch-layer-number">Layer 02</span>
+                            <span class="arch-layer-name">Spatial & Streaming Core</span>
+                        </div>
+                        <div>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
+                                High-throughput geospatial storage and event streaming cluster hosted on Microsoft Azure Kubernetes Service (AKS) with automated geo-replication.
+                            </p>
+                            <div class="arch-layer-tags">
+                                <span class="arch-tag">PostgreSQL 16 + PostGIS Spatial Engine</span>
+                                <span class="arch-tag">Redis Cluster (Low-Latency Cache)</span>
+                                <span class="arch-tag">Azure Kubernetes Service (AKS)</span>
+                                <span class="arch-tag">MQTT Message Brokers</span>
+                                <span class="arch-tag">Zero-Trust Azure Key Vault Encryption</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layer 1 -->
+                    <div class="arch-layer" style="border-left: 4px solid var(--accent-warning);">
+                        <div class="arch-layer-label">
+                            <span class="arch-layer-number">Layer 01</span>
+                            <span class="arch-layer-name">Edge & Telemetry Ingestion</span>
+                        </div>
+                        <div>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
+                                Connects directly to existing municipal field hardware via standard protocols. Computes vehicle classifications and queue counts at the network edge.
+                            </p>
+                            <div class="arch-layer-tags">
+                                <span class="arch-tag">CCTV Video Streams (RTSP)</span>
+                                <span class="arch-tag">YOLOv8 Edge Computer Vision</span>
+                                <span class="arch-tag">NTCIP 1202 Signal Actuation</span>
+                                <span class="arch-tag">Inductive Loop & Radar Telemetry</span>
+                                <span class="arch-tag">GPS Transit Bus Beacons</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- COMPREHENSIVE CAPABILITIES BREAKDOWN                               -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Deep Capabilities</div>
+                    <h2 class="section-title">Core Subsystems & Operational Features</h2>
+                    <p class="section-subtitle">A granular review of each subsystem operating within MoviSabio Enterprise Smart City.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card-enterprise">
+                        <h3 class="card-title">1. AITCS Adaptive Signal Timing</h3>
+                        <p class="card-desc">
+                            Continuously computes queue lengths and approach velocities to dynamically adjust green times. Rather than calculating single isolated intersections, our algorithm optimizes green waves across entire 10-to-20 intersection corridors.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-primary); font-size: 0.85rem;">
+                            <strong>Fail-Safe Constraint:</strong> Minimum green and maximum red times are hard-locked into the controller firmware, preventing edge AI model drift from compromising pedestrian safety.
+                        </div>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <h3 class="card-title">2. Edge Vision & Vehicle Classification</h3>
+                        <p class="card-desc">
+                            Ingests standard H.264/H.265 video from traffic cameras. Real-time inference classifies objects into cars, delivery trucks, city buses, motorcycles, bicycles, and pedestrians, converting visual pixels into structured telemetry.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-secondary); font-size: 0.85rem;">
+                            <strong>Privacy by Design:</strong> Video frames are processed locally at the edge. No faces or private vehicle data are stored on central cloud databases, ensuring GDPR and LGPD compliance.
+                        </div>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <h3 class="card-title">3. Digital Twin Simulation (SUMO & CARLA)</h3>
+                        <p class="card-desc">
+                            Every city network is ingested from OpenStreetMap into the SUMO (Simulation of Urban MObility) framework. Operators can simulate major detours, road closures, or sporting events in a virtual sandbox with synthetic vehicle demand.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-success); font-size: 0.85rem;">
+                            <strong>Benchmark Validation:</strong> Enables municipal departments to evaluate expected delay reductions in software before authorizing physical controller deployment.
+                        </div>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <h3 class="card-title">4. Automated Emergency Preemption</h3>
+                        <p class="card-desc">
+                            Synchronizes with municipal CAD (Computer-Aided Dispatch) feeds. When an emergency vehicle is en route, the platform automatically clears downstream vehicle queues and secures green phases through the intersection.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-warning); font-size: 0.85rem;">
+                            <strong>Operational Impact:</strong> Targets up to 30% reduction in emergency travel times, reducing intersection crash risks for first responders.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 4-PHASE DEPLOYMENT ROADMAP                                          -->
+        <!-- ================================================================== -->
+        <section id="roadmap" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Implementation Methodology</div>
+                    <h2 class="section-title">4-Phase Municipal Rollout Framework</h2>
+                    <p class="section-subtitle">A structured, low-risk deployment framework designed to prove measurable results before scaling city-wide.</p>
+                </div>
+
+                <div class="grid-4">
+                    <div class="metric-card" style="border-top: 4px solid var(--accent-primary);">
+                        <div style="font-family: var(--font-mono); color: var(--accent-primary); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 01 • WEEKS 1–4</div>
+                        <div class="metric-label" style="font-size: 1.15rem;">Digital Twin Modeling</div>
+                        <p class="metric-sub">
+                            Ingest city network from OpenStreetMap. Calibrate baseline traffic flows using municipal sensor logs inside the SUMO simulation engine.
+                        </p>
+                    </div>
+
+                    <div class="metric-card" style="border-top: 4px solid var(--accent-secondary);">
+                        <div style="font-family: var(--font-mono); color: var(--accent-secondary); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 02 • WEEKS 5–8</div>
+                        <div class="metric-label" style="font-size: 1.15rem;">Corridor Sandbox (Shadow Mode)</div>
+                        <p class="metric-sub">
+                            Connect edge hardware to 5–10 intersections. The AI observes real-time CCTV feeds and computes optimal timings in "shadow mode" without physical actuation.
+                        </p>
+                    </div>
+
+                    <div class="metric-card" style="border-top: 4px solid var(--accent-success);">
+                        <div style="font-family: var(--font-mono); color: var(--accent-success); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 03 • WEEKS 9–14</div>
+                        <div class="metric-label" style="font-size: 1.15rem;">Active Pilot Actuation</div>
+                        <p class="metric-sub">
+                            Activate dynamic signal adjustment during off-peak hours first, expanding to 24/7 autonomous coordination under strict MAXBAND fail-safe constraints.
+                        </p>
+                    </div>
+
+                    <div class="metric-card" style="border-top: 4px solid var(--accent-warning);">
+                        <div style="font-family: var(--font-mono); color: var(--accent-warning); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 04 • WEEKS 15+</div>
+                        <div class="metric-label" style="font-size: 1.15rem;">City-Wide Expansion</div>
+                        <p class="metric-sub">
+                            Unveil the 3D Digital Twin Command Center at City Hall. Expand AI coordination across adjacent arterial corridors and connect public transit priority.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Call to Action Banner -->
+                <div style="margin-top: var(--space-3xl); background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: var(--space-2xl); text-align: center;">
+                    <h3 style="color: var(--text-primary); margin-bottom: var(--space-sm);">Ready to Explore a Pilot Corridor for Your Municipality?</h3>
+                    <p style="color: var(--text-secondary); max-width: 680px; margin: 0 auto var(--space-xl);">
+                        Our engineering team works with municipal departments of transportation to model existing traffic networks in SUMO and evaluate baseline improvement projections.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: var(--space-md); flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Request a Pilot Scoping Call →</a>
+                        <a href="technology.html" class="btn btn-outline btn-lg">Inspect Full Technology Stack</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- FOOTER                                                                 -->
+    <!-- ====================================================================== -->
+    <footer class="footer-enterprise" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand-logo" style="margin-bottom: var(--space-md);">
+                        <span class="brand-dot"></span>
+                        <span>MoviSabio</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Intelligent Infrastructure. Smarter Territories. Connected Futures. Transforming fragmented territorial data into actionable spatial intelligence.
+                    </p>
+                    <div class="status-pill status-live">
+                        <span class="status-dot"></span>
+                        <span>Aligned with UN SDGs 11 & 13</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Enterprise Smart City</a></li>
+                        <li><a href="solutions.html">Solutions Catalog</a></li>
+                        <li><a href="technology.html">Architecture & Stack</a></li>
+                        <li><a href="global.html">Territorial Operations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About MoviSabio</a></li>
+                        <li><a href="research.html">Research & Grants</a></li>
+                        <li><a href="leadership.html">Leadership Team</a></li>
+                        <li><a href="partners.html">Partners & LOIs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Global Hubs</h4>
+                    <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-sm);">
+                        <strong>Pilots:</strong> Campinas (BR) & Montevideo (UY)<br>
+                        <strong>Expansion:</strong> Munich/Berlin (DE) & Milan (IT)<br>
+                        <strong>Inquiries:</strong> <a href="mailto:info@movisabio.com">info@movisabio.com</a>
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://linkedin.com/company/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🔗 LinkedIn</a>
+                        <a href="https://github.com/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🐙 GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 MoviSabio Tech Solutions. All rights reserved.</div>
+                <div>Enterprise Spatial Intelligence • GDPR & Privacy Compliant</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

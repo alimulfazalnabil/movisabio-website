@@ -6,7 +6,7 @@
     <title>MoviSabio Enterprise Smart City | Flagship Territorial Intelligence Platform</title>
 
     <!-- SEO & Metadata -->
-    <meta name="description" content="Detailed architecture, simulation telemetry, and technical specifications for MoviSabio Enterprise Smart City — the central nervous system for urban environments.">
+    <meta name="description" content="Comprehensive technical specifications, 6-layer system architecture, and algorithmic documentation for MoviSabio Enterprise Smart City.">
     <link rel="canonical" href="https://www.movisabio.com/platform.html">
 
     <!-- International SEO hreflang Annotations (6 Languages) -->
@@ -22,8 +22,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.movisabio.com/platform.html">
     <meta property="og:title" content="MoviSabio Enterprise Smart City | Flagship Platform">
-    <meta property="og:description" content="Cloud-native, AI-driven adaptive traffic signal coordination, edge computer vision, and 3D digital twins.">
-    <meta property="og:image" content="https://www.movisabio.com/logo.png">
+    <meta property="og:description" content="AI Traffic Signal Coordination, Edge Computer Vision, 3D Digital Twins, and Territorial Intelligence Platform.">
+    <meta property="og:image" content="https://www.movisabio.com/Connected%20Smart%20City%20at%20Dusk-1.png">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="de_DE">
     <meta property="og:locale:alternate" content="pt_BR">
@@ -35,8 +35,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.movisabio.com/platform.html">
     <meta name="twitter:title" content="MoviSabio Enterprise Smart City | Flagship Platform">
-    <meta name="twitter:description" content="Cloud-native, AI-driven adaptive traffic signal coordination, edge computer vision, and 3D digital twins.">
-    <meta name="twitter:image" content="https://www.movisabio.com/logo.png">
+    <meta name="twitter:description" content="AI Traffic Signal Coordination, Edge Computer Vision, 3D Digital Twins, and Territorial Intelligence Platform.">
+    <meta name="twitter:image" content="https://www.movisabio.com/Connected%20Smart%20City%20at%20Dusk-1.png">
 
     <!-- Tab Icon -->
     <link rel="icon" type="image/png" href="logo.png">
@@ -62,7 +62,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
+<body class="platform-body">
 
     <a href="#main-content" class="skip-to-content" data-i18n="skip_to_content">Skip to main content</a>
 
@@ -110,168 +110,218 @@
 
     <main id="main-content">
         <!-- ================================================================== -->
-        <!-- PLATFORM HERO SECTION                                              -->
+        <!-- HERO SECTION (DARK CONTRAST SHELL)                                 -->
         <!-- ================================================================== -->
-        <section class="section-padding" style="padding-top: var(--space-4xl); padding-bottom: var(--space-3xl); background: radial-gradient(circle at 80% 20%, rgba(85, 215, 232, 0.08) 0%, transparent 60%);">
+        <section class="platform-dark-contrast-section" aria-labelledby="hero-title">
             <div class="container">
-                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                    <div class="section-tag">Flagship Product Specification</div>
-                    <h1 class="section-title" style="font-size: clamp(2.4rem, 5vw, 3.8rem); margin-bottom: var(--space-lg);">
+                <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+                    <div class="platform-section-tag" data-i18n="tag_flagship_platform">Flagship Product Specification</div>
+                    <h1 id="hero-title" class="platform-section-title" data-i18n="platform_hero_title">
                         MoviSabio Enterprise Smart City
                     </h1>
-                    <p class="section-subtitle" style="font-size: var(--font-size-md); margin-bottom: var(--space-2xl);">
-                        The central nervous system for modern urban environments. A cloud-native, edge-integrated operating platform that standardizes fragmented municipal traffic, computer vision feeds, and digital twin simulations into coordinated, predictive actuation.
+                    <p class="platform-section-subtitle" style="margin: 0 auto 2rem; color: #CBD5E1;" data-i18n="platform_hero_subtitle">
+                        The intelligent neural backbone for modern urban ecosystems. Unifying real-time adaptive traffic signal coordination, edge computer vision, 3D digital twin simulation, and environmental monitoring into an enterprise-grade platform.
                     </p>
 
-                    <div style="display: flex; justify-content: center; gap: var(--space-md); flex-wrap: wrap; margin-bottom: var(--space-3xl);">
-                        <a href="#architecture" class="btn btn-primary btn-lg">Explore 4-Layer Architecture ↓</a>
-                        <a href="#roadmap" class="btn btn-secondary btn-lg">Deployment Roadmap</a>
-                        <a href="solutions.html" class="btn btn-outline btn-lg">Browse 15 Modules →</a>
+                    <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                        <a href="#traffic-intelligence" class="btn btn-primary btn-lg" data-i18n="btn_explore_modules">Explore 12 Technical Modules ↓</a>
+                        <a href="#tech-specs" class="btn btn-secondary btn-lg" data-i18n="btn_view_specs">Technical Specifications Table</a>
+                        <a href="#system-architecture" class="btn btn-outline btn-lg" data-i18n="btn_view_architecture">6-Layer Architecture Diagram</a>
                     </div>
                 </div>
 
-                <!-- High-Resolution Visual Collage -->
-                <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg), 0 0 40px rgba(85, 215, 232, 0.1); margin-top: var(--space-xl);">
-                    <img src="Smart City Mobility Collage.png" alt="MoviSabio Enterprise Smart City Integrated Command and Simulation Collage" style="width: 100%; max-height: 520px; object-fit: cover;" fetchpriority="high" decoding="async" width="1200" height="520">
-                </div>
-            </div>
-        </section>
-
-        <!-- ================================================================== -->
-        <!-- PRODUCT OVERVIEW & CORE PROBLEM ADDRESSED                          -->
-        <!-- ================================================================== -->
-        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-tag">Problem & Solution</div>
-                    <h2 class="section-title">The Urban Gridlock Dilemma</h2>
-                    <p class="section-subtitle">
-                        Mid-sized and growing metropolitan areas lose millions annually in wasted fuel, extended emergency response times, and heightened emissions due to obsolete, hardware-locked traffic management.
-                    </p>
-                </div>
-
-                <div class="grid-3">
-                    <div class="card-enterprise">
-                        <div class="card-icon" style="color: var(--accent-danger); background: rgba(255, 107, 139, 0.1); border-color: rgba(255, 107, 139, 0.3);">⚠️</div>
-                        <h3 class="card-title">Legacy Isolated Controllers</h3>
-                        <p class="card-desc">
-                            Traditional traffic signals operate on pre-programmed fixed timers or isolated magnetic loops, unable to coordinate dynamically across an entire corridor when sudden congestion spikes occur.
-                        </p>
-                        <span class="status-pill status-pipeline">30–40% Urban Delay Cause</span>
-                    </div>
-
-                    <div class="card-enterprise">
-                        <div class="card-icon" style="color: var(--accent-warning); background: rgba(245, 184, 66, 0.1); border-color: rgba(245, 184, 66, 0.3);">💰</div>
-                        <h3 class="card-title">Costly Hardware Lock-in</h3>
-                        <p class="card-desc">
-                            Industrial legacy vendors demand multi-million-dollar retrofits of specialized sensors, proprietary cabling, and closed signal cabinets, pricing out medium-sized municipalities.
-                        </p>
-                        <span class="status-pill status-pipeline">High Barrier to Entry</span>
-                    </div>
-
-                    <div class="card-enterprise">
-                        <div class="card-icon" style="color: var(--accent-primary); background: rgba(85, 215, 232, 0.1); border-color: rgba(85, 215, 232, 0.3);">💡</div>
-                        <h3 class="card-title">The MoviSabio Approach</h3>
-                        <p class="card-desc">
-                            A software-driven, hardware-agnostic platform. Taps existing municipal CCTV via RTSP and standard NTCIP 1202 protocols, leveraging Deep Reinforcement Learning within classical safety limits.
-                        </p>
-                        <span class="status-pill status-live">Zero Sensor Retrofit</span>
+                <!-- Product Hero Visual -->
+                <div class="product-image-container" style="max-width: 1080px; margin: 1.5rem auto 0; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); border-color: #20364D;">
+                    <img src="Connected Smart City at Dusk-1.png" alt="MoviSabio Enterprise Smart City Overview at Dusk" width="1200" height="600" fetchpriority="high">
+                    <div class="product-image-caption" style="background: #0D1B2C; color: #94A3B8; border-color: #20364D;" data-i18n="caption_hero_image">
+                        MoviSabio Enterprise Smart City: Centralized territorial operations dashboard integrating traffic corridors, transit networks, and environmental sensors.
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ================================================================== -->
-        <!-- 4-LAYER PRODUCT ARCHITECTURE                                       -->
+        <!-- SECTION A: PRODUCT OVERVIEW & VALUE PROPOSITION                    -->
         <!-- ================================================================== -->
-        <section id="architecture" class="section-padding">
+        <section id="product-overview" class="platform-light-section" aria-labelledby="overview-heading">
             <div class="container">
-                <div class="section-header">
-                    <div class="section-tag">System Blueprint</div>
-                    <h2 class="section-title">4-Layer Enterprise Architecture</h2>
-                    <p class="section-subtitle">
-                        Engineered for sub-second telemetry ingestion, deterministic fail-safe actuation, and high-availability spatial modeling on Kubernetes.
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_a">Section A • Executive Product Overview</div>
+                    <h2 id="overview-heading" class="platform-section-title" data-i18n="heading_section_a">Purpose, Operational Value & Target Stakeholders</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_a">
+                        MoviSabio Enterprise Smart City transforms reactive municipal management into proactive, self-optimizing urban ecosystems. Designed specifically for mid-sized and large metropolitan regions without requiring costly hardware retrofits.
                     </p>
                 </div>
 
-                <div class="arch-stack">
-                    <!-- Layer 4 -->
-                    <div class="arch-layer" style="border-left: 4px solid var(--accent-primary);">
-                        <div class="arch-layer-label">
-                            <span class="arch-layer-number">Layer 04</span>
-                            <span class="arch-layer-name">Command & Actuation</span>
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 2.5rem;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="card_stakeholders_title">Target Stakeholders & Customers</h3>
+                            <span class="status-badge badge-implemented">ENTERPRISE READY</span>
                         </div>
-                        <div>
-                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
-                                Centralized operator interface providing 3D spatial awareness, manual override controls, and automated emergency vehicle preemption dispatching.
-                            </p>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">3D Digital Twin Command Center</span>
-                                <span class="arch-tag">City Hall Operations Dashboard</span>
-                                <span class="arch-tag">Emergency Dispatch Preemption</span>
-                                <span class="arch-tag">REST & WebSocket APIs</span>
-                                <span class="arch-tag">Role-Based Access Control (RBAC)</span>
+                        <p class="product-card-desc" data-i18n="card_stakeholders_desc">
+                            Tailored for municipal transportation secretariats, smart-city operators, port and logistics authorities, civil engineering firms, research universities, and infrastructure investment funds seeking measurable territorial optimization.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Primary:</span>
+                                <span class="product-meta-val">Municipal Departments of Transportation (DOTs)</span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Partners:</span>
+                                <span class="product-meta-val">Traffic Engineering Consultancies & System Integrators</span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Investors:</span>
+                                <span class="product-meta-val">Infrastructure & Climate-Tech Funds (UN SDG 11 & 13)</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Layer 3 -->
-                    <div class="arch-layer" style="border-left: 4px solid var(--accent-secondary);">
-                        <div class="arch-layer-label">
-                            <span class="arch-layer-number">Layer 03</span>
-                            <span class="arch-layer-name">AI & Simulation Engine</span>
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="card_challenges_title">Core Operational Challenges Solved</h3>
+                            <span class="status-badge badge-implemented">VALIDATED IN SIM</span>
                         </div>
-                        <div>
-                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
-                                Hierarchical intelligence combining multi-agent Deep Reinforcement Learning (DQN / PPO) with deterministic MAXBAND green-wave bounds to ensure safety compliance.
-                            </p>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">Multi-Agent Deep Q-Networks (DQN)</span>
-                                <span class="arch-tag">MAXBAND Safety Envelopes</span>
-                                <span class="arch-tag">SUMO & TraCI Digital Twin Simulator</span>
-                                <span class="arch-tag">LSTM / GRU Multi-Horizon Forecasting</span>
-                                <span class="arch-tag">Explainable AI (XAI) Safety Scoring</span>
+                        <p class="product-card-desc" data-i18n="card_challenges_desc">
+                            Eliminates the three primary bottlenecks of traditional traffic systems: isolated pre-programmed signal controllers that cannot adapt to real-time traffic surges, multi-million-dollar proprietary sensor lock-in, and delayed emergency response routes.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Delays:</span>
+                                <span class="product-meta-val">30–40% of urban congestion caused by poor signal timing</span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Silos:</span>
+                                <span class="product-meta-val">Fragmented camera, transit, and sensor data streams</span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Cost:</span>
+                                <span class="product-meta-val">Legacy hardware retrofits cost $100k+ per intersection</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Layer 2 -->
-                    <div class="arch-layer" style="border-left: 4px solid var(--accent-success);">
-                        <div class="arch-layer-label">
-                            <span class="arch-layer-number">Layer 02</span>
-                            <span class="arch-layer-name">Spatial & Streaming Core</span>
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="card_valueprop_title">The MoviSabio Value Proposition</h3>
+                            <span class="status-badge badge-implemented">SOFTWARE-FIRST</span>
                         </div>
-                        <div>
-                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
-                                High-throughput geospatial storage and event streaming cluster hosted on Microsoft Azure Kubernetes Service (AKS) with automated geo-replication.
-                            </p>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">PostgreSQL 16 + PostGIS Spatial Engine</span>
-                                <span class="arch-tag">Redis Cluster (Low-Latency Cache)</span>
-                                <span class="arch-tag">Azure Kubernetes Service (AKS)</span>
-                                <span class="arch-tag">MQTT Message Brokers</span>
-                                <span class="arch-tag">Zero-Trust Azure Key Vault Encryption</span>
+                        <p class="product-card-desc" data-i18n="card_valueprop_desc">
+                            A zero-sensor retrofit, cloud-native platform that taps into existing municipal CCTV cameras via standard RTSP streams and interfaces with standard signal controllers (NTCIP 1202) under strict classical safety boundaries.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Impact:</span>
+                                <span class="product-meta-val">Up to 25% reduction in corridor travel delays (simulated)</span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Safety:</span>
+                                <span class="product-meta-val">Deterministic MAXBAND mathematical green-wave safety bounds</span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="product-meta-label">Deployment:</span>
+                                <span class="product-meta-val">4-Phase structured municipal rollout from shadow mode to live</span>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Layer 1 -->
-                    <div class="arch-layer" style="border-left: 4px solid var(--accent-warning);">
-                        <div class="arch-layer-label">
-                            <span class="arch-layer-number">Layer 01</span>
-                            <span class="arch-layer-name">Edge & Telemetry Ingestion</span>
+                <div style="background: #FFFFFF; border: 1px solid #DCE5EF; border-radius: 12px; padding: 24px; text-align: center; max-width: 860px; margin: 0 auto;">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: #10243B; margin-bottom: 8px;" data-i18n="cta_demo_title">Request a Technical Demonstration & Municipal Scoping Call</h3>
+                    <p style="color: #526579; margin-bottom: 18px; font-size: 0.95rem;" data-i18n="cta_demo_desc">
+                        Our engineering team models your city corridor in the SUMO simulation sandbox to calculate baseline delay reductions before physical deployment.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary" data-i18n="btn_request_scoping">Initiate Municipal Pilot Inquiry →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION B: TRAFFIC INTELLIGENCE & SIGNAL COORDINATION              -->
+        <!-- ================================================================== -->
+        <section id="traffic-intelligence" class="platform-light-section-alt" aria-labelledby="traffic-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_b">Section B • Core Engine</div>
+                    <h2 id="traffic-heading" class="platform-section-title" data-i18n="heading_section_b">Traffic Intelligence & Signal Coordination</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_b">
+                        Combining classical traffic engineering mathematics with modern artificial intelligence to deliver adaptive, multi-intersection signal timing that guarantees vehicular safety and maximizes arterial progression.
+                    </p>
+                </div>
+
+                <div class="product-image-container" style="max-width: 980px; margin: 0 auto 2.5rem;">
+                    <img src="AI Traffic Coordination at Sunset.png" alt="AI Traffic Coordination along Urban Corridor at Sunset" width="1100" height="550" loading="lazy">
+                    <div class="product-image-caption" data-i18n="caption_traffic_image">
+                        Multi-intersection corridor coordination: Dynamic green-wave synchronization adjusting phase splits based on real-time vehicle approach velocities.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    <!-- B1: Adaptive Signal Control -->
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="b1_title">1. AI Traffic Control System (AITCS)</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED / VERIFIED</span>
                         </div>
-                        <div>
-                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
-                                Connects directly to existing municipal field hardware via standard protocols. Computes vehicle classifications and queue counts at the network edge.
-                            </p>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">CCTV Video Streams (RTSP)</span>
-                                <span class="arch-tag">YOLOv8 Edge Computer Vision</span>
-                                <span class="arch-tag">NTCIP 1202 Signal Actuation</span>
-                                <span class="arch-tag">Inductive Loop & Radar Telemetry</span>
-                                <span class="arch-tag">GPS Transit Bus Beacons</span>
-                            </div>
+                        <p class="product-card-desc" data-i18n="b1_desc">
+                            Dynamically allocates green time to traffic movements exhibiting the highest cumulative delay and queue density. Operates continuously without requiring manual re-timing schedules.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Inputs:</span><span class="product-meta-val">Lane vehicle counts, approach speeds, queue dwell times</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Logic:</span><span class="product-meta-val">Actuated phase extension with minimum/maximum green bounds</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Outputs:</span><span class="product-meta-val">NTCIP 1202 phase split commands, hold/force-off triggers</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Status:</span><span class="product-meta-val">Verified in SUMO microscopic simulation loop</span></div>
+                        </div>
+                    </div>
+
+                    <!-- B2: Hierarchical Hybrid Framework -->
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="b2_title">2. Hierarchical Hybrid Framework (MAXBAND + AI)</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED / VERIFIED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="b2_desc">
+                            Our core algorithmic innovation: classical MAXBAND linear programming calculates deterministic arterial green waves, while Deep Reinforcement Learning agents adjust local splits within certified safety bounds.
+                        </p>
+                        <div class="math-formula-light">
+                            MAXBAND Objective: Maximize (b + k * b_bar)<br>
+                            subject to: C_min &le; C &le; C_max, red_clearance &ge; min_yellow + all_red
+                        </div>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Safety:</span><span class="product-meta-val">Precludes AI model hallucination; hard safety envelope enforced</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Dependencies:</span><span class="product-meta-val">Python PuLP / SciPy Optimization, TraCI API</span></div>
+                        </div>
+                    </div>
+
+                    <!-- B3: Multi-Intersection Coordination -->
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="b3_title">3. Multi-Intersection Corridor Coordination</h3>
+                            <span class="status-badge badge-active">ACTIVE DEVELOPMENT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="b3_desc">
+                            Coordinates a chain of 5 to 20 consecutive signalized intersections to create bi-directional green waves along primary arterial routes, mitigating shockwaves caused by mid-block queue spillovers.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Inputs:</span><span class="product-meta-val">Upstream departure rates, travel times, downstream queue storage</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Logic:</span><span class="product-meta-val">Offset optimization based on progression speed and platoon dispersion</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Status:</span><span class="product-meta-val">Active training on multi-agent SUMO grid models</span></div>
+                        </div>
+                    </div>
+
+                    <!-- B4: Emergency Vehicle Preemption -->
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="b4_title">4. Emergency Vehicle Preemption (EVP)</h3>
+                            <span class="status-badge badge-planned">PLANNED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="b4_desc">
+                            Interfaces with emergency dispatch Computer-Aided Dispatch (CAD) systems. Preemptively clears downstream vehicular queues and provides a continuous green wave for ambulances and fire engines.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Target:</span><span class="product-meta-val">Up to 30% reduction in emergency travel times</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Protocols:</span><span class="product-meta-val">NTCIP 1202 EVP standard with automatic phase recovery</span></div>
                         </div>
                     </div>
                 </div>
@@ -279,54 +329,80 @@
         </section>
 
         <!-- ================================================================== -->
-        <!-- COMPREHENSIVE CAPABILITIES BREAKDOWN                               -->
+        <!-- SECTION C: COMPUTER VISION & EDGE AI                               -->
         <!-- ================================================================== -->
-        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+        <section id="computer-vision" class="platform-light-section" aria-labelledby="vision-heading">
             <div class="container">
-                <div class="section-header">
-                    <div class="section-tag">Deep Capabilities</div>
-                    <h2 class="section-title">Core Subsystems & Operational Features</h2>
-                    <p class="section-subtitle">A granular review of each subsystem operating within MoviSabio Enterprise Smart City.</p>
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_c">Section C • Visual Sensor Network</div>
+                    <h2 id="vision-heading" class="platform-section-title" data-i18n="heading_section_c">Computer Vision & Edge AI Processing</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_c">
+                        Transforming existing municipal CCTV and traffic camera feeds into structured, real-time vehicular and pedestrian telemetry without purchasing new physical road sensors.
+                    </p>
                 </div>
 
-                <div class="grid-2">
-                    <div class="card-enterprise">
-                        <h3 class="card-title">1. AITCS Adaptive Signal Timing</h3>
-                        <p class="card-desc">
-                            Continuously computes queue lengths and approach velocities to dynamically adjust green times. Rather than calculating single isolated intersections, our algorithm optimizes green waves across entire 10-to-20 intersection corridors.
+                <div class="product-image-container" style="max-width: 980px; margin: 0 auto 2.5rem;">
+                    <img src="MoviSabio Smart City Detection.png" alt="MoviSabio Computer Vision Vehicle Detection and Bounding Box Tracking" width="1100" height="550" loading="lazy">
+                    <div class="product-image-caption" data-i18n="caption_vision_image">
+                        YOLOv8 Edge Computer Vision: Multi-class vehicle detection, lane-wise spatial counting, and pedestrian crosswalk occupancy tracking.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="c1_title">YOLOv8 Real-Time Vehicle Detection</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED / VERIFIED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="c1_desc">
+                            Processes H.264 / H.265 RTSP streams from city cameras. Detects and tracks vehicles with high precision across diverse lighting and weather conditions (sun glare, rain, nighttime).
                         </p>
-                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-primary); font-size: 0.85rem;">
-                            <strong>Fail-Safe Constraint:</strong> Minimum green and maximum red times are hard-locked into the controller firmware, preventing edge AI model drift from compromising pedestrian safety.
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Classes:</span><span class="product-meta-val">Cars, delivery vans, city buses, heavy trucks, motorcycles, bicycles</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Frameworks:</span><span class="product-meta-val">PyTorch, Ultralytics YOLOv8, OpenCV 4.9</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Latency:</span><span class="product-meta-val">&lt; 35ms per frame on edge hardware (NVIDIA Jetson Orin)</span></div>
                         </div>
                     </div>
 
-                    <div class="card-enterprise">
-                        <h3 class="card-title">2. Edge Vision & Vehicle Classification</h3>
-                        <p class="card-desc">
-                            Ingests standard H.264/H.265 video from traffic cameras. Real-time inference classifies objects into cars, delivery trucks, city buses, motorcycles, bicycles, and pedestrians, converting visual pixels into structured telemetry.
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="c2_title">Lane-Wise Spatial Counting & Speed Tracking</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED / VERIFIED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="c2_desc">
+                            Defines virtual polygon detection zones and directional tripwires across approach lanes to compute vehicle density, approach speed, queue dwell time, and Level of Service (LOS).
                         </p>
-                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-secondary); font-size: 0.85rem;">
-                            <strong>Privacy by Design:</strong> Video frames are processed locally at the edge. No faces or private vehicle data are stored on central cloud databases, ensuring GDPR and LGPD compliance.
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Algorithm:</span><span class="product-meta-val">ByteTrack / DeepSORT tracking with perspective transformation</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Outputs:</span><span class="product-meta-val">Lane occupancy percentage, vehicle speed distribution, queue lengths</span></div>
                         </div>
                     </div>
 
-                    <div class="card-enterprise">
-                        <h3 class="card-title">3. Digital Twin Simulation (SUMO & CARLA)</h3>
-                        <p class="card-desc">
-                            Every city network is ingested from OpenStreetMap into the SUMO (Simulation of Urban MObility) framework. Operators can simulate major detours, road closures, or sporting events in a virtual sandbox with synthetic vehicle demand.
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="c3_title">Edge Deployment & Zero Hardware Upgrade</h3>
+                            <span class="status-badge badge-active">ACTIVE DEVELOPMENT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="c3_desc">
+                            Inference runs locally on ruggedized edge micro-servers installed in signal cabinets, eliminating the cost of streaming gigabytes of raw video to the cloud and ensuring resilience during network outages.
                         </p>
-                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-success); font-size: 0.85rem;">
-                            <strong>Benchmark Validation:</strong> Enables municipal departments to evaluate expected delay reductions in software before authorizing physical controller deployment.
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Hardware:</span><span class="product-meta-val">Compatible with NVIDIA Jetson Orin / Industrial ARM64 nodes</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Telemetry:</span><span class="product-meta-val">Transmits lightweight JSON metrics via MQTT over secure VPN</span></div>
                         </div>
                     </div>
 
-                    <div class="card-enterprise">
-                        <h3 class="card-title">4. Automated Emergency Preemption</h3>
-                        <p class="card-desc">
-                            Synchronizes with municipal CAD (Computer-Aided Dispatch) feeds. When an emergency vehicle is en route, the platform automatically clears downstream vehicle queues and secures green phases through the intersection.
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="c4_title">Automatic Number Plate Recognition (ANPR) Roadmap</h3>
+                            <span class="status-badge badge-planned">PLANNED (PRIVACY SAFEGUARDED)</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="c4_desc">
+                            Planned capability for point-to-point travel time estimation and municipal security. Strictly engineered with cryptographic hashing and local redaction to ensure GDPR and LGPD compliance.
                         </p>
-                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-warning); font-size: 0.85rem;">
-                            <strong>Operational Impact:</strong> Targets up to 30% reduction in emergency travel times, reducing intersection crash risks for first responders.
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Safeguards:</span><span class="product-meta-val">Zero raw plate storage; one-way salted cryptographic hashing</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Governance:</span><span class="product-meta-val">Requires explicit municipal authorization and legal compliance review</span></div>
                         </div>
                     </div>
                 </div>
@@ -334,59 +410,770 @@
         </section>
 
         <!-- ================================================================== -->
-        <!-- 4-PHASE DEPLOYMENT ROADMAP                                          -->
+        <!-- SECTION D: TERRITORIAL INTELLIGENCE & DIGITAL TWINS                -->
         <!-- ================================================================== -->
-        <section id="roadmap" class="section-padding">
+        <section id="territorial-intelligence" class="platform-light-section-alt" aria-labelledby="gis-heading">
             <div class="container">
-                <div class="section-header">
-                    <div class="section-tag">Implementation Methodology</div>
-                    <h2 class="section-title">4-Phase Municipal Rollout Framework</h2>
-                    <p class="section-subtitle">A structured, low-risk deployment framework designed to prove measurable results before scaling city-wide.</p>
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_d">Section D • Spatial Modeling & Simulation</div>
+                    <h2 id="gis-heading" class="platform-section-title" data-i18n="heading_section_d">Territorial Intelligence & Digital Twins</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_d">
+                        Constructing high-fidelity digital replicas of urban road networks from open geospatial data to validate optimization strategies before physical field deployment.
+                    </p>
                 </div>
 
-                <div class="grid-4">
-                    <div class="metric-card" style="border-top: 4px solid var(--accent-primary);">
-                        <div style="font-family: var(--font-mono); color: var(--accent-primary); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 01 • WEEKS 1–4</div>
-                        <div class="metric-label" style="font-size: 1.15rem;">Digital Twin Modeling</div>
-                        <p class="metric-sub">
-                            Ingest city network from OpenStreetMap. Calibrate baseline traffic flows using municipal sensor logs inside the SUMO simulation engine.
+                <div class="product-image-container" style="max-width: 980px; margin: 0 auto 2.5rem;">
+                    <img src="MoviSabio Aerial Intelligence Mapping.png" alt="MoviSabio Territorial Aerial Mapping and Digital Twin Grid" width="1100" height="550" loading="lazy">
+                    <div class="product-image-caption" data-i18n="caption_gis_image">
+                        Territorial Digital Twin: Integrating OpenStreetMap road geometry, elevation contours, and land-use data into the SUMO microscopic simulation environment.
+                    </div>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="d1_title">GIS Integration & OpenStreetMap Extraction</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED / VERIFIED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="d1_desc">
+                            Automated spatial ingestion pipeline parses OpenStreetMap (OSM) vector data, extracting road hierarchies, intersection geometries, speed limits, and pedestrian sidewalks into GeoPandas DataFrames.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Stack:</span><span class="product-meta-val">OSMnx, GeoPandas, Shapely, PyProj</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Format:</span><span class="product-meta-val">GeoJSON, PostGIS WKB, SUMO .net.xml</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="d2_title">SUMO & TraCI Closed-Loop Simulation</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED / VERIFIED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="d2_desc">
+                            Microscopic traffic simulator (SUMO) connected via the TraCI Python API. Enables our AI models to step through virtual seconds, observe simulated vehicle queues, and execute phase timing changes.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Interface:</span><span class="product-meta-val">TraCI (Traffic Control Interface) Python Client</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Throughput:</span><span class="product-meta-val">100,000+ vehicles simulated concurrently across corridor</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="d3_title">CARLA 3D Photorealistic Simulation</h3>
+                            <span class="status-badge badge-research">RESEARCH CONCEPT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="d3_desc">
+                            Exploratory integration with the Unreal Engine-based CARLA simulator to test edge computer vision models against synthetic video feeds rendered under extreme fog, blinding sun, and nighttime conditions.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Purpose:</span><span class="product-meta-val">Synthetic dataset generation and sensor model benchmarking</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Status:</span><span class="product-meta-val">Academic & research collaboration milestone</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION E: INTELLIGENT MOBILITY                                    -->
+        <!-- ================================================================== -->
+        <section id="intelligent-mobility" class="platform-light-section" aria-labelledby="mobility-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_e">Section E • Multimodal Transit</div>
+                    <h2 id="mobility-heading" class="platform-section-title" data-i18n="heading_section_e">Intelligent Mobility & Public Transit Priority</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_e">
+                        Enhancing mass transit punctuality, parking efficiency, and pedestrian safety to incentivize sustainable, shared urban mobility over single-occupancy vehicles.
+                    </p>
+                </div>
+
+                <div class="product-image-container" style="max-width: 980px; margin: 0 auto 2.5rem;">
+                    <img src="Smart BRT City Mobility Dashboard.png" alt="Smart BRT City Mobility and Transit Priority Dashboard" width="1100" height="550" loading="lazy">
+                    <div class="product-image-caption" data-i18n="caption_transit_image">
+                        Public transit telemetry monitoring: Bus Rapid Transit (BRT) schedule adherence and GPS-triggered signal priority at key municipal junctions.
+                    </div>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="e1_title">Transit Signal Priority (TSP)</h3>
+                            <span class="status-badge badge-planned">PLANNED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="e1_desc">
+                            Ingests real-time GPS coordinates from municipal transit fleets. Extends green lights or truncates red lights when a delayed bus approaches, targeting a 20–40% improvement in public transit punctuality.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Protocol:</span><span class="product-meta-val">GTFS-Realtime & NTCIP 1202 TSP Extensions</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Hardware:</span><span class="product-meta-val">Zero new road hardware; utilizes existing onboard bus GPS</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="e2_title">Smart Parking Guidance</h3>
+                            <span class="status-badge badge-planned">PLANNED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="e2_desc">
+                            Monitors on-street and garage parking space occupancy using computer vision feeds. Directs drivers to open spaces via digital variable message signs (VMS) to eliminate block-circling traffic.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Benefit:</span><span class="product-meta-val">Reduces cruising traffic by up to 30% in commercial downtown areas</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Interface:</span><span class="product-meta-val">REST APIs for mobile navigation apps & municipal VMS displays</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="e3_title">Pedestrian Intelligence & Adaptive Crosswalks</h3>
+                            <span class="status-badge badge-planned">PLANNED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="e3_desc">
+                            Detects pedestrian crowds, school children, and elderly citizens waiting at crosswalks. Dynamically extends pedestrian clearance phases, ensuring vulnerable citizens cross safely without causing unnecessary vehicle delays.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Detection:</span><span class="product-meta-val">CCTV crosswalk polygon detection zones via YOLOv8</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Safety:</span><span class="product-meta-val">Strict compliance with national traffic manual clearance minimums</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION F: ENVIRONMENTAL INTELLIGENCE                              -->
+        <!-- ================================================================== -->
+        <section id="environmental-intelligence" class="platform-light-section-alt" aria-labelledby="env-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_f">Section F • Sustainability & Climate Resilience</div>
+                    <h2 id="env-heading" class="platform-section-title" data-i18n="heading_section_f">Environmental Intelligence & Climate Resilience</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_f">
+                        Tracking vehicular emissions, ingesting weather station feeds, and optimizing territorial traffic flows to meet United Nations Sustainable Development Goals (SDG 11 & 13).
+                    </p>
+                </div>
+
+                <div class="product-image-container" style="max-width: 980px; margin: 0 auto 2.5rem;">
+                    <img src="MoviSabio Environmental Intelligence Dashboard.png" alt="MoviSabio Environmental Intelligence Air Quality Dashboard" width="1100" height="550" loading="lazy">
+                    <div class="product-image-caption" data-i18n="caption_env_image">
+                        Environmental monitoring dashboard: Tracking CO2 and PM2.5 emissions curves correlated directly with intersection vehicle idling times.
+                    </div>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="f1_title">CO2 & PM2.5 Emissions Modeling</h3>
+                            <span class="status-badge badge-active">ACTIVE DEVELOPMENT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="f1_desc">
+                            Estimates real-time greenhouse gas and particulate emissions at congested intersections using vehicular delay logs and vehicle classification ratios (cars vs. heavy diesel trucks).
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Model:</span><span class="product-meta-val">HBEFA (Handbook Emission Factors for Road Transport) factors</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Target:</span><span class="product-meta-val">15–30% simulated reduction in localized idling emissions</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="f2_title">Weather-Adaptive Signal Adjustment</h3>
+                            <span class="status-badge badge-planned">PLANNED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="f2_desc">
+                            Ingests hyper-local precipitation, road surface temperature, and visibility telemetry. Automatically increases yellow and all-red clearance intervals during rain, snow, or fog to prevent intersection collisions.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Data:</span><span class="product-meta-val">OpenWeatherMap API & municipal road weather sensors</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Adaptation:</span><span class="product-meta-val">Extends clearance intervals by 1.0–2.5s for wet pavement</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="f3_title">Flood Risk & Microgrid Resilience</h3>
+                            <span class="status-badge badge-research">RESEARCH CONCEPT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="f3_desc">
+                            Correlates territorial drainage topography with stormwater runoff sensors to dynamically route vehicles away from flash-flood corridors and monitor EV charging microgrid loads.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Alignment:</span><span class="product-meta-val">UN SDG 11: Sustainable Cities & SDG 13: Climate Action</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Scope:</span><span class="product-meta-val">Long-term municipal climate adaptation and resilience planning</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION G: AI PREDICTION AND OPTIMIZATION                          -->
+        <!-- ================================================================== -->
+        <section id="ai-prediction" class="platform-light-section" aria-labelledby="ai-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_g">Section G • Deep Learning Architecture</div>
+                    <h2 id="ai-heading" class="platform-section-title" data-i18n="heading_section_g">AI Prediction & Reinforcement Learning</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_g">
+                        Harnessing sequential deep learning for multi-horizon traffic forecasting and multi-agent reinforcement learning for continuous signal timing optimization.
+                    </p>
+                </div>
+
+                <div class="product-image-container" style="max-width: 980px; margin: 0 auto 2.5rem;">
+                    <img src="MoviSabio AI Traffic Command Centre.png" alt="MoviSabio AI Traffic Command Center Predictive Analytics" width="1100" height="550" loading="lazy">
+                    <div class="product-image-caption" data-i18n="caption_ai_image">
+                        AI Analytics Dashboard: Multi-horizon LSTM traffic demand predictions, corridor travel time distributions, and reinforcement learning policy convergence metrics.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="g1_title">LSTM / GRU Multi-Horizon Forecasting</h3>
+                            <span class="status-badge badge-active">ACTIVE DEVELOPMENT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="g1_desc">
+                            Recurrent neural networks ingest historical and rolling traffic time-series to forecast corridor congestion levels 10, 30, and 60 minutes in advance, enabling preemptive signal offset adjustments.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Architecture:</span><span class="product-meta-val">2-Layer Bidirectional LSTM with Attention Mechanism</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Horizons:</span><span class="product-meta-val">T+10 min (tactical), T+30 min (corridor), T+60 min (strategic)</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Framework:</span><span class="product-meta-val">PyTorch, TorchScript optimized for production serving</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="g2_title">Multi-Agent Deep Reinforcement Learning (DQN / PPO)</h3>
+                            <span class="status-badge badge-active">ACTIVE DEVELOPMENT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="g2_desc">
+                            Each intersection operates an autonomous reinforcement learning agent. The state space captures approach queue lengths and waiting times; the reward function penalizes aggregate intersection delay and phase-switching overhead.
+                        </p>
+                        <div class="math-formula-light">
+                            Reward: R_t = - &sum; (w_1 * queue_i + w_2 * delay_i) - w_3 * phase_switch
+                        </div>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Algorithms:</span><span class="product-meta-val">Deep Q-Network (DQN) with Prioritized Experience Replay; PPO</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Coordination:</span><span class="product-meta-val">Neighborhood state sharing across adjacent arterial controllers</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION H: COMPLETE TECHNICAL SPECIFICATIONS TABLE                 -->
+        <!-- ================================================================== -->
+        <section id="tech-specs" class="platform-light-section-alt" aria-labelledby="specs-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_h">Section H • Engineering Reference</div>
+                    <h2 id="specs-heading" class="platform-section-title" data-i18n="heading_section_h">Technical Specifications & Technology Stack</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_h">
+                        An exhaustive, transparent engineering matrix detailing every technology, input data source, processing algorithm, and verified development status.
+                    </p>
+                </div>
+
+                <div class="table-responsive-wrapper">
+                    <table class="tech-spec-table" aria-label="MoviSabio Technical Specifications">
+                        <thead>
+                            <tr>
+                                <th scope="col">Domain</th>
+                                <th scope="col">Technology</th>
+                                <th scope="col">Purpose</th>
+                                <th scope="col">Input Data</th>
+                                <th scope="col">Processing / Algorithm</th>
+                                <th scope="col">Output Data</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tech-cell-component">Programming</td>
+                                <td class="tech-cell-tech">Python 3.11</td>
+                                <td>Core AI models, simulation orchestration, and spatial ETL</td>
+                                <td>Sensor logs, CCTV streams</td>
+                                <td>Asynchronous execution, vectorization</td>
+                                <td>Structured predictions</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Programming</td>
+                                <td class="tech-cell-tech">C++17</td>
+                                <td>Low-latency edge inference and controller serialization</td>
+                                <td>Raw frame buffers, serial bits</td>
+                                <td>NTCIP 1202 byte parsing</td>
+                                <td>Actuation commands</td>
+                                <td><span class="status-badge badge-active">ACTIVE DEV</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Computer Vision</td>
+                                <td class="tech-cell-tech">YOLOv8</td>
+                                <td>Real-time vehicle detection and multi-class classification</td>
+                                <td>H.264/H.265 RTSP streams</td>
+                                <td>Deep convolutional object detection</td>
+                                <td>Bounding boxes, classes</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Computer Vision</td>
+                                <td class="tech-cell-tech">OpenCV 4.9</td>
+                                <td>Tripwire line crossing, polygon zones, and video decoding</td>
+                                <td>RTSP video frames</td>
+                                <td>Perspective transform, morphological ops</td>
+                                <td>Lane counts, velocity</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Geospatial</td>
+                                <td class="tech-cell-tech">OpenStreetMap</td>
+                                <td>Base road network geometry, intersections, and lane rules</td>
+                                <td>OSM XML / PBF extracts</td>
+                                <td>Graph extraction via OSMnx</td>
+                                <td>Road topology graph</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Geospatial</td>
+                                <td class="tech-cell-tech">GeoPandas & PostGIS</td>
+                                <td>Spatial data transformation, corridor indexing, and querying</td>
+                                <td>Shapefiles, GeoJSON, GPS</td>
+                                <td>R-tree spatial indexing, ST_DWithin</td>
+                                <td>Spatial query results</td>
+                                <td><span class="status-badge badge-active">ACTIVE DEV</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Simulation</td>
+                                <td class="tech-cell-tech">SUMO 1.20+</td>
+                                <td>Microscopic traffic simulation of vehicles and pedestrians</td>
+                                <td>Network .net.xml, trip routes</td>
+                                <td>Krauss car-following, LC2013 lane change</td>
+                                <td>Vehicle trajectory logs</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Simulation</td>
+                                <td class="tech-cell-tech">TraCI (Python)</td>
+                                <td>Bidirectional runtime control of SUMO signal phases</td>
+                                <td>Real-time simulation state</td>
+                                <td>TCP socket RPC commands</td>
+                                <td>Dynamic phase changes</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Simulation</td>
+                                <td class="tech-cell-tech">CARLA</td>
+                                <td>Photorealistic 3D sensor simulation under weather anomalies</td>
+                                <td>3D town maps, weather states</td>
+                                <td>Unreal Engine 4 physics/rendering</td>
+                                <td>Synthetic camera frames</td>
+                                <td><span class="status-badge badge-research">RESEARCH</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">AI & ML</td>
+                                <td class="tech-cell-tech">PyTorch 2.2</td>
+                                <td>Deep learning model training, reinforcement learning agents</td>
+                                <td>Tensor batches of traffic states</td>
+                                <td>Gradient descent, AdamW optimizer</td>
+                                <td>Trained policy weights</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">AI Prediction</td>
+                                <td class="tech-cell-tech">LSTM / GRU</td>
+                                <td>Sequential multi-horizon traffic congestion forecasting</td>
+                                <td>Historical traffic count series</td>
+                                <td>Recurrent gated cell state transition</td>
+                                <td>10, 30, 60m predictions</td>
+                                <td><span class="status-badge badge-active">ACTIVE DEV</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Optimization</td>
+                                <td class="tech-cell-tech">MAXBAND</td>
+                                <td>Classical green-wave arterial bandwidth progression</td>
+                                <td>Intersection distances, speeds</td>
+                                <td>Mixed-Integer Linear Programming (MILP)</td>
+                                <td>Baseline green splits</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Backend</td>
+                                <td class="tech-cell-tech">FastAPI</td>
+                                <td>High-throughput asynchronous REST APIs & WebSockets</td>
+                                <td>JSON payloads, client requests</td>
+                                <td>AsyncIO event loop, Pydantic validation</td>
+                                <td>JSON responses, live streams</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Messaging</td>
+                                <td class="tech-cell-tech">MQTT</td>
+                                <td>Lightweight telemetry publishing between edge nodes and cloud</td>
+                                <td>Edge sensor readings, alerts</td>
+                                <td>Pub/sub topic hierarchy via QoS 1</td>
+                                <td>Low-bandwidth telemetry</td>
+                                <td><span class="status-badge badge-active">ACTIVE DEV</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Hardware Protocol</td>
+                                <td class="tech-cell-tech">NTCIP 1202</td>
+                                <td>Standard traffic signal controller communications</td>
+                                <td>ASC phase hold/omit commands</td>
+                                <td>SNMP/STMP byte serialization</td>
+                                <td>Physical signal timing</td>
+                                <td><span class="status-badge badge-planned">PLANNED</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">Infrastructure</td>
+                                <td class="tech-cell-tech">Docker & K8s (AKS)</td>
+                                <td>Microservices containerization and automated cluster scaling</td>
+                                <td>Dockerfile, Helm charts</td>
+                                <td>Pod autoscaling, health probes</td>
+                                <td>High-availability deployment</td>
+                                <td><span class="status-badge badge-active">ACTIVE DEV</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-cell-component">CI/CD & DevOps</td>
+                                <td class="tech-cell-tech">GitHub Actions</td>
+                                <td>Automated test execution, linting, and build verification</td>
+                                <td>Git commits and pull requests</td>
+                                <td>Linux runner testing, Docker build</td>
+                                <td>Verified build artifacts</td>
+                                <td><span class="status-badge badge-implemented">IMPLEMENTED</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION I: 6-LAYER SYSTEM ARCHITECTURE DIAGRAM                     -->
+        <!-- ================================================================== -->
+        <section id="system-architecture" class="platform-dark-contrast-section" aria-labelledby="arch-heading">
+            <div class="container">
+                <div class="architecture-diagram-header">
+                    <div class="platform-section-tag" style="border-color: #087EA4; color: #55D7E8; background: rgba(85, 215, 232, 0.1);" data-i18n="tag_section_i">Section I • System Topology</div>
+                    <h2 id="arch-heading" class="platform-section-title" data-i18n="heading_section_i">6-Layer Enterprise System Architecture</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_i">
+                        Visualizing the end-to-end data flow: from physical edge cameras and road sensors up through spatial ingestion, deep learning, digital twin simulation, and operator command actuation.
+                    </p>
+                </div>
+
+                <div class="architecture-visual-wrapper">
+                    <!-- Layer 6: Application & Operations -->
+                    <div class="arch-layer-card-enterprise" style="border-left: 5px solid #55D7E8;">
+                        <div class="arch-layer-badge-col">
+                            <span class="arch-layer-num">Layer 06 • Top</span>
+                            <span class="arch-layer-title">Applications & Operations</span>
+                        </div>
+                        <div class="arch-layer-content-col">
+                            <p class="arch-layer-description">
+                                Centralized situational awareness dashboard for municipal dispatchers, interactive Leaflet geospatial map, corridor performance analytics, and emergency preemption consoles.
+                            </p>
+                            <div class="arch-layer-chips">
+                                <span class="arch-chip">3D City Hall Dashboard</span>
+                                <span class="arch-chip">Leaflet Geospatial Map</span>
+                                <span class="arch-chip">Operator Override</span>
+                                <span class="arch-chip">Automated Reporting</span>
+                                <span class="arch-chip">NTCIP Controller Interface</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="status-badge badge-implemented">DEPLOYED</span>
+                        </div>
+                    </div>
+
+                    <div class="arch-flow-connector">▲ Bi-directional Telemetry & Actuation Commands ▼</div>
+
+                    <!-- Layer 5: Simulation & Decision Support -->
+                    <div class="arch-layer-card-enterprise" style="border-left: 5px solid #6C9CFF;">
+                        <div class="arch-layer-badge-col">
+                            <span class="arch-layer-num">Layer 05</span>
+                            <span class="arch-layer-title">Simulation & Decision Support</span>
+                        </div>
+                        <div class="arch-layer-content-col">
+                            <p class="arch-layer-description">
+                                Closed-loop validation sandbox testing AI-generated signal timing plans against microscopic vehicle behavior in SUMO before physical controller actuation.
+                            </p>
+                            <div class="arch-layer-chips">
+                                <span class="arch-chip">SUMO Microscopic Engine</span>
+                                <span class="arch-chip">TraCI Python Client</span>
+                                <span class="arch-chip">Scenario Evaluator</span>
+                                <span class="arch-chip">Policy Validator</span>
+                                <span class="arch-chip">CARLA 3D Co-Simulation</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="status-badge badge-implemented">SIM TESTED</span>
+                        </div>
+                    </div>
+
+                    <div class="arch-flow-connector">▲ Policy Bounds & Simulation States ▼</div>
+
+                    <!-- Layer 4: AI & Analytics -->
+                    <div class="arch-layer-card-enterprise" style="border-left: 5px solid #78DFB0;">
+                        <div class="arch-layer-badge-col">
+                            <span class="arch-layer-num">Layer 04</span>
+                            <span class="arch-layer-title">AI & Analytics Engines</span>
+                        </div>
+                        <div class="arch-layer-content-col">
+                            <p class="arch-layer-description">
+                                Deep learning inference pipelines: YOLOv8 edge vision, LSTM multi-horizon traffic forecasting, MAXBAND linear programming, and Deep Reinforcement Learning (DQN/PPO).
+                            </p>
+                            <div class="arch-layer-chips">
+                                <span class="arch-chip">YOLOv8 Edge Vision</span>
+                                <span class="arch-chip">LSTM Forecasting</span>
+                                <span class="arch-chip">Deep Q-Networks (DQN)</span>
+                                <span class="arch-chip">MAXBAND Green Waves</span>
+                                <span class="arch-chip">Explainable AI (XAI)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="status-badge badge-active">ACTIVE INFERENCE</span>
+                        </div>
+                    </div>
+
+                    <div class="arch-flow-connector">▲ Normalized Spatial Telemetry & Features ▼</div>
+
+                    <!-- Layer 3: Spatial Data Platform -->
+                    <div class="arch-layer-card-enterprise" style="border-left: 5px solid #F5B842;">
+                        <div class="arch-layer-badge-col">
+                            <span class="arch-layer-num">Layer 03</span>
+                            <span class="arch-layer-title">Spatial Data Platform</span>
+                        </div>
+                        <div class="arch-layer-content-col">
+                            <p class="arch-layer-description">
+                                High-availability geospatial data repository hosting PostgreSQL with PostGIS extensions. Executes spatial indexing, corridor network graph queries, and data validation.
+                            </p>
+                            <div class="arch-layer-chips">
+                                <span class="arch-chip">PostgreSQL 16 + PostGIS</span>
+                                <span class="arch-chip">GeoPandas ETL</span>
+                                <span class="arch-chip">R-tree Spatial Indexing</span>
+                                <span class="arch-chip">OpenStreetMap Parser</span>
+                                <span class="arch-chip">Redis Live State Cache</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="status-badge badge-active">PERSISTED</span>
+                        </div>
+                    </div>
+
+                    <div class="arch-flow-connector">▲ High-Throughput Ingestion Pipelines ▼</div>
+
+                    <!-- Layer 2: Data Ingestion -->
+                    <div class="arch-layer-card-enterprise" style="border-left: 5px solid #FF6B8B;">
+                        <div class="arch-layer-badge-col">
+                            <span class="arch-layer-num">Layer 02</span>
+                            <span class="arch-layer-title">Data Ingestion</span>
+                        </div>
+                        <div class="arch-layer-content-col">
+                            <p class="arch-layer-description">
+                                High-concurrency asynchronous ingestion cluster handling MQTT telemetry messages from edge devices, RTSP video streaming sockets, and RESTful API data feeds.
+                            </p>
+                            <div class="arch-layer-chips">
+                                <span class="arch-chip">FastAPI Asynchronous Gateway</span>
+                                <span class="arch-chip">MQTT Telemetry Broker</span>
+                                <span class="arch-chip">RTSP Video Decoder</span>
+                                <span class="arch-chip">WebSocket Real-Time Pipes</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="status-badge badge-implemented">SUBSCRIBED</span>
+                        </div>
+                    </div>
+
+                    <div class="arch-flow-connector">▲ Physical Field Signals & Telemetry Feeds ▼</div>
+
+                    <!-- Layer 1: Data Acquisition -->
+                    <div class="arch-layer-card-enterprise" style="border-left: 5px solid #A78BFA;">
+                        <div class="arch-layer-badge-col">
+                            <span class="arch-layer-num">Layer 01 • Base</span>
+                            <span class="arch-layer-title">Data Acquisition</span>
+                        </div>
+                        <div class="arch-layer-content-col">
+                            <p class="arch-layer-description">
+                                Existing physical municipal infrastructure: CCTV traffic cameras, transit bus GPS beacons, inductive loop detectors, weather stations, and local traffic controller cabinets.
+                            </p>
+                            <div class="arch-layer-chips">
+                                <span class="arch-chip">Municipal CCTV Cameras</span>
+                                <span class="arch-chip">Bus GPS Telemetry</span>
+                                <span class="arch-chip">Signal Controller Cabinets</span>
+                                <span class="arch-chip">Environmental IoT</span>
+                                <span class="arch-chip">Weather Stations</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="status-badge badge-implemented">FIELD READY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION J: DEPLOYMENT AND INTEGRATION                              -->
+        <!-- ================================================================== -->
+        <section id="deployment-integration" class="platform-light-section" aria-labelledby="deploy-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_j">Section J • Enterprise Operations</div>
+                    <h2 id="deploy-heading" class="platform-section-title" data-i18n="heading_section_j">Deployment Models & Controller Integration</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_j">
+                        Flexible hosting options designed to satisfy municipal data sovereignty requirements while maintaining deterministic fail-safe physical signal actuation.
+                    </p>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="j1_title">Cloud & On-Premises Flexibility</h3>
+                            <span class="status-badge badge-active">ACTIVE DEVELOPMENT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="j1_desc">
+                            Deployable on public cloud clusters (Microsoft Azure AKS / AWS EKS), private municipal data centers, or air-gapped on-premises servers to comply with government privacy regulations.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Cloud:</span><span class="product-meta-val">Azure Kubernetes Service with automated geo-redundancy</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">On-Prem:</span><span class="product-meta-val">Bare-metal Kubernetes / Docker Compose appliance</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="j2_title">Edge Synchronization & Offline Autonomy</h3>
+                            <span class="status-badge badge-active">ACTIVE DEVELOPMENT</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="j2_desc">
+                            Edge devices run local inference and retain baseline timing configurations. If wide-area network connectivity drops, edge controllers operate independently without interruption.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Resilience:</span><span class="product-meta-val">Zero reliance on continuous cloud connectivity for local safety</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Sync:</span><span class="product-meta-val">Automatic state reconciliation when connectivity resumes</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="j3_title">Controller Integration & Fail-Safe Air-Gap</h3>
+                            <span class="status-badge badge-planned">PLANNED (SAFETY AUDITED)</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="j3_desc">
+                            Signal cabinet actuation is executed strictly through authorized NTCIP 1202 protocols. The local controller conflict monitor retains absolute hardware priority; any anomalous command reverts immediately to fixed fallback timings.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Fail-Safe:</span><span class="product-meta-val">Hardware Conflict Monitor Unit (CMU) override guarantee</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Prerequisite:</span><span class="product-meta-val">Requires field bench validation and municipal authorization</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION K: SECURITY AND GOVERNANCE                                 -->
+        <!-- ================================================================== -->
+        <section id="security-governance" class="platform-light-section-alt" aria-labelledby="sec-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_k">Section K • Enterprise Compliance</div>
+                    <h2 id="sec-heading" class="platform-section-title" data-i18n="heading_section_k">Security, Data Governance & Privacy</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_k">
+                        Built from the ground up for strict regulatory compliance, data sovereignty, and human-in-the-loop operational oversight.
+                    </p>
+                </div>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="k1_title">Authentication, Encryption & RBAC</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="k1_desc">
+                            All communications are encrypted using TLS 1.3 in transit and AES-256 at rest. Fine-grained Role-Based Access Control (RBAC) separates viewer permissions (analysts) from actuation privileges (authorized dispatchers).
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Auth:</span><span class="product-meta-val">OAuth 2.0 / OpenID Connect with Multi-Factor Authentication</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Keys:</span><span class="product-meta-val">Secrets isolated in Azure Key Vault / Hardware Security Modules</span></div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-light">
+                        <div class="product-card-header">
+                            <h3 class="product-card-title" data-i18n="k2_title">Privacy-by-Design & GDPR/LGPD Compliance</h3>
+                            <span class="status-badge badge-implemented">IMPLEMENTED</span>
+                        </div>
+                        <p class="product-card-desc" data-i18n="k2_desc">
+                            CCTV video streams are processed exclusively in volatile memory at edge nodes. Video frames are discarded immediately after object detection; no private identities or raw citizen faces are transmitted to central servers.
+                        </p>
+                        <div class="product-meta-block">
+                            <div class="product-meta-item"><span class="product-meta-label">Regulations:</span><span class="product-meta-val">Compliant with European GDPR & Brazilian LGPD standards</span></div>
+                            <div class="product-meta-item"><span class="product-meta-label">Audit:</span><span class="product-meta-val">Tamper-evident audit logs record all timing adjustments and logins</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- SECTION L: RESEARCH, INNOVATION & ROADMAP                          -->
+        <!-- ================================================================== -->
+        <section id="research-roadmap" class="platform-light-section" aria-labelledby="roadmap-heading">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="platform-section-tag" data-i18n="tag_section_l">Section L • Strategic Horizon</div>
+                    <h2 id="roadmap-heading" class="platform-section-title" data-i18n="heading_section_l">Research Direction & 4-Phase Municipal Roadmap</h2>
+                    <p class="platform-section-subtitle" style="margin: 0 auto;" data-i18n="sub_section_l">
+                        A structured progression demonstrating current technical capabilities, near-term development milestones, and long-term quantum-ready territorial research.
+                    </p>
+                </div>
+
+                <div class="grid-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 3rem;">
+                    <div class="product-card-light" style="border-top: 4px solid #087EA4;">
+                        <span class="status-badge badge-implemented" style="margin-bottom: 8px;">PHASE 01 • WEEKS 1–4</span>
+                        <h3 style="font-size: 1.1rem; font-weight: 700; color: #10243B; margin-bottom: 8px;">Corridor Sandbox Modeling</h3>
+                        <p style="font-size: 0.88rem; color: #526579; line-height: 1.55;">
+                            Ingest road geometry from OpenStreetMap. Calibrate baseline vehicle flows inside the SUMO simulator to establish empirical delay benchmarks.
                         </p>
                     </div>
 
-                    <div class="metric-card" style="border-top: 4px solid var(--accent-secondary);">
-                        <div style="font-family: var(--font-mono); color: var(--accent-secondary); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 02 • WEEKS 5–8</div>
-                        <div class="metric-label" style="font-size: 1.15rem;">Corridor Sandbox (Shadow Mode)</div>
-                        <p class="metric-sub">
-                            Connect edge hardware to 5–10 intersections. The AI observes real-time CCTV feeds and computes optimal timings in "shadow mode" without physical actuation.
+                    <div class="product-card-light" style="border-top: 4px solid #2563EB;">
+                        <span class="status-badge badge-active" style="margin-bottom: 8px;">PHASE 02 • WEEKS 5–8</span>
+                        <h3 style="font-size: 1.1rem; font-weight: 700; color: #10243B; margin-bottom: 8px;">Shadow Mode Calibration</h3>
+                        <p style="font-size: 0.88rem; color: #526579; line-height: 1.55;">
+                            Connect edge hardware to 5–10 intersections. The AI observes real-time camera feeds and calculates optimal signal splits without physical light actuation.
                         </p>
                     </div>
 
-                    <div class="metric-card" style="border-top: 4px solid var(--accent-success);">
-                        <div style="font-family: var(--font-mono); color: var(--accent-success); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 03 • WEEKS 9–14</div>
-                        <div class="metric-label" style="font-size: 1.15rem;">Active Pilot Actuation</div>
-                        <p class="metric-sub">
+                    <div class="product-card-light" style="border-top: 4px solid #0E7490;">
+                        <span class="status-badge badge-planned" style="margin-bottom: 8px;">PHASE 03 • WEEKS 9–14</span>
+                        <h3 style="font-size: 1.1rem; font-weight: 700; color: #10243B; margin-bottom: 8px;">Active Pilot Actuation</h3>
+                        <p style="font-size: 0.88rem; color: #526579; line-height: 1.55;">
                             Activate dynamic signal adjustment during off-peak hours first, expanding to 24/7 autonomous coordination under strict MAXBAND fail-safe constraints.
                         </p>
                     </div>
 
-                    <div class="metric-card" style="border-top: 4px solid var(--accent-warning);">
-                        <div style="font-family: var(--font-mono); color: var(--accent-warning); font-size: 0.8rem; font-weight: bold; margin-bottom: 6px;">PHASE 04 • WEEKS 15+</div>
-                        <div class="metric-label" style="font-size: 1.15rem;">City-Wide Expansion</div>
-                        <p class="metric-sub">
-                            Unveil the 3D Digital Twin Command Center at City Hall. Expand AI coordination across adjacent arterial corridors and connect public transit priority.
+                    <div class="product-card-light" style="border-top: 4px solid #7E22CE;">
+                        <span class="status-badge badge-research" style="margin-bottom: 8px;">PHASE 04 • WEEKS 15+</span>
+                        <h3 style="font-size: 1.1rem; font-weight: 700; color: #10243B; margin-bottom: 8px;">City-Wide Expansion</h3>
+                        <p style="font-size: 0.88rem; color: #526579; line-height: 1.55;">
+                            Unveil the 3D Digital Twin Command Center at City Hall. Scale AI coordination across adjacent arterial corridors and connect public transit priority.
                         </p>
                     </div>
                 </div>
 
-                <!-- Call to Action Banner -->
-                <div style="margin-top: var(--space-3xl); background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: var(--space-2xl); text-align: center;">
-                    <h3 style="color: var(--text-primary); margin-bottom: var(--space-sm);">Ready to Explore a Pilot Corridor for Your Municipality?</h3>
-                    <p style="color: var(--text-secondary); max-width: 680px; margin: 0 auto var(--space-xl);">
-                        Our engineering team works with municipal departments of transportation to model existing traffic networks in SUMO and evaluate baseline improvement projections.
+                <!-- Call to Action Card -->
+                <div style="background: #FFFFFF; border: 1px solid #DCE5EF; border-radius: 16px; padding: 36px 24px; text-align: center; max-width: 900px; margin: 0 auto; box-shadow: 0 10px 30px rgba(16, 36, 59, 0.06);">
+                    <h3 style="font-size: 1.45rem; font-weight: 800; color: #10243B; margin-bottom: 10px;" data-i18n="cta_final_title">Ready to Model Your Municipality in our Digital Twin?</h3>
+                    <p style="color: #526579; max-width: 720px; margin: 0 auto 22px; font-size: 1rem; line-height: 1.6;" data-i18n="cta_final_desc">
+                        We collaborate with municipal transport departments, university researchers, and smart-city operators to deploy low-risk, high-impact corridor pilots.
                     </p>
-                    <div style="display: flex; justify-content: center; gap: var(--space-md); flex-wrap: wrap;">
-                        <a href="contact.html" class="btn btn-primary btn-lg">Request a Pilot Scoping Call →</a>
-                        <a href="technology.html" class="btn btn-outline btn-lg">Inspect Full Technology Stack</a>
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="btn_schedule_scoping">Schedule a Scoping Call →</a>
+                        <a href="technology.html" class="btn btn-secondary btn-lg" data-i18n="btn_view_tech">Inspect Technology Architecture</a>
+                        <a href="partners.html" class="btn btn-outline btn-lg" data-i18n="btn_submit_pitch">Submit Open Innovation Pitch</a>
                     </div>
                 </div>
             </div>
@@ -394,7 +1181,7 @@
     </main>
 
     <!-- ====================================================================== -->
-    <!-- FOOTER                                                                 -->
+    <!-- ENTERPRISE FOOTER (DARK CONTRAST SHELL)                                -->
     <!-- ====================================================================== -->
     <footer class="footer-enterprise" role="contentinfo">
         <div class="container">
@@ -450,6 +1237,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- 1. Corporate Homepage -->
+  <url>
+    <loc>https://www.movisabio.com/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- 2. Enterprise Smart City Platform -->
+  <url>
+    <loc>https://www.movisabio.com/platform.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/platform.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/platform.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/platform.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/platform.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/platform.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/platform.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- 3. Modular Solutions Catalog -->
+  <url>
+    <loc>https://www.movisabio.com/solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/solutions.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/solutions.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/solutions.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/solutions.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/solutions.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/solutions.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 4. Technology & Architecture -->
+  <url>
+    <loc>https://www.movisabio.com/technology.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/technology.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/technology.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/technology.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/technology.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/technology.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/technology.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/technology.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 5. Global Presence & Regional Corridors -->
+  <url>
+    <loc>https://www.movisabio.com/global.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/global.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/global.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/global.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/global.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/global.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/global.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/global.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 6. Research & Innovation -->
+  <url>
+    <loc>https://www.movisabio.com/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/research.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/research.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/research.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/research.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/research.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/research.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 7. About MoviSabio -->
+  <url>
+    <loc>https://www.movisabio.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/about.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/about.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/about.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/about.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/about.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/about.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 8. Leadership & Governance -->
+  <url>
+    <loc>https://www.movisabio.com/leadership.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/leadership.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/leadership.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/leadership.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/leadership.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/leadership.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/leadership.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/leadership.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 9. Institutional Partnerships & Open Innovation -->
+  <url>
+    <loc>https://www.movisabio.com/partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/partners.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/partners.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/partners.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/partners.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/partners.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/partners.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/partners.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 10. Multi-Pathway Contact -->
+  <url>
+    <loc>https://www.movisabio.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/contact.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/contact.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/contact.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/contact.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/contact.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/contact.html?lang=zh"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>

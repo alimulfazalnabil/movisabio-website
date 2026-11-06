@@ -1,0 +1,1004 @@
+// --- SCRIPT 0 ---
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        // Initialize Global Tag Manager Routing
+        gtag('config', 'GT-P3552MX8');
+
+        // Initialize Google Analytics 4 Stream Destination
+        gtag('config', 'G-8H2FTKWGJB', {
+            'cookie_flags': 'SameSite=None;Secure'
+        });
+    
+
+// --- SCRIPT 1 ---
+
+        // --- 1. LANGUAGE TRANSLATION ENGINE (i18n) ---
+        const i18n = {
+            en: {
+                nav_solutions: "Our Solutions", nav_leadership: "Leadership", nav_about: "About Us", nav_roadmap: "Roadmap", nav_videos: "Videos", nav_contact: "Contact", nav_economics: "Economics", nav_submit_idea: "💡 Submit Idea",
+                hero_title: "AI & Quantum-Ready Territorial Intelligence Platform",
+                hero_subtitle: "Transforming fragmented data into actionable intelligence. We integrate AI, IoT, electric mobility, environmental monitoring, and quantum computing into a unified digital ecosystem for urban and rural territories.",
+                sec_portfolio: "Our Tech Portfolio", sec_leadership: "Company Leadership", sec_about: "About MoviSabio", sec_impact: "Global Impact & Pilot Programs", sec_roadmap: "18-Month Strategic Timeline", sec_videos: "Project Videos & Media", sec_partner: "Partner With Us", sec_economics: "Market Opportunity & Unit Economics", sec_submit_idea: "Open Innovation: Submit Your Project Idea",
+                title_cto: "Chief Technology Officer", title_public: "Public Sector Relations", title_partners: "Strategic Partnerships", title_research: "Research Lead",
+                card_mission_title: "Global Vision & Mission", card_mission_text: "We are building the world's leading Territorial Intelligence Platform. Our mission is to scale AI, IoT, and quantum-ready digital ecosystems globally, empowering governments, enterprises, and communities across all continents to make evidence-based, sustainable decisions.",
+                card_structure_title: "Borderless SaaS Architecture", card_structure_text: "Engineered for immediate international deployment, our cloud-native platform transforms fragmented territorial data into standardized, actionable intelligence. We enable rapid cross-border scalability without requiring heavy, localized hardware infrastructure.",
+                card_strategy_title: "Worldwide Climate & ESG Impact", card_strategy_text: "Addressing universal challenges in urbanization, agriculture, and resource management. Our predictive AI models help global municipalities and organizations optimize mobility, drastically reduce carbon footprints, and meet rigorous international ESG standards.",
+                pilot_br_title: "Campinas, Brazil", pilot_br_text: "Our flagship pilot region testing AI-coordinated traffic signaling against traditional fixed-time models in mid-sized urban corridors.",
+                pilot_uy_title: "Montevideo, Uruguay", pilot_uy_text: "Utilizing OpenStreetMap data and municipal traffic sensors to build highly accurate digital twins for traffic flow prediction.",
+                sdg_11: "UN SDG 11: Sustainable Cities & Communities", sdg_13: "UN SDG 13: Climate Action (Targeting 15-30% CO2 Reduction)",
+                ask_title: "Current Status: Phase 1 (Foundation & Scoping)", ask_text: "We are actively seeking academic research partnerships, Letters of Intent (LOIs) from municipal traffic departments in LATAM, and non-dilutive climate tech grants to fund our initial SUMO simulation benchmarks.",
+                contact_pilot_title: "📍 Pilot Operations", contact_general_title: "✉️ General Inquiries", btn_send: "Send Message"
+            },
+            es: {
+                nav_solutions: "Soluciones", nav_leadership: "Liderazgo", nav_about: "Nosotros", nav_roadmap: "Hoja de Ruta", nav_videos: "Videos", nav_contact: "Contacto", nav_economics: "Economía", nav_submit_idea: "💡 Envía tu Idea",
+                hero_title: "Plataforma de Inteligencia Territorial Preparada para IA y Cuántica",
+                hero_subtitle: "Transformamos datos fragmentados en inteligencia procesable. Integramos IA, IoT, movilidad eléctrica, monitoreo ambiental y computación cuántica en un ecosistema digital unificado para territorios urbanos y rurales.",
+                sec_portfolio: "Nuestro Portafolio Tecnológico", sec_leadership: "Liderazgo de la Empresa", sec_about: "Sobre MoviSabio", sec_impact: "Impacto Global y Pilotos", sec_roadmap: "Línea de Tiempo Estratégica", sec_videos: "Vídeos del Proyecto y Medios", sec_partner: "Asóciate con Nosotros", sec_economics: "Oportunidad de Mercado y Economía de Unidad", sec_submit_idea: "Innovación Abierta: Envía tu Idea de Proyecto",
+                title_cto: "Director de Tecnología", title_public: "Relaciones con el Sector Público", title_partners: "Alianzas Estratégicas", title_research: "Líder de Investigación",
+                card_mission_title: "Nuestra Visión y Misión", card_mission_text: "Convertirnos en la plataforma de inteligencia territorial líder en América Latina. Transformamos datos territoriales en inteligencia estratégica, empoderando a gobiernos, organizaciones y comunidades para tomar decisiones basadas en evidencia mediante análisis impulsados por IA y computación de próxima generación.",
+                card_structure_title: "Propuesta de Valor para Inversores", card_structure_text: '"Utilizamos inteligencia de datos impulsada por IA para optimizar la movilidad, la sostenibilidad y la gestión de recursos en territorios rurales y urbanos, permitiendo decisiones más inteligentes, mayor eficiencia y un impacto ambiental a largo plazo."',
+                card_strategy_title: "La Ventaja Cuántica", card_strategy_text: "La computación cuántica es una extensión natural de nuestra estrategia de innovación. Aprovechamos plataformas en la nube híbridas clásico-cuánticas para resolver problemas de optimización territorial computacionalmente intensivos que están fuera del alcance de la computación convencional.",
+                pilot_br_title: "Campinas, Brasil", pilot_br_text: "Nuestra región piloto principal probando señalización de tráfico coordinada por IA contra modelos tradicionales en corredores urbanos medianos.",
+                pilot_uy_title: "Montevideo, Uruguay", pilot_uy_text: "Utilizando datos de OpenStreetMap y sensores municipales para construir gemelos digitales altamente precisos.",
+                sdg_11: "ODS 11: Ciudades y Comunidades Sostenibles", sdg_13: "ODS 13: Acción por el Clima (Meta: 15-30% Reducción de CO2)",
+                ask_title: "Estado Actual: Fase 1 (Fundación y Alcance)", ask_text: "Buscamos activamente asociaciones de investigación académica, Cartas de Intención (LOI) de departamentos de tránsito e inversiones tecnológicas climáticas no dilutivas.",
+                contact_pilot_title: "📍 Operaciones Piloto", contact_general_title: "✉️ Consultas Generales", btn_send: "Enviar Mensaje"
+            },
+            pt: {
+                nav_solutions: "Soluções", nav_leadership: "Liderança", nav_about: "Sobre Nós", nav_roadmap: "Roteiro", nav_videos: "Vídeos", nav_contact: "Contato", nav_economics: "Economia", nav_submit_idea: "💡 Envie sua Ideia",
+                hero_title: "Plataforma de Inteligência Territorial Preparada para IA e Quântica",
+                hero_subtitle: "Transformando dados fragmentados em inteligência acionável. Integramos IA, IoT, mobilidade elétrica, monitoramento ambiental e computação quântica em um ecossistema digital unificado para territórios urbanos e rurais.",
+                sec_portfolio: "Nosso Portfólio de Tecnologia", sec_leadership: "Liderança da Empresa", sec_about: "Sobre a MoviSabio", sec_impact: "Impacto Global e Projetos Piloto", sec_roadmap: "Cronograma Estratégico", sec_videos: "Vídeos e Mídia do Projeto", sec_partner: "Seja nosso Parceiro", sec_economics: "Oportunidade de Mercado e Economia de Unidade", sec_submit_idea: "Inovação Aberta: Envie sua Ideia de Projeto",
+                title_cto: "Diretor de Tecnologia", title_public: "Relações com o Setor Público", title_partners: "Parcerias Estratégicas", title_research: "Líder de Pesquisa",
+                card_mission_title: "Nossa Visão e Missão", card_mission_text: "Tornar-nos a principal plataforma de inteligência territorial da América Latina. Transformamos dados territoriais em inteligência estratégica, capacitando governos, organizações e comunidades a tomar decisões baseadas em evidências através de análises impulsionadas por IA e computação de próxima geração.",
+                card_structure_title: "Proposta de Valor para Investidores", card_structure_text: '"Usando inteligência de dados impulsionada por IA para otimizar a mobilidade, a sustentabilidade e a gestão de recursos em territórios rurais e urbanos, permitindo decisões mais inteligentes, maior eficiência e impacto ambiental a longo prazo."',
+                card_strategy_title: "A Vantagem Quântica", card_strategy_text: "A computação quântica é uma extensão natural da nossa estratégia de inovação. Usamos plataformas em nuvem híbridas clássico-quânticas para resolver problemas de otimização territorial computacionalmente intensivos que estão além do alcance da computação convencional.",
+                pilot_br_title: "Campinas, Brasil", pilot_br_text: "A nossa região piloto principal, a testar a sinalização coordenada por IA contra modelos tradicionais em corredores urbanos.",
+                pilot_uy_title: "Montevidéu, Uruguai", pilot_uy_text: "Utilizando dados do OpenStreetMap e sensores municipais para construir gêmeos digitais altamente precisos.",
+                sdg_11: "ODS 11: Cidades e Comunidades Sustentáveis", sdg_13: "ODS 13: Ação Climática (Meta: 15-30% Redução de CO2)",
+                ask_title: "Estado Atual: Fase 1 (Fundação e Escopo)", ask_text: "Buscamos ativamente parcerias de pesquisa acadêmica, Cartas de Intenção (LOI) de departamentos de trânsito e financiamentos climáticos não diluidores.",
+                contact_pilot_title: "📍 Operações Piloto", contact_general_title: "✉️ Consultas Gerais", btn_send: "Enviar Mensagem"
+            },
+            it: {
+                nav_solutions: "Soluzioni", nav_leadership: "Leadership", nav_about: "Chi Siamo", nav_roadmap: "Roadmap", nav_videos: "Video", nav_contact: "Contatti", nav_economics: "Economia", nav_submit_idea: "💡 Invia Idea",
+                hero_title: "Piattaforma di Intelligenza Territoriale Pronta per IA e Quantistica",
+                hero_subtitle: "Trasformiamo dati frammentati in intelligenza fruibile. Integriamo IA, IoT, mobilità elettrica, monitoraggio ambientale e informatica quantistica in un ecosistema digitale unificato per territori urbani e rurali.",
+                sec_portfolio: "Il Nostro Portafoglio Tecnologico", sec_leadership: "Leadership Aziendale", sec_about: "Su MoviSabio", sec_impact: "Impatto Globale e Programmi Pilota", sec_roadmap: "Cronologia Strategica", sec_videos: "Video e Media del Progetto", sec_partner: "Collabora con Noi", sec_economics: "Opportunità di Mercato ed Economia Unitaria", sec_submit_idea: "Innovazione Aperta: Invia la tua Idea di Progetto",
+                title_cto: "Chief Technology Officer", title_public: "Relazioni con il Settore Pubblico", title_partners: "Partnership Strategiche", title_research: "Responsabile Ricerca",
+                card_mission_title: "La Nostra Visione e Missione", card_mission_text: "Diventare la principale piattaforma di intelligenza territoriale dell'America Latina. Trasformiamo i dati territoriali in intelligenza strategica, consentendo a governi, organizzazioni e comunità di prendere decisioni basate su prove attraverso analisi basate sull'IA e informatica di nuova generazione.",
+                card_structure_title: "Proposta di Valore per gli Investitori", card_structure_text: '"Utilizziamo l\'intelligenza dei dati guidata dall\'IA per ottimizzare la mobilità, la sostenibilità e la gestione delle risorse nei territori rurali e urbani, consentendo decisioni più intelligenti, una maggiore efficienza e un impatto ambientale a lungo termine."',
+                card_strategy_title: "Il Vantaggio Quantistico", card_strategy_text: "L'informatica quantistica è un'estensione naturale della nostra strategia di innovazione. Sfruttiamo piattaforme cloud ibride classico-quantistiche per risolvere problemi di ottimizzazione territoriale ad alta intensità di calcolo che sono al di fuori della portata dell'informatica convenzionale.",
+                pilot_br_title: "Campinas, Brasile", pilot_br_text: "La nostra regione pilota principale che testa la coordinazione dei segnali di traffico alimentata da IA rispetto ai modelli tradizionali nei corridoi urbani di medie dimensioni.",
+                pilot_uy_title: "Montevideo, Uruguay", pilot_uy_text: "Utilizzo di dati OpenStreetMap e sensori municipali per costruire gemelli digitali altamente accurati.",
+                sdg_11: "SDG ONU 11: Città e Comunità Sostenibili", sdg_13: "SDG ONU 13: Azione Climatica (Riduzione CO2 del 15-30%)",
+                ask_title: "Stato Attuale: Fase 1 (Fondazione e Portata)", ask_text: "Stiamo attivamente cercando partnership di ricerca accademica, Lettere di Intenti da dipartimenti di traffico municipali e sovvenzioni per tecnologie climatiche non dilutive.",
+                contact_pilot_title: "📍 Operazioni Pilota", contact_general_title: "✉️ Richieste Generali", btn_send: "Invia Messaggio"
+            },
+            de: {
+                nav_solutions: "Unsere Lösungen", nav_leadership: "Führungsteam", nav_about: "Über Uns", nav_roadmap: "Roadmap", nav_videos: "Videos", nav_contact: "Kontakt", nav_economics: "Wirtschaftlichkeit", nav_submit_idea: "💡 Idee Einreichen",
+                hero_title: "KI- und quantenbereite Plattform für territoriale Intelligenz",
+                hero_subtitle: "Wir verwandeln fragmentierte Daten in handlungsrelevante Erkenntnisse. Wir integrieren KI, IoT, Elektromobilität, Umweltüberwachung und Quantencomputing in ein einheitliches digitales Ökosystem für städtische und ländliche Gebiete.",
+                sec_portfolio: "Unser Technologie-Portfolio", sec_leadership: "Unternehmensführung", sec_about: "Über MoviSabio", sec_impact: "Globale Auswirkung und Pilotprogramme", sec_roadmap: "Strategischer Zeitplan", sec_videos: "Projektvideos und Medien", sec_partner: "Partnern Sie mit Uns", sec_economics: "Marktchancen und Unit Economics", sec_submit_idea: "Open Innovation: Reichen Sie Ihre Projektidee ein",
+                title_cto: "Chief Technology Officer", title_public: "Beziehungen zum öffentlichen Sektor", title_partners: "Strategische Partnerschaften", title_research: "Forschungsleiter",
+                card_mission_title: "Unsere Vision und Mission", card_mission_text: "Die führende Plattform für territoriale Intelligenz in Lateinamerika zu werden. Wir verwandeln territoriale Daten in strategische Erkenntnisse und befähigen Regierungen, Organisationen und Gemeinden, fundierte Entscheidungen durch KI-gestützte Analysen und Computertechnologien der nächsten Generation zu treffen.",
+                card_structure_title: "Wertversprechen für Investoren", card_structure_text: '"Einsatz von KI-gestützter Datenintelligenz zur Optimierung von Mobilität, Nachhaltigkeit und Ressourcenmanagement in städtischen und ländlichen Gebieten für intelligentere Entscheidungen, höhere Effizienz und langfristige positive Umweltauswirkungen."',
+                card_strategy_title: "Der Quantenvorteil", card_strategy_text: "Das Quantencomputing ist eine natürliche Erweiterung unserer Innovationsstrategie. Wir nutzen hybride klassisch-quantenmechanische Cloud-Plattformen, um rechenintensive territoriale Optimierungsprobleme zu lösen, die die Möglichkeiten herkömmlicher Computer übersteigen.",
+                pilot_br_title: "Campinas, Brasilien", pilot_br_text: "Unsere Flaggschiff-Pilotregion testet die KI-koordinierte Ampelsteuerung gegen traditionelle Modelle in mittelgroßen Stadtkorridoren.",
+                pilot_uy_title: "Montevideo, Uruguay", pilot_uy_text: "Verwendung von OpenStreetMap-Daten und städtischen Sensoren zur Erstellung hochgenauer digitaler Zwillinge.",
+                sdg_11: "UN SDG 11: Nachhaltige Städte und Gemeinden", sdg_13: "UN SDG 13: Maßnahmen zum Klimaschutz (Angestrebte CO2-Reduktion 15-30%)",
+                ask_title: "Aktueller Status: Phase 1 (Grundlagen und Umfang)", ask_text: "Wir suchen aktiv nach akademischen Forschungspartnerschaften, Absichtserklärungen von städtischen Verkehrsbehörden und nicht verwässernden Klimatechnik-Zuschüssen.",
+                contact_pilot_title: "📍 Pilot-Operationen", contact_general_title: "✉️ Allgemeine Anfragen", btn_send: "Nachricht Senden"
+            },
+            zh: {
+                nav_solutions: "我们的解决方案", nav_leadership: "领导力", nav_about: "关于我们", nav_roadmap: "路线图", nav_videos: "视频", nav_contact: "联系方式", nav_economics: "商业经济", nav_submit_idea: "💡 提交创意",
+                hero_title: "面向人工智能与量子计算的地域智能平台",
+                hero_subtitle: "将零散的数据转化为可行动的智能。我们将人工智能、物联网、电动出行、环境监测和量子计算整合到一个统一的城乡数字化生态系统中。",
+                sec_portfolio: "我们的技术组合", sec_leadership: "企业领导力", sec_about: "关于 MoviSabio", sec_impact: "全球影响力和试点项目", sec_roadmap: "18 个月战略时间表", sec_videos: "项目视频和媒体", sec_partner: "与我们合作", sec_economics: "市场机遇与单位经济效益", sec_submit_idea: "开放创新：提交您的项目创意",
+                title_cto: "首席技术官", title_public: "公共部门关系", title_partners: "战略伙伴关系", title_research: "研究负责人",
+                card_mission_title: "我们的愿景与使命", card_mission_text: "成为拉丁美洲领先的地域智能平台。我们将地域数据转化为战略情报，通过人工智能分析和下一代计算技术，赋能政府、组织和社区做出科学的决策。",
+                card_structure_title: "投资者价值主张", card_structure_text: '“利用人工智能驱动的数据智能，优化城乡地域的流动性、可持续性和资源管理，促成更加智能的决策、更高的效率以及长期的环境影响力。”',
+                card_strategy_title: "量子优势", card_strategy_text: "量子计算是我们创新战略的自然延伸。我们利用混合经典-量子云平台来解决传统计算无法企及的计算密集型地域优化问题。",
+                pilot_br_title: "坎皮纳斯，巴西", pilot_br_text: "我们的旗舰试点区域，测试人工智能协调的交通信号控制与中等规模城市走廊中的传统模型的对比。",
+                pilot_uy_title: "蒙得维的亚，乌拉圭", pilot_uy_text: "利用 OpenStreetMap 数据和市政传感器构建高精度的数字孪生体。",
+                sdg_11: "联合国可持续发展目标 11：可持续城市和社区", sdg_13: "联合国可持续发展目标 13：气候行动（目标：15-30% 二氧化碳减少量）",
+                ask_title: "当前状态：第 1 阶段（基础和范围）", ask_text: "我们积极寻求学术研究合作伙伴关系、来自市政交通部门的意向书以及无稀释气候技术补助金。",
+                contact_pilot_title: "📍 试点运营", contact_general_title: "✉️ 常规询询问", btn_send: "发送消息"
+            }
+        };
+        function setLanguage(lang) {
+            const langSelect = document.getElementById('lang-select');
+            if (langSelect) langSelect.value = lang;
+
+            // Find all elements with a data-i18n attribute and translate them
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (i18n[lang] && Object.prototype.hasOwnProperty.call(i18n[lang], key)) {
+                    element.innerHTML = i18n[lang][key];
+                }
+            });
+        }
+        setLanguage('en');
+
+        // --- 2.5 PROJECT VIDEOS DATABASE ---
+        const projectVideos = [
+            {
+                id: 1,
+                title: "AI Traffic Signal Demo - Campinas",
+                date: "March 2026",
+                thumbnail: "🎥",
+                youtubeId: "4Gexo2-tHFs",
+                description: "Watch our AI-powered traffic signal system in action at Campinas, Brazil. The system reduces intersection wait times by up to 45% using deep reinforcement learning while maintaining safety constraints."
+            },
+            {
+                id: 2,
+                title: "Digital Twin Technology Explanation",
+                date: "February 2026",
+                thumbnail: "🌐",
+                youtubeId: "",
+                description: "Learn how MoviSabio builds highly accurate digital twins using OpenStreetMap data and municipal sensors to predict traffic flow patterns and optimize signal timing in real-time."
+            },
+            {
+                id: 3,
+                title: "Montevideo Pilot Launch Event",
+                date: "January 2026",
+                thumbnail: "🚦",
+                youtubeId: "",
+                description: "Highlights from our Montevideo, Uruguay pilot program launch. See how our team collaborated with municipal authorities to deploy the AI traffic coordination system across key city intersections."
+            },
+            {
+                id: 4,
+                title: "Computer Vision Vehicle Detection",
+                date: "December 2025",
+                thumbnail: "👁️",
+                youtubeId: "",
+                description: "Showcase of our YOLOv8-based vehicle detection system processing real-time CCTV feeds. The system accurately counts and classifies vehicles to feed data into our core AI optimization engine."
+            },
+            {
+                id: 5,
+                title: "Sustainability Impact Overview",
+                date: "November 2025",
+                thumbnail: "🌍",
+                youtubeId: "",
+                description: "Discover how MoviSabio's solutions contribute to UN Sustainable Development Goals 11 and 13. Our technology targets 15-30% CO2 reduction in urban traffic corridors while improving quality of life."
+            },
+            {
+                id: 6,
+                title: "Leadership Team Introduction",
+                date: "October 2025",
+                thumbnail: "👥",
+                youtubeId: "",
+                description: "Meet the talented founders and leadership team behind MoviSabio. Hear their vision for solving urban mobility challenges through AI and technology in developing regions."
+            }
+        ];
+
+        // --- 2.6 VIDEOS PAGE LOGIC ---
+        const videoGridElement = document.getElementById('video-grid');
+        projectVideos.forEach(video => {
+            const videoCardHTML = `
+                <div class="video-card" onclick="openVideoModal(${video.id})">
+                    <div class="video-thumbnail" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-blue));">${video.thumbnail}</div>
+                    <div class="video-content">
+                        <h3>${video.title}</h3>
+                        <p>${video.description}</p>
+                        <div class="video-date">📅 ${video.date}</div>
+                    </div>
+                </div>
+            `;
+            videoGridElement.innerHTML += videoCardHTML;
+        });
+
+        function openVideoModal(videoId) {
+            const video = projectVideos.find(v => v.id === videoId);
+            document.getElementById('modal-video-title').innerText = video.title;
+            document.getElementById('modal-video-iframe').src = `https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&loop=1&playlist=${video.youtubeId}`;
+            document.getElementById('modal-video-description').innerText = video.description;
+            document.getElementById('video-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            document.getElementById('video-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function openLeaderModal(name, position, motto) {
+            document.getElementById('modal-leader-name').innerText = name;
+            document.getElementById('modal-leader-position').innerText = position;
+            document.getElementById('modal-leader-motto').innerText = motto;
+            document.getElementById('leader-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLeaderModal() {
+            document.getElementById('leader-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            const videoModal = document.getElementById('video-modal');
+            const leaderModal = document.getElementById('leader-modal');
+            if (event.target === videoModal) {
+                closeVideoModal();
+            }
+            if (event.target === leaderModal) {
+                closeLeaderModal();
+            }
+        }
+
+
+        // --- 2. PROJECT DATABASE (HTML INJECTION) ---
+        const techSolutions = [
+            
+            {
+        id: 5,
+        title: "movisabio-enterprise-smart-city",
+        badge: "Enterprise Platform",
+        badgeColor: "var(--white)",
+        badgeBg: "linear-gradient(135deg, var(--primary-color), var(--accent-blue))",
+        borderColor: "var(--accent-blue)",
+        shortDesc: "A next-generation smart city and intelligent transportation platform acting as the central nervous system of modern urban areas.",
+        subtitle: "Complete Stakeholder Guide, Feature Breakdown, Deployment Roadmap & Investor Deck.",
+        longDesc: `
+            <h2 class="detail-heading">movisabio-enterprise-smart-city: Complete Architecture, Roadmap & Pitch Deck</h2>
+            
+            <div class="presentation-slide" style="border-top-color: var(--accent-blue);">
+                <div class="slide-header" style="color: var(--accent-blue);">Introduction & Overview</div>
+                <p style="text-align: center; color: var(--text-light); font-size: 1.05rem; line-height: 1.7;">
+                    To fully understand how <strong>movisabio-enterprise-smart-city</strong> transforms a bustling urban area into a smoothly running, safe, and eco-friendly home, let's walk through every single feature tier, strategic phase, and executive presentation slide.
+                </p>
+            </div>
+
+            <!-- PART 1: TRAFFIC CONTROL & AI -->
+            <div class="presentation-slide" style="border-top-color: var(--primary-color);">
+                <div class="slide-header" style="color: var(--primary-color);">Part 1: Traffic Control & Artificial Intelligence</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🚦</div>
+                        <h4>1. AI Traffic Control System (AITCS)</h4>
+                        <p><strong>Adaptive Signal Control:</strong> Changes green and red lights based on real-time vehicle queues.<br><br><strong>Green-Wave Coordination:</strong> Syncs a series of lights along major corridors.<br><br><strong>Fail-Safe Override:</strong> Allows human operators to take manual control during emergencies.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🧠</div>
+                        <h4>6. Reinforcement Learning</h4>
+                        <p><strong>Trial-and-Error AI:</strong> Uses Deep Q-Networks to simulate thousands of traffic scenarios, discovering optimal timing strategies faster than human calculation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 2: VISION, EYES, & SECURITY -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-green);">
+                <div class="slide-header" style="color: var(--accent-green);">Part 2: Vision, Eyes, & Security</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">👁️</div>
+                        <h4>2. Computer Vision & Edge AI</h4>
+                        <p><strong>Object Detection:</strong> Recognizes cars, buses, trucks, motorcycles, and pedestrians.<br><br><strong>Crowd & Lane Analytics:</strong> Monitors traffic density and public plazas to spot overcrowded areas.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🛡️</div>
+                        <h4>3. Automatic Number Plate Recognition (ANPR)</h4>
+                        <p><strong>Security Tracking:</strong> Cross-references scanned plates with databases for stolen vehicle alerts.<br><br><strong>Travel Time Calculation:</strong> Measures point-to-point transit times via plate scanning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 3: ANALYTICS & PREDICTION -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-yellow);">
+                <div class="slide-header" style="color: var(--accent-yellow);">Part 3: Analytics & Prediction</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">📊</div>
+                        <h4>4. Traffic Analytics</h4>
+                        <p><strong>Congestion Index & Density:</strong> Real-time road crowding metrics.<br><br><strong>Level of Service (LOS):</strong> Grades road performance from smooth (A) to gridlocked (F).</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🔮</div>
+                        <h4>5. AI Prediction</h4>
+                        <p><strong>Multi-Horizon Forecasting:</strong> Uses LSTM/GRU deep learning models to predict traffic jams 10, 30, or 60 minutes ahead of time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 4: SAFETY & EMERGENCY MANAGEMENT -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-red);">
+                <div class="slide-header" style="color: var(--accent-red);">Part 4: Safety & Emergency Management</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🚑</div>
+                        <h4>7. Emergency Management</h4>
+                        <p><strong>Priority Corridors:</strong> Automatically turns emergency vehicle routes green.<br><br><strong>Evacuation Routing:</strong> Guides citizens safely out during crises.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">⚠️</div>
+                        <h4>10. Incident Detection</h4>
+                        <p><strong>Accident Alerts:</strong> Instantly flags stopped vehicles, collisions, wrong-way drivers, or debris for dispatchers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 5: PUBLIC TRANSIT, PARKING, & PEDESTRIANS -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-blue);">
+                <div class="slide-header" style="color: var(--accent-blue);">Part 5: Public Transit, Parking, & Pedestrians</div>
+                <div class="slide-grid three-col">
+                    <div class="slide-item">
+                        <div class="icon">🚌</div>
+                        <h4>8. Public Transport</h4>
+                        <p><strong>Transit Signal Priority (TSP):</strong> Grants green extensions to crowded buses and BRT systems.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon">🅿️</div>
+                        <h4>11. Smart Parking</h4>
+                        <p><strong>Occupancy & Guidance:</strong> Directs drivers to open garage spaces to eliminate block-circling gridlock.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon">🚶</div>
+                        <h4>9. Pedestrian Intelligence</h4>
+                        <p><strong>Adaptive Crossing:</strong> Gives children, elderly citizens, and crowds extra time at crosswalks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 6: ENVIRONMENT & WEATHER -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-green);">
+                <div class="slide-header" style="color: var(--accent-green);">Part 6: Environment & Weather</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🌱</div>
+                        <h4>12. Environmental Intelligence</h4>
+                        <p><strong>Emissions Tracking:</strong> Estimates $CO_2$ and $PM_{2.5}$ pollution around busy junctions based on vehicle idling times.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🌧️</div>
+                        <h4>13. Weather Intelligence</h4>
+                        <p><strong>Weather Adjustments:</strong> Automatically modifies speed limits and signal timings during rain, fog, or snow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 7: DRONES & DIGITAL TWINS -->
+            <div class="presentation-slide" style="border-top-color: var(--primary-color);">
+                <div class="slide-header" style="color: var(--primary-color);">Part 7: Drones & Digital Twins</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🛸</div>
+                        <h4>14. Drone Operations</h4>
+                        <p><strong>Autonomous Drones:</strong> Dispatches rooftop drones to accident scenes for live aerial video and flood assessments.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🌐</div>
+                        <h4>15. Digital Twin</h4>
+                        <p><strong>City Simulation:</strong> Uses SUMO/CARLA simulation to test layouts and traffic rules in a virtual world before building.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 8: MAPPING, IOT, & V2X -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-yellow);">
+                <div class="slide-header" style="color: var(--accent-yellow);">Part 8: Mapping, IoT, & Connected Vehicles</div>
+                <div class="slide-grid three-col">
+                    <div class="slide-item">
+                        <div class="icon">🗺️</div>
+                        <h4>16. GIS & Mapping</h4>
+                        <p>OpenStreetMap and PostGIS spatial modeling across the city.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon">📡</div>
+                        <h4>17. IoT & Edge Computing</h4>
+                        <p>MQTT, WebSockets, and NTCIP hardware protocol integration.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon">🚗</div>
+                        <h4>27. V2X Support</h4>
+                        <p>Connected vehicle telemetry communication directly with signals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 9: CLOUD, BACKEND, & FRONTEND -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-blue);">
+                <div class="slide-header" style="color: var(--accent-blue);">Part 9: Cloud, Backend, & Frontend Command Center</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px;">
+                    <div class="slide-item"><h4>18. Cloud Platform</h4><p>Microsoft Azure & Kubernetes (AKS) high-availability clustering.</p></div>
+                    <div class="slide-item"><h4>19. Backend Services</h4><p>Asynchronous APIs processing thousands of requests per second.</p></div>
+                    <div class="slide-item"><h4>20. Frontend UI</h4><p>React & Tailwind CSS 3D command dashboard for operators.</p></div>
+                    <div class="slide-item"><h4>21. Data & Storage</h4><p>PostgreSQL and Redis high-performance municipal databases.</p></div>
+                </div>
+            </div>
+
+            <!-- PART 10: OBSERVABILITY, SECURITY, DEVOPS, & MLOPS -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-red);">
+                <div class="slide-header" style="color: var(--accent-red);">Part 10: Observability, Security, DevOps, & Integration</div>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px;">
+                    <div class="slide-item"><h4>22. Observability</h4><p>System health monitoring and error logging alerts.</p></div>
+                    <div class="slide-item"><h4>23. Security</h4><p>OAuth, JWT, TLS encryption, and Azure Key Vault protection.</p></div>
+                    <div class="slide-item"><h4>24. DevOps</h4><p>GitOps, Docker, and zero-downtime CI/CD pipelines.</p></div>
+                    <div class="slide-item"><h4>25. AI & MLOps</h4><p>Explainable AI (XAI) confidence scores and safety checks.</p></div>
+                    <div class="slide-item" style="grid-column: 1 / -1;"><h4>26. Smart City Integrations</h4><p>Unified municipal hub connecting traffic with utilities, smart lighting, port logistics, and citizen reporting.</p></div>
+                </div>
+            </div>
+
+            <!-- PART 11: DEPLOYMENT & STRATEGIC SCALING ROADMAP -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-purple);">
+                <div class="slide-header" style="color: var(--primary-color);">Part 11: Deployment & Strategic Scaling Roadmap</div>
+                <p style="text-align: center; color: var(--text-light); font-size: 1.05rem; line-height: 1.7; margin-bottom: 25px;">
+                    With the codebase fully engineered, tested, and documented for both technical and non-technical stakeholders, the next logical milestone for <strong>movisabio-enterprise-smart-city</strong> is transitioning from a monorepo architecture into a live municipal pilot program.
+                </p>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🗺️</div>
+                        <h4>Phase 1: Pilot Corridor</h4>
+                        <p><strong>Objective:</strong> Select a controlled urban corridor of 5 to 10 interconnected intersections.<br><br><strong>Actions:</strong> Deploy Edge AI hardware boxes with camera feeds, connect loop sensors, and establish secure VPN tunnels to AKS.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">📊</div>
+                        <h4>Phase 2: Baseline Calibration</h4>
+                        <p><strong>Objective:</strong> Establish baseline traffic performance metrics before active AI control.<br><br><strong>Actions:</strong> Run in "shadow mode" for two weeks. AI observes traffic flows and queues without modifying lights to fine-tune Deep Reinforcement Learning models.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🚦</div>
+                        <h4>Phase 3: Active Control</h4>
+                        <p><strong>Objective:</strong> Go live with dynamic signal timing and emergency green-wave corridors.<br><br><strong>Actions:</strong> Activate ATSC engine during off-peak hours first, expanding to full 24/7 autonomous coordination. Integrate emergency station dispatch feeds.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🏛️</div>
+                        <h4>Phase 4: City Hall Dashboard</h4>
+                        <p><strong>Objective:</strong> Unveil the 3D Digital Twin Command Center at City Hall and open citizen channels.<br><br><strong>Actions:</strong> Train operators and dispatchers on the React command center. Launch the citizen mobile portal for reporting hazards and streetlights.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 12: STAKEHOLDER & INVESTOR PRESENTATION DECK -->
+            <div class="presentation-slide" style="border-top-color: var(--accent-yellow);">
+                <div class="slide-header" style="color: var(--primary-color);">Part 12: Stakeholder & Investor Presentation Deck</div>
+                <p style="text-align: center; color: var(--text-light); font-size: 1.05rem; line-height: 1.7; margin-bottom: 25px;">
+                    This executive presentation outline and pitch summary is designed for city officials, municipal stakeholders, and investors to clearly communicate the value, architecture, and operational impact of <strong>movisabio-enterprise-smart-city</strong>.
+                </p>
+                <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🚀</div>
+                        <h4> 1 --> Title & Vision</h4>
+                        <p><strong>Transforming Urban Mobility with AI:</strong> Introducing movisabio-enterprise-smart-city as the intelligent neural backbone for modern cities, shifting from reactive management to proactive ecosystems.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">💸</div>
+                        <h4> 2 --> The Urban Dilemma</h4>
+                        <p><strong>The Cost of Gridlock:</strong> Billions lost in wasted fuel, heightened carbon footprints ($CO_2$, $PM_{2.5}$), emergency delays, and fragmented legacy municipal silos.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🧠</div>
+                        <h4>3 --> Solution Overview</h4>
+                        <p><strong>Meet MoviSabio Enterprise:</strong> An enterprise-grade, cloud-native platform acting as the central nervous system and brain of the city, unifying traffic, vision, and utilities.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">☁️</div>
+                        <h4>4 --> Enterprise Architecture</h4>
+                        <p><strong>Built for Scale & Reliability:</strong> Powered by Microsoft Azure AKS, PostgreSQL/PostGIS spatial repository, Redis caching, and secure MQTT/WebSocket edge IoT nodes.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🚦</div>
+                        <h4>5 --> Core Adaptive Control</h4>
+                        <p><strong>Traffic That Thinks:</strong> Features dynamic green splits, green-wave corridor coordination, and deep reinforcement learning trained via digital twin simulations.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🚑</div>
+                        <h4>6 --> Life Safety & Incidents</h4>
+                        <p><strong>Saving Lives:</strong> Automated emergency green corridors for first responders and computer vision incident detection for immediate hazard alerting.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🌱</div>
+                        <h4>7 --> Sustainability & Weather</h4>
+                        <p><strong>Eco-Resilient Infrastructure:</strong> Real-time emissions tracking (CO2, PM2.5) and weather-aware speed limit and signal adjustments during rain or snow.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🖥️</div>
+                        <h4>8 --> City Hall Command Center</h4>
+                        <p><strong>3D Digital Twin Dashboard:</strong> Interactive React-based situational awareness platform enabling unified monitoring and virtual "what-if" scenario simulations.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">📈</div>
+                        <h4>9 --> Measurable ROI</h4>
+                        <p><strong>Tangible Impact:</strong> Up to 25% reduction in travel times, 30% faster emergency response, lower carbon emissions, and data-driven planning via Explainable AI.</p>
+                    </div>
+                    <div class="slide-item">
+                        <div class="icon" style="font-size: 2rem;">🗺️</div>
+                        <h4>10 --> Implementation Roadmap</h4>
+                        <p><strong>Phased Rollout:</strong> Sandbox corridor selection, shadow mode baseline calibration, active go-live with emergency preemption, and full city-wide expansion.</p>
+                    </div>
+                    <div class="slide-item" style="grid-column: 1 / -1;">
+                        <div class="icon" style="font-size: 2rem;">🎯</div>
+                        <h4> 11 --> Conclusion & Call to Action</h4>
+                        <p><strong>Shaping the Future:</strong> Transforming the vision of a sustainable, efficient metropolis into a deployed reality. Partner with us to pilot movisabio-enterprise-smart-city today.</p>
+                    </div>
+                </div>
+            </div>
+        `
+    },
+            
+            {
+                id: 0,
+                title: "Territorial Intelligence & Quantum Platform",
+                badge: "Core Ecosystem",
+                badgeColor: "var(--white)",
+                badgeBg: "linear-gradient(135deg, var(--primary-color), var(--accent-blue))",
+                borderColor: "var(--accent-blue)",
+                shortDesc: "Our cloud-native platform consolidating IoT, AI, electric mobility, and quantum computing to solve complex rural and urban territorial challenges.",
+                subtitle: "Transforming fragmented data into predictive and actionable strategic intelligence.",
+                longDesc: `
+                    <h2 class="detail-heading">Platform Architecture: AI & Quantum-Ready Ecosystem</h2>
+                    
+                    <div class="presentation-slide" style="border-top-color: var(--accent-blue);">
+                        <div class="slide-header" style="color: var(--accent-blue);">The Role of Quantum Computing</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">Rather than serving as a standalone feature, quantum technologies are woven into our technological identity to solve computationally intensive territorial optimization problems.</p>
+                        
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-blue);">
+                                <div class="icon">☁️</div>
+                                <h4>1. Hybrid Classical-Quantum Phase</h4>
+                                <p>Initially, we leverage hybrid algorithms using cloud-based quantum platforms and simulators while continuing to scale our advanced classical AI models.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-yellow);">
+                                <div class="icon">⚛️</div>
+                                <h4>2. Quantum Machine Learning (QML)</h4>
+                                <p>As commercial quantum hardware matures, our cloud-native platform will progressively incorporate QML capabilities for complex simulation and decision-making.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--primary-color);">
+                        <div class="slide-header" style="color: var(--primary-color);">8 Strategic Future-Ready Applications</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1rem;">Our unified digital ecosystem generates actionable intelligence across eight critical sectors of territorial management:</p>
+                        
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">🚗</div>
+                                <h4>Smart Mobility</h4>
+                                <p>Traffic flow optimization, intelligent routing, public transit planning, and EV charging optimization.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">🌱</div>
+                                <h4>Environmental Intelligence</h4>
+                                <p>Climate risk modeling, pollution forecasting, biodiversity monitoring, and ecosystem simulation.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">🏗️</div>
+                                <h4>Infrastructure Management</h4>
+                                <p>Predictive maintenance, digital twins, asset optimization, and resilient infrastructure planning.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">⚡</div>
+                                <h4>Energy Systems</h4>
+                                <p>Smart grid optimization, renewable energy integration, and real-time demand forecasting.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">🚜</div>
+                                <h4>Agriculture</h4>
+                                <p>Precision farming, irrigation optimization, crop prediction, and sustainable resource management.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">🏥</div>
+                                <h4>Healthcare</h4>
+                                <p>Intelligent resource allocation, epidemiological modeling, and territorial healthcare logistics.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">🏛️</div>
+                                <h4>Public Administration</h4>
+                                <p>Policy simulation, evidence-based urban planning, emergency management, and data-driven governance.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon" style="font-size: 2.2rem;">📊</div>
+                                <h4>ESG & Financial Analytics</h4>
+                                <p>Investment prioritization, sustainability metrics tracking, risk analysis, and long-term impact assessment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--accent-green);">
+                        <div class="slide-header" style="color: var(--accent-green);">Core Economic & Social Value Creation</div>
+                        <div class="flow-container">
+                            <div class="flow-step" style="border-color: var(--accent-blue);"><h4>Operational Efficiency</h4><p style="font-size: 0.85rem;">Transforming fragmented data into unified workflows.</p></div>
+                            <div class="flow-arrow">➔</div>
+                            <div class="flow-step" style="border-color: var(--accent-green);"><h4>Cost Reduction</h4><p style="font-size: 0.85rem;">Lowering municipal infrastructure and maintenance costs.</p></div>
+                            <div class="flow-arrow">➔</div>
+                            <div class="flow-step" style="border-color: var(--accent-yellow);"><h4>ESG Performance</h4><p style="font-size: 0.85rem;">Accelerating measurable sustainability outcomes.</p></div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 1,
+                title: "AI Traffic Signal Coordination",
+                badge: "Flagship Product",
+                badgeColor: "var(--accent-green)",
+                badgeBg: "rgba(46, 182, 125, 0.1)",
+                borderColor: "var(--accent-green)",
+                shortDesc: "A software-only platform utilizing Reinforcement Learning to dynamically adjust traffic signals. Reduces urban congestion by up to 45%.",
+                subtitle: "Zero-cost deployment MVP leveraging cloud-free and open-source foundations.",
+                longDesc: `
+                    <h2 class="detail-heading">Presentation Highlights: Shaping Urban Mobility</h2>
+                    
+                    <div class="presentation-slide" style="border-top-color: var(--accent-red);">
+                        <div class="slide-header" style="color: var(--accent-red);">Urban Congestion: A Global Challenge</div>
+                        <div class="slide-grid three-col">
+                            <div class="slide-item center-text"><div class="icon">💰</div><h4>Affordability Barrier</h4><p>Mid-sized cities frequently lack access to affordable, cutting-edge traffic optimisation tools, hindering their progress.</p></div>
+                            <div class="slide-item center-text"><div class="icon">🚗</div><h4>Significant Congestion</h4><p>Inefficient traffic signal timing is a major contributor to urban congestion, accounting for 30-40% of all delays.</p></div>
+                            <div class="slide-item center-text"><div class="icon">🚦</div><h4>Outdated Infrastructure</h4><p>Existing systems are often hardware-heavy, expensive, and lack the scalability required for modern urban demands.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--primary-color);">
+                        <div class="slide-header" style="color: var(--primary-color);">Our Core Innovation: Hierarchical Hybrid Framework</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto;">Combining classical traffic engineering with modern artificial intelligence to create a system that is both immediately deployable and highly adaptive.</p>
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                            <div class="slide-item" style="border-left: 4px solid var(--text-light);">
+                                <h4>1. Classical Foundation (MAXBAND)</h4>
+                                <p>We use established traffic engineering principles to set baseline 'green waves' and strict safety constraints. This ensures the system acts predictably and is safe for municipal regulators from day one.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-yellow);">
+                                <h4>2. AI Adaptation (Deep RL)</h4>
+                                <p>Multi-agent Deep Q-Networks (DQN) continuously tweak the timing phases in real-time within those safety boundaries, reacting to live traffic anomalies that classical systems cannot handle.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--accent-blue);">
+                        <div class="slide-header" style="color: var(--accent-blue);">Technical Implementation: Data at the Core</div>
+                        <div class="flow-container">
+                            <div class="flow-step"><h4>1. Data Acquisition</h4><p style="font-size: 0.9rem;">Sources: Municipal traffic sensors, CCTV feeds. Processed via Python ETL pipelines.</p></div>
+                            <div class="flow-arrow">➔</div>
+                            <div class="flow-step"><h4>2. AI / ML Models</h4><p style="font-size: 0.9rem;"><strong>Prediction:</strong> LSTM / GRU.<br><strong>Optimisation:</strong> Reinforcement Learning (DQN).</p></div>
+                            <div class="flow-arrow">➔</div>
+                            <div class="flow-step"><h4>3. Simulation Engine</h4><p style="font-size: 0.9rem;"><strong>SUMO</strong> combined with the TraCI interface to simulate policies before physical deployment.</p></div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 2,
+                title: "Computer Vision Vehicle Detection",
+                badge: "Phase 2 Initiative",
+                badgeColor: "var(--accent-red)",
+                badgeBg: "rgba(224, 30, 90, 0.1)",
+                borderColor: "var(--accent-red)",
+                shortDesc: "Real-time vehicle counting and classification module using YOLOv8. Designed to feed visual data into core AI algorithms.",
+                subtitle: "Advanced edge-computing object detection for urban environments.",
+                longDesc: `
+                    <h2 class="detail-heading">Presentation Highlights: Edge-AI Vision</h2>
+                    
+                    <div class="presentation-slide" style="border-top-color: var(--accent-red);">
+                        <div class="slide-header" style="color: var(--accent-red);">Leveraging Existing Infrastructure</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">This secondary priority module turns raw video feeds from existing city cameras into structured datasets, removing the need for costly physical sensor upgrades.</p>
+                        
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                            <div class="slide-item center-text">
+                                <div class="icon">📷</div>
+                                <h4>Zero New Hardware</h4>
+                                <p>We tap into existing municipal CCTV and traffic cameras via RTSP protocols, eliminating the need for expensive radar or inductive loop installations.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">👁️</div>
+                                <h4>Advanced Computer Vision</h4>
+                                <p>Utilizing state-of-the-art YOLOv8 object detection to accurately count, track, and classify vehicles (cars, buses, trucks, motorcycles) in real-time under varying weather conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--accent-blue);">
+                        <div class="slide-header" style="color: var(--accent-blue);">The Data Integration Pipeline</div>
+                        <div class="flow-container">
+                            <div class="flow-step"><h4>1. Video Stream</h4><p style="font-size: 0.9rem;">Capture continuous real-time frames from city intersections.</p></div>
+                            <div class="flow-arrow">➔</div>
+                            <div class="flow-step"><h4>2. Edge Inference</h4><p style="font-size: 0.9rem;">Run YOLOv8 models locally or on edge nodes to extract vehicle counts and density metrics.</p></div>
+                            <div class="flow-arrow">➔</div>
+                            <div class="flow-step"><h4>3. AI Signal Engine</h4><p style="font-size: 0.9rem;">Feed structured metrics directly into our core Deep RL optimization platform.</p></div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 3,
+                title: "Smart Public Transit Router",
+                badge: "In Concept",
+                badgeColor: "var(--accent-blue)",
+                badgeBg: "rgba(54, 197, 240, 0.1)",
+                borderColor: "var(--accent-blue)",
+                shortDesc: "An upcoming API designed to prioritize public transport dynamically at intersections to ensure schedule adherence.",
+                subtitle: "Making public transit faster and more reliable than private vehicles.",
+                longDesc: `
+                    <h2 class="detail-heading">Presentation Highlights: Transit Prioritization</h2>
+                    
+                    <div class="presentation-slide" style="border-top-color: var(--accent-blue);">
+                        <div class="slide-header" style="color: var(--accent-blue);">The Vision: Zero-Delay Public Transit</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">A Phase 3 initiative designed to seamlessly integrate with our core AI platform, providing specific advantages to mass transit vehicles.</p>
+                        
+                        <div class="slide-grid three-col">
+                            <div class="slide-item center-text">
+                                <div class="icon">🚌</div>
+                                <h4>Dynamic Prioritization</h4>
+                                <p>Automatically extend green lights or truncate red lights when a delayed bus approaches a connected intersection.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">⏱️</div>
+                                <h4>Schedule Adherence</h4>
+                                <p>Targeting a massive 20-40% improvement in public transport punctuality, actively encouraging citizens to shift away from private cars.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">📡</div>
+                                <h4>V2X Foundation</h4>
+                                <p>Laying the initial groundwork for Vehicle-to-Everything communication, relying entirely on existing bus GPS telemetry rather than new hardware.</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 4,
+                title: "Virtual Fencing",
+                badge: "AgriTech Solution",
+                badgeColor: "var(--accent-yellow)",
+                badgeBg: "rgba(236, 178, 46, 0.1)",
+                borderColor: "var(--accent-yellow)",
+                shortDesc: "A spatial management technology using GPS, cloud computing, and animal behavior conditioning to contain and move livestock without physical barriers.",
+                subtitle: "Replacing wire and posts with intelligent digital boundaries.",
+                longDesc: `
+                    <h2 class="detail-heading">Presentation Highlights: Livestock Management Revolution</h2>
+                    
+                    <div class="presentation-slide" style="border-top-color: var(--accent-yellow);">
+                        <div class="slide-header" style="color: var(--accent-yellow);">Virtual Fencing: The Next Generation of Grazing Management</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">Digital lines drawn on a map replace traditional wire and posts, enabling dynamic grazing management powered by GPS and cloud technology.</p>
+                        
+                        <div class="slide-grid three-col">
+                            <div class="slide-item center-text">
+                                <div class="icon">📡</div>
+                                <h4>The Wearable Device</h4>
+                                <p>Solar-powered collar or ear tag with GPS module, cellular/satellite radio, and battery for continuous monitoring and control.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">📱</div>
+                                <h4>Software Interface</h4>
+                                <p>Mobile or web app where managers draw virtual paddocks and exclusion zones directly on a map with real-time updates.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">☁️</div>
+                                <h4>Cloud Server</h4>
+                                <p>Coordinates communication between the app and collars, processing location data and sending boundary updates seamlessly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--accent-green);">
+                        <div class="slide-header" style="color: var(--accent-green);">How It Works: Negative Reinforcement Learning</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1rem;">Animals learn a predictable sequence of events when approaching digital boundaries, resulting in rapid behavioral adaptation.</p>
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-blue);">
+                                <div class="icon" style="font-size: 2rem;">⚠️</div>
+                                <h4>Warning Zone</h4>
+                                <p>As the animal approaches the digital line, the collar emits a distinct high-pitched audio cue to alert the animal.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-red);">
+                                <div class="icon" style="font-size: 2rem;">⚡</div>
+                                <h4>Correction Zone</h4>
+                                <p>If the animal continues forward, it receives a mild electric pulse—significantly lower energy than standard fencing but sufficiently uncomfortable.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-green);">
+                                <div class="icon" style="font-size: 2rem;">✓</div>
+                                <h4>Learning & Adaptation</h4>
+                                <p>Most animals learn to turn back upon hearing the beep alone within days, often avoiding the pulse entirely after initial training.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--accent-green);">
+                        <div class="slide-header" style="color: var(--accent-green);">Major Advantages</div>
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                            <div class="slide-item center-text">
+                                <div class="icon">🚜</div>
+                                <h4>Dynamic Grazing</h4>
+                                <p>Move herds daily to fresh grass from your phone, preventing overgrazing and dramatically improving soil health and productivity.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">⏰</div>
+                                <h4>Labor Savings</h4>
+                                <p>Eliminate the physical labor of driving posts, stringing wire, and walking fences to find breaks. Passive management from anywhere.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">🌿</div>
+                                <h4>Environmental Protection</h4>
+                                <p>Easily exclude cattle from waterways and reforestation areas without expensive permanent fencing in difficult terrain.</p>
+                            </div>
+                            <div class="slide-item center-text">
+                                <div class="icon">📊</div>
+                                <h4>Data Insights</h4>
+                                <p>Collars track rumination times and activity levels, alerting you to sick animals or heat cycles for proactive herd health management.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--accent-red);">
+                        <div class="slide-header" style="color: var(--accent-red);">Challenges & Limitations</div>
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-red);">
+                                <h4>Signal Reliability</h4>
+                                <p>GPS requires clear sky visibility. Heavily forested or deep canyon areas can cause "GPS drift," creating false boundary violations.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-red);">
+                                <h4>Upfront Cost</h4>
+                                <p>Wearable collars range from $50 to $300+ per unit. While maintenance is low, initial investment can be significant for large herds.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-red);">
+                                <h4>Battery & Durability</h4>
+                                <p>Though solar-powered, devices may struggle in dark winters or if covered in thick mud, requiring occasional manual charging or cleaning.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-red);">
+                                <h4>Animal Welfare</h4>
+                                <p>Strict training protocols required to ensure animals understand the collar's "language" and avoid unnecessary stress or behavioral issues.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--primary-color);">
+                        <div class="slide-header" style="color: var(--primary-color);">Hardware Architecture</div>
+                        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                            <tr style="background: linear-gradient(135deg, var(--primary-color), #6a1b72); color: var(--white);">
+                                <td style="padding: 15px; border: 1px solid #ddd; font-weight: bold;">Component</td>
+                                <td style="padding: 15px; border: 1px solid #ddd; font-weight: bold;">Primary Function</td>
+                            </tr>
+                            <tr style="background: var(--white);">
+                                <td style="padding: 12px; border: 1px solid #ddd;">GPS Antenna</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Determines real-time coordinates (Lat/Long) for boundary monitoring</td>
+                            </tr>
+                            <tr style="background: rgba(236, 178, 46, 0.05);">
+                                <td style="padding: 12px; border: 1px solid #ddd;">Solar Panels</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Maintains battery charge for continuous 24/7 operation in field</td>
+                            </tr>
+                            <tr style="background: var(--white);">
+                                <td style="padding: 12px; border: 1px solid #ddd;">Accelerometer</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Tracks movement patterns (grazing, walking, lying down) for health insights</td>
+                            </tr>
+                            <tr style="background: rgba(236, 178, 46, 0.05);">
+                                <td style="padding: 12px; border: 1px solid #ddd;">Connectivity Module</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Uses LoRaWAN, 4G/5G, or Satellite to sync with cloud app in real-time</td>
+                            </tr>
+                        </table>
+                    </div>
+                `
+            },
+            {
+                id: 101,
+                title: "Category Creation: Territorial Intelligence Platform (TIP)",
+                badge: "Investor Thesis",
+                badgeColor: "var(--white)",
+                badgeBg: "linear-gradient(135deg, var(--accent-red), var(--primary-color))",
+                borderColor: "var(--accent-red)",
+                shortDesc: "Why MoviSabio does not compete directly with legacy GIS or analytics vendors, creating an entirely new software category.",
+                subtitle: "Integrating GIS, AI, IoT, Mobility, and ESG into a unified SaaS ecosystem.",
+                longDesc: `
+                    <h2 class="detail-heading">Strategic Competitive Analysis & Category Creation</h2>
+                    
+                    <div class="presentation-slide" style="border-top-color: var(--accent-red);">
+                        <div class="slide-header" style="color: var(--accent-red);">The Convergence of 5 Growing Markets</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">Most existing competitors specialize in only a single layer of territorial management. MoviSabio operates at the convergence of Smart Cities, IoT, GIS, Digital Twins, and Territorial AI.</p>
+                        
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-blue);">
+                                <h4>vs. Esri (ArcGIS)</h4>
+                                <p>While Esri dominates traditional GIS mapping, they were not natively designed for real-time IoT mobility, smart agriculture, or integrated ESG analytics. We complement GIS by adding an AI-powered territorial layer.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-yellow);">
+                                <h4>vs. Palantir</h4>
+                                <p>Palantir provides powerful decision intelligence but involves multi-million-euro deployments inaccessible to medium municipalities. We act as an accessible, SaaS-based territorial intelligence layer for Latin America and Europe.</p>
+                            </div>
+                            <div class="slide-item" style="border-left: 4px solid var(--accent-green);">
+                                <h4>vs. Bentley & Siemens</h4>
+                                <p>Legacy industrial giants focus heavily on custom, expensive heavy-infrastructure digital twins. We deliver agility, lower total cost of ownership, and SaaS accessibility extending into agriculture and biodiversity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="presentation-slide" style="border-top-color: var(--primary-color);">
+                        <div class="slide-header" style="color: var(--primary-color);">3-Stage Estimated Funding Roadmap</div>
+                        <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1rem;">Our capital strategy balances non-dilutive research grants with equity scaling to achieve a €400M–€750M valuation by Year 10:</p>
+                        
+                        <div class="slide-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                            <div class="slide-item center-text" style="border-top: 4px solid var(--accent-blue);">
+                                <h4>Stage 1: Validation (2026–2028)</h4>
+                                <p style="font-size: 1.2rem; font-weight: bold; color: var(--accent-blue); margin: 10px 0;">€750k – €1.2 Million</p>
+                                <p style="font-size: 0.85rem;">Secure non-dilutive grants (EIC, Horizon Europe, EIT Urban Mobility) to build the MVP and execute anchor pilots in Germany and Uruguay.</p>
+                            </div>
+                            <div class="slide-item center-text" style="border-top: 4px solid var(--accent-green);">
+                                <h4>Stage 2: Commercialization (2028–2030)</h4>
+                                <p style="font-size: 1.2rem; font-weight: bold; color: var(--accent-green); margin: 10px 0;">€2 – €3 Million (Seed)</p>
+                                <p style="font-size: 0.85rem;">Scale commercial operations across Brazil, strengthen AI/Digital Twin capabilities, and grow recurring SaaS revenue to ~€1.2M ARR.</p>
+                            </div>
+                            <div class="slide-item center-text" style="border-top: 4px solid var(--accent-yellow);">
+                                <h4>Stage 3: International Scale (2030+)</h4>
+                                <p style="font-size: 1.2rem; font-weight: bold; color: var(--accent-yellow); margin: 10px 0;">€5 – €10 Million (Series A)</p>
+                                <p style="font-size: 0.85rem;">Expand across Europe and Latin America, establishing MoviSabio as the leading Territorial Intelligence Operating System (TIOS).</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        ];
+
+        // --- 3. PAGE LOGIC ---
+        const gridElement = document.getElementById('dynamic-project-grid');
+        techSolutions.forEach(project => {
+            const cardHTML = `
+                <div class="card" style="border-left-color: ${project.borderColor};" onclick="openProject(${project.id})">
+                    <div class="card-content">
+                        <span class="badge" style="background: ${project.badgeBg}; color: ${project.badgeColor};">${project.badge}</span>
+                        <h3>${project.title}</h3>
+                        <p>${project.shortDesc}</p>
+                        <span class="btn-text" style="color: ${project.borderColor};">View Details →</span>
+                    </div>
+                </div>
+            `;
+            gridElement.innerHTML += cardHTML;
+        });
+
+        const homeView = document.getElementById('home-view');
+        const projectView = document.getElementById('project-view');
+
+        function openProject(id) {
+            const project = techSolutions.find(p => p.id === id);
+            document.getElementById('detail-title').innerText = project.title;
+            document.getElementById('detail-subtitle').innerText = project.subtitle;
+            document.getElementById('detail-content').innerHTML = project.longDesc;
+            homeView.style.display = 'none';
+            projectView.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showHome() {
+            projectView.style.display = 'none';
+            homeView.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function initializeSectionMinimizers() {
+            document.querySelectorAll('section.section-padding').forEach(section => {
+                const title = section.querySelector('.section-title');
+                if (!title) return;
+
+                const wrapper = document.createElement('div');
+                wrapper.className = 'section-title-wrapper';
+                title.parentNode.insertBefore(wrapper, title);
+                wrapper.appendChild(title);
+
+                const toggle = document.createElement('button');
+                toggle.className = 'section-toggle';
+                toggle.type = 'button';
+                toggle.innerText = '−';
+                toggle.setAttribute('aria-expanded', 'true');
+                toggle.title = 'Minimize this section';
+                toggle.addEventListener('click', () => {
+                    const isCollapsed = section.classList.toggle('collapsed');
+                    toggle.innerText = isCollapsed ? '+' : '−';
+                    toggle.setAttribute('aria-expanded', String(!isCollapsed));
+                    toggle.title = isCollapsed ? 'Expand this section' : 'Minimize this section';
+                });
+                wrapper.appendChild(toggle);
+
+                const contentWrapper = document.createElement('div');
+                contentWrapper.className = 'section-collapse-content';
+                let next = title.nextElementSibling;
+                while (next) {
+                    const sibling = next;
+                    next = sibling.nextElementSibling;
+                    contentWrapper.appendChild(sibling);
+                }
+                wrapper.parentNode.appendChild(contentWrapper);
+            });
+        }
+
+        initializeSectionMinimizers();
+    
+

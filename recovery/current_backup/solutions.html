@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviSabio Territorial Solutions | 15 Modular Intelligence Capabilities</title>
+
+    <meta name="description" content="Explore MoviSabio's 15 modular solutions across adaptive traffic control, computer vision, digital twins, transit priority, and environmental intelligence.">
+    <link rel="canonical" href="https://www.movisabio.com/solutions.html">
+
+    <!-- International SEO hreflang Annotations (6 Languages) -->
+    <link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/solutions.html">
+    <link rel="alternate" hreflang="en" href="https://www.movisabio.com/solutions.html?lang=en">
+    <link rel="alternate" hreflang="de" href="https://www.movisabio.com/solutions.html?lang=de">
+    <link rel="alternate" hreflang="pt" href="https://www.movisabio.com/solutions.html?lang=pt">
+    <link rel="alternate" hreflang="es" href="https://www.movisabio.com/solutions.html?lang=es">
+    <link rel="alternate" hreflang="it" href="https://www.movisabio.com/solutions.html?lang=it">
+    <link rel="alternate" hreflang="zh" href="https://www.movisabio.com/solutions.html?lang=zh">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.movisabio.com/solutions.html">
+    <meta property="og:title" content="MoviSabio Territorial Solutions | 15 Modular Intelligence Capabilities">
+    <meta property="og:description" content="15 modular solutions across adaptive traffic control, computer vision, digital twins, transit priority, and environmental intelligence.">
+    <meta property="og:image" content="https://www.movisabio.com/logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <!-- Twitter / X Previews -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.movisabio.com/solutions.html">
+    <meta name="twitter:title" content="MoviSabio Territorial Solutions | 15 Modular Intelligence Capabilities">
+    <meta name="twitter:description" content="15 modular solutions across adaptive traffic control, computer vision, digital twins, and transit priority.">
+    <meta name="twitter:image" content="https://www.movisabio.com/logo.png">
+
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MoviSabio Modular Territorial Solutions",
+      "applicationCategory": "Smart City Solutions",
+      "operatingSystem": "Linux, Kubernetes, Edge Microservices",
+      "description": "15 modular territorial intelligence capabilities including AITCS, Computer Vision, Digital Twin, and Transit Priority.",
+      "url": "https://www.movisabio.com/solutions.html",
+      "author": {
+        "@type": "Organization",
+        "name": "MoviSabio Tech Solutions",
+        "url": "https://www.movisabio.com/"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .solution-card-deep {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+            scroll-margin-top: calc(var(--header-height) + 20px);
+            transition: border-color var(--transition-base), box-shadow var(--transition-base);
+        }
+        .solution-card-deep:hover, .solution-card-deep:target {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-lg), 0 0 30px rgba(85, 215, 232, 0.12);
+        }
+        .solution-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .solution-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        .solution-badge-maturity {
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-bold);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            border: 1px solid currentColor;
+        }
+        .solution-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-lg) 0;
+            background: var(--bg-secondary);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-subtle);
+        }
+        .solution-meta-item h4 {
+            font-size: var(--font-size-xs);
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 4px;
+        }
+        .solution-meta-item p {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.5;
+        }
+        .solution-filter-bar {
+            display: flex;
+            gap: var(--space-xs);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-2xl);
+            position: sticky;
+            top: var(--header-height);
+            z-index: 20;
+            background: rgba(7, 17, 31, 0.95);
+            backdrop-filter: blur(12px);
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .filter-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all var(--transition-fast);
+        }
+        .filter-btn:hover, .filter-btn.active {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            background: rgba(85, 215, 232, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <header class="navbar-enterprise" role="banner">
+        <div class="navbar-container">
+            <a href="index.html" class="brand-logo" aria-label="MoviSabio Home">
+                <span class="brand-dot"></span>
+                <span>MoviSabio</span>
+                <span class="brand-tag">Enterprise</span>
+            </a>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="platform.html" class="nav-link" data-i18n="nav_platform">Platform</a></li>
+                    <li><a href="solutions.html" class="nav-link" style="color: var(--accent-primary);" data-i18n="nav_solutions">Solutions</a></li>
+                    <li><a href="technology.html" class="nav-link" data-i18n="nav_architecture">Technology</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav_research">Research & ESG</a></li>
+                    <li><a href="global.html" class="nav-link" data-i18n="nav_map">Global Map</a></li>
+                    <li><a href="leadership.html" class="nav-link" data-i18n="nav_leadership">Leadership</a></li>
+                    <li><a href="partners.html" class="nav-link" style="color: var(--accent-success); font-weight: 700;" data-i18n="nav_submit_idea">Partners & Pitch</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" class="lang-dropdown-enterprise" onchange="MoviSabioI18n.setLanguage(this.value)" aria-label="Select Language">
+                        <option value="en">EN • English</option>
+                        <option value="de">DE • Deutsch</option>
+                        <option value="pt">PT • Português</option>
+                        <option value="es">ES • Español</option>
+                        <option value="it">IT • Italiano</option>
+                        <option value="zh">ZH • 中文</option>
+                    </select>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_cta">Partner With Us</a>
+                <button type="button" class="mobile-toggle-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO -->
+        <section class="section-padding" style="padding-top: var(--space-4xl); padding-bottom: var(--space-xl);">
+            <div class="container" style="text-align: center; max-width: 860px;">
+                <div class="section-tag">Modular Intelligence Catalog</div>
+                <h1 class="section-title">Territorial & Smart-City Solutions</h1>
+                <p class="section-subtitle">
+                    Fifteen structured capabilities designed to modernize urban mobility, public transit, environmental compliance, and regional land management. Each module includes verified architectural blueprints and transparent maturity classifications.
+                </p>
+            </div>
+        </section>
+
+        <!-- STICKY FILTER BAR -->
+        <div class="container">
+            <div class="solution-filter-bar" role="toolbar" aria-label="Solution Category Filters">
+                <button type="button" class="filter-btn active" data-filter="all" onclick="filterCategory('all', this)">All (15)</button>
+                <button type="button" class="filter-btn" data-filter="mobility" onclick="filterCategory('mobility', this)">Traffic & Mobility</button>
+                <button type="button" class="filter-btn" data-filter="vision" onclick="filterCategory('vision', this)">Computer Vision</button>
+                <button type="button" class="filter-btn" data-filter="transit" onclick="filterCategory('transit', this)">Public Transit</button>
+                <button type="button" class="filter-btn" data-filter="climate" onclick="filterCategory('climate', this)">Climate & ESG</button>
+                <button type="button" class="filter-btn" data-filter="digital-twin" onclick="filterCategory('digital-twin', this)">Digital Twins</button>
+            </div>
+        </div>
+
+        <!-- SOLUTIONS LIST -->
+        <section class="section-padding" style="padding-top: var(--space-md);">
+            <div class="container">
+
+                <!-- 1. AI Traffic Signal Coordination -->
+                <article class="solution-card-deep" id="aitcs" data-cat="mobility">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🚦</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">1. AI Traffic Signal Coordination (AITCS)</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-success); border-color: rgba(120,223,176,0.4);">
+                            Maturity: Implemented Prototype (SUMO / TraCI)
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        A hierarchical traffic actuation platform that dynamically modulates split times, offsets, and cycle lengths across arterial corridors using multi-agent reinforcement learning.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Fixed-time signal controllers cause up to 40% of peak-hour urban vehicular delay because they cannot adapt to sudden flow surges or incident detours.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Hierarchical framework combining classical MAXBAND green-wave safety envelopes with multi-agent Deep Q-Networks (DQN) for real-time queue reduction.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>Python 3.11, SUMO, TraCI, PyTorch, NTCIP 1202 controller interface, OpenStreetMap topology.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Mid-sized urban corridors (10–20 intersections), regional highway off-ramp bottlenecks, school zone arterial corridors.</p>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border-left: 3px solid var(--accent-warning); padding: 10px 14px; border-radius: 6px; font-size: 0.82rem; color: var(--text-muted);">
+                        <strong>Operational Safety & Regulatory Considerations:</strong> Hardware-locked minimum green intervals and intergreen yellow/all-red clearance intervals are non-negotiable and enforced at the local controller firmware layer.
+                    </div>
+                </article>
+
+                <!-- 2. Computer Vision and Vehicle Detection -->
+                <article class="solution-card-deep" id="vision" data-cat="vision">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">👁️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">2. Computer Vision & Vehicle Detection</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-primary); border-color: rgba(85,215,232,0.4);">
+                            Maturity: In Development (Edge Model Validation)
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Real-time edge neural inference pipeline converting standard municipal CCTV video feeds into structured vehicle counts, directional approach speeds, and density metrics.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Traditional inductive loops require street cutting, are expensive to maintain, and fail frequently during road resurfacing or heavy freeze-thaw cycles.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Edge-accelerated YOLOv8 object detection tracking bounding boxes and classification across 6 vehicle classes without hardware replacement.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>YOLOv8, OpenCV, RTSP video streaming, TensorRT edge compilation, NVIDIA Jetson / Intel OpenVINO hardware.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Intersection queue length estimation, lane occupancy monitoring, pedestrian crowd density estimation at plazas.</p>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border-left: 3px solid var(--accent-warning); padding: 10px 14px; border-radius: 6px; font-size: 0.82rem; color: var(--text-muted);">
+                        <strong>Privacy Compliance:</strong> All video frames are processed transiently in memory at the edge node. Video streams are not stored permanently, adhering to GDPR, LGPD, and privacy standards.
+                    </div>
+                </article>
+
+                <!-- 3. ANPR (Automatic Number Plate Recognition) -->
+                <article class="solution-card-deep" id="anpr" data-cat="vision">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🛡️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">3. Automatic Number Plate Recognition (ANPR)</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-secondary); border-color: rgba(108,156,255,0.4);">
+                            Maturity: Concept & Regulatory Evaluation
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Optical character recognition module designed for automated travel time calculation, fleet validation, and municipal access control corridors.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Accurate origin-destination (O-D) transit matrix calculation across large urban sectors requires expensive physical tag readers or toll gantries.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Cryptographic one-way hashing of plate characters at capture points. Matches entry and exit timestamps to calculate point-to-point corridor transit time without storing readable plates.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>OCR algorithms, SHA-256 pseudonymization, edge capture pipelines, encrypted Redis key expiration.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Corridor average speed assessment, Low-Emission Zone (LEZ) vehicle age compliance, stolen vehicle cross-referencing with municipal police authorization.</p>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border-left: 3px solid var(--accent-danger); padding: 10px 14px; border-radius: 6px; font-size: 0.82rem; color: var(--text-muted);">
+                        <strong>Regulatory Note:</strong> Requires explicit municipal statutory authorization, strict retention expiration rules, and independent data protection impact assessment (DPIA).
+                    </div>
+                </article>
+
+                <!-- 4. Traffic Analytics -->
+                <article class="solution-card-deep" id="analytics" data-cat="mobility">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">📊</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">4. Traffic Analytics & Congestion Index</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-primary); border-color: rgba(85,215,232,0.4);">
+                            Maturity: In Development
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Aggregated territorial telemetry engine calculating real-time Road Congestion Indexes and Level of Service (LOS grades A through F) for traffic operations centers.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Municipal decision-makers operate with months-old survey data rather than dynamic real-time performance indicators of network degradation.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Continuous spatial aggregation of travel time ratios, queue density indices, and delay percentiles across road network links.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>PostgreSQL 16, PostGIS, GeoPandas, Apache Arrow, FastAPI, Grafana/React spatial visualization.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>City Hall monthly mobility reporting, infrastructure bond impact auditing, signal timing retiming evaluation.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Predictive Traffic Intelligence -->
+                <article class="solution-card-deep" id="predictive" data-cat="mobility">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🔮</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">5. Predictive Traffic Intelligence (LSTM/GRU)</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-success); border-color: rgba(120,223,176,0.4);">
+                            Maturity: Simulation Benchmark (SUMO Validated)
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Multi-horizon deep learning forecasting model predicting traffic volumes and congestion formation 15, 30, and 60 minutes before bottlenecks become visible.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Reactive signal adjustments only respond after long queues have formed, leading to shockwaves that propagate backwards through the network.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Recurrent Neural Networks (LSTM & GRU) trained on historical time-series sensor sequences, weather anomalies, and scheduled urban events.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>PyTorch, LSTM/GRU cells, Scikit-learn, Redis feature store, Pandas time-series resampling.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Proactive signal offset adjustment, variable speed limit recommendations, pre-emptive stadium event routing.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Reinforcement Learning -->
+                <article class="solution-card-deep" id="rl" data-cat="mobility">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🧠</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">6. Deep Reinforcement Learning (DQN & PPO)</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-success); border-color: rgba(120,223,176,0.4);">
+                            Maturity: Implemented Prototype (SUMO Multi-Agent)
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Autonomous multi-agent reinforcement learning system optimizing phase transitions across interconnected signal networks by formulating traffic as a Markov Decision Process (MDP).
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Manual timing plans developed by traffic engineers take weeks to draft and fail during non-standard holiday, weather, or detour conditions.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) agents reward cumulative queue dissipation while penalizing vehicle wait variance.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>Stable-Baselines3, PyTorch, SUMO TraCI socket API, OpenAI Gym custom environments.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Continuous autonomous arterial signal retiming, complex multi-leg intersection phase arbitration.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. Intelligent Public Transport -->
+                <article class="solution-card-deep" id="transit" data-cat="transit">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🚌</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">7. Intelligent Public Transport Management</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-secondary); border-color: rgba(108,156,255,0.4);">
+                            Maturity: Planned Module
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        High-level municipal transit telemetry layer monitoring bus fleet schedule adherence, headway regularity, and route bunching prevention.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Buses get trapped in general traffic congestion, causing unreliable schedules, passenger dissatisfaction, and transit bunching.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Ingests real-time GTFS-RT (General Transit Feed Specification Realtime) feeds and calculates dynamic speed and dwell recommendations.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>GTFS-RT, Python async ingestion, GeoPandas spatial transit lines, MQTT publisher.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Bus Rapid Transit (BRT) trunk corridor monitoring, municipal transit operator SLA compliance verification.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Transit Signal Priority (TSP) -->
+                <article class="solution-card-deep" id="tsp" data-cat="transit">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">⏱️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">8. Transit Signal Priority (TSP)</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-primary); border-color: rgba(85,215,232,0.4);">
+                            Maturity: Simulation In Development (Montevideo Model)
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Real-time intersection preemption logic that grants green extensions or red truncations when a delayed public transit vehicle approaches.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Transit buses carry 40 to 100 passengers but are forced to wait at red lights identical to single-occupant private automobiles.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Calculates estimated time of arrival (ETA) at the stop bar based on bus GPS beacons; conditionally modifies signal phase if bus is running behind schedule.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>NTCIP 1202 TSP objects, GPS spatial geofencing, SUMO TraCI preemption scripts.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>High-frequency arterial bus routes, dedicated BRT corridors, light rail at-grade streetcar crossings.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Pedestrian Intelligence -->
+                <article class="solution-card-deep" id="pedestrian" data-cat="mobility">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🚶</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">9. Pedestrian Intelligence & Adaptive Crossings</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-secondary); border-color: rgba(108,156,255,0.4);">
+                            Maturity: Planned Module
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Computer vision-assisted crosswalk management that dynamically extends pedestrian walk clearance times when crowds, mobility-impaired individuals, or elderly citizens are crossing.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Fixed pedestrian walk timers are frequently too short for seniors or persons with disabilities, causing dangerous mid-street stranding.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Camera detection tracks pedestrian clearance zone occupancy, holding vehicular red until the crosswalk is fully cleared.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>Edge AI human pose estimation, crosswalk polygon geofencing, NTCIP pedestrian phase actuation.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Hospital zone intersections, elementary school crossings, university transit hubs, high-density tourist districts.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. Incident Detection -->
+                <article class="solution-card-deep" id="incident" data-cat="vision">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🚨</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">10. Incident Detection & Hazard Alerting</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-primary); border-color: rgba(85,215,232,0.4);">
+                            Maturity: In Development
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Automated video analytics that instantly flags stopped vehicles in live lanes, wrong-way drivers, collisions, and roadway debris to traffic management centers.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Secondary accidents and severe bottlenecks often occur because operators take 15 to 30 minutes to notice stalled vehicles on live highway corridors.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Continuous vehicle trajectory velocity vectors; triggers an instant spatial alert if a vector drops to zero in a moving lane for over 15 seconds.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>Optical flow tracking, YOLOv8 trajectory analytics, WebSocket dispatch push notifications.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Expressways, urban bridge bottlenecks, tunnels, high-speed arterial corridors.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. Smart Parking -->
+                <article class="solution-card-deep" id="parking" data-cat="mobility">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🅿️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">11. Smart Parking & Guidance Telemetry</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-secondary); border-color: rgba(108,156,255,0.4);">
+                            Maturity: Concept Stage
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Spatial parking occupancy aggregation predicting stall availability and guiding drivers directly to vacant spaces to eliminate block-circling emissions.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Up to 30% of downtown congestion is generated by drivers slowly circling blocks searching for on-street parking spots.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Ingests occupancy data from IoT magnetometers, camera grids, and municipal garage counters into a unified real-time spatial API.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>LoRaWAN parking sensors, PostGIS polygon slots, MQTT telemetry, REST consumer endpoint.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Commercial downtown business improvement districts, municipal parking decks, airport curb management.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12. Environmental Intelligence -->
+                <article class="solution-card-deep" id="environmental" data-cat="climate">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🌱</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">12. Environmental Intelligence (CO₂ & PM₂.₅)</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-success); border-color: rgba(120,223,176,0.4);">
+                            Maturity: In Development (Emissions Calculation Engine)
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Correlates vehicle idle times, queue acceleration cycles, and low-cost air quality sensor telemetry to calculate localized carbon and particulate emissions.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Municipalities lack fine-grained, intersection-level air quality and carbon footprint data required for ESG reporting and climate compliance.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Applies EPA MOVES and European HBEFA vehicle emissions factors to real-time idle duration telemetry computed by the AITCS signal engine.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>HBEFA emissions coefficients, Python scientific modeling, IoT particulate telemetry (PM2.5 / PM10), PostGIS.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>UN SDG 11 & 13 climate mitigation verification, municipal Low-Emission Zone auditing, green transit corridor reporting.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13. Weather Intelligence -->
+                <article class="solution-card-deep" id="weather" data-cat="climate">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🌧️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">13. Weather-Responsive Traffic Intelligence</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-secondary); border-color: rgba(108,156,255,0.4);">
+                            Maturity: Planned Module
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Integrates hyper-local meteorological telemetry (precipitation, road surface temperature, visibility) to adapt signal clearances and variable speed limits.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Wet, icy, or foggy conditions increase vehicle braking distances by 50% to 200%, turning normal yellow clearance intervals into severe collision hazards.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Automated adjustment of yellow change and all-red clearance intervals based on road weather information systems (RWIS) telemetry.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>RWIS sensor APIs, Open-Meteo feeds, automated safety clearance overrides, NTCIP 1202 parameter tables.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Mountainous highway corridors, flood-prone underpasses, northern freeze-thaw metropolitan areas.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. Drone Operations -->
+                <article class="solution-card-deep" id="drone" data-cat="vision">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🛸</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">14. Drone Operations & Rapid Aerial Assessment</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-warning); border-color: rgba(245,184,66,0.4);">
+                            Maturity: Research Concept
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Conceptual automated drone dispatch architecture for aerial flood assessment, highway collision reconstruction, and emergency evacuation guidance.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Ground-level CCTV cameras suffer from occlusions, limited field of view, and blind spots during major regional emergencies or natural disasters.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Automated drone-in-a-box rooftop deployment flying targeted waypoints to stream real-time orthomosaic video directly into the 3D Digital Twin.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>MAVLink flight control protocol, RTSP aerial streaming, WebRTC, real-time aerial photogrammetry.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Flood zone monitoring, major chemical spill evacuations, mass gathering crowd management.</p>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border-left: 3px solid var(--accent-danger); padding: 10px 14px; border-radius: 6px; font-size: 0.82rem; color: var(--text-muted);">
+                        <strong>Regulatory Note:</strong> Requires national aviation authority authorization (e.g. FAA Part 107 BVLOS, EASA Specific Category) and strict geofencing safety envelopes.
+                    </div>
+                </article>
+
+                <!-- 15. Digital Twin -->
+                <article class="solution-card-deep" id="digital-twin" data-cat="digital-twin">
+                    <div class="solution-header-row">
+                        <div class="solution-title-wrap">
+                            <span style="font-size: 1.8rem;">🌐</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">15. Territorial Digital Twin (SUMO / CARLA)</h2>
+                        </div>
+                        <span class="solution-badge-maturity" style="color: var(--accent-success); border-color: rgba(120,223,176,0.4);">
+                            Maturity: Implemented Simulation Engine
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        High-fidelity microscopic vehicular and spatial digital replica of urban and regional networks, enabling virtual policy testing before physical execution.
+                    </p>
+                    <div class="solution-meta-grid">
+                        <div class="solution-meta-item">
+                            <h4>Problem Addressed</h4>
+                            <p>Testing new traffic signal policies or transit detours in the physical world risks gridlock, accidents, and severe public backlash.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Proposed Approach</h4>
+                            <p>Ingests real road graphs from OpenStreetMap, loads baseline demand matrices, and connects Python controllers via the TraCI socket protocol.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Relevant Technologies</h4>
+                            <p>Eclipse SUMO, TraCI, CARLA Autonomous Simulator, OSMnx, PostGIS, GeoPandas.</p>
+                        </div>
+                        <div class="solution-meta-item">
+                            <h4>Potential Use Cases</h4>
+                            <p>Pre-deployment AI policy verification, bridge closure impact modeling, municipal traffic master planning.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-enterprise" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand-logo" style="margin-bottom: var(--space-md);">
+                        <span class="brand-dot"></span>
+                        <span>MoviSabio</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Intelligent Infrastructure. Smarter Territories. Connected Futures. Transforming fragmented territorial data into actionable spatial intelligence.
+                    </p>
+                    <div class="status-pill status-live">
+                        <span class="status-dot"></span>
+                        <span>Aligned with UN SDGs 11 & 13</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Enterprise Smart City</a></li>
+                        <li><a href="solutions.html#aitcs">Adaptive Signal Control</a></li>
+                        <li><a href="solutions.html#vision">Edge Computer Vision</a></li>
+                        <li><a href="solutions.html#tsp">Transit Signal Priority</a></li>
+                        <li><a href="solutions.html#digital-twin">Territorial Digital Twin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About MoviSabio</a></li>
+                        <li><a href="technology.html">Architecture & Stack</a></li>
+                        <li><a href="research.html">Research & Grants</a></li>
+                        <li><a href="global.html">Territorial Operations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Global Hubs</h4>
+                    <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-sm);">
+                        <strong>Pilots:</strong> Campinas (BR) & Montevideo (UY)<br>
+                        <strong>Expansion:</strong> Munich/Berlin (DE) & Milan (IT)<br>
+                        <strong>Inquiries:</strong> <a href="mailto:info@movisabio.com">info@movisabio.com</a>
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://linkedin.com/company/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🔗 LinkedIn</a>
+                        <a href="https://github.com/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🐙 GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 MoviSabio Tech Solutions. All rights reserved.</div>
+                <div>Enterprise Spatial Intelligence • GDPR & Privacy Compliant</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function filterCategory(cat, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+
+            const articles = document.querySelectorAll('.solution-card-deep');
+            articles.forEach(card => {
+                if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Support URL hash navigation with history
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (['mobility', 'vision', 'transit', 'climate', 'digital-twin', 'all'].includes(hash)) {
+                const btn = document.querySelector(`.filter-btn[data-filter="${hash}"]`);
+                if (btn) filterCategory(hash, btn);
+            }
+        });
+    </script>
+</body>
+</html>

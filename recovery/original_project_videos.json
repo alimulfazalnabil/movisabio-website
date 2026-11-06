@@ -1,0 +1,50 @@
+[
+            {
+                id: 1,
+                title: "AI Traffic Signal Demo - Campinas",
+                date: "March 2026",
+                thumbnail: "🎥",
+                youtubeId: "4Gexo2-tHFs",
+                description: "Watch our AI-powered traffic signal system in action at Campinas, Brazil. The system reduces intersection wait times by up to 45% using deep reinforcement learning while maintaining safety constraints."
+            },
+            {
+                id: 2,
+                title: "Digital Twin Technology Explanation",
+                date: "February 2026",
+                thumbnail: "🌐",
+                youtubeId: "",
+                description: "Learn how MoviSabio builds highly accurate digital twins using OpenStreetMap data and municipal sensors to predict traffic flow patterns and optimize signal timing in real-time."
+            },
+            {
+                id: 3,
+                title: "Montevideo Pilot Launch Event",
+                date: "January 2026",
+                thumbnail: "🚦",
+                youtubeId: "",
+                description: "Highlights from our Montevideo, Uruguay pilot program launch. See how our team collaborated with municipal authorities to deploy the AI traffic coordination system across key city intersections."
+            },
+            {
+                id: 4,
+                title: "Computer Vision Vehicle Detection",
+                date: "December 2025",
+                thumbnail: "👁️",
+                youtubeId: "",
+                description: "Showcase of our YOLOv8-based vehicle detection system processing real-time CCTV feeds. The system accurately counts and classifies vehicles to feed data into our core AI optimization engine."
+            },
+            {
+                id: 5,
+                title: "Sustainability Impact Overview",
+                date: "November 2025",
+                thumbnail: "🌍",
+                youtubeId: "",
+                description: "Discover how MoviSabio's solutions contribute to UN Sustainable Development Goals 11 and 13. Our technology targets 15-30% CO2 reduction in urban traffic corridors while improving quality of life."
+            },
+            {
+                id: 6,
+                title: "Leadership Team Introduction",
+                date: "October 2025",
+                thumbnail: "👥",
+                youtubeId: "",
+                description: "Meet the talented founders and leadership team behind MoviSabio. Hear their vision for solving urban mobility challenges through AI and technology in developing regions."
+            }
+        ]

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviSabio Technology & Architecture Stack | Enterprise Engineering</title>
+
+    <meta name="description" content="Technical deep-dive into MoviSabio's engineering stack: Python, SUMO, TraCI, PostGIS, GeoPandas, DQN, PPO, LSTM, FastAPI, YOLOv8, and cloud-native Kubernetes.">
+    <link rel="canonical" href="https://www.movisabio.com/technology.html">
+
+    <!-- International SEO hreflang Annotations (6 Languages) -->
+    <link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/technology.html">
+    <link rel="alternate" hreflang="en" href="https://www.movisabio.com/technology.html?lang=en">
+    <link rel="alternate" hreflang="de" href="https://www.movisabio.com/technology.html?lang=de">
+    <link rel="alternate" hreflang="pt" href="https://www.movisabio.com/technology.html?lang=pt">
+    <link rel="alternate" hreflang="es" href="https://www.movisabio.com/technology.html?lang=es">
+    <link rel="alternate" hreflang="it" href="https://www.movisabio.com/technology.html?lang=it">
+    <link rel="alternate" hreflang="zh" href="https://www.movisabio.com/technology.html?lang=zh">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.movisabio.com/technology.html">
+    <meta property="og:title" content="MoviSabio Technology & Architecture Stack | Enterprise Engineering">
+    <meta property="og:description" content="Technical deep-dive into MoviSabio's engineering stack: Python, SUMO, TraCI, PostGIS, GeoPandas, DQN, PPO, LSTM, and FastAPI.">
+    <meta property="og:image" content="https://www.movisabio.com/logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <!-- Twitter / X Previews -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.movisabio.com/technology.html">
+    <meta name="twitter:title" content="MoviSabio Technology & Architecture Stack | Enterprise Engineering">
+    <meta name="twitter:description" content="Technical deep-dive into MoviSabio's engineering stack.">
+    <meta name="twitter:image" content="https://www.movisabio.com/logo.png">
+
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "MoviSabio Technology & Architecture Stack",
+      "description": "Engineering specification of Python, SUMO/TraCI, PostGIS, Deep RL, and Edge Computer Vision modules.",
+      "url": "https://www.movisabio.com/technology.html",
+      "author": {
+        "@type": "Organization",
+        "name": "MoviSabio Tech Solutions",
+        "url": "https://www.movisabio.com/"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .tech-spec-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-xl);
+            transition: all var(--transition-base);
+        }
+        .tech-spec-card:hover {
+            border-color: var(--border-hover);
+            box-shadow: var(--shadow-lg);
+        }
+        .tech-spec-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: var(--space-sm);
+        }
+        .tech-impl-badge {
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-bold);
+            padding: 4px 10px;
+            border-radius: var(--radius-sm);
+            text-transform: uppercase;
+        }
+        .code-block {
+            background: #040912;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            color: var(--accent-primary);
+            overflow-x: auto;
+            margin: var(--space-md) 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-to-content" data-i18n="skip_to_content">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <header class="navbar-enterprise" role="banner">
+        <div class="navbar-container">
+            <a href="index.html" class="brand-logo" aria-label="MoviSabio Home">
+                <span class="brand-dot"></span>
+                <span>MoviSabio</span>
+                <span class="brand-tag">Enterprise</span>
+            </a>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="platform.html" class="nav-link" data-i18n="nav_platform">Platform</a></li>
+                    <li><a href="solutions.html" class="nav-link" data-i18n="nav_solutions">Solutions</a></li>
+                    <li><a href="technology.html" class="nav-link" style="color: var(--accent-primary);" data-i18n="nav_architecture">Technology</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav_research">Research & ESG</a></li>
+                    <li><a href="global.html" class="nav-link" data-i18n="nav_map">Global Map</a></li>
+                    <li><a href="leadership.html" class="nav-link" data-i18n="nav_leadership">Leadership</a></li>
+                    <li><a href="partners.html" class="nav-link" style="color: var(--accent-success); font-weight: 700;" data-i18n="nav_submit_idea">Partners & Pitch</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" class="lang-dropdown-enterprise" onchange="MoviSabioI18n.setLanguage(this.value)" aria-label="Select Language">
+                        <option value="en">EN • English</option>
+                        <option value="de">DE • Deutsch</option>
+                        <option value="pt">PT • Português</option>
+                        <option value="es">ES • Español</option>
+                        <option value="it">IT • Italiano</option>
+                        <option value="zh">ZH • 中文</option>
+                    </select>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_cta">Partner With Us</a>
+                <button type="button" class="mobile-toggle-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO -->
+        <section class="section-padding" style="padding-top: var(--space-4xl); padding-bottom: var(--space-2xl);">
+            <div class="container" style="text-align: center; max-width: 880px;">
+                <div class="section-tag">Engineering Specifications</div>
+                <h1 class="section-title">Technology & Architecture Stack</h1>
+                <p class="section-subtitle">
+                    A comprehensive architectural disclosure for municipal Chief Technology Officers, transportation engineers, and systems architects. Transparently distinguishing implemented simulation code from active hardware development.
+                </p>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY CARDS SECTION -->
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+
+                <!-- 1. Python Scientific Core -->
+                <div class="tech-spec-card">
+                    <div class="tech-spec-header">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span style="font-size: 1.8rem;">🐍</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">Python Scientific & AI Core</h2>
+                        </div>
+                        <span class="tech-impl-badge" style="background: rgba(120,223,176,0.15); color: var(--accent-success); border: 1px solid var(--accent-success);">
+                            Status: Fully Implemented Core
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Python serves as the backbone for algorithmic modeling, TraCI socket communication, simulation orchestration, and data transformation pipelines.
+                    </p>
+                    <div class="code-block">
+# Simulation Loop Actuation Core (Python 3.11 + TraCI)
+import traci
+
+def run_traffic_step(step_idx, rl_agent):
+    traci.simulationStep()
+    state = extract_corridor_state()
+    action = rl_agent.compute_phase_action(state)
+    enforced_action = apply_maxband_safety_envelope(action)
+    traci.trafficlight.setProgram("tl_corridor_01", enforced_action.program_id)
+                    </div>
+                    <div class="grid-2" style="margin-top: var(--space-md);">
+                        <div>
+                            <h4 style="color: var(--accent-primary); font-size: var(--font-size-xs); text-transform: uppercase;">Key Libraries</h4>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary);">PyTorch, NumPy, SciPy, Stable-Baselines3, Scikit-learn, Ray Tune.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-primary); font-size: var(--font-size-xs); text-transform: uppercase;">Operational Role</h4>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary);">Executes RL policy evaluation, state feature extraction, and mathematical queue optimization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. SUMO and TraCI Simulation Engine -->
+                <div class="tech-spec-card">
+                    <div class="tech-spec-header">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span style="font-size: 1.8rem;">🚦</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">Eclipse SUMO & TraCI Simulation Engine</h2>
+                        </div>
+                        <span class="tech-impl-badge" style="background: rgba(120,223,176,0.15); color: var(--accent-success); border: 1px solid var(--accent-success);">
+                            Status: Fully Implemented Core
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Eclipse SUMO (Simulation of Urban MObility) is an open-source, highly portable, microscopic vehicular traffic simulator. Connected via the TraCI (Traffic Control Interface) socket protocol, it executes sub-second physical simulation runs with realistic car-following dynamics (Krauss / IDM models).
+                    </p>
+                    <div class="grid-3" style="margin-top: var(--space-md);">
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px;">
+                            <strong style="color: var(--text-primary); font-size: 0.9rem;">Microscopic Actuation</strong>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 4px 0 0;">Simulates individual vehicle speed, braking, lane changing, and acceleration curves.</p>
+                        </div>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px;">
+                            <strong style="color: var(--text-primary); font-size: 0.9rem;">TraCI Real-Time Socket</strong>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 4px 0 0;">Allows Python agents to inspect queues and modify signal phases step-by-step.</p>
+                        </div>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px;">
+                            <strong style="color: var(--text-primary); font-size: 0.9rem;">Demand Calibration</strong>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 4px 0 0;">Loads synthetic and real-world origin-destination matrices from municipal count logs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. GIS, PostGIS & GeoPandas -->
+                <div class="tech-spec-card">
+                    <div class="tech-spec-header">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span style="font-size: 1.8rem;">🗺️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">Geospatial Engine: PostGIS, GeoPandas & OpenStreetMap</h2>
+                        </div>
+                        <span class="tech-impl-badge" style="background: rgba(120,223,176,0.15); color: var(--accent-success); border: 1px solid var(--accent-success);">
+                            Status: Fully Implemented Data Layer
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Spatial intelligence is powered by OpenStreetMap topology converted into PostGIS network graphs. GeoPandas and Shapely execute high-speed spatial joins, corridor bounding boxes, and Low-Emission Zone polygon geofences.
+                    </p>
+                    <div class="grid-2" style="margin-top: var(--space-md);">
+                        <div style="background: var(--bg-secondary); padding: 14px; border-radius: 8px;">
+                            <h4 style="color: var(--accent-primary); font-size: var(--font-size-xs); text-transform: uppercase;">PostGIS 3.4 on PostgreSQL 16</h4>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary);">
+                                Manages street centerlines, junction coordinates, crosswalk geometries, and spatial indexing (`GIST`) for microsecond proximity queries across metropolitan territories.
+                            </p>
+                        </div>
+                        <div style="background: var(--bg-secondary); padding: 14px; border-radius: 8px;">
+                            <h4 style="color: var(--accent-secondary); font-size: var(--font-size-xs); text-transform: uppercase;">OSMnx & OpenStreetMap Ingestion</h4>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary);">
+                                Downloads, models, and visualizes street networks directly from OSM, generating navigable directed multigraphs with edge speeds, lane counts, and turn restrictions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. AI/ML: DQN, PPO, LSTM & GRU -->
+                <div class="tech-spec-card">
+                    <div class="tech-spec-header">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span style="font-size: 1.8rem;">🤖</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">Machine Learning: DQN, PPO, LSTM & GRU</h2>
+                        </div>
+                        <span class="tech-impl-badge" style="background: rgba(85,215,232,0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary);">
+                            Status: Implemented in Simulation Sandbox
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Our dual AI pipeline combines predictive sequence modeling with closed-loop policy optimization:
+                    </p>
+                    <div class="grid-2" style="margin-top: var(--space-md);">
+                        <div style="background: var(--bg-secondary); padding: 14px; border-radius: 8px;">
+                            <strong style="color: var(--accent-primary);">Deep Reinforcement Learning (DQN & PPO)</strong>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-top: 6px;">
+                                Agents learn to dynamically adjust green phase durations by observing queue lengths, wait time variances, and downstream discharge capacities.
+                            </p>
+                        </div>
+                        <div style="background: var(--bg-secondary); padding: 14px; border-radius: 8px;">
+                            <strong style="color: var(--accent-secondary);">Time-Series Forecasting (LSTM & GRU)</strong>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-top: 6px;">
+                                Recurrent neural networks predict flow surges across arterial links up to 60 minutes in advance, enabling the signal controllers to adjust offsets before queues propagate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Edge Computer Vision (YOLOv8) -->
+                <div class="tech-spec-card">
+                    <div class="tech-spec-header">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span style="font-size: 1.8rem;">👁️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">Edge Computer Vision: YOLOv8 & RTSP Pipeline</h2>
+                        </div>
+                        <span class="tech-impl-badge" style="background: rgba(85,215,232,0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary);">
+                            Status: In Development (Edge Neural Benchmark)
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Processes municipal RTSP video streams at the network edge. Tracks and classifies vehicles into classes (cars, buses, delivery trucks, motorcycles) while counting lane queue densities.
+                    </p>
+                    <div style="background: var(--bg-secondary); padding: 14px; border-radius: 8px; margin-top: var(--space-md); border-left: 3px solid var(--accent-primary);">
+                        <strong>Edge Deployment Architecture:</strong> Compiled via TensorRT for ultra-low latency execution on NVIDIA Jetson or Intel OpenVINO edge hardware boxes installed directly in signal cabinet enclosures.
+                    </div>
+                </div>
+
+                <!-- 6. Backend & Cloud Infrastructure -->
+                <div class="tech-spec-card">
+                    <div class="tech-spec-header">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span style="font-size: 1.8rem;">☁️</span>
+                            <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">Backend & Cloud Architecture: FastAPI & Azure AKS</h2>
+                        </div>
+                        <span class="tech-impl-badge" style="background: rgba(245,184,66,0.15); color: var(--accent-warning); border: 1px solid var(--accent-warning);">
+                            Status: Architectural Concept & Prototype API
+                        </span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        High-concurrency asynchronous API layer engineered in FastAPI and Python 3.11 with containerized orchestration on Microsoft Azure Kubernetes Service (AKS).
+                    </p>
+                    <div class="grid-3" style="margin-top: var(--space-md);">
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px;">
+                            <strong style="color: var(--text-primary); font-size: 0.9rem;">FastAPI Async Engine</strong>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 4px 0 0;">Sub-millisecond serialization of municipal telemetry feeds using Pydantic V2.</p>
+                        </div>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px;">
+                            <strong style="color: var(--text-primary); font-size: 0.9rem;">Redis In-Memory State</strong>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 4px 0 0;">Maintains active intersection signal states, current phases, and operator overrides.</p>
+                        </div>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px;">
+                            <strong style="color: var(--text-primary); font-size: 0.9rem;">NTCIP 1202 & MQTT</strong>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 4px 0 0;">Standard protocol bridging legacy 170/2070/ATC signal cabinets with cloud telemetry.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-enterprise" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand-logo" style="margin-bottom: var(--space-md);">
+                        <span class="brand-dot"></span>
+                        <span>MoviSabio</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Intelligent Infrastructure. Smarter Territories. Connected Futures. Transforming fragmented territorial data into actionable spatial intelligence.
+                    </p>
+                    <div class="status-pill status-live">
+                        <span class="status-dot"></span>
+                        <span>Aligned with UN SDGs 11 & 13</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Technology Stack</h4>
+                    <ul class="footer-links">
+                        <li><a href="technology.html">Python Scientific Core</a></li>
+                        <li><a href="technology.html">SUMO & TraCI Simulator</a></li>
+                        <li><a href="technology.html">PostGIS & GeoPandas</a></li>
+                        <li><a href="technology.html">DQN & PPO AI Engine</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Enterprise Platform</a></li>
+                        <li><a href="solutions.html">15 Solutions</a></li>
+                        <li><a href="about.html">About MoviSabio</a></li>
+                        <li><a href="contact.html">Contact Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Global Hubs</h4>
+                    <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-sm);">
+                        <strong>Pilots:</strong> Campinas (BR) & Montevideo (UY)<br>
+                        <strong>Expansion:</strong> Munich/Berlin (DE) & Milan (IT)<br>
+                        <strong>Inquiries:</strong> <a href="mailto:info@movisabio.com">info@movisabio.com</a>
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://linkedin.com/company/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🔗 LinkedIn</a>
+                        <a href="https://github.com/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🐙 GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 MoviSabio Tech Solutions. All rights reserved.</div>
+                <div>Enterprise Spatial Intelligence • GDPR & Privacy Compliant</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
