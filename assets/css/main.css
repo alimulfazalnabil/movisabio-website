@@ -1,0 +1,11 @@
+/**
+ * MoviSabio Enterprise Design System - Main Bundle
+ * Phase 2 - Premium Corporate Dark Theme
+ */
+
+@import url('variables.css');
+@import url('base.css');
+@import url('components.css');
+@import url('navigation.css');
+@import url('map.css');
+@import url('platform.css');

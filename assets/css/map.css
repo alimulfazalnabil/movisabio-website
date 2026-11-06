@@ -1,0 +1,216 @@
+/**
+ * MoviSabio Enterprise Design System - Map & Geospatial Styles
+ * Phase 2 - Premium Corporate Dark Theme
+ */
+
+/* ==========================================================================
+   1. MAP CARD CONTAINER
+   ========================================================================== */
+.map-card-wrapper {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+    margin: var(--space-2xl) auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.map-title {
+    color: var(--text-primary);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: 4px;
+}
+
+.map-subtitle {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+/* Map Filter Button Group */
+.map-filter-group {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+}
+
+.map-filter-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xs);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+.map-filter-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+}
+.map-filter-btn.active {
+    background: rgba(85, 215, 232, 0.15);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    box-shadow: 0 0 16px var(--accent-primary-glow);
+}
+
+/* Leaflet Container Override */
+#territorial-map {
+    height: 540px;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    background: #030810;
+    position: relative;
+    z-index: 1;
+}
+
+/* Leaflet Controls Styling */
+.leaflet-control-zoom {
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: var(--radius-md) !important;
+    overflow: hidden;
+    box-shadow: var(--shadow-md) !important;
+}
+.leaflet-control-zoom a {
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-bottom: 1px solid var(--border-subtle) !important;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+.leaflet-control-zoom a:hover {
+    background: var(--bg-secondary) !important;
+    color: var(--accent-primary) !important;
+}
+.leaflet-container .leaflet-control-attribution {
+    background: rgba(7, 17, 31, 0.85) !important;
+    color: var(--text-muted) !important;
+    font-size: 11px !important;
+    backdrop-filter: blur(4px);
+}
+.leaflet-container .leaflet-control-attribution a {
+    color: var(--text-secondary) !important;
+}
+
+/* Custom Pulsing Markers */
+.custom-pin-wrapper {
+    background: transparent !important;
+    border: none !important;
+}
+
+.custom-pin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    position: relative;
+    transition: transform var(--transition-fast);
+}
+.custom-pin:hover {
+    transform: scale(1.15);
+}
+.custom-pin::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    animation: pin-pulse 2.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    pointer-events: none;
+}
+@keyframes pin-pulse {
+    0% { transform: scale(0.9); opacity: 0.9; }
+    100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Leaflet Popup Styling - Dark Theme */
+.leaflet-popup-content-wrapper {
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: var(--shadow-lg), 0 0 30px rgba(85, 215, 232, 0.1) !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.leaflet-popup-tip {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-subtle) !important;
+}
+.leaflet-popup-content {
+    margin: 16px 20px !important;
+    line-height: var(--line-height-normal) !important;
+    font-family: var(--font-body) !important;
+}
+.leaflet-container a.leaflet-popup-close-button {
+    color: var(--text-secondary) !important;
+    padding: 8px 10px 0 0 !important;
+    font-size: 1.3rem !important;
+    transition: color var(--transition-fast);
+}
+.leaflet-container a.leaflet-popup-close-button:hover {
+    color: var(--accent-primary) !important;
+}
+
+/* Territory Quick Metric Cards */
+.territory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.territory-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border-left: 4px solid var(--accent-primary);
+}
+.territory-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+}
+.territory-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.territory-city {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+}
+.territory-desc {
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    line-height: 1.4;
+    margin: 0;
+}

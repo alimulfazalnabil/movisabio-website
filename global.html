@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Collaboration & Operations | MoviSabio Territorial Digital Twins</title>
+
+    <meta name="description" content="Explore MoviSabio's global territorial presence: pilot corridors in Brazil and Uruguay, European expansion pipelines in Germany and Italy.">
+    <link rel="canonical" href="https://www.movisabio.com/global.html">
+
+    <!-- International SEO hreflang Annotations (6 Languages) -->
+    <link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/global.html">
+    <link rel="alternate" hreflang="en" href="https://www.movisabio.com/global.html?lang=en">
+    <link rel="alternate" hreflang="de" href="https://www.movisabio.com/global.html?lang=de">
+    <link rel="alternate" hreflang="pt" href="https://www.movisabio.com/global.html?lang=pt">
+    <link rel="alternate" hreflang="es" href="https://www.movisabio.com/global.html?lang=es">
+    <link rel="alternate" hreflang="it" href="https://www.movisabio.com/global.html?lang=it">
+    <link rel="alternate" hreflang="zh" href="https://www.movisabio.com/global.html?lang=zh">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.movisabio.com/global.html">
+    <meta property="og:title" content="Global Collaboration & Operations | MoviSabio Territorial Digital Twins">
+    <meta property="og:description" content="Explore MoviSabio's global territorial presence: pilot corridors in Brazil and Uruguay, and European expansion corridors in Germany and Italy.">
+    <meta property="og:image" content="https://www.movisabio.com/logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <!-- Twitter / X Previews -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.movisabio.com/global.html">
+    <meta name="twitter:title" content="Global Collaboration & Operations | MoviSabio">
+    <meta name="twitter:description" content="Explore MoviSabio's global territorial presence.">
+    <meta name="twitter:image" content="https://www.movisabio.com/logo.png">
+
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "MoviSabio Global Regional Corridors",
+      "description": "Simulation corridors and operations in Campinas (Brazil), Montevideo (Uruguay), Munich/Berlin (Germany), and Milan (Italy).",
+      "url": "https://www.movisabio.com/global.html"
+    }
+    </script>
+
+    <!-- Leaflet Map Assets -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-to-content" data-i18n="skip_to_content">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <header class="navbar-enterprise" role="banner">
+        <div class="navbar-container">
+            <a href="index.html" class="brand-logo" aria-label="MoviSabio Home">
+                <span class="brand-dot"></span>
+                <span>MoviSabio</span>
+                <span class="brand-tag">Enterprise</span>
+            </a>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="platform.html" class="nav-link" data-i18n="nav_platform">Platform</a></li>
+                    <li><a href="solutions.html" class="nav-link" data-i18n="nav_solutions">Solutions</a></li>
+                    <li><a href="technology.html" class="nav-link" data-i18n="nav_architecture">Technology</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav_research">Research & ESG</a></li>
+                    <li><a href="global.html" class="nav-link" style="color: var(--accent-primary);" data-i18n="nav_map">Global Map</a></li>
+                    <li><a href="leadership.html" class="nav-link" data-i18n="nav_leadership">Leadership</a></li>
+                    <li><a href="partners.html" class="nav-link" style="color: var(--accent-success); font-weight: 700;" data-i18n="nav_submit_idea">Partners & Pitch</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" class="lang-dropdown-enterprise" onchange="MoviSabioI18n.setLanguage(this.value)" aria-label="Select Language">
+                        <option value="en">EN • English</option>
+                        <option value="de">DE • Deutsch</option>
+                        <option value="pt">PT • Português</option>
+                        <option value="es">ES • Español</option>
+                        <option value="it">IT • Italiano</option>
+                        <option value="zh">ZH • 中文</option>
+                    </select>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_cta">Partner With Us</a>
+                <button type="button" class="mobile-toggle-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO -->
+        <section class="section-padding" style="padding-top: var(--space-4xl); padding-bottom: var(--space-xl);">
+            <div class="container" style="text-align: center; max-width: 860px;">
+                <div class="section-tag">Geospatial Operations</div>
+                <h1 class="section-title">Global Presence & Collaboration</h1>
+                <p class="section-subtitle">
+                    Transparently reporting our international footprint across active pilot proposals, digital twin modeling nodes, and European research grant targets.
+                </p>
+            </div>
+        </section>
+
+        <!-- MAP CONTAINER -->
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+                <div class="map-card-wrapper" style="margin-top: 0;">
+                    <div class="map-header-row">
+                        <div>
+                            <h2 class="map-title">🗺️ Territorial Digital Twin & Operations Map</h2>
+                            <p class="map-subtitle">Interact with active pilot scoping nodes, digital twin testbeds, and European expansion hubs.</p>
+                        </div>
+                        <div class="map-filter-group" role="group" aria-label="Map Territory Filter">
+                            <button type="button" class="map-filter-btn active" onclick="filterMap('all', this)">🌍 All Territories</button>
+                            <button type="button" class="map-filter-btn" onclick="filterMap('latam', this)">🇧🇷 🇺🇾 Active Engagements (LATAM)</button>
+                            <button type="button" class="map-filter-btn" onclick="filterMap('europe', this)">🇩🇪 🇮🇹 Expansion Hubs (Europe)</button>
+                        </div>
+                    </div>
+
+                    <!-- Leaflet Container -->
+                    <div id="territorial-map" style="height: 580px;"></div>
+                </div>
+
+                <!-- DETAILED TERRITORIAL ENGAGEMENT BREAKDOWNS -->
+                <div class="section-header" style="margin-top: var(--space-3xl);">
+                    <div class="section-tag">Regional Breakdown</div>
+                    <h2 class="section-title">Territory Engagement Matrix</h2>
+                    <p class="section-subtitle">Detailed profiles distinguishing implemented simulation research from active scoping targets.</p>
+                </div>
+
+                <div class="grid-2">
+                    <!-- Brazil -->
+                    <div class="card-enterprise" style="border-left: 4px solid var(--accent-success);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+                            <h3 style="font-size: 1.3rem; color: var(--text-primary); margin: 0;">🇧🇷 Campinas, Brazil</h3>
+                            <span class="status-pill status-live">Pilot Scoping Proposal</span>
+                        </div>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md);">
+                            <strong>Flagship AI Traffic Signal Pilot Proposal:</strong> Scoping an active 10-intersection arterial corridor in Campinas. Applying multi-agent Deep Q-Networks (DQN) with strict MAXBAND safety limits to reduce intersection delay by up to 45% in simulation.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                            <strong>Scope:</strong> Corridor A • Dynamic Green Splits • Emergency Green Waves • CCTV Edge Inference
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="flyToTerritory(-22.9099, -47.0626, 12)">Focus on Map →</button>
+                    </div>
+
+                    <!-- Uruguay -->
+                    <div class="card-enterprise" style="border-left: 4px solid var(--accent-primary);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+                            <h3 style="font-size: 1.3rem; color: var(--text-primary); margin: 0;">🇺🇾 Montevideo, Uruguay</h3>
+                            <span class="status-pill status-active">Digital Twin Benchmark</span>
+                        </div>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md);">
+                            <strong>OpenStreetMap Digital Twin Testbed:</strong> Utilizing open-source OSM road topology and municipal sensor telemetry to construct high-fidelity digital twin corridors in SUMO. Powers Transit Signal Priority (TSP) algorithms.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                            <strong>Scope:</strong> SUMO TraCI Micro-Simulation • Bus Route Priority • Predictive LSTM Modeling
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="flyToTerritory(-34.9011, -56.1645, 12)">Focus on Map →</button>
+                    </div>
+
+                    <!-- Germany -->
+                    <div class="card-enterprise" style="border-left: 4px solid var(--accent-warning);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+                            <h3 style="font-size: 1.3rem; color: var(--text-primary); margin: 0;">🇩🇪 Munich & Berlin, Germany</h3>
+                            <span class="status-pill status-pipeline">Grant Pipeline Target</span>
+                        </div>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md);">
+                            <strong>European Grant & Research Target:</strong> Strategic expansion corridor targeting EIT Urban Mobility and Horizon Europe non-dilutive climate tech funding (2026–2028) for cross-border digital twin validation.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                            <strong>Scope:</strong> Horizon Europe Consortium • Anchor Pilot MVP • EIT Urban Mobility Partner Hub
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="flyToTerritory(48.1351, 11.5820, 10)">Focus on Map →</button>
+                    </div>
+
+                    <!-- Italy -->
+                    <div class="card-enterprise" style="border-left: 4px solid var(--accent-secondary);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+                            <h3 style="font-size: 1.3rem; color: var(--text-primary); margin: 0;">🇮🇹 Milan, Italy</h3>
+                            <span class="status-pill status-research">Expansion Corridor</span>
+                        </div>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md);">
+                            <strong>Territorial SaaS & Low-Emission Zone (LEZ) Analytics:</strong> Exploratory market evaluating urban LEZ compliance, multi-sensor air quality telemetry, and cross-border decision infrastructure.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                            <strong>Scope:</strong> LEZ Carbon Accounting • UN SDG 11 & 13 Verification • Territorial SaaS Ingestion
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="flyToTerritory(45.4642, 9.1900, 10)">Focus on Map →</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-enterprise" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand-logo" style="margin-bottom: var(--space-md);">
+                        <span class="brand-dot"></span>
+                        <span>MoviSabio</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Intelligent Infrastructure. Smarter Territories. Connected Futures. Transforming fragmented territorial data into actionable spatial intelligence.
+                    </p>
+                    <div class="status-pill status-live">
+                        <span class="status-dot"></span>
+                        <span>Aligned with UN SDGs 11 & 13</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Operations</h4>
+                    <ul class="footer-links">
+                        <li><a onclick="flyToTerritory(-22.9099, -47.0626, 12)">Campinas, Brazil</a></li>
+                        <li><a onclick="flyToTerritory(-34.9011, -56.1645, 12)">Montevideo, Uruguay</a></li>
+                        <li><a onclick="flyToTerritory(48.1351, 11.5820, 10)">Munich & Berlin, DE</a></li>
+                        <li><a onclick="flyToTerritory(45.4642, 9.1900, 10)">Milan, Italy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Enterprise Platform</a></li>
+                        <li><a href="solutions.html">15 Solutions</a></li>
+                        <li><a href="about.html">About MoviSabio</a></li>
+                        <li><a href="contact.html">Contact Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Inquiries</h4>
+                    <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-sm);">
+                        <strong>General:</strong> <a href="mailto:info@movisabio.com">info@movisabio.com</a><br>
+                        <strong>Technology Office:</strong> <a href="mailto:nabil@movisabio.com">nabil@movisabio.com</a>
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://linkedin.com/company/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🔗 LinkedIn</a>
+                        <a href="https://github.com/movisabio" target="_blank" rel="noopener noreferrer" class="footer-social-btn">🐙 GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 MoviSabio Tech Solutions. All rights reserved.</div>
+                <div>Enterprise Spatial Intelligence • GDPR & Privacy Compliant</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const territoryData = [
+            {
+                id: 'campinas',
+                region: 'latam',
+                city: 'Campinas',
+                country: 'Brazil 🇧🇷',
+                coords: [-22.9099, -47.0626],
+                status: 'Pilot Proposal (Corridor A)',
+                badgeBg: 'var(--accent-success)',
+                badgeColor: '#07111F',
+                description: 'Deploying multi-agent Deep Q-Networks (DQN) with MAXBAND safety bounds across 10 interconnected signalized intersections.',
+                metrics: [
+                    { label: 'Corridors', value: '10 Intersections' },
+                    { label: 'Delay Target', value: 'Up to 45%' },
+                    { label: 'CO₂ Goal', value: 'Target 15–30%' },
+                    { label: 'Architecture', value: 'MAXBAND + Deep RL' }
+                ],
+                icon: '🚦',
+                color: '#78DFB0'
+            },
+            {
+                id: 'montevideo',
+                region: 'latam',
+                city: 'Montevideo',
+                country: 'Uruguay 🇺🇾',
+                coords: [-34.9011, -56.1645],
+                status: 'Digital Twin Benchmark',
+                badgeBg: 'var(--accent-primary)',
+                badgeColor: '#07111F',
+                description: 'Leveraging OpenStreetMap topology and municipal loop sensors to construct high-fidelity digital twin corridors in SUMO for bus transit priority.',
+                metrics: [
+                    { label: 'Network Data', value: 'OpenStreetMap' },
+                    { label: 'Simulator', value: 'SUMO & TraCI' },
+                    { label: 'Focus', value: 'Bus Signal Priority' },
+                    { label: 'Telemetry', value: 'CCTV + Loop Mesh' }
+                ],
+                icon: '🌐',
+                color: '#55D7E8'
+            },
+            {
+                id: 'germany',
+                region: 'europe',
+                city: 'Munich & Berlin',
+                country: 'Germany 🇩🇪',
+                coords: [48.1351, 11.5820],
+                status: 'Grant Pipeline Target',
+                badgeBg: 'var(--accent-warning)',
+                badgeColor: '#07111F',
+                description: 'Strategic European expansion corridor targeting EIT Urban Mobility and Horizon Europe non-dilutive climate tech grants (2026–2028).',
+                metrics: [
+                    { label: 'Pipeline', value: 'Horizon Europe' },
+                    { label: 'Target Phase', value: '2026–2028' },
+                    { label: 'Ecosystem', value: 'EIT Urban Mobility' },
+                    { label: 'Scope', value: 'Anchor Pilot MVP' }
+                ],
+                icon: '🇩🇪',
+                color: '#F5B842'
+            },
+            {
+                id: 'italy',
+                region: 'europe',
+                city: 'Milan',
+                country: 'Italy 🇮🇹',
+                coords: [45.4642, 9.1900],
+                status: 'Expansion Corridor',
+                badgeBg: 'var(--accent-secondary)',
+                badgeColor: '#07111F',
+                description: 'Evaluating urban Low-Emission Zone (LEZ) monitoring, multi-sensor air quality telemetry, and cross-border decision infrastructure.',
+                metrics: [
+                    { label: 'Platform Layer', value: 'Territorial SaaS' },
+                    { label: 'Urban Focus', value: 'LEZ & Air Quality' },
+                    { label: 'ESG Standard', value: 'UN SDGs 11 & 13' },
+                    { label: 'Architecture', value: 'Edge Telemetry' }
+                ],
+                icon: '🇮🇹',
+                color: '#6C9CFF'
+            }
+        ];
+
+        let territorialMap = null;
+        let mapMarkers = [];
+
+        function initTerritorialMap() {
+            const container = document.getElementById('territorial-map');
+            if (!container || territorialMap) return;
+
+            territorialMap = L.map('territorial-map', {
+                center: [10.0, -25.0],
+                zoom: 3,
+                minZoom: 2,
+                maxZoom: 18,
+                scrollWheelZoom: false
+            });
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(territorialMap);
+
+            renderMapMarkers('all');
+        }
+
+        function renderMapMarkers(filter) {
+            if (!territorialMap) return;
+
+            mapMarkers.forEach(m => territorialMap.removeLayer(m));
+            mapMarkers = [];
+
+            const filtered = filter === 'all' ? territoryData : territoryData.filter(t => t.region === filter);
+
+            filtered.forEach(item => {
+                const customIcon = L.divIcon({
+                    className: 'custom-pin-wrapper',
+                    html: `<div class="custom-pin" style="background:${item.color}; width:44px; height:44px; font-size:1.25rem;">${item.icon}</div>`,
+                    iconSize: [44, 44],
+                    iconAnchor: [22, 22],
+                    popupAnchor: [0, -24]
+                });
+
+                const metricsHTML = item.metrics.map(m => `
+                    <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px; border-left: 2px solid ${item.color};">
+                        <div style="font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">${m.label}</div>
+                        <div style="font-size: 0.85rem; color: var(--text-primary); font-weight: bold; margin-top: 2px;">${m.value}</div>
+                    </div>
+                `).join('');
+
+                const popupHTML = `
+                    <div style="min-width: 280px; max-width: 320px; padding: 4px 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <h4 style="margin: 0; color: var(--text-primary); font-size: 1.15rem; font-weight: 800;">${item.city}</h4>
+                            <span style="background: ${item.badgeBg}; color: ${item.badgeColor}; font-size: 0.68rem; font-weight: bold; padding: 3px 8px; border-radius: 12px;">${item.status}</span>
+                        </div>
+                        <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-primary); margin-bottom: 8px;">${item.country}</div>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">${item.description}</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+                            ${metricsHTML}
+                        </div>
+                    </div>
+                `;
+
+                const marker = L.marker(item.coords, { icon: customIcon })
+                    .bindPopup(popupHTML)
+                    .addTo(territorialMap);
+
+                marker.territoryCoords = item.coords;
+                mapMarkers.push(marker);
+            });
+
+            if (mapMarkers.length > 0) {
+                const group = L.featureGroup(mapMarkers);
+                territorialMap.fitBounds(group.getBounds().pad(0.3));
+            }
+        }
+
+        function filterMap(region, btn) {
+            document.querySelectorAll('.map-filter-group .map-filter-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            renderMapMarkers(region);
+        }
+
+        function flyToTerritory(lat, lng, zoom) {
+            if (!territorialMap) return;
+            window.scrollTo({ top: document.querySelector('.map-card-wrapper').offsetTop - 80, behavior: 'smooth' });
+            territorialMap.flyTo([lat, lng], zoom || 11, { duration: 1.5 });
+            setTimeout(() => {
+                const marker = mapMarkers.find(m => m.territoryCoords && Math.abs(m.territoryCoords[0] - lat) < 0.01 && Math.abs(m.territoryCoords[1] - lng) < 0.01);
+                if (marker) marker.openPopup();
+            }, 1200);
+        }
+
+        window.addEventListener('DOMContentLoaded', initTerritorialMap);
+        window.addEventListener('load', () => { if (territorialMap) territorialMap.invalidateSize(); });
+    </script>
+</body>
+</html>
