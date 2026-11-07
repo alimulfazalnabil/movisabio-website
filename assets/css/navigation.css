@@ -324,6 +324,54 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .navbar-container {
+        width: 94%;
+    }
+    .brand-logo {
+        font-size: 1.2rem;
+        gap: 6px;
+    }
+    .brand-tag {
+        font-size: 0.55rem;
+        padding: 1px 4px;
+    }
+    .nav-actions {
+        gap: 8px;
+    }
+    .lang-dropdown-enterprise {
+        padding: 5px 6px;
+        font-size: 0.72rem;
+        max-width: 88px;
+    }
+    .mobile-toggle-btn {
+        padding: 5px 9px;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-container {
+        width: 95%;
+    }
+    .brand-logo {
+        font-size: 1.12rem;
+        gap: 5px;
+    }
+    .brand-tag {
+        display: none; /* Avoid header wrap on mobile viewports <= 420px */
+    }
+    .lang-dropdown-enterprise {
+        padding: 4px 6px;
+        font-size: 0.7rem;
+        max-width: 82px;
+    }
+    .mobile-toggle-btn {
+        padding: 5px 8px;
+        font-size: 1.2rem;
+    }
+}
+
 /* ==========================================================================
    3. CORPORATE MULTI-COLUMN FOOTER
    ========================================================================== */
