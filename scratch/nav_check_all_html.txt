@@ -1,0 +1,10 @@
+about.html: has Economics in nav-menu = false
+contact.html: has Economics in nav-menu = false
+global.html: has Economics in nav-menu = false
+index.html: has Economics in nav-menu = false
+leadership.html: has Economics in nav-menu = false
+partners.html: has Economics in nav-menu = false
+platform.html: has Economics in nav-menu = false
+research.html: has Economics in nav-menu = false
+solutions.html: has Economics in nav-menu = false
+technology.html: has Economics in nav-menu = false

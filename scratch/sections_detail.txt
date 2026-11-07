@@ -1,0 +1,21 @@
+=== INSPECTION OF ABOUT & PORTFOLIO ===
+
+--- Original Historical About/Company section ---
+<section id="company" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sec_about">About MoviSabio</h2>
+                <div class="company-grid">
+                    <div class="company-card" style="border-left-color: var(--accent-blue);">
+                        <div class="icon">�</div>
+                        <h3 data-i18n="card_mission_title">Global Vision & Mission</h3>
+                        <p data-i18n="card_mission_text">We are building the world's leading Territorial Intelligence Platform. Our mission is to scale AI, IoT, and quantum-ready digital ecosystems globally, empowering governments, enterprises, and communities across all continents to make evidence-based, sustainable decisions.</p>
+                    </d...
+
+--- Current About in index.html ---
+No section id="about" in index.html
+
+--- about.html exists (length: 17106) ---
+--- Original Projects array in historical index.html ---
+--- Current techSolutions array in index.html ---
+techSolutions length in index.html: 8835 characters
+

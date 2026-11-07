@@ -1,0 +1,6 @@
+Running Desktop:
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --disable-gpu --window-size=1440,900 --virtual-time-budget=3000 --screenshot="H:/Software Projects/Movisabio Website/recovery/restored_economics_desktop.png" "file:///H:/Software Projects/Movisabio Website/index.html#economics"
+Desktop screenshot captured: true
+Running Mobile:
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --disable-gpu --window-size=390,844 --virtual-time-budget=3000 --screenshot="H:/Software Projects/Movisabio Website/recovery/restored_economics_mobile.png" "file:///H:/Software Projects/Movisabio Website/index.html#economics"
+Mobile screenshot captured: true

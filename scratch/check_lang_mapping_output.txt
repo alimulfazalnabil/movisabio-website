@@ -1,0 +1,6 @@
+Lang [en]: nav_economics = "Economics", sec_economics = "Market Opportunity & Unit Economics"
+Lang [es]: nav_economics = "Economía", sec_economics = "Oportunidad de Mercado y Economía de Unidad"
+Lang [pt]: nav_economics = "Economia", sec_economics = "Oportunidade de Mercado e Economia de Unidade"
+Lang [it]: nav_economics = "Economia", sec_economics = "Opportunità di Mercato ed Economia Unitaria"
+Lang [de]: nav_economics = "Wirtschaftlichkeit", sec_economics = "Marktchancen und Unit Economics"
+Lang [zh]: nav_economics = "商业经济", sec_economics = "市场机遇与单位经济效益"

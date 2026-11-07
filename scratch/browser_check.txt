@@ -1,0 +1,3 @@
+puppeteer not installed in current dir
+playwright not installed in current dir
+Found browser at: C:\Program Files\Google\Chrome\Application\chrome.exe

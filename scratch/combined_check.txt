@@ -1,0 +1,5 @@
+data-i18n attributes found in historical_economics_section.html:
+ - sec_economics
+
+Economics keys in recovery/original_i18n.js:
+nav_economics, Economics, sec_economics, Econom, Economia

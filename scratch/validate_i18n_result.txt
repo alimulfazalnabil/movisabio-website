@@ -1,0 +1,1 @@
+assets/js/i18n.js syntax is VALID! (DOM reference expected in browser)

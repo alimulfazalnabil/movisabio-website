@@ -1,0 +1,377 @@
+<USER_REQUEST>
+# MOVISABIO — WEBSITE CONTENT RESTORATION & UX IMPROVEMENT
+
+**Priority:** High  
+**Repository:** https://github.com/alimulfazalnabil/movisabio-website  
+**Target branch:** main
+
+## IMPORTANT PROJECT RULES
+
+The website has previously experienced unintended content deletion and design changes.
+
+This task must preserve all existing website content and restore missing information.
+
+Before making changes:
+1. Inspect the current Git status.
+2. Inspect recent commits and identify the current website structure.
+3. Compare the relevant sections with historical versions.
+4. Create a restoration and modification plan.
+5. Preserve unrelated sections and existing functionality.
+
+Do not redesign the entire website. Implement only the five requested improvements.
+
+---
+
+# TASK 1 — CONNECT PLATFORM AND MOVISABIO SMART CITY SECTIONS
+
+## Problem
+
+The Platform section and MoviSabio Smart City section communicate related product capabilities, but currently appear disconnected.
+
+They must become part of one coherent product narrative.
+
+## Required relationship
+
+**MoviSabio Smart City** is the flagship enterprise application and practical implementation of the broader **Territorial Intelligence Platform**.
+
+The relationship should be:
+
+Territorial Intelligence Platform
+- Core intelligence ecosystem.
+- AI and machine learning.
+- Geospatial intelligence.
+- IoT integration.
+- Environmental and ESG intelligence.
+- Digital twins.
+- Data processing and analytics.
+
+MoviSabio Smart City
+- Flagship enterprise application.
+- Urban mobility intelligence.
+- AI traffic signal coordination.
+- Computer vision vehicle detection.
+- Smart transportation.
+- Traffic prediction and optimization.
+- Municipal decision-support capabilities.
+
+## Implementation
+
+- Connect both sections through clear headings and explanatory text.
+- Introduce a visual relationship between the platform architecture and the Smart City product.
+- Add contextual navigation links.
+- Add a clear CTA from the platform section to the Smart City section.
+- Add a link from Smart City back to the broader platform.
+- Avoid duplicating the same content in both sections.
+
+Suggested positioning:
+
+"The Territorial Intelligence Platform provides the underlying intelligence ecosystem. MoviSabio Smart City applies this ecosystem to urban mobility, infrastructure management and municipal decision-making."
+
+---
+
+# TASK 2 — RESTORE AND IMPROVE ABOUT MOVISABIO
+
+Restore the complete About MoviSabio section.
+
+Preserve the following supplied content and wording.
+
+## About MoviSabio
+
+### Global Vision & Mission
+
+We are building the world's leading Territorial Intelligence Platform. Our mission is to scale AI, IoT, and quantum-ready digital ecosystems globally, empowering governments, enterprises, and communities across all continents to make evidence-based, sustainable decisions.
+
+### Borderless SaaS Architecture
+
+Engineered for immediate international deployment, our cloud-native platform transforms fragmented territorial data into standardized, actionable intelligence. We enable rapid cross-border scalability without requiring heavy, localized hardware infrastructure.
+
+### Worldwide Climate & ESG Impact
+
+Addressing universal challenges in urbanization, agriculture, and resource management. Our predictive AI models help global municipalities and organizations optimize mobility, drastically reduce carbon footprints, and meet rigorous international ESG standards.
+
+## Design requirements
+
+- Use three visually distinct content cards or columns.
+- Use appropriate icons or illustrations.
+- Maintain the existing MoviSabio visual identity.
+- Use consistent typography and spacing.
+- Ensure responsive desktop and mobile layouts.
+- Preserve multilingual support.
+
+Do not replace the supplied content with generic corporate text.
+
+---
+
+# TASK 3 — RESTORE THE COMPLETE OUR TECH PORTFOLIO SECTION
+
+The existing portfolio section has lost its content.
+
+Restore all seven portfolio entries, including their descriptions and navigation links.
+
+## Our Tech Portfolio
+
+### 1. Enterprise Platform
+
+**movisabio-enterprise-smart-city**
+
+A next-generation smart city and intelligent transportation platform acting as the central nervous system of modern urban areas.
+
+CTA: View Details →
+
+### 2. Core Ecosystem
+
+**Territorial Intelligence & Quantum Platform**
+
+Our cloud-native platform consolidating IoT, AI, electric mobility, and quantum computing to solve complex rural and urban territorial challenges.
+
+CTA: View Details →
+
+### 3. Flagship Product
+
+**AI Traffic Signal Coordination**
+
+A software-only platform utilizing Reinforcement Learning to dynamically adjust traffic signals. Reduces urban congestion by up to 45%.
+
+CTA: View Details →
+
+### 4. Phase 2 Initiative
+
+**Computer Vision Vehicle Detection**
+
+Real-time vehicle counting and classification module using YOLOv8. Designed to feed visual data into core AI algorithms.
+
+CTA: View Details →
+
+### 5. In Concept
+
+**Smart Public Transit Router**
+
+An upcoming API designed to prioritize public transport dynamically at intersections to ensure schedule adherence.
+
+CTA: View Details →
+
+### 6. AgriTech Solution
+
+**Virtual Fencing**
+
+A spatial management technology using GPS, cloud computing, and animal behavior conditioning to contain and move livestock without physical barriers.
+
+CTA: View Details →
+
+### 7. Investor Thesis
+
+**Category Creation: Territorial Intelligence Platform (TIP)**
+
+Why MoviSabio does not compete directly with legacy GIS or analytics vendors, creating an entirely new software category.
+
+CTA: View Details →
+
+## Design requirements
+
+- Preserve all seven portfolio entries.
+- Use a consistent card layout.
+- Clearly distinguish Enterprise Platform, Flagship Product, Phase 2 Initiative and In Concept.
+- Add appropriate visual assets.
+- Ensure each View Details link points to the correct existing section or page.
+- Do not create broken placeholder links.
+- Keep product status labels accurate.
+- Maintain mobile responsiveness.
+
+The portfolio should communicate a clear hierarchy:
+
+Platform → Enterprise Application → Flagship Products → Future Products → Investor Thesis.
+
+---
+
+# TASK 4 — IMPROVE THE WEBSITE HEADER AND NAVIGATION
+
+## Problem
+
+The current header is overcrowded.
+
+Too many navigation elements compete for attention, reducing usability and making the website appear less organized.
+
+## Objective
+
+Create a clean, intelligent enterprise navigation system.
+
+## Requirements
+
+1. Keep the MoviSabio logo clearly visible.
+2. Group related navigation links.
+3. Prioritize the main product and company sections.
+4. Move secondary destinations into a dropdown or grouped navigation menu where appropriate.
+5. Preserve the language selector.
+6. Keep the primary contact or partnership CTA visible.
+7. Ensure the header works on mobile.
+8. Implement an accessible mobile navigation menu.
+9. Prevent navigation items from wrapping awkwardly.
+10. Preserve existing navigation destinations and anchors.
+
+Suggested navigation hierarchy:
+
+- Home
+- Platform
+- Solutions
+- Technology
+- Company
+- Insights / Investor
+- Language selector
+- Contact Us
+
+Do not delete important destinations simply to reduce the number of visible links.
+
+Use dropdown menus or logical grouping where necessary.
+
+## Visual requirements
+
+- Clean enterprise appearance.
+- Balanced spacing.
+- Consistent typography.
+- Proper alignment.
+- Clear hover and active states.
+- Sticky navigation only if compatible with the existing design.
+- Responsive behavior at desktop, tablet and mobile breakpoints.
+
+---
+
+# TASK 5 — ADD A PHOTO SLIDER TO THE MOVISABIO SMART CITY FLAGSHIP PROJECT
+
+## Objective
+
+Create an image slider/gallery within the MoviSabio Smart City flagship project section.
+
+The gallery should visually demonstrate the Smart City product and its application.
+
+## Image categories
+
+Use appropriate, high-quality visuals representing:
+
+1. Smart city traffic infrastructure.
+2. AI-powered traffic signal coordination.
+3. Urban traffic monitoring dashboards.
+4. Computer vision vehicle detection.
+5. Intelligent transportation systems.
+6. Digital twin and geospatial visualization.
+
+## Image requirements
+
+- Every image must fit its slider container.
+- Use consistent image aspect ratios.
+- Avoid stretched, distorted or cropped subjects where possible.
+- Use `object-fit: cover` for photographic images.
+- Use appropriate positioning and focal points.
+- Provide fallback images if an asset fails to load.
+- Optimize image sizes for web performance.
+- Use descriptive alt text.
+
+Do not use unrelated generic stock photography.
+
+Prefer genuine MoviSabio project screenshots or existing project assets when available.
+
+If suitable assets do not exist, identify the missing assets and prepare appropriate visual placeholders. Do not falsely present illustrative images as screenshots of an implemented product.
+
+## Slider functionality
+
+- Previous and next controls.
+- Pagination indicators.
+- Touch and swipe support.
+- Responsive behavior.
+- Keyboard accessibility.
+- Optional autoplay with pause controls.
+- Smooth transitions.
+- No layout shifts during image loading.
+
+The slider must be integrated into the existing Smart City section, not created as an unrelated standalone section.
+
+---
+
+# TASK 6 — DESIGN AND CONTENT INTEGRITY
+
+All five changes must follow these rules:
+
+- Preserve the existing website identity.
+- Do not remove the investor economics section.
+- Do not delete leadership information.
+- Do not remove global impact content.
+- Do not remove forms, videos or interactive maps.
+- Preserve all working translations.
+- Avoid duplicate sections.
+- Avoid duplicate HTML IDs.
+- Do not invent new financial claims.
+- Do not change product status without evidence.
+- Do not replace original content with generic descriptions.
+
+Use historical Git versions to recover deleted content wherever possible.
+
+---
+
+# TASK 7 — QUALITY ASSURANCE
+
+After implementation, verify:
+
+## Content
+- Platform and Smart City sections are connected.
+- About MoviSabio has all three subsections.
+- All seven portfolio entries are present.
+- Investor economics remains intact.
+- No unrelated content has disappeared.
+
+## UX
+- Header works on desktop, tablet and mobile.
+- Navigation links work.
+- Dropdowns work.
+- Photo slider works.
+- All images fit their containers.
+- All CTA links lead to valid destinations.
+
+## Technical
+- No JavaScript console errors.
+- No broken internal links.
+- No missing image assets.
+- No duplicate IDs.
+- No layout overflow.
+- No regression in forms, map or video functionality.
+- All six supported languages remain functional.
+
+## Visual validation
+
+Capture screenshots at:
+
+- Desktop: 1440 × 1000.
+- Tablet: 768 × 1024.
+- Mobile: 390 × 844.
+
+Compare the website before and after changes.
+
+---
+
+# GIT AND DEPLOYMENT RULES
+
+1. Work on the existing main branch or a dedicated working branch.
+2. Preserve the existing Git history.
+3. Do not perform destructive resets.
+4. Commit these improvements separately.
+5. Run all validation checks before pushing.
+6. Push to GitHub only after successful validation.
+7. Do not modify DNS or hosting.
+8. Do not deploy to production without explicit approval.
+
+## REQUIRED FINAL REPORT
+
+Provide:
+
+- Summary of all five changes.
+- List of modified files.
+- Content restoration evidence.
+- Screenshots for desktop, tablet and mobile.
+- QA results.
+- Git commit hash.
+- GitHub push status.
+- Any remaining issues.
+
+Stop after completing these changes and wait for further instructions.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-07T05:08:40+06:00.
+</ADDITIONAL_METADATA>
