@@ -13,8 +13,23 @@
 
     const dictionaries = {
         en: {
+        btn_partner_movisabio: "Partner With MoviSabio →",
+        sec_audiences_tag: "Strategic Pathways • Tailored Value Propositions",
+        sec_audiences_title: "One Platform, Three Value Propositions",
+        sec_audiences_subtitle: "Whether you are a municipal policymaker, an enterprise technology leader, or an institutional investor, MoviSabio provides a purpose-built engagement route tailored to your objectives.",
+        audience_gov_title: "Government & Municipalities",
+        audience_gov_badge: "Public-Sector Impact",
+        audience_enterprise_title: "Enterprise & Technology Partners",
+        audience_enterprise_badge: "Technology Partnerships",
+        audience_investor_title: "Investors & Venture Capital",
+        audience_investor_badge: "Business Opportunity",
+        cta_gov: "Explore Municipal Solutions ↓",
+        cta_enterprise: "Discuss Enterprise Solutions →",
+        cta_investors: "Investor Relations ↓",
+        nav_audiences: "Audiences",
+
         nav_smart_city: "Smart City",
-        btn_explore_platform: "Explore the Platform ↓",
+        btn_explore_platform: "Explore Our Platform ↓",
         btn_discover_smart_city: "Discover Smart City 🏙️",
         btn_view_portfolio: "View Technology Portfolio →",
         btn_become_partner: "Become a Strategic Partner →",
@@ -85,8 +100,8 @@
 
             // Homepage Hero & Sections
             hero_badge: "Enterprise Territorial Intelligence Platform",
-            hero_title: "AI & Quantum-Ready Territorial Intelligence Platform",
-            hero_subtitle: "Transforming fragmented municipal, mobility, and environmental telemetry into actionable spatial intelligence. We integrate multi-agent AI, IoT sensor meshes, digital twins, and predictive analytics into an integrated operating ecosystem.",
+            hero_title: "Intelligence for the Territories of Tomorrow.",
+            hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             hero_cta_platform: "Explore Platform",
             hero_cta_solutions: "View 15 Solutions",
             hero_cta_partner: "Institutional Inquiries",
@@ -116,8 +131,8 @@
             sec_cta_subtitle: "We partner with forward-thinking municipalities, research institutions, technology integrators, and infrastructure investors.",
 
             // Platform Page
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "An enterprise-grade, cloud-native territorial intelligence platform designed as the central operating system for urban and regional mobility networks.",
+            platform_hero_title: "Intelligence for the Territories of Tomorrow.",
+            platform_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             platform_pillar_1: "Adaptive Signal Control (AITCS)",
             platform_pillar_2: "Edge Computer Vision & Sensing",
             platform_pillar_3: "Multi-Agent Deep Reinforcement Learning",
@@ -127,8 +142,8 @@
             platform_rollout_title: "4-Phase Municipal Rollout Framework",
 
             // Solutions Page
-            solutions_hero_title: "15 Modular Solutions",
-            solutions_hero_subtitle: "Specialized territorial intelligence modules designed for phased integration into existing municipal infrastructure, smart corridors, and regional transport networks.",
+            solutions_hero_title: "Intelligence for the Territories of Tomorrow.",
+            solutions_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             filter_all: "All Solutions (15)",
             filter_traffic: "Traffic & Signals",
             filter_transit: "Fleet & Transit",
@@ -147,29 +162,29 @@
             label_maturity: "Development Status",
 
             // Technology Page
-            tech_hero_title: "Technology & Architecture",
-            tech_hero_subtitle: "Transparent technical disclosure of our engineering stack, microscopic simulation wrappers, reinforcement learning algorithms, and privacy guarantees.",
+            tech_hero_title: "Intelligence for the Territories of Tomorrow.",
+            tech_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             tech_verified_title: "Engineering Stack & Verification Status",
             tech_safety_title: "Safety Bounds & Interlock Guarantees",
 
             // About Page
-            about_hero_title: "About MoviSabio",
-            about_hero_subtitle: "Developing sovereign, verifiable territorial intelligence for resilient communities worldwide.",
+            about_hero_title: "Intelligence for the Territories of Tomorrow.",
+            about_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             about_mission_title: "Our Mission",
             about_vision_title: "Our Long-Term Vision",
             about_principles_title: "Architectural Principles",
             about_roadmap_title: "Strategic Roadmap 2026–2030",
 
             // Research & ESG Page
-            research_hero_title: "Research & Innovation",
-            research_hero_subtitle: "Rigorous scientific benchmarks, open-source microscopic simulation models, and international grant consortia.",
+            research_hero_title: "Intelligence for the Territories of Tomorrow.",
+            research_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             research_transparency_title: "Simulation vs. Field Actuation Disclosure",
             research_benchmarks_title: "Microscopic Simulation Benchmarks",
             research_grants_title: "International Research Consortia",
 
             // Global Page
-            global_hero_title: "Global Presence & Regional Corridors",
-            global_hero_subtitle: "Active simulation benchmarks, pilot proposals, and academic target corridors across Latin America and Europe.",
+            global_hero_title: "Intelligence for the Territories of Tomorrow.",
+            global_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             global_btn_all: "Show All",
             global_btn_brazil: "Brazil (Campinas)",
             global_btn_uruguay: "Uruguay (Montevideo)",
@@ -177,20 +192,20 @@
             global_btn_italy: "Italy (Milan)",
 
             // Leadership Page
-            leadership_hero_title: "Executive Leadership",
-            leadership_hero_subtitle: "Engineering depth, institutional governance, and global partnership stewardship.",
+            leadership_hero_title: "Intelligence for the Territories of Tomorrow.",
+            leadership_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             modal_bio_title: "Executive Biography",
             modal_close: "Close",
 
             // Partners & Pitch Page
-            partners_hero_title: "Institutional Partnerships & Open Innovation",
-            partners_hero_subtitle: "Transparent collaboration tracks for municipal authorities, academic researchers, hardware integrators, and climate innovators.",
+            partners_hero_title: "Intelligence for the Territories of Tomorrow.",
+            partners_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             pitch_title: "Submit an Open Innovation Pitch",
             pitch_desc: "Propose an urban mobility pilot, academic research experiment, or territorial dataset for collaborative development.",
 
             // Contact Page
-            contact_hero_title: "Institutional Inquiries & Contact",
-            contact_hero_subtitle: "Connect directly with MoviSabio engineering, research, and public-sector relations teams.",
+            contact_hero_title: "Intelligence for the Territories of Tomorrow.",
+            contact_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             form_name: "Full Name & Official Title",
             form_email: "Institutional Email",
             form_org: "Organization / Municipality / Institution",
@@ -221,8 +236,8 @@
             btn_explore_architecture: "Explore Architecture →",
             // --- PLATFORM ENTERPRISE SMART CITY EXPANSION (EN) ---
             tag_flagship_platform: "Flagship Product Specification",
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "The intelligent neural backbone for modern urban ecosystems. Unifying real-time adaptive traffic signal coordination, edge computer vision, 3D digital twin simulation, and environmental monitoring into an enterprise-grade platform.",
+            platform_hero_title: "Intelligence for the Territories of Tomorrow.",
+            platform_hero_subtitle: "MoviSabio develops AI-powered territorial intelligence ecosystems that connect geospatial data, mobility, IoT and environmental intelligence to help governments, enterprises and communities make smarter, evidence-based decisions.",
             btn_explore_modules: "Explore 12 Technical Modules ↓",
             btn_view_specs: "Technical Specifications Table",
             btn_view_architecture: "6-Layer Architecture Diagram",
@@ -334,8 +349,23 @@
         },
 
         de: {
+        btn_partner_movisabio: "Partner von MoviSabio werden →",
+        sec_audiences_tag: "Strategische Wege • Maßgeschneiderte Mehrwerte",
+        sec_audiences_title: "Eine Plattform, drei Wertversprechen",
+        sec_audiences_subtitle: "Ob kommunaler Entscheidungsträger, IT-Führungskraft oder institutioneller Investor – MoviSabio bietet einen zielgerichteten Weg für Ihre Anforderungen.",
+        audience_gov_title: "Regierung & Kommunen",
+        audience_gov_badge: "Öffentlicher Nutzen",
+        audience_enterprise_title: "Unternehmen & Technologiepartner",
+        audience_enterprise_badge: "Technologie-Partnerschaften",
+        audience_investor_title: "Investoren & Risikokapital",
+        audience_investor_badge: "Geschäftschance",
+        cta_gov: "Kommunale Lösungen erkunden ↓",
+        cta_enterprise: "Enterprise-Lösungen besprechen →",
+        cta_investors: "Investor Relations ↓",
+        nav_audiences: "Zielgruppen",
+
         nav_smart_city: "Smart City",
-        btn_explore_platform: "Plattform erkunden ↓",
+        btn_explore_platform: "Unsere Plattform erkunden ↓",
         btn_discover_smart_city: "Smart City entdecken 🏙️",
         btn_view_portfolio: "Technologie-Portfolio ansehen →",
         btn_become_partner: "Strategischer Partner werden →",
@@ -406,8 +436,8 @@
 
             // Homepage Hero & Sections
             hero_badge: "Plattform für Territoriale Intelligenz",
-            hero_title: "KI- & quantenbereite Plattform für territoriale Intelligenz",
-            hero_subtitle: "Transformation fragmentierter kommunaler, Verkehrs- und Umweltdaten in handlungsrelevante räumliche Intelligenz. Wir vereinen Multi-Agenten-KI, IoT-Sensornetze, digitale Zwillinge und prädiktive Analytik in einem ganzheitlichen Betriebssystem.",
+            hero_title: "Intelligenz für die Territorien von morgen.",
+            hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             hero_cta_platform: "Plattform erkunden",
             hero_cta_solutions: "15 Lösungen ansehen",
             hero_cta_partner: "Institutionelle Anfragen",
@@ -437,8 +467,8 @@
             sec_cta_subtitle: "Wir arbeiten mit zukunftsorientierten Kommunen, Forschungsinstituten, Technologieintegratoren und Infrastrukturinvestoren zusammen.",
 
             // Platform Page
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "Eine cloud-native territoriale Intelligenzplattform auf Enterprise-Niveau als zentrales Betriebssystem für städtische und regionale Verkehrsnetze.",
+            platform_hero_title: "Intelligenz für die Territorien von morgen.",
+            platform_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             platform_pillar_1: "Adaptive Signalsteuerung (AITCS)",
             platform_pillar_2: "Edge-Computer-Vision & Sensorik",
             platform_pillar_3: "Multi-Agenten Deep Reinforcement Learning",
@@ -448,8 +478,8 @@
             platform_rollout_title: "4-Phasen-Rollout-Rahmenplan für Kommunen",
 
             // Solutions Page
-            solutions_hero_title: "15 Modulare Lösungen",
-            solutions_hero_subtitle: "Spezialisierte Module für territoriale Intelligenz zur stufenweisen Integration in bestehende kommunale Infrastruktur und regionale Verkehrsnetze.",
+            solutions_hero_title: "Intelligenz für die Territorien von morgen.",
+            solutions_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             filter_all: "Alle Lösungen (15)",
             filter_traffic: "Verkehr & Signalanlagen",
             filter_transit: "ÖPNV & Flotten",
@@ -468,29 +498,29 @@
             label_maturity: "Entwicklungsstatus",
 
             // Technology Page
-            tech_hero_title: "Technologie & Architektur",
-            tech_hero_subtitle: "Transparente technische Offenlegung unseres Software-Stacks, mikroskopischer Simulations-Wrapper, Reinforcement-Learning-Algorithmen und Datenschutzgarantien.",
+            tech_hero_title: "Intelligenz für die Territorien von morgen.",
+            tech_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             tech_verified_title: "Technologie-Stack & Verifikationsstatus",
             tech_safety_title: "Sicherheitsgrenzen & Verriegelungsgarantien",
 
             // About Page
-            about_hero_title: "Über MoviSabio",
-            about_hero_subtitle: "Entwicklung souveräner, verifizierbarer territorialer Intelligenz für zukunftsfähige Gemeinschaften weltweit.",
+            about_hero_title: "Intelligenz für die Territorien von morgen.",
+            about_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             about_mission_title: "Unsere Mission",
             about_vision_title: "Unsere Langzeitvision",
             about_principles_title: "Architekturprinzipien",
             about_roadmap_title: "Strategische Roadmap 2026–2030",
 
             // Research & ESG Page
-            research_hero_title: "Forschung & Innovation",
-            research_hero_subtitle: "Präzise wissenschaftliche Benchmarks, quelloffene mikroskopische Simulationsmodelle und internationale Forschungskonsortien.",
+            research_hero_title: "Intelligenz für die Territorien von morgen.",
+            research_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             research_transparency_title: "Offenlegung: Simulation vs. Feldansteuerung",
             research_benchmarks_title: "Mikroskopische Simulations-Benchmarks",
             research_grants_title: "Internationale Forschungskonsortien",
 
             // Global Page
-            global_hero_title: "Globale Präsenz & Regionale Korridore",
-            global_hero_subtitle: "Aktive Simulations-Benchmarks, Pilotprojekte und akademische Zielkorridore in Lateinamerika und Europa.",
+            global_hero_title: "Intelligenz für die Territorien von morgen.",
+            global_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             global_btn_all: "Alle anzeigen",
             global_btn_brazil: "Brasilien (Campinas)",
             global_btn_uruguay: "Uruguay (Montevideo)",
@@ -498,20 +528,20 @@
             global_btn_italy: "Italien (Mailand)",
 
             // Leadership Page
-            leadership_hero_title: "Unternehmensführung",
-            leadership_hero_subtitle: "Ingenieurtechnische Tiefe, institutionelle Führung und globale Partnerschaftsverantwortung.",
+            leadership_hero_title: "Intelligenz für die Territorien von morgen.",
+            leadership_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             modal_bio_title: "Führungsprofil",
             modal_close: "Schließen",
 
             // Partners & Pitch Page
-            partners_hero_title: "Institutionelle Partnerschaften & Open Innovation",
-            partners_hero_subtitle: "Transparente Kooperationspfade für Kommunen, Hochschulforscher, Hardware-Integratoren und Klimainnovatoren.",
+            partners_hero_title: "Intelligenz für die Territorien von morgen.",
+            partners_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             pitch_title: "Reichen Sie Ihren Open-Innovation-Pitch ein",
             pitch_desc: "Schlagen Sie ein Pilotprojekt zur urbanen Mobilität, ein Forschungsexperiment oder einen Datensatz zur gemeinsamen Entwicklung vor.",
 
             // Contact Page
-            contact_hero_title: "Institutionelle Anfragen & Kontakt",
-            contact_hero_subtitle: "Direkter Kontakt mit dem MoviSabio-Team für Technik, Forschung und öffentliche Partnerschaften.",
+            contact_hero_title: "Intelligenz für die Territorien von morgen.",
+            contact_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             form_name: "Vollständiger Name & Titel",
             form_email: "Dienstliche E-Mail-Adresse",
             form_org: "Organisation / Kommune / Institut",
@@ -542,8 +572,8 @@
             btn_explore_architecture: "Architektur Erkunden →",
             // --- PLATFORM ENTERPRISE SMART CITY EXPANSION (DE) ---
             tag_flagship_platform: "Spezifikation des Flaggschiff-Produkts",
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "Das intelligente neuronale Rückgrat für moderne städtische Ökosysteme. Vereinheitlicht adaptive Echtzeit-Verkehrssignalkoordination, Edge-Computer-Vision, 3D-Digital-Twin-Simulation und Umweltüberwachung in einer Plattform für Großunternehmen.",
+            platform_hero_title: "Intelligenz für die Territorien von morgen.",
+            platform_hero_subtitle: "MoviSabio entwickelt KI-gestützte territoriale Intelligenz-Ökosysteme, die Geodaten, Mobilität, IoT und Umweltintelligenz verbinden, um Regierungen, Unternehmen und Gemeinschaften bei fundierten Entscheidungen zu unterstützen.",
             btn_explore_modules: "12 Technische Module Erkunden ↓",
             btn_view_specs: "Technische Spezifikationstabelle",
             btn_view_architecture: "6-Schichten-Architekturdiagramm",
@@ -655,8 +685,23 @@
         },
 
         pt: {
+        btn_partner_movisabio: "Seja Parceiro da MoviSabio →",
+        sec_audiences_tag: "Caminhos Estratégicos • Propostas de Valor Sob Medida",
+        sec_audiences_title: "Uma Plataforma, Três Propostas de Valor",
+        sec_audiences_subtitle: "Seja você um gestor público municipal, um líder corporativo de tecnologia ou um investidor institucional, a MoviSabio oferece uma rota sob medida para seus objetivos.",
+        audience_gov_title: "Governo & Municípios",
+        audience_gov_badge: "Impacto no Setor Público",
+        audience_enterprise_title: "Empresas & Parceiros Tecnológicos",
+        audience_enterprise_badge: "Parcerias Tecnológicas",
+        audience_investor_title: "Investidores & Venture Capital",
+        audience_investor_badge: "Oportunidade de Negócio",
+        cta_gov: "Explorar Soluções Municipais ↓",
+        cta_enterprise: "Discutir Soluções Corporativas →",
+        cta_investors: "Relações com Investidores ↓",
+        nav_audiences: "Públicos",
+
         nav_smart_city: "Smart City",
-        btn_explore_platform: "Explorar a Plataforma ↓",
+        btn_explore_platform: "Explorar Nossa Plataforma ↓",
         btn_discover_smart_city: "Descobrir Smart City 🏙️",
         btn_view_portfolio: "Ver Portfólio de Tecnologia →",
         btn_become_partner: "Tornar-se um Parceiro Estratégico →",
@@ -727,8 +772,8 @@
 
             // Homepage Hero & Sections
             hero_badge: "Plataforma Corporativa de Inteligência Territorial",
-            hero_title: "Plataforma de inteligência territorial preparada para IA e quântica",
-            hero_subtitle: "Transformando telemetria municipal, de mobilidade e ambiental em inteligência espacial acionável. Integramos IA multiagente, malhas de sensores IoT, gêmeos digitais e análise preditiva em um sistema operacional integrado.",
+            hero_title: "Inteligência para os Territórios de Amanhã.",
+            hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             hero_cta_platform: "Explorar Plataforma",
             hero_cta_solutions: "Ver 15 Soluções",
             hero_cta_partner: "Consultas Institucionais",
@@ -758,8 +803,8 @@
             sec_cta_subtitle: "Trabalhamos com prefeituras inovadoras, instituições de pesquisa, integradores de tecnologia e investidores de infraestrutura.",
 
             // Platform Page
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "Uma plataforma corporativa em nuvem projetada como o sistema operacional central para redes de mobilidade urbana e regional.",
+            platform_hero_title: "Inteligência para os Territórios de Amanhã.",
+            platform_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             platform_pillar_1: "Controle Semafórico Adaptativo (AITCS)",
             platform_pillar_2: "Visão Computacional e Sensores de Borda",
             platform_pillar_3: "Aprendizado por Reforço Profundo Multiagente",
@@ -769,8 +814,8 @@
             platform_rollout_title: "Estrutura de Implementação Municipal em 4 Fases",
 
             // Solutions Page
-            solutions_hero_title: "15 Soluções Modulares",
-            solutions_hero_subtitle: "Módulos de inteligência territorial projetados para integração gradual na infraestrutura municipal existente e malhas de transporte regionais.",
+            solutions_hero_title: "Inteligência para os Territórios de Amanhã.",
+            solutions_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             filter_all: "Todas as Soluções (15)",
             filter_traffic: "Tráfego e Semáforos",
             filter_transit: "Frotas e Transporte Público",
@@ -789,29 +834,29 @@
             label_maturity: "Status de Desenvolvimento",
 
             // Technology Page
-            tech_hero_title: "Tecnologia & Arquitetura",
-            tech_hero_subtitle: "Divulgação técnica transparente de nossa pilha de engenharia, motores de simulação microscópica, algoritmos de IA e conformidade de privacidade.",
+            tech_hero_title: "Inteligência para os Territórios de Amanhã.",
+            tech_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             tech_verified_title: "Pilha Tecnológica e Status de Verificação",
             tech_safety_title: "Garantias de Intertravamento e Segurança",
 
             // About Page
-            about_hero_title: "Sobre a MoviSabio",
-            about_hero_subtitle: "Desenvolvendo inteligência territorial soberana e verificável para comunidades resilientes no mundo todo.",
+            about_hero_title: "Inteligência para os Territórios de Amanhã.",
+            about_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             about_mission_title: "Nossa Missão",
             about_vision_title: "Nossa Visão de Longo Prazo",
             about_principles_title: "Princípios Arquiteturais",
             about_roadmap_title: "Roteiro Estratégico 2026–2030",
 
             // Research & ESG Page
-            research_hero_title: "Pesquisa & Inovação",
-            research_hero_subtitle: "Benchmarks científicos rigorosos, modelos de simulação microscópica de código aberto e consórcios internacionais de fomento.",
+            research_hero_title: "Inteligência para os Territórios de Amanhã.",
+            research_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             research_transparency_title: "Transparência: Simulação vs. Atuação em Campo",
             research_benchmarks_title: "Benchmarks de Simulação Microscópica",
             research_grants_title: "Consórcios Internacionais de Pesquisa",
 
             // Global Page
-            global_hero_title: "Presença Global e Corredores Regionais",
-            global_hero_subtitle: "Benchmarks ativos de simulação, propostas piloto e corredores acadêmicos na América Latina e Europa.",
+            global_hero_title: "Inteligência para os Territórios de Amanhã.",
+            global_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             global_btn_all: "Ver Todos",
             global_btn_brazil: "Brasil (Campinas)",
             global_btn_uruguay: "Uruguai (Montevidéu)",
@@ -819,20 +864,20 @@
             global_btn_italy: "Itália (Milão)",
 
             // Leadership Page
-            leadership_hero_title: "Liderança Executiva",
-            leadership_hero_subtitle: "Profundidade em engenharia, governança pública e gestão de parcerias internacionais.",
+            leadership_hero_title: "Inteligência para os Territórios de Amanhã.",
+            leadership_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             modal_bio_title: "Biografia Executiva",
             modal_close: "Fechar",
 
             // Partners & Pitch Page
-            partners_hero_title: "Parcerias Institucionais e Inovação Aberta",
-            partners_hero_subtitle: "Vias claras de colaboração para prefeituras, pesquisadores acadêmicos, integradores de sistemas e fundos climáticos.",
+            partners_hero_title: "Inteligência para os Territórios de Amanhã.",
+            partners_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             pitch_title: "Envie sua Proposta de Inovação Aberta",
             pitch_desc: "Proponha um projeto piloto de mobilidade urbana, experimento acadêmico ou conjunto de dados territoriais para codesenvolvimento.",
 
             // Contact Page
-            contact_hero_title: "Consultas Institucionais & Contato",
-            contact_hero_subtitle: "Conecte-se diretamente com as equipes de engenharia, pesquisa e relações com o setor público da MoviSabio.",
+            contact_hero_title: "Inteligência para os Territórios de Amanhã.",
+            contact_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             form_name: "Nome Completo & Cargo Oficial",
             form_email: "E-mail Institucional",
             form_org: "Organização / Prefeitura / Instituição",
@@ -863,8 +908,8 @@
             btn_explore_architecture: "Explorar Arquitetura →",
             // --- PLATFORM ENTERPRISE SMART CITY EXPANSION (PT) ---
             tag_flagship_platform: "Especificação do Produto Principal",
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "A espinha dorsal neural inteligente para ecossistemas urbanos modernos. Unificando coordenação semafórica adaptativa em tempo real, visão computacional de borda, gêmeos digitais 3D e monitoramento ambiental em uma plataforma corporativa.",
+            platform_hero_title: "Inteligência para os Territórios de Amanhã.",
+            platform_hero_subtitle: "A MoviSabio desenvolve ecossistemas de inteligência territorial baseados em IA que conectam dados geoespaciais, mobilidade, IoT e inteligência ambiental para apoiar governos, empresas e comunidades em decisões baseadas em evidências.",
             btn_explore_modules: "Explorar 12 Módulos Técnicos ↓",
             btn_view_specs: "Tabela de Especificações Técnicas",
             btn_view_architecture: "Diagrama de Arquitetura em 6 Camadas",
@@ -976,8 +1021,23 @@
         },
 
         es: {
+        btn_partner_movisabio: "Colaborar con MoviSabio →",
+        sec_audiences_tag: "Vías Estratégicas • Propuestas de Valor a Medida",
+        sec_audiences_title: "Una Plataforma, Tres Propuestas de Valor",
+        sec_audiences_subtitle: "Ya sea funcionario municipal, líder tecnológico empresarial o inversor institucional, MoviSabio ofrece una vía de interacción adaptada a sus objetivos.",
+        audience_gov_title: "Gobierno y Municipios",
+        audience_gov_badge: "Impacto en el Sector Público",
+        audience_enterprise_title: "Empresas y Socios Tecnológicos",
+        audience_enterprise_badge: "Alianzas Tecnológicas",
+        audience_investor_title: "Inversores y Capital Riesgo",
+        audience_investor_badge: "Oportunidad de Negocio",
+        cta_gov: "Explorar Soluciones Municipales ↓",
+        cta_enterprise: "Debatir Soluciones Empresariales →",
+        cta_investors: "Relaciones con Inversores ↓",
+        nav_audiences: "Públicos",
+
         nav_smart_city: "Smart City",
-        btn_explore_platform: "Explorar la Plataforma ↓",
+        btn_explore_platform: "Explorar Nuestra Plataforma ↓",
         btn_discover_smart_city: "Descubrir Smart City 🏙️",
         btn_view_portfolio: "Ver Portafolio de Tecnología →",
         btn_become_partner: "Convertirse en Socio Estratégico →",
@@ -1048,8 +1108,8 @@
 
             // Homepage Hero & Sections
             hero_badge: "Plataforma Empresarial de Inteligencia Territorial",
-            hero_title: "Plataforma de inteligencia territorial preparada para IA y cuántica",
-            hero_subtitle: "Transformamos telemetría municipal, de movilidad y medioambiental fragmentada en inteligencia espacial accionable. Integramos IA multiagente, mallas IoT, gemelos digitales y analítica predictiva en un sistema unificado.",
+            hero_title: "Inteligencia para los Territorios del Mañana.",
+            hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             hero_cta_platform: "Explorar Plataforma",
             hero_cta_solutions: "Ver 15 Soluciones",
             hero_cta_partner: "Consultas Institucionales",
@@ -1079,8 +1139,8 @@
             sec_cta_subtitle: "Colaboramos con municipios con visión de futuro, centros de investigación, integradores tecnológicos e inversores de infraestructura.",
 
             // Platform Page
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "Una plataforma empresarial en la nube diseñada como sistema operativo central para redes de movilidad urbana y regional.",
+            platform_hero_title: "Inteligencia para los Territorios del Mañana.",
+            platform_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             platform_pillar_1: "Control Semafórico Adaptativo (AITCS)",
             platform_pillar_2: "Visión Artificial y Sensores en el Borde",
             platform_pillar_3: "Aprendizaje por Refuerzo Profundo Multiagente",
@@ -1090,8 +1150,8 @@
             platform_rollout_title: "Marco de Implementación Municipal en 4 Fases",
 
             // Solutions Page
-            solutions_hero_title: "15 Soluciones Modulares",
-            solutions_hero_subtitle: "Módulos de inteligencia territorial diseñados para su integración progresiva en la infraestructura municipal existente y redes de transporte regional.",
+            solutions_hero_title: "Inteligencia para los Territorios del Mañana.",
+            solutions_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             filter_all: "Todas las Soluciones (15)",
             filter_traffic: "Tráfico y Semáforos",
             filter_transit: "Flotas y Transporte",
@@ -1110,29 +1170,29 @@
             label_maturity: "Estado de Desarrollo",
 
             // Technology Page
-            tech_hero_title: "Tecnología & Arquitectura",
-            tech_hero_subtitle: "Divulgación técnica transparente de nuestro stack de ingeniería, motores de simulación microscópica, algoritmos de IA y garantías de privacidad.",
+            tech_hero_title: "Inteligencia para los Territorios del Mañana.",
+            tech_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             tech_verified_title: "Stack Tecnológico y Estado de Verificación",
             tech_safety_title: "Límites de Seguridad y Enclavamientos",
 
             // About Page
-            about_hero_title: "Sobre MoviSabio",
-            about_hero_subtitle: "Desarrollando inteligencia territorial soberana y verificable para comunidades resilientes en todo el mundo.",
+            about_hero_title: "Inteligencia para los Territorios del Mañana.",
+            about_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             about_mission_title: "Nuestra Misión",
             about_vision_title: "Nuestra Visión a Largo Plazo",
             about_principles_title: "Principios Arquitectónicos",
             about_roadmap_title: "Hoja de Ruta Estratégica 2026–2030",
 
             // Research & ESG Page
-            research_hero_title: "Investigación & Innovación",
-            research_hero_subtitle: "Benchmarks científicos rigurosos, modelos de simulación microscópica de código abierto y consorcios internacionales de investigación.",
+            research_hero_title: "Inteligencia para los Territorios del Mañana.",
+            research_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             research_transparency_title: "Transparencia: Simulación frente a Actuación en Campo",
             research_benchmarks_title: "Benchmarks de Simulación Microscópica",
             research_grants_title: "Consorcios Internacionales de Investigación",
 
             // Global Page
-            global_hero_title: "Presencia Global y Corredores Regionales",
-            global_hero_subtitle: "Benchmarks activos de simulación, propuestas piloto y corredores académicos en América Latina y Europa.",
+            global_hero_title: "Inteligencia para los Territorios del Mañana.",
+            global_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             global_btn_all: "Ver Todos",
             global_btn_brazil: "Brasil (Campinas)",
             global_btn_uruguay: "Uruguay (Montevideo)",
@@ -1140,20 +1200,20 @@
             global_btn_italy: "Italia (Milán)",
 
             // Leadership Page
-            leadership_hero_title: "Liderazgo Ejecutivo",
-            leadership_hero_subtitle: "Profundidad técnica, gobernanza pública y gestión de alianzas estratégicas internacionales.",
+            leadership_hero_title: "Inteligencia para los Territorios del Mañana.",
+            leadership_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             modal_bio_title: "Biografía Ejecutiva",
             modal_close: "Cerrar",
 
             // Partners & Pitch Page
-            partners_hero_title: "Alianzas Institucionales e Innovación Abierta",
-            partners_hero_subtitle: "Canales transparentes de colaboración para municipios, investigadores, integradores de sistemas y fondos climáticos.",
+            partners_hero_title: "Inteligencia para los Territorios del Mañana.",
+            partners_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             pitch_title: "Envía tu Propuesta de Innovación Abierta",
             pitch_desc: "Propón un proyecto piloto de movilidad urbana, experimento académico o conjunto de datos territoriales para codesarrollo.",
 
             // Contact Page
-            contact_hero_title: "Consultas Institucionales & Contacto",
-            contact_hero_subtitle: "Conéctate directamente con los equipos de ingeniería, investigación y sector público de MoviSabio.",
+            contact_hero_title: "Inteligencia para los Territorios del Mañana.",
+            contact_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             form_name: "Nombre Completo y Cargo Oficial",
             form_email: "Correo Electrónico Institucional",
             form_org: "Organización / Municipio / Institución",
@@ -1184,8 +1244,8 @@
             btn_explore_architecture: "Explorar Arquitectura →",
             // --- PLATFORM ENTERPRISE SMART CITY EXPANSION (ES) ---
             tag_flagship_platform: "Especificación del Producto Insignia",
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "La columna vertebral neural inteligente para ecosistemas urbanos modernos. Unificando coordinación semafórica adaptativa en tiempo real, visión por computadora en el borde, gemelos digitales 3D y monitoreo ambiental en una plataforma empresarial.",
+            platform_hero_title: "Inteligencia para los Territorios del Mañana.",
+            platform_hero_subtitle: "MoviSabio desarrolla ecosistemas de inteligencia territorial impulsados por IA que conectan datos geoespaciales, movilidad, IoT e inteligencia ambiental para ayudar a gobiernos, empresas y comunidades a tomar decisiones basadas en evidencia.",
             btn_explore_modules: "Explorar 12 Módulos Técnicos ↓",
             btn_view_specs: "Tabla de Especificaciones Técnicas",
             btn_view_architecture: "Diagrama de Arquitectura de 6 Capas",
@@ -1297,8 +1357,23 @@
         },
 
         it: {
+        btn_partner_movisabio: "Collabora con MoviSabio →",
+        sec_audiences_tag: "Percorsi Strategici • Proposte di Valore Su Misura",
+        sec_audiences_title: "Una Piattaforma, Tre Proposte di Valore",
+        sec_audiences_subtitle: "Che tu sia un amministratore comunale, un leader tecnologico aziendale o un investitore istituzionale, MoviSabio offre un percorso su misura per i tuoi obiettivi.",
+        audience_gov_title: "Governo & Municipalità",
+        audience_gov_badge: "Impatto sul Settore Pubblico",
+        audience_enterprise_title: "Aziende & Partner Tecnologici",
+        audience_enterprise_badge: "Partnership Tecnologiche",
+        audience_investor_title: "Investitori & Venture Capital",
+        audience_investor_badge: "Opportunità di Business",
+        cta_gov: "Esplora Soluzioni Municipali ↓",
+        cta_enterprise: "Discuti Soluzioni Enterprise →",
+        cta_investors: "Investor Relations ↓",
+        nav_audiences: "Pubblici",
+
         nav_smart_city: "Smart City",
-        btn_explore_platform: "Esplora la Piattaforma ↓",
+        btn_explore_platform: "Esplora la Nostra Piattaforma ↓",
         btn_discover_smart_city: "Scopri Smart City 🏙️",
         btn_view_portfolio: "Visualizza Portafoglio Tecnologico →",
         btn_become_partner: "Diventa un Partner Strategico →",
@@ -1369,8 +1444,8 @@
 
             // Homepage Hero & Sections
             hero_badge: "Piattaforma Aziendale di Intelligenza Territoriale",
-            hero_title: "Piattaforma di intelligenza territoriale pronta per IA e quantistica",
-            hero_subtitle: "Trasformiamo dati frammentati municipali, di mobilità e ambientali in intelligence spaziale operativa. Integriamo IA multi-agente, reti di sensori IoT, gemelli digitali e analisi predittiva in un sistema operativo integrato.",
+            hero_title: "Intelligenza per i Territori di Domani.",
+            hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             hero_cta_platform: "Esplora Piattaforma",
             hero_cta_solutions: "Visualizza 15 Soluzioni",
             hero_cta_partner: "Richieste Istituzionali",
@@ -1400,8 +1475,8 @@
             sec_cta_subtitle: "Collaboriamo con comuni innovativi, istituti di ricerca, integratori tecnologici e investitori infrastrutturali.",
 
             // Platform Page
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "Piattaforma aziendale cloud-native progettata come sistema operativo centrale per le reti di mobilità urbana e regionale.",
+            platform_hero_title: "Intelligenza per i Territori di Domani.",
+            platform_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             platform_pillar_1: "Controllo Semaforico Adattativo (AITCS)",
             platform_pillar_2: "Visione Computazionale e Sensori Edge",
             platform_pillar_3: "Deep Reinforcement Learning Multi-Agente",
@@ -1411,8 +1486,8 @@
             platform_rollout_title: "Quadro di Rollout Municipale in 4 Fasi",
 
             // Solutions Page
-            solutions_hero_title: "15 Soluzioni Modulari",
-            solutions_hero_subtitle: "Moduli specializzati di intelligence territoriale per l'integrazione graduale nell'infrastruttura municipale e nei sistemi di trasporto.",
+            solutions_hero_title: "Intelligenza per i Territori di Domani.",
+            solutions_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.'integrazione graduale nell'infrastruttura municipale e nei sistemi di trasporto.",
             filter_all: "Tutte le Soluzioni (15)",
             filter_traffic: "Traffico e Semafori",
             filter_transit: "Flotte e Trasporto Pubblico",
@@ -1431,29 +1506,29 @@
             label_maturity: "Stato di Sviluppo",
 
             // Technology Page
-            tech_hero_title: "Tecnologia & Architettura",
-            tech_hero_subtitle: "Divulgazione tecnica trasparente del nostro stack, motori di simulazione microscopica, algoritmi di apprendimento e tutele della privacy.",
+            tech_hero_title: "Intelligenza per i Territori di Domani.",
+            tech_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             tech_verified_title: "Stack Tecnologico e Stato di Verifica",
             tech_safety_title: "Limiti di Sicurezza e Interblocchi",
 
             // About Page
-            about_hero_title: "Chi è MoviSabio",
-            about_hero_subtitle: "Sviluppiamo intelligence territoriale sovrana e verificabile per comunità resilienti in tutto il mondo.",
+            about_hero_title: "Intelligenza per i Territori di Domani.",
+            about_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             about_mission_title: "La Nostra Missione",
             about_vision_title: "La Nostra Visione a Lungo Termine",
             about_principles_title: "Principi Architetturali",
             about_roadmap_title: "Tabella di Marcia Strategica 2026–2030",
 
             // Research & ESG Page
-            research_hero_title: "Ricerca & Innovazione",
-            research_hero_subtitle: "Rigorosi benchmark scientifici, modelli di simulazione microscopica open-source e consorzi di finanziamento internazionali.",
+            research_hero_title: "Intelligenza per i Territori di Domani.",
+            research_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             research_transparency_title: "Trasparenza: Simulazione vs Attuazione sul Campo",
             research_benchmarks_title: "Benchmark di Simulazione Microscopica",
             research_grants_title: "Consorzi di Ricerca Internazionali",
 
             // Global Page
-            global_hero_title: "Presenza Globale e Corridoi Regionali",
-            global_hero_subtitle: "Benchmark attivi, proposte pilota e corridoi accademici in America Latina ed Europa.",
+            global_hero_title: "Intelligenza per i Territori di Domani.",
+            global_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             global_btn_all: "Mostra Tutti",
             global_btn_brazil: "Brasile (Campinas)",
             global_btn_uruguay: "Uruguay (Montevideo)",
@@ -1461,20 +1536,20 @@
             global_btn_italy: "Italia (Milano)",
 
             // Leadership Page
-            leadership_hero_title: "Leadership Esecutiva",
-            leadership_hero_subtitle: "Competenza ingegneristica, governance istituzionale e gestione di partenariati globali.",
+            leadership_hero_title: "Intelligenza per i Territori di Domani.",
+            leadership_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             modal_bio_title: "Profilo Esecutivo",
             modal_close: "Chiudi",
 
             // Partners & Pitch Page
-            partners_hero_title: "Partenariati Istituzionali e Open Innovation",
-            partners_hero_subtitle: "Percorsi di collaborazione chiari per municipalità, ricercatori universitari, integratori di sistemi e fondi climatici.",
+            partners_hero_title: "Intelligenza per i Territori di Domani.",
+            partners_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             pitch_title: "Invia una Proposta di Open Innovation",
             pitch_desc: "Proponi un progetto pilota per la mobilità urbana, un esperimento accademico o un dataset per lo sviluppo congiunto.",
 
             // Contact Page
-            contact_hero_title: "Richieste Istituzionali & Contatti",
-            contact_hero_subtitle: "Contatta direttamente i team di ingegneria, ricerca e relazioni istituzionali di MoviSabio.",
+            contact_hero_title: "Intelligenza per i Territori di Domani.",
+            contact_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             form_name: "Nome Completo & Titolo Ufficiale",
             form_email: "Email Istituzionale",
             form_org: "Organizzazione / Comune / Istituto",
@@ -1505,8 +1580,8 @@
             btn_explore_architecture: "Esplora Architettura →",
             // --- PLATFORM ENTERPRISE SMART CITY EXPANSION (IT) ---
             tag_flagship_platform: "Specifiche del Prodotto di Punta",
-            platform_hero_title: "MoviSabio Enterprise Smart City",
-            platform_hero_subtitle: "La spina dorsale neurale intelligente per gli ecosistemi urbani moderni. Unifica il coordinamento semaforico adattivo in tempo reale, computer vision edge, gemelli digitali 3D e monitoraggio ambientale in una piattaforma di livello aziendale.",
+            platform_hero_title: "Intelligenza per i Territori di Domani.",
+            platform_hero_subtitle: "MoviSabio sviluppa ecosistemi di intelligenza territoriale basati su intelligenza artificiale che collegano dati geospaziali, mobilità, IoT e intelligenza ambientale per supportare governi, imprese e comunità in decisioni informate e sostenibili.",
             btn_explore_modules: "Esplora 12 Moduli Tecnici ↓",
             btn_view_specs: "Tabella Specifiche Tecniche",
             btn_view_architecture: "Diagramma di Architettura a 6 Livelli",
@@ -1618,8 +1693,23 @@
         },
 
         zh: {
+        btn_partner_movisabio: "与 MoviSabio 携手合作 →",
+        sec_audiences_tag: "战略路径 • 定制价值主张",
+        sec_audiences_title: "统一平台，三大核心价值",
+        sec_audiences_subtitle: "无论您是市政决策者、企业技术领袖还是机构投资者，MoviSabio 都能为您提供专属的合作路径与赋能方案。",
+        audience_gov_title: "政府与市政部门",
+        audience_gov_badge: "公共部门价值",
+        audience_enterprise_title: "企业客户与技术合作伙伴",
+        audience_enterprise_badge: "技术合作",
+        audience_investor_title: "投资者与风险投资",
+        audience_investor_badge: "商业机遇",
+        cta_gov: "探索市政解决方案 ↓",
+        cta_enterprise: "探讨企业级解决方案 →",
+        cta_investors: "投资者关系 ↓",
+        nav_audiences: "服务对象",
+
         nav_smart_city: "智慧城市",
-        btn_explore_platform: "探索平台 ↓",
+        btn_explore_platform: "探索我们的平台 ↓",
         btn_discover_smart_city: "了解智慧城市 🏙️",
         btn_view_portfolio: "查看技术组合 →",
         btn_become_partner: "成为战略合作伙伴 →",
@@ -1690,8 +1780,8 @@
 
             // Homepage Hero & Sections
             hero_badge: "企业级地域智能平台",
-            hero_title: "面向人工智能与量子计算的地域智能平台",
-            hero_subtitle: "将零散的市政、出行与环境遥测数据转化为可执行的空间智能。深度融合多智能体AI、IoT传感网、数字孪生与预测分析，构建统一的城市运行系统。",
+            hero_title: "明日领土的智能引擎。",
+            hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             hero_cta_platform: "探索企业级平台",
             hero_cta_solutions: "查看 15 项解决方案",
             hero_cta_partner: "机构合作洽谈",
@@ -1721,8 +1811,8 @@
             sec_cta_subtitle: "我们与前瞻性的市政当局、科研院所、软硬件集成商及基础设施投资机构深度合作。",
 
             // Platform Page
-            platform_hero_title: "MoviSabio 企业级智慧城市平台",
-            platform_hero_subtitle: "云原生企业级地域智能平台，作为城市与区域多模态交通网络的核心中枢运行系统。",
+            platform_hero_title: "明日领土的智能引擎。",
+            platform_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             platform_pillar_1: "自适应交通信号协同控制 (AITCS)",
             platform_pillar_2: "边缘计算机视觉与全息感知",
             platform_pillar_3: "多智能体深度强化学习网络",
@@ -1732,8 +1822,8 @@
             platform_rollout_title: "四阶段市政部署落地框架",
 
             // Solutions Page
-            solutions_hero_title: "15 项模块化解决方案",
-            solutions_hero_subtitle: "专为现有市政基础设施与区域交通网络渐进式升级而设计的空间智能模块体系。",
+            solutions_hero_title: "明日领土的智能引擎。",
+            solutions_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             filter_all: "全部解决方案 (15)",
             filter_traffic: "交通流与信号协同",
             filter_transit: "公交调度与车队运营",
@@ -1752,29 +1842,29 @@
             label_maturity: "成熟度状态",
 
             // Technology Page
-            tech_hero_title: "技术体系与架构披露",
-            tech_hero_subtitle: "透明披露工程技术栈、微观仿真封装器、强化学习算法以及严格的数据隐私安全机制。",
+            tech_hero_title: "明日领土的智能引擎。",
+            tech_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             tech_verified_title: "工程技术栈及验证状态",
             tech_safety_title: "硬件级安全边界与故障互锁",
 
             // About Page
-            about_hero_title: "关于 MoviSabio",
-            about_hero_subtitle: "为全球可持续与高韧性城市打造自主可控、真实可信的地域智能生态。",
+            about_hero_title: "明日领土的智能引擎。",
+            about_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             about_mission_title: "我们的使命",
             about_vision_title: "远景目标",
             about_principles_title: "核心架构原则",
             about_roadmap_title: "2026–2030 战略发展路线图",
 
             // Research & ESG Page
-            research_hero_title: "科学研发与创新",
-            research_hero_subtitle: "严谨的学术仿真基准、开源微观仿真模型与国际科研基金联合体。",
+            research_hero_title: "明日领土的智能引擎。",
+            research_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             research_transparency_title: "技术透明声明：仿真建模与实际路面控制的区别",
             research_benchmarks_title: "微观交通仿真基准测试",
             research_grants_title: "国际产学研合作项目",
 
             // Global Page
-            global_hero_title: "全球布局与国际走廊",
-            global_hero_subtitle: "分布在拉美与欧洲的微观仿真基准、技术试点方案与学术联合研发走廊。",
+            global_hero_title: "明日领土的智能引擎。",
+            global_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             global_btn_all: "查看全部",
             global_btn_brazil: "巴西 (坎皮纳斯走廊)",
             global_btn_uruguay: "乌拉圭 (蒙得维的亚数字孪生)",
@@ -1782,20 +1872,20 @@
             global_btn_italy: "意大利 (米兰走廊)",
 
             // Leadership Page
-            leadership_hero_title: "管理团队",
-            leadership_hero_subtitle: "坚实的工程技术底蕴、公共部门管理经验与全球商业合作视野。",
+            leadership_hero_title: "明日领土的智能引擎。",
+            leadership_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             modal_bio_title: "高管简介",
             modal_close: "关闭",
 
             // Partners & Pitch Page
-            partners_hero_title: "机构合作与开放创新提案",
-            partners_hero_subtitle: "面向市政管理机构、高校科研人员、硬件集成商和气候基金的开放合作框架。",
+            partners_hero_title: "明日领土的智能引擎。",
+            partners_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             pitch_title: "提交开放创新提案 (Open Innovation)",
             pitch_desc: "提出智慧交通试点提案、学术联合科研计划或提供地域数据集以开展联合研发。",
 
             // Contact Page
-            contact_hero_title: "机构业务洽谈与联络",
-            contact_hero_subtitle: "直接与 MoviSabio 核心工程团队、科研专家及公共关系代表取得联系。",
+            contact_hero_title: "明日领土的智能引擎。",
+            contact_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             form_name: "联系人全名与职务",
             form_email: "机构官方工作邮箱",
             form_org: "所属机构 / 市政部门 / 企业名称",
@@ -1826,8 +1916,8 @@
             btn_explore_architecture: "探索系统架构 →",
             // --- PLATFORM ENTERPRISE SMART CITY EXPANSION (ZH) ---
             tag_flagship_platform: "旗舰产品技术规范",
-            platform_hero_title: "MoviSabio 企业级智慧城市平台",
-            platform_hero_subtitle: "现代城市生态系统的智能神经中枢。将实时自适应交通信号协调、边缘计算机视觉、三维数字孪生仿真和环境监测统一融入企业级平台。",
+            platform_hero_title: "明日领土的智能引擎。",
+            platform_hero_subtitle: "MoviSabio 开发人工智能赋能的领土智能生态系统，连接地理空间数据、移动出行、物联网和环境智能，协助政府、企业与社区做出基于证据的明智决策。",
             btn_explore_modules: "探索12个技术模块 ↓",
             btn_view_specs: "技术规范参数表",
             btn_view_architecture: "6层系统架构全景图",
