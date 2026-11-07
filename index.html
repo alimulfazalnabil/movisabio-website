@@ -679,6 +679,7 @@
                                 <button type="button" class="map-filter-btn active" onclick="filterMap('all', this)">🌍 All Territories</button>
                                 <button type="button" class="map-filter-btn" onclick="filterMap('latam', this)">🇧🇷 🇺🇾 Active Pilots (LATAM)</button>
                                 <button type="button" class="map-filter-btn" onclick="filterMap('europe', this)">🇩🇪 🇮🇹 Expansion Hubs (Europe)</button>
+                                <button type="button" class="map-filter-btn" onclick="filterMap('asia', this)">🌏 Asia-Pacific</button>
                             </div>
                         </div>
 
@@ -717,6 +718,14 @@
                                     <span class="status-pill status-research" style="padding: 2px 8px; font-size: 0.68rem;">Expansion Hub</span>
                                 </div>
                                 <p class="territory-desc">Territorial Intelligence SaaS • LEZ & ESG Analytics</p>
+                            </div>
+
+                            <div class="territory-card" style="border-left-color: var(--accent-primary);" onclick="flyToTerritory(1.3521, 103.8198, 11)" tabindex="0" role="button" aria-label="Focus on Singapore and Asia-Pacific">
+                                <div class="territory-card-header">
+                                    <span class="territory-city">🌏 Singapore & Asia</span>
+                                    <span class="status-pill status-active" style="padding: 2px 8px; font-size: 0.68rem;">Scoping Node</span>
+                                </div>
+                                <p class="territory-desc">Multi-Modal Transit Graph • Smart Port Logistics</p>
                             </div>
                         </div>
                     </div>
@@ -857,7 +866,7 @@
                         <p class="section-subtitle">Multidisciplinary leaders uniting artificial intelligence, public infrastructure policy, and strategic international partnerships.</p>
                     </div>
 
-                    <div class="grid-3">
+                    <div class="grid-3" style="align-items: stretch; margin-bottom: var(--space-2xl);">
                         <!-- Leader 1: Alimul Fazal Nabil -->
                         <div class="leader-card" onclick="openLeaderModal('Alimul Fazal Nabil', 'Chief Technology Officer (CTO)', '“Transforming complex territory data into scalable, real-time intelligence ecosystems.”')" tabindex="0" role="button" aria-label="View biography for Alimul Fazal Nabil">
                             <div class="leader-avatar-wrap">
@@ -866,6 +875,21 @@
                             <h3 class="leader-name">Alimul Fazal Nabil</h3>
                             <div class="leader-role">Chief Technology Officer (CTO)</div>
                             <span class="leader-bio-pill">Click to view bio →</span>
+                            
+                            <!-- Areas of Responsibility & Credentials -->
+                            <div class="leader-spec-block" onclick="event.stopPropagation();">
+                                <div class="leader-spec-title"><span>🎯</span> Focus Areas</div>
+                                <ul class="leader-spec-list">
+                                    <li>AI & Deep Reinforcement Learning Architecture</li>
+                                    <li>SUMO TraCI Digital Twins & Cloud Fabric</li>
+                                </ul>
+                                <div class="leader-badge-group">
+                                    <span class="leader-badge">Deep Q-Networks</span>
+                                    <span class="leader-badge">SUMO / TraCI</span>
+                                    <span class="leader-badge">Kubernetes</span>
+                                </div>
+                            </div>
+
                             <div class="leader-actions" onclick="event.stopPropagation();">
                                 <a href="mailto:nabil@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
                                 <a href="https://www.linkedin.com/in/alimul-fazal-nabil/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
@@ -880,6 +904,21 @@
                             <h3 class="leader-name">Leandro Patrón</h3>
                             <div class="leader-role">Engineering & Public Sector Relations</div>
                             <span class="leader-bio-pill">Click to view bio →</span>
+
+                            <!-- Areas of Responsibility & Credentials -->
+                            <div class="leader-spec-block" onclick="event.stopPropagation();">
+                                <div class="leader-spec-title"><span>🎯</span> Focus Areas</div>
+                                <ul class="leader-spec-list">
+                                    <li>Municipal & Public Sector Relations</li>
+                                    <li>Infrastructure Engineering & LATAM Policy</li>
+                                </ul>
+                                <div class="leader-badge-group">
+                                    <span class="leader-badge">Public Sector Relations</span>
+                                    <span class="leader-badge">Traffic Standards</span>
+                                    <span class="leader-badge">Field Pilots</span>
+                                </div>
+                            </div>
+
                             <div class="leader-actions" onclick="event.stopPropagation();">
                                 <a href="mailto:leandro@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
                                 <a href="https://www.linkedin.com/in/leandro/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
@@ -894,11 +933,35 @@
                             <h3 class="leader-name">Douglas Amante</h3>
                             <div class="leader-role">Strategic Partnerships</div>
                             <span class="leader-bio-pill">Click to view bio →</span>
+
+                            <!-- Areas of Responsibility & Credentials -->
+                            <div class="leader-spec-block" onclick="event.stopPropagation();">
+                                <div class="leader-spec-title"><span>🎯</span> Focus Areas</div>
+                                <ul class="leader-spec-list">
+                                    <li>International Strategic Partnerships & Consortia</li>
+                                    <li>Commercial Strategy & Enterprise Scaling</li>
+                                </ul>
+                                <div class="leader-badge-group">
+                                    <span class="leader-badge">Global Alliances</span>
+                                    <span class="leader-badge">Ecosystems</span>
+                                    <span class="leader-badge">Territorial Strategy</span>
+                                </div>
+                            </div>
+
                             <div class="leader-actions" onclick="event.stopPropagation();">
                                 <a href="mailto:douglas@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
                                 <a href="https://www.linkedin.com/in/douglasamante/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Leadership Navigation & Charter Link Strip -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); padding-top: var(--space-lg); border-top: 1px solid var(--border-subtle);">
+                        <div>
+                            <span style="font-weight: var(--font-weight-bold); color: var(--text-primary); font-size: var(--font-size-md);">Institutional Governance & Scientific Ethics</span>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">Learn how MoviSabio protects municipal data sovereignty, algorithmic explainability, and open science.</p>
+                        </div>
+                        <a href="leadership.html" class="btn btn-outline btn-sm">View Full Executive Charter & Governance →</a>
                     </div>
                 </div>
             </section>
@@ -1024,7 +1087,18 @@
                         </div>
                     </div>
 
-                                    <!-- Investor Conversion CTA Strip -->
+                    <!-- Contextual Disclosure on Business-Plan Targets & Modeling Assumptions -->
+                    <div class="economics-disclosure-card">
+                        <div class="economics-disclosure-title">
+                            <span>📋</span>
+                            <span>Institutional Disclosure & Forward-Looking Assumptions</span>
+                        </div>
+                        <p class="economics-disclosure-text">
+                            <strong>Business-Plan Projections:</strong> The financial targets presented above (including the US$ 1.1T TAM, US$ 25B SAM, €50.3M Year 10 ARR target across 1,000 active customer accounts, and 48% EBITDA margin) are forward-looking business-plan estimates derived from addressable smart city, GIS, and IoT market sizing models (Grand View Research, McKinsey Smart Cities). Achieving these targets requires successful execution of our three validation milestones: (1) Stage 1 Corridor A field telemetry and non-dilutive grant validation (2026–2028), (2) Stage 2 commercial municipal SaaS scaling in Latin America (2028–2030), and (3) Stage 3 international enterprise and European expansion (2030+). These metrics are intended solely for institutional discussion and do not constitute an offer of securities or guaranteed returns.
+                        </p>
+                    </div>
+
+                    <!-- Investor Conversion CTA Strip -->
                     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-top: 35px; padding-top: 25px; border-top: 1px solid rgba(0,0,0,0.1);">
                         <div>
                             <h4 style="color: var(--primary-color); margin-bottom: 4px; font-size: 1.15rem; font-weight: 700;">Institutional Capital & Strategic Alliances</h4>
@@ -1057,11 +1131,12 @@
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label class="form-label" for="pitch-name">Full Name *</label>
-                                    <input type="text" id="pitch-name" name="name" class="form-input" placeholder="Your Full Name" required>
+                                    <input type="text" id="pitch-name" name="name" class="form-input" placeholder="Your Full Name" required aria-describedby="pitch-name-hint">
+                                    <span class="form-hint" id="pitch-name-hint">Primary contact name for evaluation feedback and NDA execution.</span>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label" for="pitch-track">Creator / Innovation Track *</label>
-                                    <select id="pitch-track" name="track" class="form-select" required>
+                                    <select id="pitch-track" name="track" class="form-select" required aria-describedby="pitch-track-hint">
                                         <option value="">Select Track...</option>
                                         <option value="Municipal Pilot">Municipal Mobility Pilot (Under 10 Corridors)</option>
                                         <option value="Academic Research">Academic & University Research</option>
@@ -1069,28 +1144,32 @@
                                         <option value="Climate Tech">Climate Tech & Carbon Monitoring</option>
                                         <option value="Open Innovation">Open Category / Other</option>
                                     </select>
+                                    <span class="form-hint" id="pitch-track-hint">Directs your pitch to the relevant technical evaluation track.</span>
                                 </div>
                             </div>
 
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label class="form-label" for="pitch-email">Institutional Email Address *</label>
-                                    <input type="email" id="pitch-email" name="email" class="form-input" placeholder="name@domain.com" required>
+                                    <input type="email" id="pitch-email" name="email" class="form-input" placeholder="name@domain.com" required aria-describedby="pitch-email-hint">
+                                    <span class="form-hint" id="pitch-email-hint">Used for identity validation and formal technical review feedback.</span>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label" for="pitch-url">Pitch Deck / GitHub URL (Optional)</label>
-                                    <input type="url" id="pitch-url" name="url" class="form-input" placeholder="https://github.com/... or pitch link">
+                                    <input type="url" id="pitch-url" name="url" class="form-input" placeholder="https://github.com/... or pitch link" aria-describedby="pitch-url-hint">
+                                    <span class="form-hint" id="pitch-url-hint">Link to repository, deck presentation, or video demonstration.</span>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="pitch-title">Project Title *</label>
-                                <input type="text" id="pitch-title" name="title" class="form-input" placeholder="e.g. Distributed Flood Monitoring with Edge IoT" required>
+                                <input type="text" id="pitch-title" name="title" class="form-input" placeholder="e.g. Distributed Flood Monitoring with Edge IoT" required aria-describedby="pitch-title-hint">
+                                <span class="form-hint" id="pitch-title-hint">Concise project name identifying technology domain and objective.</span>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="pitch-domain">Primary Technology Domain *</label>
-                                <select id="pitch-domain" name="domain" class="form-select" required>
+                                <select id="pitch-domain" name="domain" class="form-select" required aria-describedby="pitch-domain-hint">
                                     <option value="">Select Domain...</option>
                                     <option value="ai">Artificial Intelligence & Predictive Analytics</option>
                                     <option value="iot">IoT & Environmental Sensor Meshes</option>
@@ -1099,11 +1178,13 @@
                                     <option value="quantum">Quantum Computing & Complex Optimization</option>
                                     <option value="other">Multi-Domain / Other</option>
                                 </select>
+                                <span class="form-hint" id="pitch-domain-hint">Select the technology layer matching your proposal.</span>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="pitch-desc">Solution & Architecture Summary *</label>
-                                <textarea id="pitch-desc" name="description" class="form-textarea" rows="4" placeholder="Detail the problem, your technical approach, and expected impact (min 20 characters)..." required></textarea>
+                                <textarea id="pitch-desc" name="description" class="form-textarea" rows="4" placeholder="Detail the problem, your technical approach, and expected impact (min 20 characters)..." required aria-describedby="pitch-desc-hint"></textarea>
+                                <span class="form-hint" id="pitch-desc-hint">Minimum 20 characters. Outline current readiness (concept, prototype, or testbed).</span>
                             </div>
 
                             <div class="form-group" style="display: flex; align-items: flex-start; gap: 10px; margin-top: var(--space-md);">
@@ -1138,10 +1219,11 @@
                         <!-- Contact Details Card -->
                         <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
                             <div class="card-enterprise">
-                                <h3 class="card-title">📍 Pilot Operations</h3>
+                                <h3 class="card-title">📍 Pilot Operations & Regional Hubs</h3>
                                 <p class="card-desc">
                                     <strong>Latin America:</strong> Campinas, Brazil & Montevideo, Uruguay<br>
-                                    <strong>European Expansion:</strong> Munich/Berlin (DE) & Milan (IT)
+                                    <strong>European Expansion:</strong> Munich/Berlin (DE) & Milan (IT)<br>
+                                    <strong>Asia-Pacific Hub:</strong> Singapore & East Asia Scoping Node
                                 </p>
                             </div>
 
@@ -1168,7 +1250,7 @@
 
                                 <div class="form-group">
                                     <label class="form-label" for="contact-category">Inquiry Category *</label>
-                                    <select id="contact-category" name="category" class="form-select" required>
+                                    <select id="contact-category" name="category" class="form-select" required aria-describedby="contact-cat-hint-index">
                                         <option value="">Select Category...</option>
                                         <option value="Municipal Partnership">🏛️ Municipal Partnership / Pilot LOI</option>
                                         <option value="Research Collaboration">🎓 Academic & Scientific Research Collaboration</option>
@@ -1176,27 +1258,32 @@
                                         <option value="Technology Partnership">⚙️ Technology & Hardware Integration</option>
                                         <option value="Enterprise Solution">🏢 Commercial Enterprise Deployment</option>
                                     </select>
+                                    <span class="form-hint" id="contact-cat-hint-index">Select the pathway matching your institution for expedited executive routing.</span>
                                 </div>
 
                                 <div class="form-grid">
                                     <div class="form-group">
                                         <label class="form-label" for="contact-name">Full Name *</label>
-                                        <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your Full Name" required>
+                                        <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your Full Name" required aria-describedby="contact-name-hint-index">
+                                        <span class="form-hint" id="contact-name-hint-index">Primary representative contact.</span>
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label" for="contact-org">Organization / Municipality *</label>
-                                        <input type="text" id="contact-org" name="organization" class="form-input" placeholder="e.g. City Department of Transportation" required>
+                                        <input type="text" id="contact-org" name="organization" class="form-input" placeholder="e.g. City Department of Transportation" required aria-describedby="contact-org-hint-index">
+                                        <span class="form-hint" id="contact-org-hint-index">Municipal department, university, or company name.</span>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label" for="contact-email">Official Email Address *</label>
-                                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="contact@organization.gov or .com" required>
+                                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="contact@organization.gov or .com" required aria-describedby="contact-email-hint-index">
+                                    <span class="form-hint" id="contact-email-hint-index">Official domain address for verifiable communication.</span>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label" for="contact-message">Message *</label>
-                                    <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Describe your territory scope, operational challenges, or inquiry (min 15 characters)..." required></textarea>
+                                    <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Describe your territory scope, operational challenges, or inquiry (min 15 characters)..." required aria-describedby="contact-msg-hint-index"></textarea>
+                                    <span class="form-hint" id="contact-msg-hint-index">Minimum 15 characters. Please mention target city, corridor scope, or research focus.</span>
                                 </div>
 
                                 <div class="form-group" style="display: flex; align-items: flex-start; gap: 10px;">
@@ -2130,7 +2217,7 @@
                 coords: [-22.9099, -47.0626],
                 status: 'Pilot Proposal (Corridor A)',
                 badgeBg: 'var(--accent-success)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 title: 'Flagship AI Traffic Signal Pilot Proposal',
                 description: 'Deploying multi-agent Deep Q-Networks (DQN) with MAXBAND safety bounds across 10 interconnected signalized intersections. Dynamic signal timing and emergency vehicle green-wave preemption.',
                 metrics: [
@@ -2150,7 +2237,7 @@
                 coords: [-34.9011, -56.1645],
                 status: 'Digital Twin Benchmark',
                 badgeBg: 'var(--accent-primary)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 title: 'OpenStreetMap Digital Twin & Sensor Mesh',
                 description: 'Leveraging OpenStreetMap topology and municipal loop sensors to construct high-fidelity digital twin corridors in SUMO for predictive forecasting and public transit signal priority.',
                 metrics: [
@@ -2170,7 +2257,7 @@
                 coords: [48.1351, 11.5820],
                 status: 'Grant Pipeline Target',
                 badgeBg: 'var(--accent-warning)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 title: 'EU Grant & Horizon Europe Pipeline',
                 description: 'Strategic European expansion corridor targeting EIT Urban Mobility and Horizon Europe non-dilutive climate tech grants for urban digital twin deployments.',
                 metrics: [
@@ -2190,7 +2277,7 @@
                 coords: [45.4642, 9.1900],
                 status: 'Expansion Corridor',
                 badgeBg: 'var(--accent-secondary)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 title: 'Territorial SaaS & Low-Emission Zone Analytics',
                 description: 'Evaluating urban Low-Emission Zone (LEZ) monitoring, multi-sensor air quality telemetry, and cross-border decision infrastructure for municipal climate compliance.',
                 metrics: [
@@ -2201,6 +2288,26 @@
                 ],
                 icon: '🇮🇹',
                 color: '#6C9CFF'
+            },
+            {
+                id: 'asia',
+                region: 'asia',
+                city: 'Singapore & Asia-Pacific',
+                country: 'Asia-Pacific 🌏',
+                coords: [1.3521, 103.8198],
+                status: 'Academic & Pilot Scoping',
+                badgeBg: 'var(--accent-primary)',
+                badgeColor: 'var(--text-primary)',
+                title: 'High-Density Transit & Smart Port Scoping',
+                description: 'Collaborative research node scoping multi-modal transit graph networks, autonomous vehicle corridors, and port-city spatial logistics with regional university research groups.',
+                metrics: [
+                    { label: 'Focus Area', value: 'Port & Transit' },
+                    { label: 'Algorithm', value: 'Graph RL' },
+                    { label: 'Simulation', value: 'CARLA + SUMO' },
+                    { label: 'Status', value: 'Scoping Node' }
+                ],
+                icon: '🌏',
+                color: '#55D7E8'
             }
         ];
 

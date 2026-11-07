@@ -689,7 +689,7 @@
     overflow: hidden;
     border: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-lg);
-    background: #040912;
+    background: var(--bg-card);
     margin-bottom: var(--space-2xl);
     user-select: none;
 }
@@ -734,7 +734,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #040912;
+    background: var(--bg-card);
 }
 
 .slider-img {
@@ -1160,6 +1160,261 @@
         padding: 4px 10px !important;
     }
 }
+
+/* ==========================================================================
+   PHASE C: LEADERSHIP, PARTNERSHIPS & INSTITUTIONAL CREDIBILITY STYLES
+   ========================================================================== */
+.leader-spec-block {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-md) 0;
+    text-align: left;
+}
+
+.leader-spec-title {
+    font-size: 0.72rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-primary);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.leader-spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leader-spec-list li {
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    line-height: 1.45;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.leader-spec-list li::before {
+    content: '•';
+    color: var(--accent-primary);
+    font-weight: bold;
+}
+
+.leader-badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.leader-badge {
+    font-size: 0.68rem;
+    font-weight: var(--font-weight-medium);
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    background: rgba(74, 21, 75, 0.08);
+    border: 1px solid rgba(74, 21, 75, 0.2);
+    color: var(--text-primary);
+}
+
+/* 6 Stages of Institutional Engagement */
+.engagement-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-2xl) 0;
+}
+
+.engagement-stage-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    position: relative;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.engagement-stage-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+.stage-number-badge {
+    position: absolute;
+    top: var(--space-lg);
+    right: var(--space-lg);
+    font-size: 0.72rem;
+    font-weight: var(--font-weight-extrabold);
+    font-family: var(--font-mono);
+    color: var(--accent-primary);
+    background: rgba(85, 215, 232, 0.1);
+    border: 1px solid rgba(85, 215, 232, 0.3);
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+}
+
+.stage-title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+    padding-right: 70px;
+}
+
+.stage-desc {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+}
+
+.stage-meta {
+    font-size: var(--font-size-xs);
+    background: var(--bg-secondary);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--accent-secondary);
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* 9 Strategic Collaboration Categories Grid */
+.collab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-4xl);
+}
+
+.collab-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.collab-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-hover);
+}
+
+.collab-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.collab-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.collab-title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.collab-dimension {
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-xs);
+    line-height: 1.5;
+}
+
+.collab-dimension strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.collab-dimension span {
+    color: var(--text-secondary);
+}
+
+/* Form Helper & Validation Feedback */
+.form-hint {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+    line-height: 1.35;
+}
+
+.form-feedback-box {
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    margin-top: var(--space-md);
+    display: none;
+    line-height: 1.5;
+}
+
+.form-feedback-success {
+    background: rgba(46, 182, 125, 0.12);
+    border: 1px solid var(--accent-success);
+    color: var(--accent-success);
+}
+
+.form-feedback-error {
+    background: rgba(224, 30, 90, 0.12);
+    border: 1px solid var(--accent-red);
+    color: var(--accent-red);
+}
+
+/* Investor Assumptions Disclaimer Card */
+.economics-disclosure-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-left: 4px solid var(--accent-warning);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg) var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.economics-disclosure-title {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.economics-disclosure-text {
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
 
 
 

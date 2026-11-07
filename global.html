@@ -125,6 +125,7 @@
                             <button type="button" class="map-filter-btn active" onclick="filterMap('all', this)">🌍 All Territories</button>
                             <button type="button" class="map-filter-btn" onclick="filterMap('latam', this)">🇧🇷 🇺🇾 Active Engagements (LATAM)</button>
                             <button type="button" class="map-filter-btn" onclick="filterMap('europe', this)">🇩🇪 🇮🇹 Expansion Hubs (Europe)</button>
+                            <button type="button" class="map-filter-btn" onclick="filterMap('asia', this)">🌏 Asia-Pacific</button>
                         </div>
                     </div>
 
@@ -199,6 +200,21 @@
                         </div>
                         <button type="button" class="btn btn-outline btn-sm" onclick="flyToTerritory(45.4642, 9.1900, 10)">Focus on Map →</button>
                     </div>
+
+                    <!-- Asia-Pacific -->
+                    <div class="card-enterprise" style="border-left: 4px solid var(--accent-primary);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+                            <h3 style="font-size: 1.3rem; color: var(--text-primary); margin: 0;">🌏 Singapore & Asia-Pacific</h3>
+                            <span class="status-pill status-active">Academic & Pilot Scoping</span>
+                        </div>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md);">
+                            <strong>High-Density Transit & Maritime Port Scoping:</strong> Collaborative research node scoping multi-modal transit graph networks, autonomous vehicle corridors, and port-city spatial logistics with regional university research groups.
+                        </p>
+                        <div style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                            <strong>Scope:</strong> Multi-Modal Graph RL • CARLA + SUMO Micro-Mesh • Smart Port Freight Corridors
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="flyToTerritory(1.3521, 103.8198, 11)">Focus on Map →</button>
+                    </div>
                 </div>
 
             </div>
@@ -271,7 +287,7 @@
                 coords: [-22.9099, -47.0626],
                 status: 'Pilot Proposal (Corridor A)',
                 badgeBg: 'var(--accent-success)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 description: 'Deploying multi-agent Deep Q-Networks (DQN) with MAXBAND safety bounds across 10 interconnected signalized intersections.',
                 metrics: [
                     { label: 'Corridors', value: '10 Intersections' },
@@ -290,7 +306,7 @@
                 coords: [-34.9011, -56.1645],
                 status: 'Digital Twin Benchmark',
                 badgeBg: 'var(--accent-primary)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 description: 'Leveraging OpenStreetMap topology and municipal loop sensors to construct high-fidelity digital twin corridors in SUMO for bus transit priority.',
                 metrics: [
                     { label: 'Network Data', value: 'OpenStreetMap' },
@@ -309,7 +325,7 @@
                 coords: [48.1351, 11.5820],
                 status: 'Grant Pipeline Target',
                 badgeBg: 'var(--accent-warning)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 description: 'Strategic European expansion corridor targeting EIT Urban Mobility and Horizon Europe non-dilutive climate tech grants (2026–2028).',
                 metrics: [
                     { label: 'Pipeline', value: 'Horizon Europe' },
@@ -328,7 +344,7 @@
                 coords: [45.4642, 9.1900],
                 status: 'Expansion Corridor',
                 badgeBg: 'var(--accent-secondary)',
-                badgeColor: '#07111F',
+                badgeColor: 'var(--text-primary)',
                 description: 'Evaluating urban Low-Emission Zone (LEZ) monitoring, multi-sensor air quality telemetry, and cross-border decision infrastructure.',
                 metrics: [
                     { label: 'Platform Layer', value: 'Territorial SaaS' },
@@ -338,6 +354,25 @@
                 ],
                 icon: '🇮🇹',
                 color: '#6C9CFF'
+            },
+            {
+                id: 'asia',
+                region: 'asia',
+                city: 'Singapore & Asia-Pacific',
+                country: 'Asia-Pacific 🌏',
+                coords: [1.3521, 103.8198],
+                status: 'Academic & Pilot Scoping',
+                badgeBg: 'var(--accent-primary)',
+                badgeColor: 'var(--text-primary)',
+                description: 'Scoping high-density multi-modal transit graph networks, autonomous vehicle corridors, and port-city spatial logistics with regional university research groups.',
+                metrics: [
+                    { label: 'Focus Area', value: 'Port & Urban Transit' },
+                    { label: 'Algorithm', value: 'Multi-Modal Graph RL' },
+                    { label: 'Simulation', value: 'CARLA + SUMO Mesh' },
+                    { label: 'Status', value: 'Exploratory Scoping' }
+                ],
+                icon: '🌏',
+                color: '#55D7E8'
             }
         ];
 

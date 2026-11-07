@@ -48,28 +48,64 @@
           "@type": "Person",
           "name": "Alimul Fazal Nabil",
           "jobTitle": "Chief Technology Officer & Lead AI Architect",
+          "email": "nabil@movisabio.com",
+          "sameAs": "https://www.linkedin.com/in/alimul-fazal-nabil/",
+          "image": "https://www.movisabio.com/alimul_photo.jpeg",
           "worksFor": {
             "@type": "Organization",
-            "name": "MoviSabio Tech Solutions"
-          }
+            "name": "MoviSabio Tech Solutions",
+            "url": "https://www.movisabio.com/"
+          },
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "Deep Reinforcement Learning",
+            "SUMO Simulation",
+            "Spatial Computing",
+            "Cloud-Native Kubernetes"
+          ],
+          "description": "Leading technical architecture, AI reinforcement learning pipelines, and spatial simulation engine. Focuses on combining classical traffic engineering constraints with deep learning."
         },
         {
           "@type": "Person",
           "name": "Leandro Patrón",
-          "jobTitle": "Institutional & Public Sector Relations Lead",
+          "jobTitle": "Engineering & Public Sector Relations",
+          "email": "leandro@movisabio.com",
+          "sameAs": "https://www.linkedin.com/in/leandro/",
+          "image": "https://www.movisabio.com/leandro_photo.jfif",
           "worksFor": {
             "@type": "Organization",
-            "name": "MoviSabio Tech Solutions"
-          }
+            "name": "MoviSabio Tech Solutions",
+            "url": "https://www.movisabio.com/"
+          },
+          "knowsAbout": [
+            "Civil Infrastructure",
+            "Public Sector Relations",
+            "Municipal Procurement",
+            "Traffic Engineering",
+            "LATAM Regulatory Compliance"
+          ],
+          "description": "Directing public sector relations and municipal traffic department engagements in Uruguay and LATAM. Specializes in aligning algorithm benchmarks with municipal regulatory requirements."
         },
         {
           "@type": "Person",
           "name": "Douglas Amante",
-          "jobTitle": "Strategic Partnerships & Business Development",
+          "jobTitle": "Strategic Partnerships & International Development",
+          "email": "douglas@movisabio.com",
+          "sameAs": "https://www.linkedin.com/in/douglasamante/",
+          "image": "https://www.movisabio.com/douglas_photo.jfif",
           "worksFor": {
             "@type": "Organization",
-            "name": "MoviSabio Tech Solutions"
-          }
+            "name": "MoviSabio Tech Solutions",
+            "url": "https://www.movisabio.com/"
+          },
+          "knowsAbout": [
+            "Strategic Partnerships",
+            "International Business Development",
+            "Smart Cities Ecosystems",
+            "Public-Private Partnerships",
+            "Territorial Strategy"
+          ],
+          "description": "Leading strategic international business development, commercial consortium formation, and enterprise technology integration across Latin America and Europe."
         }
       ]
     }
@@ -125,10 +161,10 @@
         <!-- HERO -->
         <section class="section-padding" style="padding-top: var(--space-4xl); padding-bottom: var(--space-2xl);">
             <div class="container" style="text-align: center; max-width: 860px;">
-                <div class="section-tag">Executive Team</div>
-                <h1 class="section-title">Leadership</h1>
+                <div class="section-tag" data-i18n="sec_leadership_tag">Executive Team</div>
+                <h1 class="section-title" data-i18n="sec_leadership">Leadership</h1>
                 <p class="section-subtitle">
-                    A multidisciplinary team uniting artificial intelligence engineering, public infrastructure policy, and international strategic partnerships to scale resilient territorial intelligence globally.
+                    A multidisciplinary leadership team uniting artificial intelligence engineering, public infrastructure policy, and international strategic partnerships to scale resilient territorial intelligence globally.
                 </p>
             </div>
         </section>
@@ -136,18 +172,36 @@
         <!-- LEADERSHIP CARDS -->
         <section class="section-padding" style="padding-top: 0;">
             <div class="container">
-                <div class="grid-3" style="margin-bottom: var(--space-4xl);">
+                <div class="grid-3" style="margin-bottom: var(--space-4xl); align-items: stretch;">
                     <!-- Leader 1: Alimul Fazal Nabil -->
-                    <div class="leader-card" onclick="openLeaderModal('Alimul Fazal Nabil', 'Chief Technology Officer (CTO)', '“Transforming complex territory data into scalable, real-time intelligence ecosystems.”', 'Leading the technical architecture, AI reinforcement learning pipelines, and spatial simulation engine. Focuses on combining classical traffic engineering constraints with deep learning.')" tabindex="0" role="button" aria-label="View biography for Alimul Fazal Nabil">
+                    <div class="leader-card" onclick="openLeaderModal('Alimul Fazal Nabil', 'Chief Technology Officer (CTO) & Lead AI Architect', '“Transforming complex territory data into scalable, real-time intelligence ecosystems.”', 'Leading the technical architecture, AI reinforcement learning pipelines, and spatial simulation engine. Focuses on combining classical traffic engineering constraints with deep learning to deliver auditable, fail-safe actuation across municipal and enterprise infrastructures.')" tabindex="0" role="button" aria-label="View biography for Alimul Fazal Nabil">
                         <div class="leader-avatar-wrap">
                             <img src="alimul_photo.jpeg" alt="Alimul Fazal Nabil" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
                         </div>
                         <h2 class="leader-name">Alimul Fazal Nabil</h2>
                         <div class="leader-role">Chief Technology Officer (CTO)</div>
                         <span class="leader-bio-pill">Click to view full bio →</span>
-                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-md);">
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-sm);">
                             Oversees core AI algorithm development, SUMO TraCI simulation engines, and cloud-native Kubernetes infrastructure.
                         </p>
+
+                        <!-- Areas of Responsibility -->
+                        <div class="leader-spec-block" onclick="event.stopPropagation();">
+                            <div class="leader-spec-title"><span>🎯</span> Areas of Responsibility</div>
+                            <ul class="leader-spec-list">
+                                <li>Deep Reinforcement Learning & Simulation Systems</li>
+                                <li>Cloud-Native High-Availability Data Fabric</li>
+                                <li>Edge Computer Vision & NTCIP 1202 Actuation</li>
+                            </ul>
+                            <div class="leader-spec-title" style="margin-top: 8px;"><span>🛠️</span> Technical & Strategic Credentials</div>
+                            <div class="leader-badge-group">
+                                <span class="leader-badge">SUMO & TraCI</span>
+                                <span class="leader-badge">Deep Q-Networks</span>
+                                <span class="leader-badge">Kubernetes & AKS</span>
+                                <span class="leader-badge">Explainable AI (XAI)</span>
+                            </div>
+                        </div>
+
                         <div class="leader-actions" onclick="event.stopPropagation();">
                             <a href="mailto:nabil@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
                             <a href="https://www.linkedin.com/in/alimul-fazal-nabil/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
@@ -155,16 +209,34 @@
                     </div>
 
                     <!-- Leader 2: Leandro Patrón -->
-                    <div class="leader-card" onclick="openLeaderModal('Leandro Patrón', 'Engineering & Public Sector Relations (Uruguay)', '“Bridging the gap between advanced engineering algorithms and sustainable public policies.”', 'Directing public sector relations and municipal traffic department engagements in Uruguay and LATAM. Specializes in aligning algorithm benchmarks with municipal regulatory requirements.')" tabindex="0" role="button" aria-label="View biography for Leandro Patrón">
+                    <div class="leader-card" onclick="openLeaderModal('Leandro Patrón', 'Engineering & Public Sector Relations', '“Bridging the gap between advanced engineering algorithms and sustainable public policies.”', 'Directing public sector relations and municipal traffic department engagements in Uruguay and LATAM. Specializes in aligning algorithm benchmarks with municipal regulatory requirements and ensuring that technical implementations translate directly into measurable citizen welfare.')" tabindex="0" role="button" aria-label="View biography for Leandro Patrón">
                         <div class="leader-avatar-wrap">
                             <img src="leandro_photo.jfif" alt="Leandro Patrón" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
                         </div>
                         <h2 class="leader-name">Leandro Patrón</h2>
                         <div class="leader-role">Engineering & Public Sector Relations</div>
                         <span class="leader-bio-pill">Click to view full bio →</span>
-                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-md);">
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-sm);">
                             Bridges municipal policy, academic research validation, and real-world infrastructure deployment across Uruguay and LATAM.
                         </p>
+
+                        <!-- Areas of Responsibility -->
+                        <div class="leader-spec-block" onclick="event.stopPropagation();">
+                            <div class="leader-spec-title"><span>🎯</span> Areas of Responsibility</div>
+                            <ul class="leader-spec-list">
+                                <li>Public Sector & Municipal Department Engagements</li>
+                                <li>Infrastructure Regulatory Compliance & Standards</li>
+                                <li>Corridor Feasibility & Field Validation Studies</li>
+                            </ul>
+                            <div class="leader-spec-title" style="margin-top: 8px;"><span>🏛️</span> Technical & Strategic Credentials</div>
+                            <div class="leader-badge-group">
+                                <span class="leader-badge">Public Sector Relations</span>
+                                <span class="leader-badge">Traffic Engineering</span>
+                                <span class="leader-badge">Municipal Policy</span>
+                                <span class="leader-badge">LATAM Infrastructure</span>
+                            </div>
+                        </div>
+
                         <div class="leader-actions" onclick="event.stopPropagation();">
                             <a href="mailto:leandro@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
                             <a href="https://www.linkedin.com/in/leandro/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
@@ -172,16 +244,34 @@
                     </div>
 
                     <!-- Leader 3: Douglas Amante -->
-                    <div class="leader-card" onclick="openLeaderModal('Douglas Amante', 'Strategic Partnerships', '“My vision is to establish MoviSabio as the global intelligence infrastructure for territories, enabling governments, enterprises, and communities to transform data into strategic decisions, sustainable growth, resilience, and long-term economic competitiveness.”', 'Leading strategic international business development, commercial consortium formation, and enterprise technology integration across Latin America and Europe.')" tabindex="0" role="button" aria-label="View biography for Douglas Amante">
+                    <div class="leader-card" onclick="openLeaderModal('Douglas Amante', 'Strategic Partnerships & International Development', '“My vision is to establish MoviSabio as the global intelligence infrastructure for territories, enabling governments, enterprises, and communities to transform data into strategic decisions, sustainable growth, resilience, and long-term economic competitiveness.”', 'Leading strategic international business development, commercial consortium formation, and enterprise technology integration across Latin America and Europe. Focuses on orchestrating multi-stakeholder ecosystems to accelerate sovereign territorial digitization.')" tabindex="0" role="button" aria-label="View biography for Douglas Amante">
                         <div class="leader-avatar-wrap">
                             <img src="douglas_photo.jfif" alt="Douglas Amante" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
                         </div>
                         <h2 class="leader-name">Douglas Amante</h2>
                         <div class="leader-role">Strategic Partnerships</div>
                         <span class="leader-bio-pill">Click to view full bio →</span>
-                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-md);">
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-sm);">
                             Spearheads international commercial expansion, corporate partnerships, and institutional strategic relations.
                         </p>
+
+                        <!-- Areas of Responsibility -->
+                        <div class="leader-spec-block" onclick="event.stopPropagation();">
+                            <div class="leader-spec-title"><span>🎯</span> Areas of Responsibility</div>
+                            <ul class="leader-spec-list">
+                                <li>International Strategic Alliances & Consortia</li>
+                                <li>Enterprise Go-to-Market & Sovereign Solutions</li>
+                                <li>Institutional Capital & Regional Expansion</li>
+                            </ul>
+                            <div class="leader-spec-title" style="margin-top: 8px;"><span>🌐</span> Technical & Strategic Credentials</div>
+                            <div class="leader-badge-group">
+                                <span class="leader-badge">Consortium Structuring</span>
+                                <span class="leader-badge">Cross-Border Alliances</span>
+                                <span class="leader-badge">Territorial Strategy</span>
+                                <span class="leader-badge">Global Growth</span>
+                            </div>
+                        </div>
+
                         <div class="leader-actions" onclick="event.stopPropagation();">
                             <a href="mailto:douglas@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
                             <a href="https://www.linkedin.com/in/douglasamante/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
@@ -196,23 +286,29 @@
                     <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-xl);">
                         MoviSabio is built on scientific transparency, strict algorithmic auditability, and responsible public-private collaboration:
                     </p>
-                    <div class="grid-3">
-                        <div style="background: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg);">
-                            <h4 style="color: var(--accent-primary); margin-bottom: 6px;">Algorithmic Auditability</h4>
+                    <div class="grid-2" style="gap: var(--space-lg);">
+                        <div style="background: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg); border-left: 3px solid var(--accent-primary);">
+                            <h4 style="color: var(--accent-primary); margin-bottom: 6px;">Algorithmic Auditability & XAI</h4>
                             <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">
-                                Every AI actuation decision is logged with Explainable AI (XAI) feature importance metrics, allowing traffic engineers to inspect why specific signal plans were selected.
+                                Every AI actuation decision is logged with Explainable AI (XAI) feature importance metrics, allowing municipal traffic engineers to inspect why specific signal plans were selected and guarantee fail-safe fallback.
                             </p>
                         </div>
-                        <div style="background: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg);">
-                            <h4 style="color: var(--accent-secondary); margin-bottom: 6px;">Data Sovereignty</h4>
+                        <div style="background: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg); border-left: 3px solid var(--accent-secondary);">
+                            <h4 style="color: var(--accent-secondary); margin-bottom: 6px;">Data Sovereignty & Privacy</h4>
                             <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">
-                                Municipal spatial telemetry remains the exclusive property of the contracting municipality. We never sell or commercialize citizen mobility records.
+                                Municipal spatial telemetry remains the exclusive property of the contracting authority. We strictly adhere to GDPR (EU) and LGPD (Brazil) standards—never selling or commercializing citizen mobility records.
                             </p>
                         </div>
-                        <div style="background: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg);">
+                        <div style="background: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg); border-left: 3px solid var(--accent-success);">
                             <h4 style="color: var(--accent-success); margin-bottom: 6px;">Open Scientific Benchmarking</h4>
                             <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">
-                                We actively publish our SUMO simulation topologies and performance metrics to foster peer review and accelerate academic innovation in smart mobility.
+                                We actively publish our SUMO simulation topologies and performance metrics to foster academic peer review and accelerate global research in resilient urban mobility.
+                            </p>
+                        </div>
+                        <div style="background: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg); border-left: 3px solid var(--accent-warning);">
+                            <h4 style="color: var(--accent-warning); margin-bottom: 6px;">Partnership Integrity & Disclosure</h4>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">
+                                MoviSabio upholds the highest standards of institutional honesty: we clearly distinguish exploratory proposals from active pilots, and never publish unauthorized logos or unverified agreements.
                             </p>
                         </div>
                     </div>
