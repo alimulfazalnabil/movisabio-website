@@ -172,6 +172,15 @@ ul, ol {
     gap: var(--space-md);
 }
 
+@media screen and (max-width: 768px) {
+    .section-padding {
+        padding: var(--space-2xl) 0;
+    }
+    .section-header {
+        margin-bottom: var(--space-xl);
+    }
+}
+
 /* Reduced Motion Preference */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {

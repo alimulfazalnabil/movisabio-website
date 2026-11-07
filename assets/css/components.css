@@ -89,6 +89,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .card-enterprise::before {
     content: '';
@@ -623,6 +624,57 @@
     #economics .sdg-badge {
         width: 100%;
         padding: 14px 18px;
+    }
+}
+
+/* ==========================================================================
+   FLAGSHIP APPLICATION BANNER & HERO
+   ========================================================================== */
+.flagship-banner {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-3xl) var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.flagship-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-primary);
+    background: rgba(85, 215, 232, 0.1);
+    border: 1px solid rgba(85, 215, 232, 0.3);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+}
+
+.flagship-title {
+    font-size: clamp(2rem, 4vw, var(--font-size-3xl));
+    font-weight: var(--font-weight-extrabold);
+    color: var(--text-primary);
+    margin: var(--space-md) 0 var(--space-sm);
+    letter-spacing: -0.03em;
+}
+
+.flagship-lead {
+    font-size: var(--font-size-md);
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+    max-width: 920px;
+    margin-bottom: var(--space-2xl);
+}
+
+@media screen and (max-width: 768px) {
+    .flagship-banner {
+        padding: var(--space-xl) var(--space-md);
     }
 }
 

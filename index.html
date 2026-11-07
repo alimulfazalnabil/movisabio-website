@@ -119,8 +119,9 @@
             <nav aria-label="Main Navigation">
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#platform" onclick="scrollToSection('platform')" class="nav-link" data-i18n="nav_platform">Platform</a></li>
-                    <li><a href="#solutions" onclick="scrollToSection('solutions')" class="nav-link" data-i18n="nav_solutions">Solutions</a></li>
+                    <li><a href="#smart-city" onclick="scrollToSection('smart-city')" class="nav-link" data-i18n="nav_smart_city">Smart City</a></li>
                     <li><a href="#architecture" onclick="scrollToSection('architecture')" class="nav-link" data-i18n="nav_architecture">Technology</a></li>
+                    <li><a href="#solutions" onclick="scrollToSection('solutions')" class="nav-link" data-i18n="nav_solutions">Solutions</a></li>
                     
                     <li class="nav-item-dropdown">
                         <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
@@ -140,6 +141,7 @@
                         </button>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#economics" onclick="scrollToSection('economics')" class="dropdown-item" data-i18n="nav_economics" role="menuitem">Market Opportunity & Economics</a></li>
+                            <li><a href="#submit-idea" onclick="scrollToSection('submit-idea')" class="dropdown-item" data-i18n="sec_submit_idea" role="menuitem">Open Innovation Pitch</a></li>
                             <li><a href="partners.html" class="dropdown-item" data-i18n="nav_submit_idea" role="menuitem" style="color: var(--accent-success); font-weight: 700;">Partners & Pitch Deck</a></li>
                         </ul>
                     </li>
@@ -187,9 +189,9 @@
                     </p>
 
                     <div style="display: flex; justify-content: center; gap: var(--space-md); flex-wrap: wrap; margin-bottom: var(--space-3xl);">
-                        <a onclick="scrollToSection('platform')" class="btn btn-primary btn-lg">Explore Flagship Platform →</a>
-                        <a onclick="scrollToSection('presence')" class="btn btn-secondary btn-lg">View Territorial Map 🗺️</a>
-                        <a onclick="scrollToSection('submit-idea')" class="btn btn-outline btn-lg">Submit Project Idea 💡</a>
+                        <a href="#platform" onclick="scrollToSection('platform')" class="btn btn-primary btn-lg" data-i18n="btn_explore_platform">Explore the Platform ↓</a>
+                        <a href="#smart-city" onclick="scrollToSection('smart-city')" class="btn btn-secondary btn-lg" data-i18n="btn_discover_smart_city">Discover Smart City 🏙️</a>
+                        <a href="#solutions" onclick="scrollToSection('solutions')" class="btn btn-outline btn-lg" data-i18n="btn_view_portfolio">View Technology Portfolio →</a>
                     </div>
 
                     <!-- Enterprise Trust & Capability Strip -->
@@ -214,7 +216,7 @@
                 </div>
             </section>
 
-            <!-- ================================================================== -->
+<!-- ================================================================== -->
             <!-- 3. TERRITORIAL INTELLIGENCE PLATFORM & SMART CITY SHOWCASE         -->
             <!-- ================================================================== -->
             <section id="platform" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
@@ -286,7 +288,15 @@
                     </div>
 
                     <!-- MoviSabio Smart City Flagship Application Container -->
-                    <div class="flagship-banner" id="smart-city" style="border-top: 2px solid rgba(85, 215, 232, 0.3);">
+                </div>
+            </section>
+
+            <!-- ================================================================== -->
+            <!-- 3. MOVISABIO SMART CITY FLAGSHIP PRODUCT                           -->
+            <!-- ================================================================== -->
+            <section id="smart-city" class="section-padding" style="background: var(--bg-primary); border-bottom: 1px solid var(--border-subtle);">
+                <div class="container">
+                    <div class="flagship-banner" style="border-top: 2px solid rgba(85, 215, 232, 0.3);">
                         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-xs);">
                             <span class="flagship-badge">⭐ Flagship Enterprise Application</span>
                             <span style="font-size: var(--font-size-xs); color: var(--text-muted); font-family: var(--font-mono);">Powered by Territorial Intelligence Platform</span>
@@ -455,24 +465,7 @@
                 </div>
             </section>
 
-            <!-- ================================================================== -->
-            <!-- 4. MODULAR SOLUTIONS CATALOG                                       -->
-            <!-- ================================================================== -->
-            <section id="solutions" class="section-padding">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-tag" data-i18n="sec_solutions_tag">Enterprise Portfolio</div>
-                        <h2 class="section-title" data-i18n="sec_portfolio">Modular Territorial Solutions</h2>
-                        <p class="section-subtitle">Scalable, software-driven solutions addressing urban congestion, public transit priority, agricultural spatial boundaries, and territorial ESG analytics.</p>
-                    </div>
-
-                    <div class="grid-3" id="dynamic-project-grid">
-                        <!-- Populated dynamically via JavaScript with preserved project data -->
-                    </div>
-                </div>
-            </section>
-
-            <!-- ================================================================== -->
+<!-- ================================================================== -->
             <!-- 5. MULTI-LAYER PLATFORM ARCHITECTURE                              -->
             <!-- ================================================================== -->
             <section id="architecture" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
@@ -539,11 +532,281 @@
                                 <span class="arch-tag">LoRaWAN & GPS AgriTech Collars</span>
                             </div>
                         </div>
+                                        <!-- Architecture to Solutions CTA Strip -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-subtle);">
+                        <div>
+                            <span style="font-weight: var(--font-weight-bold); color: var(--text-primary); font-size: var(--font-size-md);">Modular Solutions Built on This Architecture</span>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">Explore our 7 modular territorial intelligence solutions addressing urban, transit, and rural environments.</p>
+                        </div>
+                        <a href="#solutions" onclick="scrollToSection('solutions')" class="btn btn-primary btn-sm" data-i18n="btn_view_portfolio">View Technology Portfolio →</a>
                     </div>
                 </div>
             </section>
 
+<!-- ================================================================== -->
+            <!-- 4. MODULAR SOLUTIONS CATALOG                                       -->
             <!-- ================================================================== -->
+            <section id="solutions" class="section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-tag" data-i18n="sec_solutions_tag">Enterprise Portfolio</div>
+                        <h2 class="section-title" data-i18n="sec_portfolio">Modular Territorial Solutions</h2>
+                        <p class="section-subtitle">Scalable, software-driven solutions addressing urban congestion, public transit priority, agricultural spatial boundaries, and territorial ESG analytics.</p>
+                    </div>
+
+                    <div class="grid-3" id="dynamic-project-grid">
+                        <!-- Populated dynamically via JavaScript with preserved project data -->
+                    </div>
+                </div>
+            </section>
+
+<!-- ================================================================== -->
+            <!-- 7. GLOBAL PRESENCE & INTERACTIVE MAP                               -->
+            <!-- ================================================================== -->
+            <section id="presence" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-tag" data-i18n="sec_impact_tag">Geospatial Operations</div>
+                        <h2 class="section-title" data-i18n="sec_impact">Global Operations & Digital Twins</h2>
+                        <p class="section-subtitle">Interactive map of active simulation corridors, digital twin modeling nodes, and European expansion pipelines.</p>
+                    </div>
+
+                    <!-- Leaflet Territorial Digital Twin Card -->
+                    <div class="map-card-wrapper">
+                        <div class="map-header-row">
+                            <div>
+                                <h3 class="map-title">🗺️ Live Operations & Territorial Digital Twin Map</h3>
+                                <p class="map-subtitle">Real-time pilot corridors, digital twin simulations, and European expansion nodes.</p>
+                            </div>
+                            <div class="map-filter-group" role="group" aria-label="Map Territory Filter">
+                                <button type="button" class="map-filter-btn active" onclick="filterMap('all', this)">🌍 All Territories</button>
+                                <button type="button" class="map-filter-btn" onclick="filterMap('latam', this)">🇧🇷 🇺🇾 Active Pilots (LATAM)</button>
+                                <button type="button" class="map-filter-btn" onclick="filterMap('europe', this)">🇩🇪 🇮🇹 Expansion Hubs (Europe)</button>
+                            </div>
+                        </div>
+
+                        <!-- Leaflet Map Container -->
+                        <div id="territorial-map" role="region" aria-label="Territorial Map Viewer"></div>
+
+                        <!-- Quick Focus Cards -->
+                        <div class="territory-grid">
+                            <div class="territory-card" style="border-left-color: var(--accent-success);" onclick="flyToTerritory(-22.9099, -47.0626, 12)" tabindex="0" role="button" aria-label="Focus on Campinas, Brazil">
+                                <div class="territory-card-header">
+                                    <span class="territory-city">🇧🇷 Campinas, Brazil</span>
+                                    <span class="status-pill status-live" style="padding: 2px 8px; font-size: 0.68rem;">Pilot Proposal</span>
+                                </div>
+                                <p class="territory-desc">10 Corridors • DQN Signal Coordination • -45% Delay Goal</p>
+                            </div>
+
+                            <div class="territory-card" style="border-left-color: var(--accent-primary);" onclick="flyToTerritory(-34.9011, -56.1645, 12)" tabindex="0" role="button" aria-label="Focus on Montevideo, Uruguay">
+                                <div class="territory-card-header">
+                                    <span class="territory-city">🇺🇾 Montevideo, Uruguay</span>
+                                    <span class="status-pill status-active" style="padding: 2px 8px; font-size: 0.68rem;">Digital Twin</span>
+                                </div>
+                                <p class="territory-desc">OpenStreetMap Digital Twin • SUMO Traffic Simulation</p>
+                            </div>
+
+                            <div class="territory-card" style="border-left-color: var(--accent-warning);" onclick="flyToTerritory(48.1351, 11.5820, 10)" tabindex="0" role="button" aria-label="Focus on Munich and Berlin, Germany">
+                                <div class="territory-card-header">
+                                    <span class="territory-city">🇩🇪 Munich & Berlin, DE</span>
+                                    <span class="status-pill status-pipeline" style="padding: 2px 8px; font-size: 0.68rem;">EU Target</span>
+                                </div>
+                                <p class="territory-desc">EIT Urban Mobility & Horizon Europe Grant Pipeline</p>
+                            </div>
+
+                            <div class="territory-card" style="border-left-color: var(--accent-secondary);" onclick="flyToTerritory(45.4642, 9.1900, 10)" tabindex="0" role="button" aria-label="Focus on Milan, Italy">
+                                <div class="territory-card-header">
+                                    <span class="territory-city">🇮🇹 Milan, Italy</span>
+                                    <span class="status-pill status-research" style="padding: 2px 8px; font-size: 0.68rem;">Expansion Hub</span>
+                                </div>
+                                <p class="territory-desc">Territorial Intelligence SaaS • LEZ & ESG Analytics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UN SDG Impact Badges -->
+                    <div class="sdg-badge-container">
+                        <div class="sdg-badge" style="border-left-color: var(--accent-primary);">
+                            <span style="font-size: 1.4rem;">🏙️</span>
+                            <span><strong>UN SDG 11:</strong> Sustainable Cities & Resilient Communities</span>
+                        </div>
+                        <div class="sdg-badge" style="border-left-color: var(--accent-success);">
+                            <span style="font-size: 1.4rem;">🌍</span>
+                            <span><strong>UN SDG 13:</strong> Climate Action (Targeting 15–30% CO₂ Reduction)</span>
+                        </div>
+                    </div>
+                                    <!-- Strategic Partner CTA Strip -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-subtle);">
+                        <div>
+                            <span style="font-weight: var(--font-weight-bold); color: var(--text-primary); font-size: var(--font-size-md);">Interested in a municipal pilot in your region?</span>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">We partner with municipal transportation authorities, regional planning agencies, and university labs.</p>
+                        </div>
+                        <a href="#contact" onclick="selectInquiry('Municipal Partnership'); scrollToSection('contact')" class="btn btn-primary btn-sm" data-i18n="btn_become_partner">Become a Strategic Partner →</a>
+                    </div>
+            </div>
+            </section>
+
+<!-- ================================================================== -->
+            <!-- 6. INTERACTIVE MEDIA & VIDEO SHOWCASE                             -->
+            <!-- ================================================================== -->
+            <section id="videos" class="section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-tag" data-i18n="sec_videos_tag">Simulation & Footage</div>
+                        <h2 class="section-title" data-i18n="sec_videos">Project Videos & Media</h2>
+                        <p class="section-subtitle">Explore our live simulations, traffic coordination demonstrations, and edge computer vision showcases.</p>
+                    </div>
+
+                    <div class="grid-3" id="video-grid">
+                        <!-- Populated dynamically via JavaScript with preserved video data -->
+                    </div>
+                </div>
+            </section>
+
+<!-- ================================================================== -->
+            <!-- 8. RESEARCH, INNOVATION & ESG STRATEGY                            -->
+            <!-- ================================================================== -->
+            <section id="research" class="section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-tag">Science & Grants</div>
+                        <h2 class="section-title">Research & Innovation</h2>
+                        <p class="section-subtitle">Driving forward-looking evidence through rigorous academic partnerships, European grant pipelines, and future-ready quantum computing research.</p>
+                    </div>
+
+                    <div class="grid-3">
+                        <div class="card-enterprise">
+                            <div class="card-icon" style="color: var(--accent-secondary); background: rgba(108, 156, 255, 0.1); border-color: rgba(108, 156, 255, 0.25);">⚛️</div>
+                            <h3 class="card-title">Hybrid Classical-Quantum Exploration</h3>
+                            <p class="card-desc">
+                                Preparing for quantum advantage in NP-hard combinatorial territorial optimization (large-scale vehicle routing and multi-regional evacuation corridors) via hybrid QML simulators.
+                            </p>
+                            <span class="status-pill status-research" style="width: fit-content;"><span class="status-dot"></span> Next-Gen R&D</span>
+                        </div>
+
+                        <div class="card-enterprise">
+                            <div class="card-icon" style="color: var(--accent-warning); background: rgba(245, 184, 66, 0.1); border-color: rgba(245, 184, 66, 0.25);">🇪🇺</div>
+                            <h3 class="card-title">European Grant Pipeline</h3>
+                            <p class="card-desc">
+                                Targeting non-dilutive research funding through Horizon Europe and EIT Urban Mobility to fund our academic digital twin validation benchmarks and cross-border validation.
+                            </p>
+                            <span class="status-pill status-pipeline" style="width: fit-content;"><span class="status-dot"></span> Horizon Europe Pipeline</span>
+                        </div>
+
+                        <div class="card-enterprise">
+                            <div class="card-icon" style="color: var(--accent-success); background: rgba(120, 223, 176, 0.1); border-color: rgba(120, 223, 176, 0.25);">📊</div>
+                            <h3 class="card-title">Evidence-Based Traffic Science</h3>
+                            <p class="card-desc">
+                                Benchmarking multi-agent reinforcement learning directly against classical MAXBAND and fixed-timing plans inside SUMO simulation grids with real-world OpenStreetMap topologies.
+                            </p>
+                            <span class="status-pill status-live" style="width: fit-content;"><span class="status-dot"></span> Open Benchmark</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- ================================================================== -->
+            <!-- 5B. ABOUT MOVISABIO SECTION (RESTORED & ENHANCED)                   -->
+            <!-- ================================================================== -->
+            <section id="about" class="section-padding" style="border-top: 1px solid var(--border-subtle); background: var(--bg-primary);">
+                <div class="container">
+                    <div class="section-header" style="text-align: center;">
+                        <div class="section-tag" data-i18n="sec_about_tag">Corporate Overview</div>
+                        <h2 class="section-title" data-i18n="sec_about">About MoviSabio</h2>
+                        <p class="section-subtitle" style="margin: 0 auto;" data-i18n="sec_about_subtitle">
+                            Pioneering borderless spatial intelligence, cloud-native scalability, and measurable ESG impact across global territories.
+                        </p>
+                    </div>
+
+                    <div class="grid-3" style="gap: var(--space-xl);">
+                        <!-- Card 1: Global Vision & Mission -->
+                        <div class="card-enterprise" style="border-top: 3px solid var(--accent-primary); background: var(--bg-card);">
+                            <div class="card-icon" style="background: rgba(85, 215, 232, 0.12); color: var(--accent-primary); width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); font-size: 1.6rem; margin-bottom: var(--space-md); border: 1px solid rgba(85, 215, 232, 0.25);">💡</div>
+                            <h3 class="card-title" data-i18n="card_mission_title">Global Vision & Mission</h3>
+                            <p class="card-desc" style="line-height: 1.7; color: var(--text-secondary);" data-i18n="card_mission_text">
+                                We are building the world's leading Territorial Intelligence Platform. Our mission is to scale AI, IoT, and quantum-ready digital ecosystems globally, empowering governments, enterprises, and communities across all continents to make evidence-based, sustainable decisions.
+                            </p>
+                        </div>
+
+                        <!-- Card 2: Borderless SaaS Architecture -->
+                        <div class="card-enterprise" style="border-top: 3px solid var(--accent-warning); background: var(--bg-card);">
+                            <div class="card-icon" style="background: rgba(245, 184, 66, 0.12); color: var(--accent-warning); width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); font-size: 1.6rem; margin-bottom: var(--space-md); border: 1px solid rgba(245, 184, 66, 0.25);">☁️</div>
+                            <h3 class="card-title" data-i18n="card_structure_title">Borderless SaaS Architecture</h3>
+                            <p class="card-desc" style="line-height: 1.7; color: var(--text-secondary);" data-i18n="card_structure_text">
+                                Engineered for immediate international deployment, our cloud-native platform transforms fragmented territorial data into standardized, actionable intelligence. We enable rapid cross-border scalability without requiring heavy, localized hardware infrastructure.
+                            </p>
+                        </div>
+
+                        <!-- Card 3: Worldwide Climate & ESG Impact -->
+                        <div class="card-enterprise" style="border-top: 3px solid var(--accent-success); background: var(--bg-card);">
+                            <div class="card-icon" style="background: rgba(120, 223, 176, 0.12); color: var(--accent-success); width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); font-size: 1.6rem; margin-bottom: var(--space-md); border: 1px solid rgba(120, 223, 176, 0.25);">🌍</div>
+                            <h3 class="card-title" data-i18n="card_strategy_title">Worldwide Climate & ESG Impact</h3>
+                            <p class="card-desc" style="line-height: 1.7; color: var(--text-secondary);" data-i18n="card_strategy_text">
+                                Addressing universal challenges in urbanization, agriculture, and resource management. Our predictive AI models help global municipalities and organizations optimize mobility, drastically reduce carbon footprints, and meet rigorous international ESG standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- ================================================================== -->
+            <!-- 9. EXECUTIVE LEADERSHIP                                            -->
+            <!-- ================================================================== -->
+            <section id="leadership" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-tag" data-i18n="sec_leadership_tag">Executive Team</div>
+                        <h2 class="section-title" data-i18n="sec_leadership">Leadership</h2>
+                        <p class="section-subtitle">Multidisciplinary leaders uniting artificial intelligence, public infrastructure policy, and strategic international partnerships.</p>
+                    </div>
+
+                    <div class="grid-3">
+                        <!-- Leader 1: Alimul Fazal Nabil -->
+                        <div class="leader-card" onclick="openLeaderModal('Alimul Fazal Nabil', 'Chief Technology Officer (CTO)', '“Transforming complex territory data into scalable, real-time intelligence ecosystems.”')" tabindex="0" role="button" aria-label="View biography for Alimul Fazal Nabil">
+                            <div class="leader-avatar-wrap">
+                                <img src="alimul_photo.jpeg" alt="Alimul Fazal Nabil" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
+                            </div>
+                            <h3 class="leader-name">Alimul Fazal Nabil</h3>
+                            <div class="leader-role">Chief Technology Officer (CTO)</div>
+                            <span class="leader-bio-pill">Click to view bio →</span>
+                            <div class="leader-actions" onclick="event.stopPropagation();">
+                                <a href="mailto:nabil@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
+                                <a href="https://www.linkedin.com/in/alimul-fazal-nabil/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
+                            </div>
+                        </div>
+
+                        <!-- Leader 2: Leandro Patrón -->
+                        <div class="leader-card" onclick="openLeaderModal('Leandro Patrón', 'Engineering & Public Sector Relations (Uruguay)', '“Bridging the gap between advanced engineering algorithms and sustainable public policies.”')" tabindex="0" role="button" aria-label="View biography for Leandro Patrón">
+                            <div class="leader-avatar-wrap">
+                                <img src="leandro_photo.jfif" alt="Leandro Patrón" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
+                            </div>
+                            <h3 class="leader-name">Leandro Patrón</h3>
+                            <div class="leader-role">Engineering & Public Sector Relations</div>
+                            <span class="leader-bio-pill">Click to view bio →</span>
+                            <div class="leader-actions" onclick="event.stopPropagation();">
+                                <a href="mailto:leandro@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
+                                <a href="https://www.linkedin.com/in/leandro/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
+                            </div>
+                        </div>
+
+                        <!-- Leader 3: Douglas Amante -->
+                        <div class="leader-card" onclick="openLeaderModal('Douglas Amante', 'Strategic Partnerships', '“My vision is to establish MoviSabio as the global intelligence infrastructure for territories, enabling governments, enterprises, and communities to transform data into strategic decisions, sustainable growth, resilience, and long-term economic competitiveness.”')" tabindex="0" role="button" aria-label="View biography for Douglas Amante">
+                            <div class="leader-avatar-wrap">
+                                <img src="douglas_photo.jfif" alt="Douglas Amante" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
+                            </div>
+                            <h3 class="leader-name">Douglas Amante</h3>
+                            <div class="leader-role">Strategic Partnerships</div>
+                            <span class="leader-bio-pill">Click to view bio →</span>
+                            <div class="leader-actions" onclick="event.stopPropagation();">
+                                <a href="mailto:douglas@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
+                                <a href="https://www.linkedin.com/in/douglasamante/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- ================================================================== -->
             <!-- 5.5. MARKET OPPORTUNITY & UNIT ECONOMICS (INVESTOR SECTION)        -->
             <!-- ================================================================== -->
             <section id="economics" class="section-padding bg-light">
@@ -664,248 +927,21 @@
                         </div>
                     </div>
 
-                </div>
+                                    <!-- Investor Conversion CTA Strip -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-top: 35px; padding-top: 25px; border-top: 1px solid rgba(0,0,0,0.1);">
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 4px; font-size: 1.15rem; font-weight: 700;">Institutional Capital & Strategic Alliances</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light); margin: 0;">Request investor briefs, grant co-funding details, and unit economics modeling.</p>
+                        </div>
+                        <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                            <a href="#contact" onclick="selectInquiry('Investor Enquiry'); scrollToSection('contact')" class="btn btn-primary btn-sm" data-i18n="btn_investor_enquiries">Investor Enquiries →</a>
+                            <a href="partners.html" class="btn btn-outline btn-sm">Partners & Pitch Deck 📄</a>
+                        </div>
+                    </div>
+            </div>
             </section>
 
-            <!-- ================================================================== -->
-            <!-- 5B. ABOUT MOVISABIO SECTION (RESTORED & ENHANCED)                   -->
-            <!-- ================================================================== -->
-            <section id="about" class="section-padding" style="border-top: 1px solid var(--border-subtle); background: var(--bg-primary);">
-                <div class="container">
-                    <div class="section-header" style="text-align: center;">
-                        <div class="section-tag" data-i18n="sec_about_tag">Corporate Overview</div>
-                        <h2 class="section-title" data-i18n="sec_about">About MoviSabio</h2>
-                        <p class="section-subtitle" style="margin: 0 auto;" data-i18n="sec_about_subtitle">
-                            Pioneering borderless spatial intelligence, cloud-native scalability, and measurable ESG impact across global territories.
-                        </p>
-                    </div>
-
-                    <div class="grid-3" style="gap: var(--space-xl);">
-                        <!-- Card 1: Global Vision & Mission -->
-                        <div class="card-enterprise" style="border-top: 3px solid var(--accent-primary); background: var(--bg-card);">
-                            <div class="card-icon" style="background: rgba(85, 215, 232, 0.12); color: var(--accent-primary); width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); font-size: 1.6rem; margin-bottom: var(--space-md); border: 1px solid rgba(85, 215, 232, 0.25);">💡</div>
-                            <h3 class="card-title" data-i18n="card_mission_title">Global Vision & Mission</h3>
-                            <p class="card-desc" style="line-height: 1.7; color: var(--text-secondary);" data-i18n="card_mission_text">
-                                We are building the world's leading Territorial Intelligence Platform. Our mission is to scale AI, IoT, and quantum-ready digital ecosystems globally, empowering governments, enterprises, and communities across all continents to make evidence-based, sustainable decisions.
-                            </p>
-                        </div>
-
-                        <!-- Card 2: Borderless SaaS Architecture -->
-                        <div class="card-enterprise" style="border-top: 3px solid var(--accent-warning); background: var(--bg-card);">
-                            <div class="card-icon" style="background: rgba(245, 184, 66, 0.12); color: var(--accent-warning); width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); font-size: 1.6rem; margin-bottom: var(--space-md); border: 1px solid rgba(245, 184, 66, 0.25);">☁️</div>
-                            <h3 class="card-title" data-i18n="card_structure_title">Borderless SaaS Architecture</h3>
-                            <p class="card-desc" style="line-height: 1.7; color: var(--text-secondary);" data-i18n="card_structure_text">
-                                Engineered for immediate international deployment, our cloud-native platform transforms fragmented territorial data into standardized, actionable intelligence. We enable rapid cross-border scalability without requiring heavy, localized hardware infrastructure.
-                            </p>
-                        </div>
-
-                        <!-- Card 3: Worldwide Climate & ESG Impact -->
-                        <div class="card-enterprise" style="border-top: 3px solid var(--accent-success); background: var(--bg-card);">
-                            <div class="card-icon" style="background: rgba(120, 223, 176, 0.12); color: var(--accent-success); width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); font-size: 1.6rem; margin-bottom: var(--space-md); border: 1px solid rgba(120, 223, 176, 0.25);">🌍</div>
-                            <h3 class="card-title" data-i18n="card_strategy_title">Worldwide Climate & ESG Impact</h3>
-                            <p class="card-desc" style="line-height: 1.7; color: var(--text-secondary);" data-i18n="card_strategy_text">
-                                Addressing universal challenges in urbanization, agriculture, and resource management. Our predictive AI models help global municipalities and organizations optimize mobility, drastically reduce carbon footprints, and meet rigorous international ESG standards.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ================================================================== -->
-            <!-- 6. INTERACTIVE MEDIA & VIDEO SHOWCASE                             -->
-            <!-- ================================================================== -->
-            <section id="videos" class="section-padding">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-tag" data-i18n="sec_videos_tag">Simulation & Footage</div>
-                        <h2 class="section-title" data-i18n="sec_videos">Project Videos & Media</h2>
-                        <p class="section-subtitle">Explore our live simulations, traffic coordination demonstrations, and edge computer vision showcases.</p>
-                    </div>
-
-                    <div class="grid-3" id="video-grid">
-                        <!-- Populated dynamically via JavaScript with preserved video data -->
-                    </div>
-                </div>
-            </section>
-
-            <!-- ================================================================== -->
-            <!-- 7. GLOBAL PRESENCE & INTERACTIVE MAP                               -->
-            <!-- ================================================================== -->
-            <section id="presence" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-tag" data-i18n="sec_impact_tag">Geospatial Operations</div>
-                        <h2 class="section-title" data-i18n="sec_impact">Global Operations & Digital Twins</h2>
-                        <p class="section-subtitle">Interactive map of active simulation corridors, digital twin modeling nodes, and European expansion pipelines.</p>
-                    </div>
-
-                    <!-- Leaflet Territorial Digital Twin Card -->
-                    <div class="map-card-wrapper">
-                        <div class="map-header-row">
-                            <div>
-                                <h3 class="map-title">🗺️ Live Operations & Territorial Digital Twin Map</h3>
-                                <p class="map-subtitle">Real-time pilot corridors, digital twin simulations, and European expansion nodes.</p>
-                            </div>
-                            <div class="map-filter-group" role="group" aria-label="Map Territory Filter">
-                                <button type="button" class="map-filter-btn active" onclick="filterMap('all', this)">🌍 All Territories</button>
-                                <button type="button" class="map-filter-btn" onclick="filterMap('latam', this)">🇧🇷 🇺🇾 Active Pilots (LATAM)</button>
-                                <button type="button" class="map-filter-btn" onclick="filterMap('europe', this)">🇩🇪 🇮🇹 Expansion Hubs (Europe)</button>
-                            </div>
-                        </div>
-
-                        <!-- Leaflet Map Container -->
-                        <div id="territorial-map" role="region" aria-label="Territorial Map Viewer"></div>
-
-                        <!-- Quick Focus Cards -->
-                        <div class="territory-grid">
-                            <div class="territory-card" style="border-left-color: var(--accent-success);" onclick="flyToTerritory(-22.9099, -47.0626, 12)" tabindex="0" role="button" aria-label="Focus on Campinas, Brazil">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇧🇷 Campinas, Brazil</span>
-                                    <span class="status-pill status-live" style="padding: 2px 8px; font-size: 0.68rem;">Pilot Proposal</span>
-                                </div>
-                                <p class="territory-desc">10 Corridors • DQN Signal Coordination • -45% Delay Goal</p>
-                            </div>
-
-                            <div class="territory-card" style="border-left-color: var(--accent-primary);" onclick="flyToTerritory(-34.9011, -56.1645, 12)" tabindex="0" role="button" aria-label="Focus on Montevideo, Uruguay">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇺🇾 Montevideo, Uruguay</span>
-                                    <span class="status-pill status-active" style="padding: 2px 8px; font-size: 0.68rem;">Digital Twin</span>
-                                </div>
-                                <p class="territory-desc">OpenStreetMap Digital Twin • SUMO Traffic Simulation</p>
-                            </div>
-
-                            <div class="territory-card" style="border-left-color: var(--accent-warning);" onclick="flyToTerritory(48.1351, 11.5820, 10)" tabindex="0" role="button" aria-label="Focus on Munich and Berlin, Germany">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇩🇪 Munich & Berlin, DE</span>
-                                    <span class="status-pill status-pipeline" style="padding: 2px 8px; font-size: 0.68rem;">EU Target</span>
-                                </div>
-                                <p class="territory-desc">EIT Urban Mobility & Horizon Europe Grant Pipeline</p>
-                            </div>
-
-                            <div class="territory-card" style="border-left-color: var(--accent-secondary);" onclick="flyToTerritory(45.4642, 9.1900, 10)" tabindex="0" role="button" aria-label="Focus on Milan, Italy">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇮🇹 Milan, Italy</span>
-                                    <span class="status-pill status-research" style="padding: 2px 8px; font-size: 0.68rem;">Expansion Hub</span>
-                                </div>
-                                <p class="territory-desc">Territorial Intelligence SaaS • LEZ & ESG Analytics</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- UN SDG Impact Badges -->
-                    <div class="sdg-badge-container">
-                        <div class="sdg-badge" style="border-left-color: var(--accent-primary);">
-                            <span style="font-size: 1.4rem;">🏙️</span>
-                            <span><strong>UN SDG 11:</strong> Sustainable Cities & Resilient Communities</span>
-                        </div>
-                        <div class="sdg-badge" style="border-left-color: var(--accent-success);">
-                            <span style="font-size: 1.4rem;">🌍</span>
-                            <span><strong>UN SDG 13:</strong> Climate Action (Targeting 15–30% CO₂ Reduction)</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ================================================================== -->
-            <!-- 8. RESEARCH, INNOVATION & ESG STRATEGY                            -->
-            <!-- ================================================================== -->
-            <section id="research" class="section-padding">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-tag">Science & Grants</div>
-                        <h2 class="section-title">Research & Innovation</h2>
-                        <p class="section-subtitle">Driving forward-looking evidence through rigorous academic partnerships, European grant pipelines, and future-ready quantum computing research.</p>
-                    </div>
-
-                    <div class="grid-3">
-                        <div class="card-enterprise">
-                            <div class="card-icon" style="color: var(--accent-secondary); background: rgba(108, 156, 255, 0.1); border-color: rgba(108, 156, 255, 0.25);">⚛️</div>
-                            <h3 class="card-title">Hybrid Classical-Quantum Exploration</h3>
-                            <p class="card-desc">
-                                Preparing for quantum advantage in NP-hard combinatorial territorial optimization (large-scale vehicle routing and multi-regional evacuation corridors) via hybrid QML simulators.
-                            </p>
-                            <span class="status-pill status-research" style="width: fit-content;"><span class="status-dot"></span> Next-Gen R&D</span>
-                        </div>
-
-                        <div class="card-enterprise">
-                            <div class="card-icon" style="color: var(--accent-warning); background: rgba(245, 184, 66, 0.1); border-color: rgba(245, 184, 66, 0.25);">🇪🇺</div>
-                            <h3 class="card-title">European Grant Pipeline</h3>
-                            <p class="card-desc">
-                                Targeting non-dilutive research funding through Horizon Europe and EIT Urban Mobility to fund our academic digital twin validation benchmarks and cross-border validation.
-                            </p>
-                            <span class="status-pill status-pipeline" style="width: fit-content;"><span class="status-dot"></span> Horizon Europe Pipeline</span>
-                        </div>
-
-                        <div class="card-enterprise">
-                            <div class="card-icon" style="color: var(--accent-success); background: rgba(120, 223, 176, 0.1); border-color: rgba(120, 223, 176, 0.25);">📊</div>
-                            <h3 class="card-title">Evidence-Based Traffic Science</h3>
-                            <p class="card-desc">
-                                Benchmarking multi-agent reinforcement learning directly against classical MAXBAND and fixed-timing plans inside SUMO simulation grids with real-world OpenStreetMap topologies.
-                            </p>
-                            <span class="status-pill status-live" style="width: fit-content;"><span class="status-dot"></span> Open Benchmark</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ================================================================== -->
-            <!-- 9. EXECUTIVE LEADERSHIP                                            -->
-            <!-- ================================================================== -->
-            <section id="leadership" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-tag" data-i18n="sec_leadership_tag">Executive Team</div>
-                        <h2 class="section-title" data-i18n="sec_leadership">Leadership</h2>
-                        <p class="section-subtitle">Multidisciplinary leaders uniting artificial intelligence, public infrastructure policy, and strategic international partnerships.</p>
-                    </div>
-
-                    <div class="grid-3">
-                        <!-- Leader 1: Alimul Fazal Nabil -->
-                        <div class="leader-card" onclick="openLeaderModal('Alimul Fazal Nabil', 'Chief Technology Officer (CTO)', '“Transforming complex territory data into scalable, real-time intelligence ecosystems.”')" tabindex="0" role="button" aria-label="View biography for Alimul Fazal Nabil">
-                            <div class="leader-avatar-wrap">
-                                <img src="alimul_photo.jpeg" alt="Alimul Fazal Nabil" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
-                            </div>
-                            <h3 class="leader-name">Alimul Fazal Nabil</h3>
-                            <div class="leader-role">Chief Technology Officer (CTO)</div>
-                            <span class="leader-bio-pill">Click to view bio →</span>
-                            <div class="leader-actions" onclick="event.stopPropagation();">
-                                <a href="mailto:nabil@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
-                                <a href="https://www.linkedin.com/in/alimul-fazal-nabil/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
-                            </div>
-                        </div>
-
-                        <!-- Leader 2: Leandro Patrón -->
-                        <div class="leader-card" onclick="openLeaderModal('Leandro Patrón', 'Engineering & Public Sector Relations (Uruguay)', '“Bridging the gap between advanced engineering algorithms and sustainable public policies.”')" tabindex="0" role="button" aria-label="View biography for Leandro Patrón">
-                            <div class="leader-avatar-wrap">
-                                <img src="leandro_photo.jfif" alt="Leandro Patrón" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
-                            </div>
-                            <h3 class="leader-name">Leandro Patrón</h3>
-                            <div class="leader-role">Engineering & Public Sector Relations</div>
-                            <span class="leader-bio-pill">Click to view bio →</span>
-                            <div class="leader-actions" onclick="event.stopPropagation();">
-                                <a href="mailto:leandro@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
-                                <a href="https://www.linkedin.com/in/leandro/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
-                            </div>
-                        </div>
-
-                        <!-- Leader 3: Douglas Amante -->
-                        <div class="leader-card" onclick="openLeaderModal('Douglas Amante', 'Strategic Partnerships', '“My vision is to establish MoviSabio as the global intelligence infrastructure for territories, enabling governments, enterprises, and communities to transform data into strategic decisions, sustainable growth, resilience, and long-term economic competitiveness.”')" tabindex="0" role="button" aria-label="View biography for Douglas Amante">
-                            <div class="leader-avatar-wrap">
-                                <img src="douglas_photo.jfif" alt="Douglas Amante" class="leader-img" loading="lazy" decoding="async" width="110" height="110">
-                            </div>
-                            <h3 class="leader-name">Douglas Amante</h3>
-                            <div class="leader-role">Strategic Partnerships</div>
-                            <span class="leader-bio-pill">Click to view bio →</span>
-                            <div class="leader-actions" onclick="event.stopPropagation();">
-                                <a href="mailto:douglas@movisabio.com" class="btn btn-outline btn-sm">✉️ Email</a>
-                                <a href="https://www.linkedin.com/in/douglasamante/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🔗 LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ================================================================== -->
+<!-- ================================================================== -->
             <!-- 10. OPEN INNOVATION & STARTUP PITCH SUBMISSION                     -->
             <!-- ================================================================== -->
             <section id="submit-idea" class="section-padding">
@@ -990,7 +1026,7 @@
                 </div>
             </section>
 
-            <!-- ================================================================== -->
+<!-- ================================================================== -->
             <!-- 11. INSTITUTIONAL INQUIRIES & PARTNERSHIPS                         -->
             <!-- ================================================================== -->
             <section id="contact" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle);">

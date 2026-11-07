@@ -13,6 +13,14 @@
 
     const dictionaries = {
         en: {
+        nav_smart_city: "Smart City",
+        btn_explore_platform: "Explore the Platform ↓",
+        btn_discover_smart_city: "Discover Smart City 🏙️",
+        btn_view_portfolio: "View Technology Portfolio →",
+        btn_become_partner: "Become a Strategic Partner →",
+        btn_investor_enquiries: "Investor Enquiries →",
+        btn_contact_movisabio: "Contact MoviSabio",
+
             sec_videos: "Project Videos & Media",
             sec_leadership: "Executive Leadership",
             sec_solutions_tag: "Enterprise Portfolio",
@@ -326,6 +334,14 @@
         },
 
         de: {
+        nav_smart_city: "Smart City",
+        btn_explore_platform: "Plattform erkunden ↓",
+        btn_discover_smart_city: "Smart City entdecken 🏙️",
+        btn_view_portfolio: "Technologie-Portfolio ansehen →",
+        btn_become_partner: "Strategischer Partner werden →",
+        btn_investor_enquiries: "Investorenanfragen →",
+        btn_contact_movisabio: "MoviSabio kontaktieren",
+
             sec_videos: "Projektvideos & Medien",
             sec_leadership: "Unternehmensführung",
             sec_solutions_tag: "Unternehmensportfolio",
@@ -639,6 +655,14 @@
         },
 
         pt: {
+        nav_smart_city: "Smart City",
+        btn_explore_platform: "Explorar a Plataforma ↓",
+        btn_discover_smart_city: "Descobrir Smart City 🏙️",
+        btn_view_portfolio: "Ver Portfólio de Tecnologia →",
+        btn_become_partner: "Tornar-se um Parceiro Estratégico →",
+        btn_investor_enquiries: "Consultas de Investidores →",
+        btn_contact_movisabio: "Contatar MoviSabio",
+
             sec_videos: "Vídeos do Projeto & Mídia",
             sec_leadership: "Liderança Executiva",
             sec_solutions_tag: "Portfólio Empresarial",
@@ -952,6 +976,14 @@
         },
 
         es: {
+        nav_smart_city: "Smart City",
+        btn_explore_platform: "Explorar la Plataforma ↓",
+        btn_discover_smart_city: "Descubrir Smart City 🏙️",
+        btn_view_portfolio: "Ver Portafolio de Tecnología →",
+        btn_become_partner: "Convertirse en Socio Estratégico →",
+        btn_investor_enquiries: "Consultas de Inversores →",
+        btn_contact_movisabio: "Contactar a MoviSabio",
+
             sec_videos: "Videos del Proyecto y Medios",
             sec_leadership: "Liderazgo Ejecutivo",
             sec_solutions_tag: "Portafolio Empresarial",
@@ -1265,6 +1297,14 @@
         },
 
         it: {
+        nav_smart_city: "Smart City",
+        btn_explore_platform: "Esplora la Piattaforma ↓",
+        btn_discover_smart_city: "Scopri Smart City 🏙️",
+        btn_view_portfolio: "Visualizza Portafoglio Tecnologico →",
+        btn_become_partner: "Diventa un Partner Strategico →",
+        btn_investor_enquiries: "Richieste per Investitori →",
+        btn_contact_movisabio: "Contatta MoviSabio",
+
             sec_videos: "Video di Progetto e Media",
             sec_leadership: "Leadership Esecutiva",
             sec_solutions_tag: "Portfolio Aziendale",
@@ -1578,6 +1618,14 @@
         },
 
         zh: {
+        nav_smart_city: "智慧城市",
+        btn_explore_platform: "探索平台 ↓",
+        btn_discover_smart_city: "了解智慧城市 🏙️",
+        btn_view_portfolio: "查看技术组合 →",
+        btn_become_partner: "成为战略合作伙伴 →",
+        btn_investor_enquiries: "投资人咨询 →",
+        btn_contact_movisabio: "联系 MoviSabio",
+
             sec_videos: "项目视频与媒体演示",
             sec_leadership: "核心领导团队",
             sec_solutions_tag: "企业产品组合",
