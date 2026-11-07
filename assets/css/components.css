@@ -446,3 +446,183 @@
 .modal-body {
     padding: var(--space-xl);
 }
+
+/* ==========================================================================
+   10. INVESTOR ECONOMICS & MARKET OPPORTUNITY SECTION (#economics)
+   ========================================================================== */
+#economics {
+    --primary-color: #4A154B; 
+    --accent-green: #2EB67D;
+    --accent-blue: #36C5F0;
+    --accent-yellow: #ECB22E;
+    --accent-red: #E01E5A;
+    --text-dark: #1D1C1D;
+    --text-light: #616061;
+    --bg-light: #F4F5F5;
+    --white: #ffffff;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+#economics .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#economics .section-title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+#economics .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+#economics .pilot-card {
+    background: linear-gradient(135deg, var(--white) 0%, rgba(54, 197, 240, 0.02) 100%);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(54, 197, 240, 0.1);
+    text-align: center;
+    border-top: 5px solid var(--accent-blue);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+#economics .pilot-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(54, 197, 240, 0.2), 0 0 30px rgba(54, 197, 240, 0.15);
+}
+
+#economics .pilot-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#economics .pilot-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+#economics .company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+#economics .company-card {
+    background: linear-gradient(135deg, var(--white) 0%, #fafbfc 100%);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-left: 5px solid var(--primary-color);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#economics .company-card::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(54, 197, 240, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+#economics .company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(74, 21, 75, 0.12);
+}
+
+#economics .company-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#economics .company-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#economics .company-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+#economics .sdg-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#economics .sdg-badge {
+    background: linear-gradient(135deg, var(--white), #fafbfc);
+    border: 2px solid #ddd;
+    padding: 18px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+#economics .sdg-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 768px) {
+    #economics .section-title {
+        font-size: 1.85rem;
+    }
+    #economics .pilot-card {
+        padding: 25px 20px;
+    }
+    #economics .pilot-card h3 {
+        font-size: 1.75rem !important;
+    }
+    #economics .company-card {
+        padding: 25px 20px;
+    }
+    #economics .sdg-badge {
+        width: 100%;
+        padding: 14px 18px;
+    }
+}
+
