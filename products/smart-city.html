@@ -29,7 +29,11 @@
     <link rel="stylesheet" href="../assets/css/components.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/platform.css">
+    <link rel="stylesheet" href="../assets/css/map.css">
     <link rel="stylesheet" href="../assets/css/enterprise-smart-city.css">
+
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 
     <!-- Schema.org SoftwareApplication JSON-LD -->
     <script type="application/ld+json">
@@ -141,7 +145,7 @@
                 <li class="chapter-nav-item"><a href="#computer-vision"><span class="chap-num">06</span> Edge Vision</a></li>
                 <li class="chapter-nav-item"><a href="#predictive-analytics"><span class="chap-num">07</span> Prediction & RL</a></li>
                 <li class="chapter-nav-item"><a href="#digital-twin"><span class="chap-num">08</span> Digital Twin</a></li>
-                <li class="chapter-nav-item"><a href="#gis-intelligence"><span class="chap-num">09</span> GIS & Spatial</a></li>
+                <li class="chapter-nav-item"><a href="#gis-intelligence"><span class="chap-num">09</span> Geospatial Ops</a></li>
                 <li class="chapter-nav-item"><a href="#data-api-ecosystem"><span class="chap-num">10</span> Data & API</a></li>
                 <li class="chapter-nav-item"><a href="#infrastructure-devops"><span class="chap-num">11</span> DevOps</a></li>
                 <li class="chapter-nav-item"><a href="#security-governance"><span class="chap-num">12</span> Security & AI</a></li>
@@ -625,6 +629,976 @@
                     </div>
 
                 </div>
+
+                <!-- ========================================================== -->
+                <!-- SUBSECTION: SYSTEM ENGINEERING — CLOUD-NATIVE & EDGE ARCHITECTURE -->
+                <!-- ========================================================== -->
+                <div id="system-engineering" class="syseng-subsection">
+                    <div class="syseng-header">
+                        <div class="sc-tag" data-i18n="syseng_tag">Engineering Specification • Cloud-Native & Edge</div>
+                        <h3 class="syseng-title" data-i18n="syseng_title">System Engineering</h3>
+                        <div class="syseng-subtitle" data-i18n="syseng_subtitle">Cloud-Native & Edge Architecture</div>
+                        <p class="syseng-intro" data-i18n="syseng_intro">
+                            An interactive, production-grade deep dive into the four architectural layers powering the MoviSabio platform. Explore the bidirectional execution pipelines—from high-frequency optical roadside edge perception to cloud-native micro-simulation, spatial graphs, and municipal command centers. Click any layer tab to filter the stack, or inspect individual technology modules to review exact communication protocols, latency tolerances, and fail-safe safety envelopes.
+                        </p>
+                    </div>
+
+                    <!-- Bidirectional Pipeline Overview Banner -->
+                    <div class="syseng-pipeline-banner">
+                        <div class="pipeline-channel upward-channel">
+                            <div class="channel-header">
+                                <span class="channel-icon">▲</span>
+                                <span class="channel-title" data-i18n="syseng_upward_flow">Upward Telemetry Flow</span>
+                                <span class="channel-pill">Ingestion & AI Inference</span>
+                            </div>
+                            <div class="channel-steps">
+                                <span class="channel-step">L1: RTSP / Loops / GPS</span>
+                                <span class="channel-arrow">→</span>
+                                <span class="channel-step">L2: MQTT / Redis / AKS</span>
+                                <span class="channel-arrow">→</span>
+                                <span class="channel-step">L3: SUMO / DQN / Forecast</span>
+                                <span class="channel-arrow">→</span>
+                                <span class="channel-step">L4: 3D Twin & Open API</span>
+                            </div>
+                        </div>
+
+                        <div class="pipeline-channel downward-channel">
+                            <div class="channel-header">
+                                <span class="channel-icon">▼</span>
+                                <span class="channel-title" data-i18n="syseng_downward_flow">Downward Control Flow</span>
+                                <span class="channel-pill">Safety-Bounded Actuation</span>
+                            </div>
+                            <div class="channel-steps">
+                                <span class="channel-step">L4: Operator Directives</span>
+                                <span class="channel-arrow">→</span>
+                                <span class="channel-step">L3: Watchdog Safety Bounds</span>
+                                <span class="channel-arrow">→</span>
+                                <span class="channel-step">L2: mTLS Authenticated Sockets</span>
+                                <span class="channel-arrow">→</span>
+                                <span class="channel-step">L1: NTCIP 1202 Signal Controllers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Layer Filter Tabs -->
+                    <div class="syseng-controls" role="tablist" aria-label="System Engineering Layer Selector">
+                        <button type="button" class="syseng-tab-btn active" role="tab" aria-selected="true" data-layer="all" id="tab-all">
+                            <span class="tab-icon">⚡</span> <span data-i18n="syseng_all_layers">All 4 Layers (Full Stack)</span>
+                        </button>
+                        <button type="button" class="syseng-tab-btn" role="tab" aria-selected="false" data-layer="l4" id="tab-l4">
+                            <span class="tab-badge l4-badge">L4</span> Command & Operations
+                        </button>
+                        <button type="button" class="syseng-tab-btn" role="tab" aria-selected="false" data-layer="l3" id="tab-l3">
+                            <span class="tab-badge l3-badge">L3</span> AI & Simulation Engine
+                        </button>
+                        <button type="button" class="syseng-tab-btn" role="tab" aria-selected="false" data-layer="l2" id="tab-l2">
+                            <span class="tab-badge l2-badge">L2</span> Spatial & Streaming Core
+                        </button>
+                        <button type="button" class="syseng-tab-btn" role="tab" aria-selected="false" data-layer="l1" id="tab-l1">
+                            <span class="tab-badge l1-badge">L1</span> Edge & Telemetry Ingestion
+                        </button>
+                    </div>
+
+                    <!-- 4 Layers Container -->
+                    <div class="syseng-layers-container" id="syseng-layers-container">
+
+                        <!-- LAYER 04: COMMAND & OPERATIONS -->
+                        <div class="syseng-layer-card" data-layer="l4">
+                            <div class="syseng-layer-header">
+                                <div class="syseng-layer-title-group">
+                                    <div class="syseng-layer-badge badge-l4">L4</div>
+                                    <div>
+                                        <h4 class="syseng-layer-name">Layer 04 — Command & Operations</h4>
+                                        <p class="syseng-layer-desc">Mission-critical visualization, executive municipal intelligence, and sovereign REST/GraphQL developer gateways.</p>
+                                    </div>
+                                </div>
+                                <div class="syseng-layer-tags">
+                                    <span class="feature-tech-pill">MapLibre GL 3D</span>
+                                    <span class="feature-tech-pill">Scope 1 Carbon</span>
+                                    <span class="feature-tech-pill">CAD Preemption</span>
+                                    <span class="feature-tech-pill">OpenAPI 3.0</span>
+                                </div>
+                            </div>
+                            <div class="syseng-layer-body">
+                                <div class="syseng-module-grid">
+                                    
+                                    <!-- Module 1: 3D Digital Twin Command Center -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🌐</span>
+                                                <h5 class="syseng-mod-title">3D Digital Twin Command Center</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                WebGL & MapLibre GL 3D vector map rendering real-time corridor speeds, live signal phase states, and territorial incident overlays.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect 3D Digital Twin Command Center specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">WebGL 2.0 / Vector Tiles / GeoJSON</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">60 FPS Render / &lt; 120ms WebSocket</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Automatic fallback to 2D vector canvas</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Municipal TMC video walls &amp; consoles</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 2: City Hall Operations Dashboard -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🏛️</span>
+                                                <h5 class="syseng-mod-title">City Hall Operations Dashboard</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Executive municipal KPI aggregation, Level of Service (LOS A–F) reporting, and automated Scope 1 carbon emission accounting.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect City Hall Operations Dashboard specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">HTTPS / REST / JSON Schema</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">5-min Rolling Averages / 99.95% SLA</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Cached Redis read replicas during peak</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Mayoral briefings &amp; Open Data portals</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 3: Emergency Dispatch Preemption -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🚑</span>
+                                                <h5 class="syseng-mod-title">Emergency Dispatch Preemption</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                First-responder green-corridor reservation, blue-light preemption logging, and multi-agency Computer-Aided Dispatch (CAD) integration.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Emergency Dispatch Preemption specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">NTCIP 1202 Preemption / WebSocket</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">&lt; 50ms Dispatch / Priority Override</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Automatic transition recovery to normal cycle</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">911 CAD &amp; Ambulance Fleet AVL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 4: Citizen Hazard Reporting -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">📱</span>
+                                                <h5 class="syseng-mod-title">Citizen Hazard Reporting</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Crowdsourced mobile hazard intake, automated computer-vision deduplication, and geospatial incident geo-fencing.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Citizen Hazard Reporting specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">HTTPS REST OpenAPI 3.0 / WGS84</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">Sub-second ingestion / Rate-limited spam filter</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Human-in-the-loop operator validation flag</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Municipal 311 app &amp; field maintenance crews</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 5: REST & GraphQL APIs -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">⚡</span>
+                                                <h5 class="syseng-mod-title">REST & GraphQL APIs</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                High-throughput asynchronous developer endpoints serving real-time transit telemetry, spatial graphs, and regional open data.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect REST & GraphQL APIs specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">FastAPI / GraphQL Apollo / OpenAPI 3.0</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">&lt; 25ms p95 / 10,000 req/sec</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Token-bucket rate limits &amp; circuit breakers</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Regional transit agencies &amp; navigation providers</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FLOW DIVIDER L4 <-> L3 -->
+                        <div class="syseng-flow-divider">
+                            <div class="syseng-flow-badge">
+                                <span class="up-flow">▲ Telemetry: Corridor Speed Heatmaps, Congestion Forecasts & Incident GeoJSON</span>
+                                <span>|</span>
+                                <span class="down-flow">▼ Actuation: Dispatch Preemption Triggers & Operator Policy Directives</span>
+                            </div>
+                        </div>
+
+                        <!-- LAYER 03: AI & SIMULATION ENGINE -->
+                        <div class="syseng-layer-card" data-layer="l3">
+                            <div class="syseng-layer-header">
+                                <div class="syseng-layer-title-group">
+                                    <div class="syseng-layer-badge badge-l3">L3</div>
+                                    <div>
+                                        <h4 class="syseng-layer-name">Layer 03 — AI & Simulation Engine</h4>
+                                        <p class="syseng-layer-desc">Reinforcement learning, arterial progression physics, microscopic simulation, and explainable safety bounds.</p>
+                                    </div>
+                                </div>
+                                <div class="syseng-layer-tags">
+                                    <span class="feature-tech-pill">DQN / PPO</span>
+                                    <span class="feature-tech-pill">MAXBAND MILP</span>
+                                    <span class="feature-tech-pill">TraCI Python</span>
+                                    <span class="feature-tech-pill">Safety Watchdog</span>
+                                </div>
+                            </div>
+                            <div class="syseng-layer-body">
+                                <div class="syseng-module-grid">
+                                    
+                                    <!-- Module 1: Deep Reinforcement Learning (DQN) -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🧠</span>
+                                                <h5 class="syseng-mod-title">Deep Reinforcement Learning (DQN)</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Multi-agent neural networks (DQN/PPO) trained in simulation to dynamically modulate green phase splits and cycle lengths based on waiting time.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Deep Reinforcement Learning specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">PyTorch / ONNX Runtime / CUDA 12</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">&lt; 15ms Inference / 1,000+ states/sec</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Hard upper/lower bounding constraints</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">AITCS optimization core &amp; shadow validators</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 2: MAXBAND Green-Wave -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🌊</span>
+                                                <h5 class="syseng-mod-title">MAXBAND Green-Wave</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Mathematical linear programming maximizing arterial progression bandwidth and minimizing stops across coordinated corridors.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect MAXBAND Green-Wave specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">Mixed-Integer Linear Programming (MILP)</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">Continuous Corridor Offsets / 10s recalibration</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Fallback to certified pre-timed coordination band</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Arterial master controllers &amp; NTCIP clocks</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 3: Safety Bounds Watchdog -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🛡️</span>
+                                                <h5 class="syseng-mod-title">Safety Bounds Watchdog</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Immutable deterministic safety filter enforcing mandatory minimum green times (7s), yellow clearance (4s), and pedestrian walk guarantees.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Safety Bounds Watchdog specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">Deterministic Hardware Validation Gate</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">&lt; 1ms Synchronous Filter / Zero-Bypass</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Immediate rejection of any AI action outside envelope</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Pre-actuation buffer &amp; Conflict Monitor Unit (CMU)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 4: SUMO & TraCI Digital Twin Simulator -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🔄</span>
+                                                <h5 class="syseng-mod-title">SUMO & TraCI Digital Twin Simulator</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                High-fidelity microscopic physics simulation running Krauss car-following models to benchmark policies before physical release.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect SUMO & TraCI Digital Twin Simulator specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">Eclipse SUMO / TraCI TCP Socket</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">10x Real-Time / 50,000 Vehicle Agents</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Sandboxed container preventing contamination</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Synthetic scenario stress-testing engine</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 5: LSTM / GRU Multi-Horizon Forecasting -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">📈</span>
+                                                <h5 class="syseng-mod-title">LSTM / GRU Multi-Horizon Forecasting</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Recurrent neural network forecasting corridor densities and queue formation 15 to 60 minutes into the future to prevent gridlock.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect LSTM / GRU Forecasting specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">TensorFlow / TensorRT Time-Series</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">15/30/60-min Horizons / 94.2% Accuracy</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Reversion to historical diurnal baseline on anomaly</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Upstream corridor metering &amp; VMS signs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 6: Explainable AI (XAI) Safety Checks -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🔍</span>
+                                                <h5 class="syseng-mod-title">Explainable AI (XAI) Safety Checks</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Transparent feature-attribution logging explaining every timing modulation; zero opaque black-box actuation.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Explainable AI specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">Integrated Gradients / SHAP Value Logs</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">Synchronous explanation log per cycle</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Audit alert triggered if attribution diverges &gt; 2.5σ</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Municipal compliance auditors &amp; review panels</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FLOW DIVIDER L3 <-> L2 -->
+                        <div class="syseng-flow-divider">
+                            <div class="syseng-flow-badge">
+                                <span class="up-flow">▲ Telemetry: Filtered Event Streams, Redis In-Memory State & Spatial Road Graph Vectors</span>
+                                <span>|</span>
+                                <span class="down-flow">▼ Actuation: Safety-Bounded Cycle Splits, Green-Wave Offsets & Preemption Overrides</span>
+                            </div>
+                        </div>
+
+                        <!-- LAYER 02: SPATIAL & STREAMING CORE -->
+                        <div class="syseng-layer-card" data-layer="l2">
+                            <div class="syseng-layer-header">
+                                <div class="syseng-layer-title-group">
+                                    <div class="syseng-layer-badge badge-l2">L2</div>
+                                    <div>
+                                        <h4 class="syseng-layer-name">Layer 02 — Spatial & Streaming Core</h4>
+                                        <p class="syseng-layer-desc">Geospatial graph topologies, in-memory stream buffering, cloud-native orchestration, and zero-trust security.</p>
+                                    </div>
+                                </div>
+                                <div class="syseng-layer-tags">
+                                    <span class="feature-tech-pill">PostGIS 3.4</span>
+                                    <span class="feature-tech-pill">Redis Cluster</span>
+                                    <span class="feature-tech-pill">Azure AKS</span>
+                                    <span class="feature-tech-pill">MQTT QoS 1</span>
+                                    <span class="feature-tech-pill">mTLS 1.3</span>
+                                </div>
+                            </div>
+                            <div class="syseng-layer-body">
+                                <div class="syseng-module-grid">
+                                    
+                                    <!-- Module 1: PostgreSQL / PostGIS Spatial Models -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🗺️</span>
+                                                <h5 class="syseng-mod-title">PostgreSQL / PostGIS Spatial Models</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Relational geospatial database encoding directed road network topologies, turn restrictions, and EPSG:4326/3857 coordinates.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect PostgreSQL PostGIS specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">SQL / PostGIS 3.4 / GiST Spatial Indexes</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">Sub-millisecond polygon containment queries</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Automated WAL archiving &amp; multi-AZ failover</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">OpenStreetMap basemaps &amp; municipal cadastre</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 2: Redis In-Memory State Cache -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">⚡</span>
+                                                <h5 class="syseng-mod-title">Redis In-Memory State Cache</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Ultra-low-latency in-memory data store caching intersection state, queue occupancy, and decoupling ingestion from analytical workloads.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Redis Cache specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">RESP3 / Redis Sentinel Cluster</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">&lt; 2ms Latency / 150,000 ops/sec</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Automatic master election &amp; AOF persistence</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Real-time telemetry buffering &amp; pub/sub event bus</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 3: Microsoft Azure Kubernetes Service (AKS) -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">☁️</span>
+                                                <h5 class="syseng-mod-title">Microsoft Azure Kubernetes Service (AKS)</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Auto-scaling container orchestration executing microservices, inference pods, and streaming worker pools.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Azure Kubernetes Service specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">Kubernetes 1.29+ / Helm 3 / Azure CNI</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">Horizontal Pod Autoscaler (HPA) / 99.99% uptime</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Multi-node pool isolation &amp; blue-green updates</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">GitHub Actions CI/CD &amp; Prometheus scrapers</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 4: MQTT Message Brokers -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">📡</span>
+                                                <h5 class="syseng-mod-title">MQTT Message Brokers</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Lightweight publish-subscribe telemetry ingestion broker handling high-frequency sensor heartbeats and cabinet pulses.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect MQTT Message Brokers specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">MQTT 5.0 / Mosquitto &amp; EMQX / QoS 1</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">&lt; 15ms Message Routing / 200,000 msgs/sec</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Persistent offline queuing with backpressure</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Edge microservers &amp; roadside detector hubs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 5: TLS 1.3 & OAuth 2.0 Security -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🔒</span>
+                                                <h5 class="syseng-mod-title">TLS 1.3 & OAuth 2.0 Security</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                End-to-end transport layer security with mutual certificate authentication (mTLS) and fine-grained JWT role permissions.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect TLS 1.3 OAuth 2.0 specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">TLS 1.3 / mTLS / RFC 6749 OAuth 2.0</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">Hardware Cryptographic Acceleration / 0 plaintext</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Instant token revocation list &amp; cert watchdog</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Edge-to-cloud VPN tunnels &amp; municipal IAM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 6: Zero-Trust Vault -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🗝️</span>
+                                                <h5 class="syseng-mod-title">Zero-Trust Vault</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Centralized secrets management, dynamic credential leases, and cryptographic audit signing for municipal IT governance.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Zero-Trust Vault specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">HashiCorp Vault / KMS / HSM-backed keys</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">Automated 30-day rotation / &lt; 10ms lease</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Encrypted root quorum sealing &amp; DR replica</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Production Kubernetes pods &amp; database brokers</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FLOW DIVIDER L2 <-> L1 -->
+                        <div class="syseng-flow-divider">
+                            <div class="syseng-flow-badge">
+                                <span class="up-flow">▲ Telemetry: Optical Detections, Inductive Counts, Sub-Second Heartbeats & AgriTech Collars</span>
+                                <span>|</span>
+                                <span class="down-flow">▼ Actuation: Encrypted mTLS Control Sockets & NTCIP 1202 Phase Hold Commands</span>
+                            </div>
+                        </div>
+
+                        <!-- LAYER 01: EDGE & TELEMETRY INGESTION -->
+                        <div class="syseng-layer-card" data-layer="l1">
+                            <div class="syseng-layer-header">
+                                <div class="syseng-layer-title-group">
+                                    <div class="syseng-layer-badge badge-l1">L1</div>
+                                    <div>
+                                        <h4 class="syseng-layer-name">Layer 01 — Edge & Telemetry Ingestion</h4>
+                                        <p class="syseng-layer-desc">Physical roadside perception, edge computer vision, hardware signal cabinets, and IoT sensor meshes.</p>
+                                    </div>
+                                </div>
+                                <div class="syseng-layer-tags">
+                                    <span class="feature-tech-pill">RTSP 1080p</span>
+                                    <span class="feature-tech-pill">YOLOv8 INT8</span>
+                                    <span class="feature-tech-pill">NTCIP 1202</span>
+                                    <span class="feature-tech-pill">Inductive Loops</span>
+                                    <span class="feature-tech-pill">LoRaWAN</span>
+                                </div>
+                            </div>
+                            <div class="syseng-layer-body">
+                                <div class="syseng-module-grid">
+                                    
+                                    <!-- Module 1: Municipal CCTV Feeds (RTSP) -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">📹</span>
+                                                <h5 class="syseng-mod-title">Municipal CCTV Feeds (RTSP)</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Direct hardware ingestion from existing municipal surveillance IP cameras over secure local RTSP/ONVIF streams.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Municipal CCTV Feeds specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">RTSP / ONVIF Profile S/T / H.264/H.265</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">1080p @ 30 FPS / Hardware-accelerated decode</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Instant camera reconnect watchdog with auto-recovery</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Municipal CCTV networks &amp; PTZ/fixed cams</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 2: YOLOv8 Edge Computer Vision -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">👁️</span>
+                                                <h5 class="syseng-mod-title">YOLOv8 Edge Computer Vision</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Ruggedized edge neural inference nodes (NVIDIA Jetson) classifying vehicles, cyclists, and pedestrians with ByteTrack tracking.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect YOLOv8 Edge Computer Vision specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">TensorRT / ONNX Runtime / FP16 Quantized</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">&lt; 33ms Per Frame (30 FPS) / 98.4% Precision</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Raw frames purged immediately from RAM (GDPR/LGPD)</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Roadside microservers &amp; edge industrial PCs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 3: NTCIP 1202 Signal Controllers -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🚥</span>
+                                                <h5 class="syseng-mod-title">NTCIP 1202 Signal Controllers</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Standardized roadside cabinet controller interfacing supporting NEMA TS2, Type 170, and Type 2070 hardware units.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect NTCIP 1202 Signal Controllers specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">NTCIP 1202 v03 / RS-232 / Ethernet IP</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">100ms Controller Poll &amp; Phase Hold Actuation</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Local hardware flash / time-of-day failsafe if drop &gt; 3s</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Physical intersection cabinets &amp; signal monitors</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 4: Inductive Loop & Sensor Meshes -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🧲</span>
+                                                <h5 class="syseng-mod-title">Inductive Loop & Sensor Meshes</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                In-pavement magnetic loop detectors, radar speed sensors, and push-button pedestrian demand contacts.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect Inductive Loop & Sensor Meshes specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">Dry Contact Closures / Optoisolated I/O / Modbus</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">1ms Pulse Detection / Continuous Occupancy</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Stuck detector filter isolates faulty loops</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Roadside loop amplifier racks &amp; sensor hubs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 5: LoRaWAN & GPS AgriTech Collars -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🛰️</span>
+                                                <h5 class="syseng-mod-title">LoRaWAN & GPS AgriTech Collars</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Long-range low-power telemetry capturing virtual fencing coordinates, livestock proximity, and rural territorial assets.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect LoRaWAN & GPS AgriTech Collars specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">LoRaWAN 1.0.4 / EU868 &amp; US915 / GNSS GPS</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">15km Line-of-Sight / Sub-500 byte payloads</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">Ultra-low-power sleep with local buffer</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Rural gateway base stations &amp; boundary monitors</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -993,43 +1967,298 @@
         </section>
 
         <!-- ================================================================== -->
-        <!-- CHAPTER 09: GIS & TERRITORIAL INTELLIGENCE                         -->
+        <!-- CHAPTER 09: GEOSPATIAL OPERATIONS & GLOBAL DIGITAL TWINS          -->
         <!-- ================================================================== -->
         <section id="gis-intelligence" class="smart-city-section" style="background: var(--bg-secondary);">
             <div class="container">
                 <div class="sc-section-header">
-                    <div class="sc-tag">Chapter 09 • Spatial Infrastructure</div>
-                    <h2 class="sc-title">GIS & Territorial Spatial Intelligence</h2>
+                    <div class="sc-tag">Chapter 09 • Spatial Infrastructure & Global Operations</div>
+                    <h2 class="sc-title">Geospatial Operations</h2>
+                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--color-brand-primary); margin-top: 4px; margin-bottom: 8px;">
+                        Global Operations & Digital Twins
+                    </div>
                     <p class="sc-subtitle">
-                        Traffic does not occur in an abstract mathematical void—it occurs across complex geographic terrain. MoviSabio grounds all traffic observations onto PostGIS spatial graphs.
+                        Interactive map of active simulation corridors, digital twin modeling nodes, and European expansion pipelines.
                     </p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                    <div class="card-enterprise">
-                        <h4 style="color: var(--color-brand-primary); margin-bottom: 8px;">PostGIS Spatial Tables</h4>
-                        <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                            Road centerlines, intersection coordinates, detector bounding boxes, and municipal boundary shapefiles are stored as PostGIS vector geometries with spatial GIST indexing for sub-millisecond proximity queries.
-                        </p>
+                <!-- OSIRIS GEOSPATIAL OPERATIONS SUITE -->
+                <div class="osiris-operations-container">
+
+                    <!-- Control & Filter Strip -->
+                    <div class="osiris-control-bar">
+                        <div class="osiris-control-top">
+                            <div class="osiris-search-wrap">
+                                <input type="text" id="camera-search-input" class="osiris-search-input" placeholder="Search camera feeds by name, city, highway, or network (e.g. Berlin, London, Campinas, SR-20, TfL)..." aria-label="Search cameras">
+                            </div>
+                            <div class="osiris-status-indicator" id="camera-dataset-status">
+                                <span class="live-dot-pulse"></span> Initializing OSIRIS Live Feeds...
+                            </div>
+                        </div>
+
+                        <div class="osiris-filter-row">
+                            <!-- Region Filter Buttons -->
+                            <div class="osiris-filter-group" role="group" aria-label="Region Filter">
+                                <button type="button" class="cam-filter-btn cam-region-btn active" data-region="all">🌍 Global</button>
+                                <button type="button" class="cam-filter-btn cam-region-btn" data-region="latam">🇧🇷 🇺🇾 LATAM</button>
+                                <button type="button" class="cam-filter-btn cam-region-btn" data-region="europe">🇩🇪 🇮🇹 🇬🇧 Europe</button>
+                                <button type="button" class="cam-filter-btn cam-region-btn" data-region="north-america">🇺🇸 🇨🇦 North America</button>
+                                <button type="button" class="cam-filter-btn cam-region-btn" data-region="asia">🇸🇬 🇯🇵 🇹🇼 Asia-Pacific</button>
+                                <button type="button" class="cam-filter-btn cam-region-btn" data-region="middle-east">Regional Hubs</button>
+                            </div>
+
+                            <!-- Feed Type Filter Buttons -->
+                            <div class="osiris-filter-group" role="group" aria-label="Feed Type Filter">
+                                <button type="button" class="cam-filter-btn cam-type-btn active" data-type="all">All Feeds</button>
+                                <button type="button" class="cam-filter-btn cam-type-btn" data-type="live">📹 Live Streams</button>
+                                <button type="button" class="cam-filter-btn cam-type-btn" data-type="snapshot">📷 Snapshot Feeds</button>
+                                <button type="button" class="cam-filter-btn cam-type-btn" data-type="territorial">🏢 Territorial Nodes</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-enterprise">
-                        <h4 style="color: var(--color-brand-primary); margin-bottom: 8px;">GeoPandas & Spatial Joins</h4>
-                        <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                            Executes high-throughput spatial joins between vehicle trajectory points and road segments (`ST_DWithin`, `ST_Intersects`), enabling automated calculation of corridor-level density and link travel times.
-                        </p>
+
+                    <!-- COMPONENT B: GLOBAL GEOSPATIAL CAMERA MAP -->
+                    <div class="osiris-map-card">
+                        <div class="osiris-map-header">
+                            <h3 class="osiris-map-title">
+                                <span>🗺️</span> Global Geospatial Camera & Digital Twin Map
+                            </h3>
+                            <div class="osiris-map-legend">
+                                <span class="legend-item"><span class="legend-dot dot-territorial"></span> MoviSabio Digital Twins (Campinas, Montevideo, Munich, Berlin, Milan, Singapore)</span>
+                                <span class="legend-item"><span class="legend-dot dot-live"></span> Live Video Feeds</span>
+                                <span class="legend-item"><span class="legend-dot dot-snapshot"></span> Periodic Snapshot Feeds</span>
+                            </div>
+                        </div>
+                        <div id="osiris-geospatial-map"></div>
                     </div>
-                    <div class="card-enterprise">
-                        <h4 style="color: var(--color-brand-primary); margin-bottom: 8px;">Topological Network Graph</h4>
-                        <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                            Builds directed spatial road network graphs containing speed limits, elevation changes, turn prohibitions, and lane counts, providing the structural foundation for both micro-simulation and transit routing.
-                        </p>
+
+                    <!-- COMPONENT A: LIVE CAMERA MONITORING WALL -->
+                    <div class="osiris-wall-wrapper" id="live-camera-monitoring-wall">
+                        <div class="osiris-wall-header">
+                            <div class="wall-header-left">
+                                <h3><span>📺</span> Live Camera Monitoring Wall</h3>
+                                <p>Authorized real-time CCTV traffic monitoring, stream probe diagnostics, and high-resolution surveillance playback.</p>
+                            </div>
+                            <div class="wall-header-right">
+                                <div class="hud-clock-badge">
+                                    <span>⏱️</span> <span id="hud-live-clock">--:--:-- UTC</span>
+                                </div>
+                                <span class="status-pill status-live-stream" id="active-cam-status-badge">
+                                    <span class="status-dot"></span> LIVE
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Main Active Player Viewport -->
+                        <div class="osiris-player-container">
+                            <div class="player-meta-bar">
+                                <div class="active-cam-heading">
+                                    <h4 id="active-cam-title">Berlin - Alexanderplatz</h4>
+                                    <p id="active-cam-location">Berlin, Germany • Network: YouTube Live</p>
+                                </div>
+                                <div class="player-actions">
+                                    <span class="snapshot-refresh-indicator" id="snapshot-refresh-indicator" style="display:none; font-size: 0.75rem; color: #ECB22E; font-family: var(--font-mono); margin-right: 8px;">
+                                        ⏱️ Periodic Snapshot Active
+                                    </span>
+                                    <button type="button" class="btn btn-outline btn-xs" id="btn-fullscreen-player" style="color: #FFFFFF; border-color: rgba(255,255,255,0.3);">
+                                        ⛶ Full Screen
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="active-cam-viewport-box" id="active-cam-viewport">
+                                <!-- Dynamic player content injected by osiris-traffic-monitor.js -->
+                                <div class="unsupported-feed-box">
+                                    <p>Connecting to camera feed...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Grid Switcher -->
+                        <div class="camera-thumbnails-container">
+                            <div class="thumbnails-header">
+                                <h5>Switch Active Feed</h5>
+                                <span style="font-size: 0.78rem; color: #a1a1aa; font-family: var(--font-mono);" id="camera-filtered-count">Loading feeds...</span>
+                            </div>
+                            <div class="camera-thumbnails-grid" id="camera-thumbnails-grid">
+                                <!-- Dynamic thumbnails injected by osiris-traffic-monitor.js -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-enterprise">
-                        <h4 style="color: var(--color-brand-primary); margin-bottom: 8px;">Territorial Sustainability Indicators</h4>
-                        <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                            Aggregates traffic data with municipal demographic, socio-economic, and air quality layers, calculating spatial equity scores that show whether underserved neighborhoods suffer disproportionate transport delays.
-                        </p>
+
+                    <!-- COMPONENT C: CAMERA INFORMATION PANEL -->
+                    <div class="osiris-info-card" id="osiris-camera-info-panel">
+                        <div class="info-card-header">
+                            <h4><span>📋</span> Active Camera Telemetry & Technical Metadata</h4>
+                            <div id="cam-probe-result" style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-secondary);">
+                                <span class="status-dot dot-green"></span> Ingestion Stream Active
+                            </div>
+                        </div>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Camera Identifier</span>
+                                <span class="info-value" id="info-cam-id">OSIRIS-DE-BERLIN-1</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Name & Location</span>
+                                <span class="info-value" id="info-cam-name">Berlin - Alexanderplatz</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">City & Country</span>
+                                <span class="info-value" id="info-cam-city">Berlin, Germany</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Geodetic Coordinates</span>
+                                <span class="info-value" id="info-cam-coords">52.52000° N, 13.40500° E (WGS84 EPSG:4326)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Source Provider Network</span>
+                                <span class="info-value" id="info-cam-source">YouTube Live / Public Ingestion Mesh</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Transmission Format & Codec</span>
+                                <span class="info-value" id="info-cam-format">H.264 / AVC YouTube Live Embed</span>
+                            </div>
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <span class="info-label">Last Successful Frame Timestamp</span>
+                                <span class="info-value" id="info-cam-timestamp" style="color: var(--color-brand-primary);">Live Stream Synchronized</span>
+                            </div>
+                        </div>
+
+                        <div class="info-legal-notice">
+                            <strong>Attribution & Statutory Usage Policy:</strong>
+                            <span id="info-cam-attribution">OSIRIS Open Traffic Camera Telemetry Mesh.</span>
+                            Public camera streams are accessed strictly in accordance with open-access municipal transport guidelines. MoviSabio operates exclusively on optical density metrics and immediately purges raw pixel frames in edge memory—strictly prohibiting facial recognition or biometric individual tracking under GDPR (Regulation EU 2016/679) and LGPD (Lei 13.709/2018).
+                        </div>
                     </div>
+
+                    <!-- COMPONENT D: TRAFFIC ANALYTICS PREPARATION (YOLOV8 STAGING AREA) -->
+                    <div class="yolo-staging-card" id="yolo-analytics-staging">
+                        <div class="yolo-staging-header">
+                            <h4 class="yolo-staging-title">
+                                <span>⚡</span> Traffic Analytics Preparation — Edge YOLOv8 Perception Pipeline
+                            </h4>
+                            <span class="status-pill status-pipeline" style="font-size: 0.72rem;">
+                                Staged Architecture • Ready for Roadside Deployment
+                            </span>
+                        </div>
+
+                        <div class="yolo-staging-banner">
+                            <strong>⚠️ AWAITING ROADSIDE YOLOV8 INFERENCE DEPLOYMENT:</strong>
+                            TensorRT YOLOv8 neural network weights and ByteTrack multi-object tracker pipelines are architecturally configured and ready for roadside edge container activation on this camera feed. Ground-plane homography calibration and tensor execution will activate upon physical traffic management center integration. <strong>Zero fabricated live detections are displayed.</strong>
+                            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--color-brand-primary); margin-top: 6px;" id="analytics-camera-ref">
+                                Target Feed: Berlin - Alexanderplatz (Berlin, Germany) • Sensor ID: de-berlin-1
+                            </div>
+                        </div>
+
+                        <div class="yolo-metrics-grid">
+                            <!-- Metric 1: Vehicle Detection -->
+                            <div class="yolo-metric-tile">
+                                <div class="yolo-tile-top">
+                                    <div class="yolo-tile-title">Vehicle Detection</div>
+                                    <span class="yolo-tile-badge">YOLOv8x Tensor</span>
+                                </div>
+                                <p class="yolo-tile-spec">Bounding box localization running at INT8 precision on edge GPU acceleration (NVIDIA Jetson / x86).</p>
+                                <div class="yolo-tile-status"><span>⚙️ Pipeline:</span> Staged (ONNX Runtime / TensorRT)</div>
+                            </div>
+
+                            <!-- Metric 2: Vehicle Classification -->
+                            <div class="yolo-metric-tile">
+                                <div class="yolo-tile-top">
+                                    <div class="yolo-tile-title">Vehicle Classification</div>
+                                    <span class="yolo-tile-badge">6 Classes</span>
+                                </div>
+                                <p class="yolo-tile-spec">Multi-modal classification partitioning passenger cars, buses, commercial trucks, motorcycles, bicycles, and pedestrians.</p>
+                                <div class="yolo-tile-status"><span>🏷️ Taxonomy:</span> Configured (COCO + Custom Road)</div>
+                            </div>
+
+                            <!-- Metric 3: Lane-Wise Counting -->
+                            <div class="yolo-metric-tile">
+                                <div class="yolo-tile-top">
+                                    <div class="yolo-tile-title">Lane-Wise Counting</div>
+                                    <span class="yolo-tile-badge">Virtual Tripwires</span>
+                                </div>
+                                <p class="yolo-tile-spec">Directional vector tripwires calculating vehicle turnover across approach lanes and turning bays.</p>
+                                <div class="yolo-tile-status"><span>📐 Geometry:</span> Polygon Coordinates Defined</div>
+                            </div>
+
+                            <!-- Metric 4: Vehicle Density -->
+                            <div class="yolo-metric-tile">
+                                <div class="yolo-tile-top">
+                                    <div class="yolo-tile-title">Vehicle Density</div>
+                                    <span class="yolo-tile-badge">Occupancy %</span>
+                                </div>
+                                <p class="yolo-tile-spec">Spatial road segment occupancy estimation comparing stationary vehicle area against total lane capacity.</p>
+                                <div class="yolo-tile-status"><span>📊 Buffer:</span> 50m Stopline Approach Buffer</div>
+                            </div>
+
+                            <!-- Metric 5: Queue Length -->
+                            <div class="yolo-metric-tile">
+                                <div class="yolo-tile-top">
+                                    <div class="yolo-tile-title">Queue Length</div>
+                                    <span class="yolo-tile-badge">Spatial Accumulation</span>
+                                </div>
+                                <p class="yolo-tile-spec">Real-time meter-distance and vehicle-count standing queue accumulation tracking to prevent intersection spillback.</p>
+                                <div class="yolo-tile-status"><span>⏱️ Window:</span> 15-Second Rolling Accumulator</div>
+                            </div>
+
+                            <!-- Metric 6: Speed Estimation -->
+                            <div class="yolo-metric-tile">
+                                <div class="yolo-tile-top">
+                                    <div class="yolo-tile-title">Speed Estimation</div>
+                                    <span class="yolo-tile-badge">Homography Matrix</span>
+                                </div>
+                                <p class="yolo-tile-spec">Translates 2D pixel trajectory velocities into ground-plane km/h speed vectors where optical homography is calibrated.</p>
+                                <div class="yolo-tile-status"><span>🎯 Calibration:</span> Pending Field GCP Verification</div>
+                            </div>
+
+                            <!-- Metric 7: Congestion Detection -->
+                            <div class="yolo-metric-tile" style="grid-column: 1 / -1;">
+                                <div class="yolo-tile-top">
+                                    <div class="yolo-tile-title">Congestion & Bottleneck Detection (HCM Level of Service)</div>
+                                    <span class="yolo-tile-badge">LOS A–F Engine</span>
+                                </div>
+                                <p class="yolo-tile-spec">Continuous classification of intersection Level of Service based on volume-to-capacity (v/c) ratios and delay thresholds, automatically signaling upstream corridor metering when LOS degrades below threshold D.</p>
+                                <div class="yolo-tile-status"><span>🚨 Alert Logic:</span> Standby for Roadside Cabinet Trigger</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRESERVED POSTGIS FOUNDATIONS BLOCK -->
+                    <div class="postgis-foundations-box">
+                        <div class="postgis-foundations-header">
+                            <h4><span>🌐</span> Spatial Foundations: PostGIS & Spatial Graph Infrastructure</h4>
+                            <p>Grounding physical sensor telemetry, micro-simulation meshes, and municipal boundary cadastres onto spatial PostGIS databases.</p>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+                            <div class="card-enterprise" style="background:#FFFFFF;">
+                                <h5 style="color: var(--color-brand-primary); margin-bottom: 6px; font-size: 0.95rem;">PostGIS Spatial Tables</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                                    Road centerlines, intersection coordinates, detector bounding boxes, and municipal boundary shapefiles stored as PostGIS vector geometries with spatial GIST indexing for sub-millisecond queries.
+                                </p>
+                            </div>
+                            <div class="card-enterprise" style="background:#FFFFFF;">
+                                <h5 style="color: var(--color-brand-primary); margin-bottom: 6px; font-size: 0.95rem;">GeoPandas & Spatial Joins</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                                    Executes high-throughput spatial joins between vehicle trajectory points and road segments (`ST_DWithin`, `ST_Intersects`), enabling automated calculation of corridor-level density and link travel times.
+                                </p>
+                            </div>
+                            <div class="card-enterprise" style="background:#FFFFFF;">
+                                <h5 style="color: var(--color-brand-primary); margin-bottom: 6px; font-size: 0.95rem;">Topological Network Graph</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                                    Builds directed spatial road network graphs containing speed limits, elevation changes, turn prohibitions, and lane counts, providing the structural foundation for both micro-simulation and transit routing.
+                                </p>
+                            </div>
+                            <div class="card-enterprise" style="background:#FFFFFF;">
+                                <h5 style="color: var(--color-brand-primary); margin-bottom: 6px; font-size: 0.95rem;">Territorial Sustainability Indicators</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                                    Aggregates traffic data with municipal demographic, socio-economic, and air quality layers, calculating spatial equity scores that show whether underserved neighborhoods suffer disproportionate transport delays.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -1807,7 +3036,9 @@
 
     <!-- Translation Engine & Interactive Application Scripts -->
     <script src="../assets/js/i18n.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="../assets/js/enterprise-smart-city.js"></script>
+    <script src="../assets/js/osiris-traffic-monitor.js"></script>
     <script>
         function toggleMobileNav() {
             var menu = document.getElementById('nav-menu');

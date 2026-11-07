@@ -458,6 +458,15 @@
             btn_schedule_scoping: "Schedule a Scoping Call →",
             btn_view_tech: "Inspect Technology Architecture",
             btn_submit_pitch: "Submit Open Innovation Pitch",
+            syseng_tag: "Engineering Specification • Cloud-Native & Edge",
+            syseng_title: "System Engineering",
+            syseng_subtitle: "Cloud-Native & Edge Architecture",
+            syseng_intro: "An interactive, production-grade deep dive into the four architectural layers powering the MoviSabio platform. Explore the bidirectional execution pipelines—from high-frequency optical roadside edge perception to cloud-native micro-simulation, spatial graphs, and municipal command centers.",
+            syseng_upward_flow: "Upward Telemetry Flow",
+            syseng_downward_flow: "Downward Control Flow",
+            syseng_all_layers: "All 4 Layers (Full Stack)",
+            syseng_inspect_specs: "Inspect Specifications",
+            syseng_hide_specs: "Hide Specifications",
         },
 
         de: {
@@ -906,6 +915,15 @@
             btn_schedule_scoping: "Scoping-Gespräch Vereinbaren →",
             btn_view_tech: "Technologiearchitektur Einsehen",
             btn_submit_pitch: "Open-Innovation-Idee Einreichen",
+            syseng_tag: "Ingenieursspezifikation • Cloud-Native & Edge",
+            syseng_title: "System-Engineering",
+            syseng_subtitle: "Cloud-Native- & Edge-Architektur",
+            syseng_intro: "Ein interaktiver, produktionsreifer Einblick in die vier Architekturschichten der MoviSabio-Plattform. Erkunden Sie die bidirektionalen Ausführungspipelines – von hochfrequenter optischer Edge-Wahrnehmung bis hin zu cloud-nativer Mikrosimulation, Raumgraphen und städtischen Leitstellen.",
+            syseng_upward_flow: "Aufwärts-Telemetriefluss",
+            syseng_downward_flow: "Abwärts-Steuerungsfluss",
+            syseng_all_layers: "Alle 4 Schichten (Full Stack)",
+            syseng_inspect_specs: "Spezifikationen einsehen",
+            syseng_hide_specs: "Spezifikationen ausblenden",
         },
 
         pt: {
@@ -1354,6 +1372,15 @@
             btn_schedule_scoping: "Agendar Reunião de Escopo →",
             btn_view_tech: "Inspecionar Arquitetura Tecnológica",
             btn_submit_pitch: "Submeter Ideia de Inovação Aberta",
+            syseng_tag: "Especificação de Engenharia • Cloud-Native & Edge",
+            syseng_title: "Engenharia de Sistemas",
+            syseng_subtitle: "Arquitetura Cloud-Native e de Borda",
+            syseng_intro: "Um aprofundamento interativo e de nível de produção nas quatro camadas arquiteturais que alimentam a plataforma MoviSabio. Explore os pipelines de execução bidirecionais — da percepção óptica de borda de alta frequência à microssimulação em nuvem, grafos espaciais e centros de comando municipais.",
+            syseng_upward_flow: "Fluxo de Telemetria Ascendente",
+            syseng_downward_flow: "Fluxo de Controle Descendente",
+            syseng_all_layers: "Todas as 4 Camadas (Stack Completa)",
+            syseng_inspect_specs: "Inspecionar Especificações",
+            syseng_hide_specs: "Ocultar Especificações",
         },
 
         es: {
@@ -1802,6 +1829,15 @@
             btn_schedule_scoping: "Programar Reunión de Alcance →",
             btn_view_tech: "Inspeccionar Arquitectura Tecnológica",
             btn_submit_pitch: "Enviar Propuesta de Innovación Abierta",
+            syseng_tag: "Especificación de Ingeniería • Cloud-Native & Edge",
+            syseng_title: "Ingeniería de Sistemas",
+            syseng_subtitle: "Arquitectura Cloud-Native y de Borde",
+            syseng_intro: "Una profundización interactiva y de nivel de producción en las cuatro capas arquitectónicas que impulsan la plataforma MoviSabio. Explore los canales de ejecución bidireccionales: desde la percepción óptica de borde de alta frecuencia hasta la microsimulación en la nube, grafos espaciales y centros de mando municipales.",
+            syseng_upward_flow: "Flujo de Telemetría Ascendente",
+            syseng_downward_flow: "Flujo de Control Descendente",
+            syseng_all_layers: "Las 4 Capas (Stack Completo)",
+            syseng_inspect_specs: "Inspeccionar Especificaciones",
+            syseng_hide_specs: "Ocultar Especificaciones",
         },
 
         it: {
@@ -2250,6 +2286,15 @@
             btn_schedule_scoping: "Pianifica Incontro di Fattibilità →",
             btn_view_tech: "Consulta Architettura Tecnologica",
             btn_submit_pitch: "Invia Proposta di Innovazione Aperta",
+            syseng_tag: "Specifica Ingegneristica • Cloud-Native & Edge",
+            syseng_title: "Ingegneria dei Sistemi",
+            syseng_subtitle: "Architettura Cloud-Native & Edge",
+            syseng_intro: "Un approfondimento interattivo e pronto per la produzione sui quattro livelli architetturali che alimentano la piattaforma MoviSabio. Esplora le pipeline di esecuzione bidirezionali: dalla percezione edge ottica ad alta frequenza alla micro-simulazione cloud-native, grafi spaziali e centri di comando municipali.",
+            syseng_upward_flow: "Flusso di Telemetria Ascendente",
+            syseng_downward_flow: "Flusso di Controllo Discendente",
+            syseng_all_layers: "Tutti e 4 i Livelli (Full Stack)",
+            syseng_inspect_specs: "Ispeziona Specifiche",
+            syseng_hide_specs: "Nascondi Specifiche",
         },
 
         zh: {
@@ -2698,6 +2743,15 @@
             btn_schedule_scoping: "预约方案论证研讨 →",
             btn_view_tech: "查看系统整体技术架构",
             btn_submit_pitch: "提交开放创新合作提案",
+            syseng_tag: "工程规范 • 云原生与边缘架构",
+            syseng_title: "系统工程",
+            syseng_subtitle: "云原生与边缘计算架构",
+            syseng_intro: "深入探索赋能 MoviSabio 平台的四大架构层级的交互式企业级深度解析。探索双向执行流水线——从高频路侧边缘光学感知，到云原生微观仿真数字孪生、空间拓扑图谱及市政指挥中心。",
+            syseng_upward_flow: "向上遥测数据流",
+            syseng_downward_flow: "向下控制指令流",
+            syseng_all_layers: "全部 4 个架构层 (完整技术栈)",
+            syseng_inspect_specs: "查看技术规格",
+            syseng_hide_specs: "收起技术规格",
         }
     };
 

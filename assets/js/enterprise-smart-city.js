@@ -756,6 +756,63 @@
                 }
             });
         });
+
+        // --- 8. SYSTEM ENGINEERING INTERACTIVE CONTROLLER ---
+        const sysengTabs = document.querySelectorAll('.syseng-tab-btn');
+        const sysengLayers = document.querySelectorAll('.syseng-layer-card');
+        const sysengDividers = document.querySelectorAll('.syseng-flow-divider');
+
+        if (sysengTabs.length > 0) {
+            sysengTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    sysengTabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    this.classList.add('active');
+                    this.setAttribute('aria-selected', 'true');
+
+                    const selectedLayer = this.getAttribute('data-layer');
+
+                    if (selectedLayer === 'all') {
+                        sysengLayers.forEach(l => l.classList.remove('hidden'));
+                        sysengDividers.forEach(d => { d.style.display = 'flex'; });
+                    } else {
+                        sysengLayers.forEach(l => {
+                            if (l.getAttribute('data-layer') === selectedLayer) {
+                                l.classList.remove('hidden');
+                            } else {
+                                l.classList.add('hidden');
+                            }
+                        });
+                        sysengDividers.forEach(d => { d.style.display = 'none'; });
+                    }
+                });
+            });
+        }
+
+        // Module Spec Drawer Toggles
+        const specToggles = document.querySelectorAll('.syseng-spec-toggle');
+        specToggles.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const drawer = this.parentElement.querySelector('.syseng-spec-drawer');
+                if (!drawer) return;
+
+                const isOpen = drawer.classList.contains('open');
+                if (isOpen) {
+                    drawer.classList.remove('open');
+                    this.setAttribute('aria-expanded', 'false');
+                    const textSpan = this.querySelector('.toggle-text');
+                    if (textSpan) textSpan.textContent = 'Inspect Specs';
+                } else {
+                    drawer.classList.add('open');
+                    this.setAttribute('aria-expanded', 'true');
+                    const textSpan = this.querySelector('.toggle-text');
+                    if (textSpan) textSpan.textContent = 'Hide Specs';
+                }
+            });
+        });
     });
 
 })();
+
