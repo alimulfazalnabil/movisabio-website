@@ -1,0 +1,347 @@
+/**
+ * MoviSabio Enterprise Design System - Career Portal Stylesheet
+ * Integrates seamlessly with Corporate Dark Theme (variables.css & components.css)
+ */
+
+/* ==========================================================================
+   1. CAREER HERO SECTION
+   ========================================================================== */
+.career-hero {
+    padding: clamp(60px, 10vw, 120px) 0 clamp(40px, 8vw, 80px);
+    background: radial-gradient(circle at 50% 10%, rgba(85, 215, 232, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 30%, rgba(108, 156, 255, 0.06) 0%, transparent 50%),
+                var(--bg-primary);
+    border-bottom: 1px solid var(--border-subtle);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.career-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(85, 215, 232, 0.1);
+    border: 1px solid rgba(85, 215, 232, 0.25);
+    color: var(--accent-primary);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-lg);
+}
+
+.career-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--text-primary);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    max-width: 900px;
+    margin: 0 auto var(--space-lg);
+}
+
+.career-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 820px;
+    margin: 0 auto var(--space-2xl);
+}
+
+.career-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-2xl);
+}
+
+.career-stat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    padding: 8px 18px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* ==========================================================================
+   2. PILLARS & VALUE PROPOSITION
+   ========================================================================== */
+.career-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.career-pillar-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: left;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.career-pillar-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.career-pillar-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+    display: inline-block;
+}
+
+.career-pillar-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.career-pillar-desc {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   3. 8 AREAS OF OPPORTUNITY
+   ========================================================================== */
+.career-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.career-area-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all var(--transition-base);
+}
+
+.career-area-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.career-area-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.career-area-num {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    background: rgba(85, 215, 232, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(85, 215, 232, 0.2);
+}
+
+.career-area-title {
+    font-size: 1.15rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.career-area-desc {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+    flex-grow: 1;
+}
+
+.career-area-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--space-lg);
+}
+
+.career-tag-pill {
+    font-size: 0.72rem;
+    font-family: var(--font-mono);
+    color: var(--accent-secondary);
+    background: rgba(108, 156, 255, 0.08);
+    border: 1px solid rgba(108, 156, 255, 0.2);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   4. RECRUITMENT PROCESS STEPS
+   ========================================================================== */
+.career-process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-2xl);
+}
+
+.career-step-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    position: relative;
+}
+
+.career-step-num {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-primary);
+    opacity: 0.4;
+    margin-bottom: var(--space-sm);
+}
+
+.career-step-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.career-step-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   5. APPLICATION FORM & CV UPLOAD ZONE
+   ========================================================================== */
+.career-form-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: clamp(24px, 5vw, 48px);
+    box-shadow: var(--shadow-xl);
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.form-section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: var(--space-xl) 0 var(--space-md);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-section-title:first-of-type {
+    margin-top: 0;
+}
+
+.form-section-title span.step-badge {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    font-weight: 800;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-drop-zone {
+    border: 2px dashed var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    text-align: center;
+    background: var(--bg-secondary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.cv-drop-zone:hover, .cv-drop-zone.drop-zone-active {
+    border-color: var(--accent-primary);
+    background: rgba(85, 215, 232, 0.04);
+}
+
+.cv-file-info {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: rgba(120, 223, 176, 0.1);
+    border: 1px solid var(--accent-success);
+    border-radius: var(--radius-sm);
+    color: var(--accent-success);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.consent-checkbox-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: var(--space-xl) 0 var(--space-lg);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+}
+
+.consent-checkbox-wrap input[type="checkbox"] {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent-primary);
+    cursor: pointer;
+}
+
+.consent-checkbox-label {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .career-hero {
+        padding: 50px 0 40px;
+    }
+    .career-areas-grid {
+        grid-template-columns: 1fr;
+    }
+    .career-form-panel {
+        padding: var(--space-lg);
+    }
+}

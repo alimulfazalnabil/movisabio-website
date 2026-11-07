@@ -152,4 +152,19 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- 11. Career & Talent Network -->
+  <url>
+    <loc>https://www.movisabio.com/career.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.movisabio.com/career.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.movisabio.com/career.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.movisabio.com/career.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.movisabio.com/career.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.movisabio.com/career.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.movisabio.com/career.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.movisabio.com/career.html?lang=zh"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>
