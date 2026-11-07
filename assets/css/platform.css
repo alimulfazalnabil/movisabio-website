@@ -18,29 +18,29 @@
    1. GLOBAL CANVAS & LIGHT ENTERPRISE RESET FOR PLATFORM
    ========================================================================== */
 .platform-body {
-    background-color: #F5F8FC;
-    color: #10243B;
+    background-color: var(--bg-primary, #F4F5F5);
+    color: var(--text-primary, #1D1C1D);
     font-family: var(--font-primary, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif);
     line-height: 1.6;
 }
 
 .platform-light-section {
-    background-color: #F5F8FC;
-    color: #10243B;
+    background-color: var(--bg-primary, #F4F5F5);
+    color: var(--text-primary, #1D1C1D);
     padding: clamp(3rem, 6vw, 5rem) 0;
-    border-bottom: 1px solid #DCE5EF;
+    border-bottom: 1px solid var(--border-subtle, rgba(74, 21, 75, 0.12));
 }
 
 .platform-light-section-alt {
-    background-color: #EDF3F8;
-    color: #10243B;
+    background-color: var(--bg-secondary, #FFFFFF);
+    color: var(--text-primary, #1D1C1D);
     padding: clamp(3rem, 6vw, 5rem) 0;
-    border-bottom: 1px solid #DCE5EF;
+    border-bottom: 1px solid var(--border-subtle, rgba(74, 21, 75, 0.12));
 }
 
 .platform-dark-contrast-section {
-    background-color: #10243B;
-    color: #EEF5FC;
+    background: linear-gradient(135deg, #4A154B 0%, #2c0a3b 100%);
+    color: #FFFFFF;
     padding: clamp(3.5rem, 7vw, 6rem) 0;
     position: relative;
     overflow: hidden;
@@ -56,9 +56,9 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #087EA4;
-    background: rgba(8, 126, 164, 0.1);
-    border: 1px solid rgba(8, 126, 164, 0.3);
+    color: var(--accent-primary, #4A154B);
+    background: rgba(74, 21, 75, 0.08);
+    border: 1px solid rgba(74, 21, 75, 0.25);
     padding: 5px 14px;
     border-radius: 9999px;
     margin-bottom: 1rem;
@@ -67,7 +67,7 @@
 .platform-section-title {
     font-size: clamp(1.85rem, 3.5vw, 2.75rem);
     font-weight: 800;
-    color: #10243B;
+    color: var(--text-primary, #1D1C1D);
     line-height: 1.25;
     letter-spacing: -0.025em;
     margin-bottom: 1rem;
@@ -75,7 +75,7 @@
 
 .platform-section-subtitle {
     font-size: clamp(1rem, 1.6vw, 1.15rem);
-    color: #526579;
+    color: var(--text-secondary, #525052);
     max-width: 820px;
     line-height: 1.65;
     margin-bottom: 2.5rem;
@@ -86,7 +86,7 @@
 }
 
 .platform-dark-contrast-section .platform-section-subtitle {
-    color: #A7B8CA;
+    color: #e2d3e5;
 }
 
 /* ==========================================================================

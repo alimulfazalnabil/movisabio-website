@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Vision Vehicle Detection (Phase 2) — MoviSabio Territorial Intelligence</title>
+    <meta name="description" content="Computer Vision Vehicle Detection by MoviSabio transforms existing municipal CCTV cameras into high-density traffic sensors using edge YOLO models. Marked as Phase 2 on the product roadmap.">
+    <link rel="canonical" href="https://www.movisabio.com/products/vehicle-detection.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Computer Vision Vehicle Detection (Phase 2) — MoviSabio">
+    <meta property="og:description" content="Edge YOLOv8 vehicle detection, multi-class classification, lane-wise density analysis, and speed estimation from CCTV video streams.">
+    <meta property="og:image" content="https://www.movisabio.com/Smart%20City%20Traffic%20Control%20Center-1.png">
+    <meta property="og:url" content="https://www.movisabio.com/products/vehicle-detection.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Computer Vision Vehicle Detection (Phase 2) — MoviSabio">
+    <meta name="twitter:description" content="Phase 2 product roadmap: Edge AI perception without costly pavement cutting.">
+    <meta name="twitter:image" content="https://www.movisabio.com/Smart%20City%20Traffic%20Control%20Center-1.png">
+
+    <!-- Browser Tab Favicon -->
+    <link rel="icon" type="image/png" href="../logo.png">
+
+    <!-- Enterprise Design System Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/platform.css">
+
+    <style>
+        .hero-banner-product {
+            background: linear-gradient(135deg, #4A154B 0%, #6a1b72 50%, #2c0a3b 100%);
+            color: #FFFFFF;
+            padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--accent-warning);
+        }
+        .hero-banner-product h1 { color: #FFFFFF; }
+        .hero-banner-product p { color: #e2d3e5; }
+
+        .phase-banner {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(236, 178, 46, 0.2);
+            border: 1px solid var(--accent-warning);
+            color: #FFFFFF;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .cv-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: var(--space-2xl) 0;
+        }
+
+        .pipeline-step {
+            background: #FFFFFF;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+            transition: transform var(--transition-base), border-color var(--transition-base);
+        }
+        .pipeline-step:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+        }
+        .step-number {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            background: rgba(74, 21, 75, 0.08);
+            border: 1px solid rgba(74, 21, 75, 0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-to-content" data-i18n="skip_to_content">Skip to main content</a>
+
+    <!-- ====================================================================== -->
+    <!-- 1. NAVIGATION                                                          -->
+    <!-- ====================================================================== -->
+    <header class="navbar-enterprise" role="banner">
+        <div class="navbar-container">
+            <a href="../index.html" class="brand-logo" aria-label="MoviSabio Home">
+                <span class="brand-dot"></span>
+                <span>MoviSabio</span>
+                <span class="brand-tag">Enterprise</span>
+            </a>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html#platform" class="nav-link" data-i18n="nav_platform">Platform</a></li>
+                    
+                    <li class="nav-item-dropdown">
+                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true" style="color: var(--accent-primary); font-weight: 700;">
+                            <span data-i18n="nav_products">Products</span> <span class="dropdown-caret">▾</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="smart-city.html" class="dropdown-item" role="menuitem"><strong>MoviSabio Smart City</strong> <span style="font-size: 0.7rem; color: var(--accent-success); font-weight: 700;">[Flagship]</span></a></li>
+                            <li><a href="traffic-signal-coordination.html" class="dropdown-item" role="menuitem" data-i18n="prod_aitcs_title">AI Traffic Signal Coordination</a></li>
+                            <li><a href="vehicle-detection.html" class="dropdown-item" role="menuitem"><strong>Computer Vision Vehicle Detection</strong> <span style="font-size: 0.68rem; color: var(--accent-warning); font-weight: 600;">[Phase 2]</span></a></li>
+                            <li><a href="public-transit-router.html" class="dropdown-item" role="menuitem"><span>Smart Public Transit Router</span> <span style="font-size: 0.68rem; color: var(--accent-secondary); font-weight: 600;">[Concept]</span></a></li>
+                            <li><a href="virtual-fencing.html" class="dropdown-item" role="menuitem"><span>Virtual Fencing AgriTech</span> <span style="font-size: 0.68rem; color: var(--accent-primary); font-weight: 600;">[Solution Concept]</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../platform.html" class="nav-link" data-i18n="nav_specs">Technical Specs</a></li>
+                    <li><a href="../index.html#audiences" class="nav-link" data-i18n="nav_audiences">Audiences</a></li>
+                    <li><a href="../index.html#economics" class="nav-link" data-i18n="nav_economics">Economics</a></li>
+                    <li><a href="../partners.html" class="nav-link" data-i18n="nav_submit_idea">Partners</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" class="lang-dropdown-enterprise" onchange="MoviSabioI18n.setLanguage(this.value)" aria-label="Select Language">
+                        <option value="en">EN • English</option>
+                        <option value="de">DE • Deutsch</option>
+                        <option value="pt">PT • Português</option>
+                        <option value="es">ES • Español</option>
+                        <option value="it">IT • Italiano</option>
+                        <option value="zh">ZH • 中文</option>
+                    </select>
+                </div>
+                <a href="../contact.html" class="btn btn-primary btn-sm" id="nav-cta-btn" data-i18n="nav_cta">Partner With Us</a>
+                <button type="button" class="mobile-toggle-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ================================================================== -->
+        <!-- 2. HERO SECTION                                                    -->
+        <!-- ================================================================== -->
+        <section class="hero-banner-product">
+            <div class="container">
+                <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+                    <div class="phase-banner" data-i18n="tag_cv_phase">
+                        Product Roadmap • Phase 2 Development
+                    </div>
+                    
+                    <h1 style="font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 1.2rem; letter-spacing: -0.03em;" data-i18n="cv_hero_title">
+                        Computer Vision Vehicle Detection
+                    </h1>
+                    
+                    <p style="font-size: var(--font-size-md); line-height: 1.7; max-width: 860px; margin: 0 auto 2.5rem;" data-i18n="cv_hero_desc">
+                        Scheduled for Phase 2 of the MoviSabio product roadmap, this module transforms existing municipal CCTV camera networks into real-time traffic density sensors using edge-deployed YOLO models—eliminating the need for expensive pavement cuts and inductive loop installation.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <a href="#pipeline" class="btn btn-primary btn-lg" style="background: var(--accent-warning); color: #07111F;" data-i18n="btn_cv_pipeline">Inspect Vision Pipeline ↓</a>
+                        <a href="#privacy" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);" data-i18n="btn_privacy_framework">GDPR/LGPD Privacy Model</a>
+                        <a href="../contact.html?type=pilot_hardware" class="btn btn-outline btn-lg" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);" data-i18n="btn_hardware_partner">Join Phase 2 Pilot Program →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 3. ROADMAP POSITION & HONEST STATUS                               -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-primary);">
+            <div class="container">
+                <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-xl); box-shadow: var(--shadow-sm); max-width: 960px; margin: 0 auto 3rem;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                        <span style="font-size: 1.5rem;">📅</span>
+                        <div>
+                            <h3 style="font-size: var(--font-size-md); font-weight: 700; color: var(--text-primary); margin: 0;">Roadmap Placement: Phase 2 Active Development</h3>
+                            <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0;">Targeted Edge Validation & Hardware Co-Design</p>
+                        </div>
+                    </div>
+                    <p style="font-size: var(--font-size-sm); color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                        While MoviSabio's core SUMO/TraCI micro-simulation and AITCS coordination algorithms are production-ready in simulation, the Computer Vision Vehicle Detection module is formally classified as <strong>Phase 2 in the product roadmap</strong>. Prototype models have been benchmarked on standard datasets; field edge integration is scheduled for municipal pilot hardware deployments.
+                    </p>
+                </div>
+
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="cv_capabilities_tag">Perception Architecture</div>
+                    <h2 class="section-title" data-i18n="cv_capabilities_title">Key Computer Vision Capabilities</h2>
+                    <p class="section-subtitle" data-i18n="cv_capabilities_desc">
+                        Engineered to convert noisy optical CCTV feeds into structured, privacy-compliant traffic telemetry.
+                    </p>
+                </div>
+
+                <div class="cv-feature-grid">
+                    
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(74, 21, 75, 0.08); color: var(--accent-primary);">🎯</div>
+                        <h3 class="card-title" data-i18n="cv_feat1_title">YOLO-Based Vehicle Detection</h3>
+                        <p class="card-desc" data-i18n="cv_feat1_desc">
+                            Utilizes lightweight YOLOv8 nano and small models quantised to INT8 precision for low-power edge compute (NVIDIA Jetson Nano/Orin or Intel OpenVINO edge gateways).
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(54, 197, 240, 0.12); color: #027494;">🚛</div>
+                        <h3 class="card-title" data-i18n="cv_feat2_title">Multi-Class Classification & Counting</h3>
+                        <p class="card-desc" data-i18n="cv_feat2_desc">
+                            Distinguishes passenger cars, city transit buses, heavy commercial trucks, motorcycles, bicycles, and crossing pedestrians to calculate accurate Passenger Car Units (PCU).
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(46, 182, 125, 0.12); color: #065F46;">🛣️</div>
+                        <h3 class="card-title" data-i18n="cv_feat3_title">Lane-Wise Traffic Analysis</h3>
+                        <p class="card-desc" data-i18n="cv_feat3_desc">
+                            Software-defined polygonal detection zones isolate dedicated turning lanes, through-lanes, and bus rapid transit (BRT) corridors to compute specific lane queue depths.
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(236, 178, 46, 0.12); color: #9c6c00;">⚡</div>
+                        <h3 class="card-title" data-i18n="cv_feat4_title">Speed Estimation & Incident Alerts</h3>
+                        <p class="card-desc" data-i18n="cv_feat4_desc">
+                            Estimates approaching approach velocity vectors using calibrated ground-plane homography matrices, detecting sudden stalls, wrong-way movements, and stalled vehicles.
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(74, 21, 75, 0.08); color: var(--accent-primary);">📡</div>
+                        <h3 class="card-title" data-i18n="cv_feat5_title">CCTV & IP Camera Input Ingestion</h3>
+                        <p class="card-desc" data-i18n="cv_feat5_desc">
+                            Connects directly to existing municipal RTSP and ONVIF optical video streams. Operates at variable frame rates (10–30 FPS) to balance inference latency with network bandwidth.
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(54, 197, 240, 0.12); color: #027494;">🔄</div>
+                        <h3 class="card-title" data-i18n="cv_feat6_title">Direct Integration with AITCS Core</h3>
+                        <p class="card-desc" data-i18n="cv_feat6_desc">
+                            Extracted vehicle counts and arrival times are immediately packaged into lightweight JSON payloads and transmitted via local MQTT to the signal coordination algorithm.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 4. PRIVACY GUARD: STRICT GDPR & LGPD COMPLIANCE                   -->
+        <!-- ================================================================== -->
+        <section id="privacy" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="cv_privacy_tag">Privacy by Design</div>
+                    <h2 class="section-title" data-i18n="cv_privacy_title">European GDPR & Brazilian LGPD Compliance</h2>
+                    <p class="section-subtitle" data-i18n="cv_privacy_desc">
+                        MoviSabio's computer vision architecture is strictly designed as an edge-only telemetry converter, not a surveillance system.
+                    </p>
+                </div>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-xl); box-shadow: var(--shadow-sm);">
+                        <h3 style="font-size: var(--font-size-md); font-weight: 700; color: var(--accent-primary); margin-bottom: 10px;">Immediate Pixel Discard</h3>
+                        <p style="font-size: var(--font-size-sm); color: var(--text-secondary); line-height: 1.6;">
+                            Raw video frames are held in volatile edge memory only for the duration of model inference (under 35ms). Once bounding boxes and class vectors are extracted, frames are immediately deleted from edge memory. No video recordings, facial images, or license plates are ever stored on disk or transmitted to the cloud.
+                        </p>
+                    </div>
+
+                    <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-xl); box-shadow: var(--shadow-sm);">
+                        <h3 style="font-size: var(--font-size-md); font-weight: 700; color: var(--accent-primary); margin-bottom: 10px;">Anonymized Vector Telemetry</h3>
+                        <p style="font-size: var(--font-size-sm); color: var(--text-secondary); line-height: 1.6;">
+                            The only data leaving the intersection cabinet is anonymous numeric telemetry: <code>{"lane": 2, "count": 14, "class": "car", "avg_speed_kmh": 46.2}</code>. This guarantees 100% compliance with strict international data protection laws, enabling seamless public-sector procurement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 5. AUDIENCE PATHWAYS                                               -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Audience Pathways</div>
+                    <h2 class="section-title">Stakeholder Relevance</h2>
+                    <p class="section-subtitle">Discover how Phase 2 Computer Vision enhances each partner's operational horizon.</p>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    <div class="audience-card audience-card-gov">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-gov">Public Sector</span>
+                        </div>
+                        <h3 class="audience-title">No Trenching, Zero Road Closures</h3>
+                        <p class="audience-desc">
+                            Traditional loop detectors require road cutting and weeks of lane closures. Optical edge detection uses existing municipal camera poles with zero asphalt disruption.
+                        </p>
+                        <div class="audience-actions">
+                            <a href="../contact.html?type=camera_audit" class="btn btn-primary btn-sm" style="width: 100%;">Audit Municipal Camera Fleet →</a>
+                        </div>
+                    </div>
+
+                    <div class="audience-card audience-card-enterprise">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-enterprise">Hardware Partners</span>
+                        </div>
+                        <h3 class="audience-title">Edge Device OEMs</h3>
+                        <p class="audience-desc">
+                            We collaborate with edge compute vendors (NVIDIA Jetson, Hailo, Qualcomm) to package optimized containerized inference models for roadside ITS cabinets.
+                        </p>
+                        <div class="audience-actions">
+                            <a href="../platform.html" class="btn btn-secondary btn-sm" style="width: 100%;">Inspect Edge Runtime Specs →</a>
+                        </div>
+                    </div>
+
+                    <div class="audience-card audience-card-investor">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-investor">Investors</span>
+                        </div>
+                        <h3 class="audience-title">Roadmap Upsell Potential</h3>
+                        <p class="audience-desc">
+                            Computer Vision represents a high-margin ARR expansion module for existing MoviSabio Smart City accounts, increasing annual contract value (ACV) by 35–45%.
+                        </p>
+                        <div class="audience-actions">
+                            <a href="../index.html#economics" class="btn btn-outline btn-sm" style="width: 100%;">Inspect SaaS ARR Projections →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- 6. FOOTER                                                              -->
+    <!-- ====================================================================== -->
+    <footer class="footer-enterprise" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="brand-logo" style="color: #FFFFFF; margin-bottom: var(--space-md); display: inline-flex;">
+                        <span class="brand-dot" style="background: var(--accent-secondary); box-shadow: 0 0 12px var(--accent-secondary);"></span>
+                        <span>MoviSabio</span>
+                    </a>
+                    <p class="footer-brand-desc" data-i18n="footer_desc">
+                        AI & Quantum-Ready Territorial Intelligence Platform. Unifying adaptive signal timing, computer vision, digital twins, and climate analytics for urban and regional territories.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="nav_products">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="smart-city.html">MoviSabio Smart City</a></li>
+                        <li><a href="traffic-signal-coordination.html">AI Signal Coordination</a></li>
+                        <li><a href="vehicle-detection.html">Vehicle Detection (Phase 2)</a></li>
+                        <li><a href="public-transit-router.html">Public Transit Router (Concept)</a></li>
+                        <li><a href="virtual-fencing.html">Virtual Fencing AgriTech</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_quick_links">Platform Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#platform">Territorial Platform</a></li>
+                        <li><a href="../platform.html">Technical Specs (12 Modules)</a></li>
+                        <li><a href="../index.html#economics">Investor Economics</a></li>
+                        <li><a href="../partners.html">Partners & Pitch Deck</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_governance">Roadmap Integrity</h4>
+                    <p style="font-size: var(--font-size-xs); line-height: 1.6; color: #d1bdd6; margin-bottom: 12px;">
+                        This module is explicitly positioned in Phase 2 of our engineering roadmap. Field deployments are delivered in staged hardware pilot partnerships.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 MoviSabio Tech Solutions. <span data-i18n="footer_rights">All rights reserved.</span></div>
+                <div>Computer Vision Module • Product Roadmap Phase 2</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/i18n.js"></script>
+    <script>
+        function toggleMobileNav() {
+            var menu = document.getElementById('nav-menu');
+            if (menu) menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

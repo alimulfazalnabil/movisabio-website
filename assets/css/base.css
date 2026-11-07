@@ -16,7 +16,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
-    color-scheme: dark;
+    color-scheme: light;
     overflow-x: hidden;
     max-width: 100vw;
 }
@@ -27,10 +27,7 @@ body {
     line-height: var(--line-height-relaxed);
     color: var(--text-primary);
     background-color: var(--bg-primary);
-    background-image: 
-        radial-gradient(circle at 15% 10%, rgba(85, 215, 232, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 85% 35%, rgba(108, 156, 255, 0.04) 0%, transparent 45%),
-        radial-gradient(circle at 50% 80%, rgba(120, 223, 176, 0.03) 0%, transparent 50%);
+    background-image: linear-gradient(135deg, rgba(224, 30, 90, 0.05) 0%, rgba(54, 197, 240, 0.05) 25%, rgba(46, 182, 125, 0.05) 50%, rgba(236, 178, 46, 0.05) 75%, rgba(224, 30, 90, 0.05) 100%);
     background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;

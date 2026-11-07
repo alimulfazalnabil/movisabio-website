@@ -27,13 +27,13 @@
 
 .btn-primary {
     background: var(--accent-primary);
-    color: var(--bg-primary);
+    color: #FFFFFF;
     font-weight: var(--font-weight-bold);
     box-shadow: 0 4px 16px var(--accent-primary-glow);
 }
 .btn-primary:hover {
     background: var(--accent-primary-hover);
-    color: var(--bg-primary);
+    color: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: 0 8px 24px var(--accent-primary-glow);
 }
@@ -42,14 +42,14 @@
 }
 
 .btn-secondary {
-    background: rgba(108, 156, 255, 0.12);
-    border: 1px solid rgba(108, 156, 255, 0.35);
+    background: rgba(54, 197, 240, 0.12);
+    border: 1px solid rgba(54, 197, 240, 0.4);
     color: var(--text-primary);
 }
 .btn-secondary:hover {
-    background: rgba(108, 156, 255, 0.22);
+    background: rgba(54, 197, 240, 0.22);
     border-color: var(--accent-secondary);
-    color: var(--text-primary);
+    color: var(--accent-primary);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px var(--accent-secondary-glow);
 }
@@ -57,12 +57,12 @@
 .btn-outline {
     background: transparent;
     border: 1px solid var(--border-subtle);
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 .btn-outline:hover {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(74, 21, 75, 0.05);
     border-color: var(--accent-primary);
-    color: var(--text-primary);
+    color: var(--accent-primary);
     transform: translateY(-2px);
 }
 
@@ -112,9 +112,9 @@
 }
 
 .card-highlight {
-    border-color: rgba(85, 215, 232, 0.4);
-    background: linear-gradient(135deg, rgba(16, 34, 56, 0.95) 0%, rgba(13, 27, 44, 0.98) 100%);
-    box-shadow: var(--shadow-md), 0 0 30px rgba(85, 215, 232, 0.08);
+    border-color: rgba(74, 21, 75, 0.35);
+    background: linear-gradient(135deg, #FFFFFF 0%, #FAF5FB 100%);
+    box-shadow: var(--shadow-md), 0 0 30px rgba(74, 21, 75, 0.08);
 }
 .card-highlight::before {
     opacity: 1;
@@ -125,8 +125,8 @@
     width: 52px;
     height: 52px;
     border-radius: var(--radius-md);
-    background: rgba(85, 215, 232, 0.1);
-    border: 1px solid rgba(85, 215, 232, 0.25);
+    background: rgba(74, 21, 75, 0.08);
+    border: 1px solid rgba(74, 21, 75, 0.2);
     color: var(--accent-primary);
     display: flex;
     align-items: center;
@@ -1045,21 +1045,21 @@
 }
 
 .audience-badge-gov {
-    background: rgba(85, 215, 232, 0.12);
-    border: 1px solid rgba(85, 215, 232, 0.3);
+    background: rgba(74, 21, 75, 0.08);
+    border: 1px solid rgba(74, 21, 75, 0.25);
     color: var(--accent-primary);
 }
 
 .audience-badge-enterprise {
-    background: rgba(108, 156, 255, 0.12);
-    border: 1px solid rgba(108, 156, 255, 0.3);
-    color: var(--accent-secondary);
+    background: rgba(54, 197, 240, 0.12);
+    border: 1px solid rgba(54, 197, 240, 0.35);
+    color: #027494;
 }
 
 .audience-badge-investor {
-    background: rgba(245, 184, 66, 0.12);
-    border: 1px solid rgba(245, 184, 66, 0.3);
-    color: var(--accent-warning);
+    background: rgba(236, 178, 46, 0.12);
+    border: 1px solid rgba(236, 178, 46, 0.35);
+    color: #9c6c00;
 }
 
 .audience-title {
@@ -1106,6 +1106,59 @@
     display: flex;
     gap: var(--space-sm);
     flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   16. PRODUCT HERO BANNER & MOBILE RESPONSIVE OPTIMIZATION
+   ========================================================================== */
+.hero-banner-product {
+    background: linear-gradient(135deg, #4A154B 0%, #6a1b72 50%, #2c0a3b 100%);
+    color: #FFFFFF;
+    padding: clamp(3rem, 6vw, 5.5rem) 0;
+    position: relative;
+    overflow-x: hidden;
+    border-bottom: 4px solid var(--accent-secondary);
+}
+
+.hero-banner-product h1 {
+    color: #FFFFFF;
+    font-size: clamp(1.75rem, 4.5vw, 3.5rem) !important;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.03em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.hero-banner-product p {
+    color: #e2d3e5;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.hero-banner-product .container {
+    overflow-x: hidden;
+}
+
+.hero-banner-product [data-i18n^="tag_"] {
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    word-break: break-word !important;
+    display: inline-flex !important;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-banner-product h1 {
+        font-size: 1.65rem !important;
+        letter-spacing: -0.02em;
+    }
+    .hero-banner-product [data-i18n^="tag_"] {
+        font-size: 0.68rem !important;
+        padding: 4px 10px !important;
+    }
 }
 
 

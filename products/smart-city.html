@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviSabio Smart City — Flagship Enterprise Territorial Intelligence Application</title>
+    <meta name="description" content="MoviSabio Smart City is the flagship enterprise territorial intelligence application integrating SUMO/TraCI digital twins, AITCS signal coordination, YOLOv8 edge computer vision, MQTT telemetry, and municipal ESG reporting.">
+    <link rel="canonical" href="https://www.movisabio.com/products/smart-city.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="MoviSabio Smart City — Flagship Enterprise Territorial Intelligence">
+    <meta property="og:description" content="Urban territorial intelligence ecosystem unifying AI traffic signal coordination, digital twin simulation, and municipal carbon reduction.">
+    <meta property="og:image" content="https://www.movisabio.com/Connected%20Smart%20City%20at%20Dusk-1.png">
+    <meta property="og:url" content="https://www.movisabio.com/products/smart-city.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MoviSabio Smart City — Flagship Enterprise Application">
+    <meta name="twitter:description" content="Digital twin simulation with SUMO/TraCI, dynamic AITCS coordination, and edge computer vision.">
+    <meta name="twitter:image" content="https://www.movisabio.com/Connected%20Smart%20City%20at%20Dusk-1.png">
+
+    <!-- Browser Tab Favicon -->
+    <link rel="icon" type="image/png" href="../logo.png">
+
+    <!-- Enterprise Design System Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/platform.css">
+
+    <style>
+        .arch-diagram-wrap {
+            background: #FFFFFF;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+            margin: var(--space-2xl) 0;
+            overflow-x: auto;
+        }
+        .arch-layer {
+            background: #FAF7FB;
+            border: 1px solid rgba(74, 21, 75, 0.12);
+            border-radius: var(--radius-md);
+            padding: var(--space-lg);
+            margin-bottom: var(--space-md);
+            transition: transform var(--transition-fast), border-color var(--transition-fast);
+        }
+        .arch-layer:hover {
+            border-color: var(--accent-primary);
+            transform: translateX(4px);
+            background: #FFFFFF;
+            box-shadow: var(--shadow-md);
+        }
+        .arch-layer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .arch-layer-title {
+            font-size: var(--font-size-md);
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .arch-badge {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .badge-core { background: rgba(74, 21, 75, 0.1); color: var(--accent-primary); border: 1px solid rgba(74, 21, 75, 0.25); }
+        .badge-sim { background: rgba(54, 197, 240, 0.12); color: #027494; border: 1px solid rgba(54, 197, 240, 0.3); }
+        .badge-edge { background: rgba(46, 182, 125, 0.12); color: #065F46; border: 1px solid rgba(46, 182, 125, 0.3); }
+        .badge-spec { background: rgba(236, 178, 46, 0.12); color: #9c6c00; border: 1px solid rgba(236, 178, 46, 0.3); }
+
+        .arch-grid-nodes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .arch-node {
+            background: #FFFFFF;
+            border: 1px solid rgba(74, 21, 75, 0.08);
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-size: var(--font-size-xs);
+            color: var(--text-secondary);
+        }
+        .arch-node strong {
+            display: block;
+            color: var(--text-primary);
+            font-size: var(--font-size-sm);
+            margin-bottom: 2px;
+        }
+
+        .hero-banner-product {
+            background: linear-gradient(135deg, #4A154B 0%, #6a1b72 50%, #2c0a3b 100%);
+            color: #FFFFFF;
+            padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--accent-secondary);
+        }
+        .hero-banner-product h1 {
+            color: #FFFFFF;
+        }
+        .hero-banner-product p {
+            color: #e2d3e5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessible Skip to Content -->
+    <a href="#main-content" class="skip-to-content" data-i18n="skip_to_content">Skip to main content</a>
+
+    <!-- ====================================================================== -->
+    <!-- 1. ENTERPRISE NAVIGATION                                               -->
+    <!-- ====================================================================== -->
+    <header class="navbar-enterprise" role="banner">
+        <div class="navbar-container">
+            <a href="../index.html" class="brand-logo" aria-label="MoviSabio Home">
+                <span class="brand-dot"></span>
+                <span>MoviSabio</span>
+                <span class="brand-tag">Enterprise</span>
+            </a>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html#platform" class="nav-link" data-i18n="nav_platform">Platform</a></li>
+                    
+                    <!-- Products Dropdown (Active) -->
+                    <li class="nav-item-dropdown">
+                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true" style="color: var(--accent-primary); font-weight: 700;">
+                            <span data-i18n="nav_products">Products</span> <span class="dropdown-caret">▾</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="smart-city.html" class="dropdown-item" role="menuitem"><strong>MoviSabio Smart City</strong> <span style="font-size: 0.7rem; color: var(--accent-success); font-weight: 700;">[Flagship]</span></a></li>
+                            <li><a href="traffic-signal-coordination.html" class="dropdown-item" role="menuitem" data-i18n="prod_aitcs_title">AI Traffic Signal Coordination</a></li>
+                            <li><a href="vehicle-detection.html" class="dropdown-item" role="menuitem"><span>Computer Vision Vehicle Detection</span> <span style="font-size: 0.68rem; color: var(--accent-warning); font-weight: 600;">[Phase 2]</span></a></li>
+                            <li><a href="public-transit-router.html" class="dropdown-item" role="menuitem"><span>Smart Public Transit Router</span> <span style="font-size: 0.68rem; color: var(--accent-secondary); font-weight: 600;">[Concept]</span></a></li>
+                            <li><a href="virtual-fencing.html" class="dropdown-item" role="menuitem"><span>Virtual Fencing AgriTech</span> <span style="font-size: 0.68rem; color: var(--accent-primary); font-weight: 600;">[Solution Concept]</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../platform.html" class="nav-link" data-i18n="nav_specs">Technical Specs</a></li>
+                    <li><a href="../index.html#audiences" class="nav-link" data-i18n="nav_audiences">Audiences</a></li>
+                    
+                    <li class="nav-item-dropdown">
+                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span data-i18n="nav_company">Company</span> <span class="dropdown-caret">▾</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="../index.html#about" class="dropdown-item" data-i18n="nav_about" role="menuitem">About MoviSabio</a></li>
+                            <li><a href="../index.html#leadership" class="dropdown-item" data-i18n="nav_leadership" role="menuitem">Executive Leadership</a></li>
+                            <li><a href="../index.html#presence" class="dropdown-item" data-i18n="nav_map" role="menuitem">Global Map & Digital Twins</a></li>
+                            <li><a href="../index.html#research" class="dropdown-item" data-i18n="nav_research" role="menuitem">Research & ESG</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item-dropdown">
+                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span data-i18n="nav_investor">Investor</span> <span class="dropdown-caret">▾</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="../index.html#economics" class="dropdown-item" data-i18n="nav_economics" role="menuitem">Market Opportunity & Economics</a></li>
+                            <li><a href="../partners.html" class="dropdown-item" data-i18n="nav_submit_idea" role="menuitem" style="color: var(--accent-success); font-weight: 700;">Partners & Pitch Deck</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" class="lang-dropdown-enterprise" onchange="MoviSabioI18n.setLanguage(this.value)" aria-label="Select Language">
+                        <option value="en">EN • English</option>
+                        <option value="de">DE • Deutsch</option>
+                        <option value="pt">PT • Português</option>
+                        <option value="es">ES • Español</option>
+                        <option value="it">IT • Italiano</option>
+                        <option value="zh">ZH • 中文</option>
+                    </select>
+                </div>
+                <a href="../contact.html" class="btn btn-primary btn-sm" id="nav-cta-btn" data-i18n="nav_cta">Partner With Us</a>
+                <button type="button" class="mobile-toggle-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ================================================================== -->
+        <!-- 2. PRODUCT HERO SECTION                                            -->
+        <!-- ================================================================== -->
+        <section class="hero-banner-product">
+            <div class="container">
+                <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 5px 16px; border-radius: 9999px; font-family: var(--font-mono); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; color: #FFFFFF;" data-i18n="tag_smart_city_flagship">
+                        Flagship Enterprise Application • Production-Ready Core
+                    </div>
+                    
+                    <h1 style="font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 1.2rem; letter-spacing: -0.03em;" data-i18n="smart_city_hero_title">
+                        MoviSabio Smart City
+                    </h1>
+                    
+                    <p style="font-size: var(--font-size-md); line-height: 1.7; max-width: 860px; margin: 0 auto 2.5rem;" data-i18n="smart_city_hero_desc">
+                        The flagship urban application of the Territorial Intelligence Platform. Unifying micro-simulation digital twins (SUMO/TraCI), adaptive traffic signal timing (AITCS), edge computer vision, MQTT IoT telemetry, and municipal ESG reporting into a coherent municipal operations ecosystem.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                        <a href="#architecture" class="btn btn-primary btn-lg" style="background: var(--accent-secondary); color: #07111F;" data-i18n="btn_view_arch_diag">Explore System Architecture ↓</a>
+                        <a href="#technical-capabilities" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);" data-i18n="btn_tech_capabilities">Technical Capabilities</a>
+                        <a href="../contact.html" class="btn btn-outline btn-lg" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);" data-i18n="btn_schedule_demo">Request Municipal Briefing →</a>
+                    </div>
+
+                    <!-- Operational Readiness Badges -->
+                    <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+                        <span class="status-pill" style="background: rgba(255, 255, 255, 0.12); color: #FFFFFF; border-color: rgba(255, 255, 255, 0.25);">
+                            <span class="status-dot" style="background: var(--accent-success);"></span>
+                            <span>SUMO / TraCI Simulation Engine</span>
+                        </span>
+                        <span class="status-pill" style="background: rgba(255, 255, 255, 0.12); color: #FFFFFF; border-color: rgba(255, 255, 255, 0.25);">
+                            <span class="status-dot" style="background: var(--accent-secondary);"></span>
+                            <span>AITCS Adaptive Coordination</span>
+                        </span>
+                        <span class="status-pill" style="background: rgba(255, 255, 255, 0.12); color: #FFFFFF; border-color: rgba(255, 255, 255, 0.25);">
+                            <span class="status-dot" style="background: var(--accent-warning);"></span>
+                            <span>MQTT IoT & NTCIP 1202 Protocol Spec</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 3. PRODUCT OVERVIEW & RELATIONSHIP TO PLATFORM                     -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="smart_city_rel_tag">Flagship Ecosystem Integration</div>
+                    <h2 class="section-title" data-i18n="smart_city_rel_title">The Operational Face of Territorial Intelligence</h2>
+                    <p class="section-subtitle" data-i18n="smart_city_rel_desc">
+                        While the Territorial Intelligence Platform (TIP) provides the foundational spatial data processing, vector ingestion, and predictive AI core, <strong>MoviSabio Smart City</strong> delivers the specialized application layer designed for municipal transportation authorities, urban planners, and fleet operators.
+                    </p>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 2rem;">
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(74, 21, 75, 0.08); color: var(--accent-primary);">🏙️</div>
+                        <h3 class="card-title" data-i18n="card_urban_intel_title">Urban Territorial Intelligence</h3>
+                        <p class="card-desc" data-i18n="card_urban_intel_desc">
+                            Standardizes municipal GIS basemaps, OpenStreetMap road networks, and elevation layers into a unified digital twin coordinate framework. Eliminates data silos between transit, public works, and emergency dispatch.
+                        </p>
+                        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-primary); font-weight: 600;">Status: Production-Ready Digital Twin</div>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(54, 197, 240, 0.12); color: #027494;">🚦</div>
+                        <h3 class="card-title" data-i18n="card_dynamic_signals_title">Dynamic Signal Optimization</h3>
+                        <p class="card-desc" data-i18n="card_dynamic_signals_desc">
+                            Automates corridor-level signal timings using MAXBAND mathematical green-wave optimization paired with deep reinforcement learning. Dynamically adapts cycle lengths and phase splits to real-time platoon densities.
+                        </p>
+                        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-success); font-weight: 600;">Status: Verified Simulation Core (TraCI)</div>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(46, 182, 125, 0.12); color: #065F46;">🌱</div>
+                        <h3 class="card-title" data-i18n="card_esg_analytics_title">Environmental & ESG Analytics</h3>
+                        <p class="card-desc" data-i18n="card_esg_analytics_desc">
+                            Calculates continuous fuel consumption and CO₂/NOx emissions using the HBEFA (Handbook Emission Factors for Road Transport) model directly inside the traffic simulation loop, supporting UN SDGs 11 and 13.
+                        </p>
+                        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-primary); font-weight: 600;">Status: Quantified Emissions Model</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 4. SYSTEM ARCHITECTURE VISUALIZATION                               -->
+        <!-- ================================================================== -->
+        <section id="architecture" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="smart_city_arch_tag">System Architecture • Full Stack Specification</div>
+                    <h2 class="section-title" data-i18n="smart_city_arch_title">5-Tier End-to-End Technical Architecture</h2>
+                    <p class="section-subtitle" data-i18n="smart_city_arch_desc">
+                        A clear, honest visual breakdown of MoviSabio Smart City's modular components—from physical edge sensors to municipal reporting dashboards.
+                    </p>
+                </div>
+
+                <div class="arch-diagram-wrap">
+                    
+                    <!-- Tier 5: Enterprise Presentation & Reporting -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <span class="arch-layer-title">
+                                <span style="color: var(--accent-primary);">Tier 5:</span> Enterprise Dashboard & Executive Reporting
+                            </span>
+                            <span class="arch-badge badge-core">Production Ready</span>
+                        </div>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0 0 8px 0;">
+                            Role-based web consoles, real-time corridor metrics, incident dispatch panels, and automated municipal ESG compliance exports.
+                        </p>
+                        <div class="arch-grid-nodes">
+                            <div class="arch-node">
+                                <strong>Municipal Command UI</strong>
+                                MapLibre GL 3D vector map, corridor speed heatmaps, queue alerts.
+                            </div>
+                            <div class="arch-node">
+                                <strong>ESG Carbon Ledger</strong>
+                                Automated Scope 1 municipal emission reduction reports (HBEFA standard).
+                            </div>
+                            <div class="arch-node">
+                                <strong>Open Data API</strong>
+                                REST & GraphQL endpoints for regional mobility agencies.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tier 4: Algorithmic Intelligence & Optimization Core -->
+                    <div class="arch-layer" style="border-left: 4px solid var(--accent-primary);">
+                        <div class="arch-layer-header">
+                            <span class="arch-layer-title">
+                                <span style="color: var(--accent-primary);">Tier 4:</span> Algorithmic Traffic Optimization & Digital Twin Core
+                            </span>
+                            <span class="arch-badge badge-sim">Core Implementation</span>
+                        </div>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0 0 8px 0;">
+                            The central computational engine executing TraCI micro-simulation loops, MAXBAND progression, and DQN signal policy evaluation.
+                        </p>
+                        <div class="arch-grid-nodes">
+                            <div class="arch-node">
+                                <strong>SUMO Micro-Simulator</strong>
+                                Eclipse SUMO 1.18+ running multi-modal vehicle, bus, and pedestrian models.
+                            </div>
+                            <div class="arch-node">
+                                <strong>TraCI Python Orchestrator</strong>
+                                High-speed bidirectional socket control for real-time phase interventions.
+                            </div>
+                            <div class="arch-node">
+                                <strong>AITCS Optimization Engine</strong>
+                                Hybrid MAXBAND arterial progression combined with Deep Q-Networks.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tier 3: Edge Connectivity & Protocol Gateway -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <span class="arch-layer-title">
+                                <span style="color: var(--accent-primary);">Tier 3:</span> Telemetry Mesh & Protocol Bridge
+                            </span>
+                            <span class="arch-badge badge-spec">Specification & Pilot Gate</span>
+                        </div>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0 0 8px 0;">
+                            Edge broker translating field detector counts into telemetry streams and converting algorithmic recommendations into controller instructions.
+                        </p>
+                        <div class="arch-grid-nodes">
+                            <div class="arch-node">
+                                <strong>MQTT Telemetry Broker</strong>
+                                Lightweight publish/subscribe event bus (QoS 1) with TLS 1.3 encryption.
+                            </div>
+                            <div class="arch-node">
+                                <strong>NTCIP 1202 Adapter</strong>
+                                Standardized object definitions for traffic signal controller phase actuation.
+                            </div>
+                            <div class="arch-node">
+                                <strong>Edge Fail-Safe Watchdog</strong>
+                                Reverts controllers to standard pre-timed cycles upon connectivity drops.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tier 2: Perception & Computer Vision -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <span class="arch-layer-title">
+                                <span style="color: var(--accent-primary);">Tier 2:</span> Edge Computer Vision & Perception Layer
+                            </span>
+                            <span class="arch-badge badge-edge">Phase 2 Roadmap</span>
+                        </div>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0 0 8px 0;">
+                            On-premise edge inference converting existing optical CCTV feeds into privacy-safe numeric vehicle counts and queue telemetry.
+                        </p>
+                        <div class="arch-grid-nodes">
+                            <div class="arch-node">
+                                <strong>YOLOv8 Edge Detectors</strong>
+                                Real-time classification: cars, buses, heavy trucks, motorcycles, cyclists.
+                            </div>
+                            <div class="arch-node">
+                                <strong>Privacy Guard (GDPR/LGPD)</strong>
+                                Immediate local discard of raw pixels; only vector coordinates exported.
+                            </div>
+                            <div class="arch-node">
+                                <strong>Virtual Detection Zones</strong>
+                                Software-defined stopline tripwires and queue length occupancy buffers.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tier 1: Physical Infrastructure & Sensors -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <span class="arch-layer-title">
+                                <span style="color: var(--accent-primary);">Tier 1:</span> Physical Road & Sensor Infrastructure
+                            </span>
+                            <span class="arch-badge badge-core">Hardware Agnostic</span>
+                        </div>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0 0 8px 0;">
+                            Hardware-agnostic ingestion supporting existing municipal intersection equipment without forced vendor lock-in.
+                        </p>
+                        <div class="arch-grid-nodes">
+                            <div class="arch-node">
+                                <strong>Traffic Signal Heads</strong>
+                                Physical 3-phase and 8-phase NEMA / Type 170 controller cabinets.
+                            </div>
+                            <div class="arch-node">
+                                <strong>Optical & CCTV Feeds</strong>
+                                Existing RTSP municipal cameras and pan-tilt-zoom traffic monitors.
+                            </div>
+                            <div class="arch-node">
+                                <strong>Inductive Loops / Radar</strong>
+                                Legacy stopline induction coils and radar vehicle detectors.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="background: rgba(74, 21, 75, 0.04); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: var(--space-md) var(--space-lg); font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.6;">
+                    <strong style="color: var(--accent-primary);">Architectural Integrity Note:</strong> Integrations with physical NTCIP 1202 field controllers and production CCTV camera networks are executed in dedicated staged pilot phases following simulation validation. No untested field actuation is performed.
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 5. DETAILED TECHNICAL CAPABILITIES                                 -->
+        <!-- ================================================================== -->
+        <section id="technical-capabilities" class="section-padding" style="background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="smart_city_tech_tag">Core Capabilities • Deep Dive</div>
+                    <h2 class="section-title" data-i18n="smart_city_tech_title">Engineered for Municipal Resilience</h2>
+                    <p class="section-subtitle" data-i18n="smart_city_tech_desc">
+                        Explore the deep technical features that make MoviSabio Smart City the preferred territorial intelligence platform for cities worldwide.
+                    </p>
+                </div>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px;">
+                    
+                    <div class="card-enterprise">
+                        <h3 class="card-title">1. Micro-Simulation Digital Twin (SUMO / TraCI)</h3>
+                        <p class="card-desc">
+                            MoviSabio constructs 1:1 digital twin representations of real metropolitan corridors. Using Eclipse SUMO and Python TraCI, our platform models vehicle-following physics (Krauss car-following model), lane-changing behavior (LC2013), and multimodal transit interactions with second-by-second fidelity.
+                        </p>
+                        <ul style="list-style: disc; padding-left: 20px; font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.8;">
+                            <li>Simulates up to 100,000 concurrent agents on standard cloud compute.</li>
+                            <li>Extracts sub-second latency telemetry for queue spillback prediction.</li>
+                            <li>Tests scenario interventions (road closures, transit lanes) prior to real-world deployment.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <h3 class="card-title">2. AITCS Dynamic Signal Coordination</h3>
+                        <p class="card-desc">
+                            Our Adaptive Intelligent Traffic Control System (AITCS) combines deterministic arterial progression (MAXBAND) with adaptive reinforcement learning. Instead of fixed time-of-day tables, cycles dynamically expand and contract based on approaching vehicle platoons.
+                        </p>
+                        <ul style="list-style: disc; padding-left: 20px; font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.8;">
+                            <li>Simulated delay reductions of up to 31.4% along calibrated test corridors.</li>
+                            <li>Coordinated green waves across multiple consecutive intersections.</li>
+                            <li>Integrated Transit Signal Priority (TSP) for municipal bus fleets.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <h3 class="card-title">3. Edge Computer Vision (YOLOv8 — Phase 2)</h3>
+                        <p class="card-desc">
+                            Designed to turn existing municipal CCTV cameras into high-density traffic sensors without requiring expensive in-pavement inductive loops. Optimized for edge inference on NVIDIA Jetson and x86 edge servers.
+                        </p>
+                        <ul style="list-style: disc; padding-left: 20px; font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.8;">
+                            <li>Multi-class object tracking with DeepSORT / ByteTrack algorithms.</li>
+                            <li>Zero raw video transmission; edge privacy guard strictly protects citizen anonymity.</li>
+                            <li>Speed estimation and lane occupancy rate computed directly at the intersection.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <h3 class="card-title">4. Industrial Protocol Telemetry (MQTT & NTCIP 1202)</h3>
+                        <p class="card-desc">
+                            Connects the central platform to field traffic cabinets through industry-standard open protocols. The architecture supports NTCIP 1202 standards for signal controllers and utilizes lightweight MQTT over TLS 1.3 for resilient edge communication.
+                        </p>
+                        <ul style="list-style: disc; padding-left: 20px; font-size: var(--font-size-xs); color: var(--text-secondary); line-height: 1.8;">
+                            <li>Sub-100ms telemetry heartbeat with automatic reconnection queues.</li>
+                            <li>Deterministic fail-safe mode reverts controllers to local schedules if mesh disconnects.</li>
+                            <li>Vendor-neutral design compatible with modern NEMA TS2 and 2070 hardware.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 6. CONTEXTUAL AUDIENCE PATHWAYS                                    -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="smart_city_aud_tag">Engagement Pathways • Targeted Value</div>
+                    <h2 class="section-title" data-i18n="smart_city_aud_title">Tailored Pathways for Every Stakeholder</h2>
+                    <p class="section-subtitle" data-i18n="smart_city_aud_desc">
+                        Whether you lead public-sector infrastructure, manage enterprise technology integration, or evaluate strategic market scalability, discover how MoviSabio Smart City delivers measurable ROI.
+                    </p>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    
+                    <!-- Government Pathway -->
+                    <div class="audience-card audience-card-gov">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-gov">Government & Municipalities</span>
+                        </div>
+                        <h3 class="audience-title">Public-Sector Infrastructure</h3>
+                        <p class="audience-desc">
+                            Transform city traffic operations from reactive congestion fighting into predictive, evidence-based urban flow management without high capital expenditure.
+                        </p>
+                        <ul class="audience-pillars">
+                            <li><strong>Congestion Mitigation:</strong> Reduce commuter travel delay by up to 30% in validated simulation corridors.</li>
+                            <li><strong>Air Quality & ESG:</strong> Quantify carbon and fuel savings for UN SDG reporting and municipal climate grants.</li>
+                            <li><strong>Hardware Reuse:</strong> Work with existing cameras, inductive loops, and controller cabinets.</li>
+                        </ul>
+                        <div class="audience-actions">
+                            <a href="../contact.html?type=municipal" class="btn btn-primary btn-sm" style="width: 100%;">Schedule Municipal Consultation →</a>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Pathway -->
+                    <div class="audience-card audience-card-enterprise">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-enterprise">Enterprise & Systems Integrators</span>
+                        </div>
+                        <h3 class="audience-title">Technical Integration & Scalability</h3>
+                        <p class="audience-desc">
+                            A cloud-native, microservices-driven platform built for seamless integration into municipal smart city command centers, ITS architectures, and telecom 5G edge networks.
+                        </p>
+                        <ul class="audience-pillars">
+                            <li><strong>Open API & MQTT:</strong> Standardized REST, WebSocket, and MQTT data streams for unified dashboarding.</li>
+                            <li><strong>Containerized Deployment:</strong> Kubernetes-ready, deployable across cloud, on-premises, or hybrid edge servers.</li>
+                            <li><strong>High Reliability:</strong> Fail-safe watchdog mechanisms ensure zero municipal disruption.</li>
+                        </ul>
+                        <div class="audience-actions">
+                            <a href="../platform.html" class="btn btn-secondary btn-sm" style="width: 100%;">Review Technical Specifications →</a>
+                        </div>
+                    </div>
+
+                    <!-- Investor Pathway -->
+                    <div class="audience-card audience-card-investor">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-investor">Institutional Investors</span>
+                        </div>
+                        <h3 class="audience-title">Product Maturity & Scalability</h3>
+                        <p class="audience-desc">
+                            MoviSabio Smart City represents the commercial spearhead of our US$ 1.1T TAM Territorial Intelligence Platform, combining high software margins with recurring SaaS economics.
+                        </p>
+                        <ul class="audience-pillars">
+                            <li><strong>Spearhead Application:</strong> Immediate municipal market entry with proven simulation validation.</li>
+                            <li><strong>High Margin SaaS:</strong> Low marginal cost per corridor expansion; hardware-agnostic architecture.</li>
+                            <li><strong>€50.3M ARR Roadmap:</strong> Scalable enterprise rollout across Latin America, North America, and Europe.</li>
+                        </ul>
+                        <div class="audience-actions">
+                            <a href="../index.html#economics" class="btn btn-outline btn-sm" style="width: 100%;">Inspect Market Economics & ARR →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 7. CROSS-PRODUCT NAVIGATION                                       -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-primary); border-top: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div class="section-tag">Territorial Intelligence Ecosystem</div>
+                    <h2 style="font-size: var(--font-size-2xl); font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">Explore Related Modular Solutions</h2>
+                    <p style="color: var(--text-secondary); font-size: var(--font-size-sm);">Discover other specialized applications built on MoviSabio's spatial intelligence architecture.</p>
+                </div>
+
+                <div class="grid-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+                    <a href="traffic-signal-coordination.html" class="card-enterprise" style="text-decoration: none; padding: var(--space-lg);">
+                        <span style="font-size: 1.5rem; margin-bottom: 8px; display: block;">🚦</span>
+                        <h4 style="font-size: var(--font-size-base); color: var(--text-primary); margin-bottom: 4px;">AI Signal Coordination</h4>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0;">SUMO simulation KPIs, MAXBAND green waves, DQN algorithms.</p>
+                    </a>
+
+                    <a href="vehicle-detection.html" class="card-enterprise" style="text-decoration: none; padding: var(--space-lg);">
+                        <span style="font-size: 1.5rem; margin-bottom: 8px; display: block;">📹</span>
+                        <h4 style="font-size: var(--font-size-base); color: var(--text-primary); margin-bottom: 4px;">Vehicle Detection (Phase 2)</h4>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0;">YOLOv8 edge computer vision, CCTV feeds, vehicle counting.</p>
+                    </a>
+
+                    <a href="public-transit-router.html" class="card-enterprise" style="text-decoration: none; padding: var(--space-lg);">
+                        <span style="font-size: 1.5rem; margin-bottom: 8px; display: block;">🚌</span>
+                        <h4 style="font-size: var(--font-size-base); color: var(--text-primary); margin-bottom: 4px;">Public Transit Router</h4>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0;">Concept-stage route optimization and multimodal accessibility.</p>
+                    </a>
+
+                    <a href="virtual-fencing.html" class="card-enterprise" style="text-decoration: none; padding: var(--space-lg);">
+                        <span style="font-size: 1.5rem; margin-bottom: 8px; display: block;">🌾</span>
+                        <h4 style="font-size: var(--font-size-base); color: var(--text-primary); margin-bottom: 4px;">Virtual Fencing AgriTech</h4>
+                        <p style="font-size: var(--font-size-xs); color: var(--text-secondary); margin: 0;">Solution concept for rural asset tracking and virtual boundaries.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- 8. CORPORATE ENTERPRISE FOOTER                                         -->
+    <!-- ====================================================================== -->
+    <footer class="footer-enterprise" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="brand-logo" style="color: #FFFFFF; margin-bottom: var(--space-md); display: inline-flex;">
+                        <span class="brand-dot" style="background: var(--accent-secondary); box-shadow: 0 0 12px var(--accent-secondary);"></span>
+                        <span>MoviSabio</span>
+                    </a>
+                    <p class="footer-brand-desc" data-i18n="footer_desc">
+                        AI & Quantum-Ready Territorial Intelligence Platform. Unifying adaptive signal timing, computer vision, digital twins, and climate analytics for urban and regional territories.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://github.com/alimulfazalnabil/movisabio-website" class="footer-social-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/company/movisabio" class="footer-social-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="mailto:contact@movisabio.com" class="footer-social-btn">Email Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="nav_products">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="smart-city.html">MoviSabio Smart City</a></li>
+                        <li><a href="traffic-signal-coordination.html">AI Signal Coordination</a></li>
+                        <li><a href="vehicle-detection.html">Vehicle Detection (Phase 2)</a></li>
+                        <li><a href="public-transit-router.html">Public Transit Router (Concept)</a></li>
+                        <li><a href="virtual-fencing.html">Virtual Fencing AgriTech</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_quick_links">Platform Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#platform">Territorial Platform</a></li>
+                        <li><a href="../platform.html">Technical Specs (12 Modules)</a></li>
+                        <li><a href="../index.html#economics">Investor Economics</a></li>
+                        <li><a href="../partners.html">Partners & Pitch Deck</a></li>
+                        <li><a href="../index.html#presence">Global Digital Twins Map</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_governance">Ethics & Governance</h4>
+                    <p style="font-size: var(--font-size-xs); line-height: 1.6; color: #d1bdd6; margin-bottom: 12px;" data-i18n="footer_privacy_note">
+                        All algorithmic traffic control and sensory computer vision modules strictly adhere to European GDPR and Brazilian LGPD standards. Edge processing discards raw camera feeds immediately after vector extraction.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <span class="status-pill" style="background: rgba(255,255,255,0.08); color: #FFFFFF; font-size: 0.68rem; padding: 3px 8px;">GDPR Compliant</span>
+                        <span class="status-pill" style="background: rgba(255,255,255,0.08); color: #FFFFFF; font-size: 0.68rem; padding: 3px 8px;">LGPD Compliant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 MoviSabio Tech Solutions. <span data-i18n="footer_rights">All rights reserved.</span></div>
+                <div>Territorial Intelligence Platform™ • Production Specification v2.4</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translation Engine & Application Scripts -->
+    <script src="../assets/js/i18n.js"></script>
+    <script>
+        function toggleMobileNav() {
+            var menu = document.getElementById('nav-menu');
+            if (menu) {
+                menu.classList.toggle('open');
+            }
+        }
+    </script>
+</body>
+</html>

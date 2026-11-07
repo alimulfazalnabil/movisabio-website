@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Public Transit Router (Concept Stage) — MoviSabio Territorial Intelligence</title>
+    <meta name="description" content="Smart Public Transit Router is an advanced concept-stage product by MoviSabio exploring AI route optimization, dynamic passenger demand modeling, and multimodal transit accessibility.">
+    <link rel="canonical" href="https://www.movisabio.com/products/public-transit-router.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Smart Public Transit Router (Concept Stage) — MoviSabio">
+    <meta property="og:description" content="Solution concept exploring AI route optimization, dynamic passenger demand modeling, and multimodal mobility planning.">
+    <meta property="og:image" content="https://www.movisabio.com/Connected%20Smart%20City%20at%20Dusk-1.png">
+    <meta property="og:url" content="https://www.movisabio.com/products/public-transit-router.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Public Transit Router (Concept Stage) — MoviSabio">
+    <meta name="twitter:description" content="Next-generation multimodal transit routing and demand modeling concept.">
+    <meta name="twitter:image" content="https://www.movisabio.com/Connected%20Smart%20City%20at%20Dusk-1.png">
+
+    <!-- Browser Tab Favicon -->
+    <link rel="icon" type="image/png" href="../logo.png">
+
+    <!-- Enterprise Design System Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/platform.css">
+
+    <style>
+        .hero-banner-product {
+            background: linear-gradient(135deg, #4A154B 0%, #6a1b72 50%, #2c0a3b 100%);
+            color: #FFFFFF;
+            padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--accent-secondary);
+        }
+        .hero-banner-product h1 { color: #FFFFFF; }
+        .hero-banner-product p { color: #e2d3e5; }
+
+        .concept-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(54, 197, 240, 0.2);
+            border: 1px solid var(--accent-secondary);
+            color: #FFFFFF;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .concept-disclaimer {
+            background: rgba(54, 197, 240, 0.08);
+            border: 1px solid rgba(54, 197, 240, 0.3);
+            border-left: 4px solid var(--accent-secondary);
+            border-radius: var(--radius-md);
+            padding: var(--space-md) var(--space-lg);
+            font-size: var(--font-size-xs);
+            color: #015269;
+            line-height: 1.6;
+            margin-bottom: var(--space-2xl);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-to-content" data-i18n="skip_to_content">Skip to main content</a>
+
+    <!-- ====================================================================== -->
+    <!-- 1. NAVIGATION                                                          -->
+    <!-- ====================================================================== -->
+    <header class="navbar-enterprise" role="banner">
+        <div class="navbar-container">
+            <a href="../index.html" class="brand-logo" aria-label="MoviSabio Home">
+                <span class="brand-dot"></span>
+                <span>MoviSabio</span>
+                <span class="brand-tag">Enterprise</span>
+            </a>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html#platform" class="nav-link" data-i18n="nav_platform">Platform</a></li>
+                    
+                    <li class="nav-item-dropdown">
+                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true" style="color: var(--accent-primary); font-weight: 700;">
+                            <span data-i18n="nav_products">Products</span> <span class="dropdown-caret">▾</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="smart-city.html" class="dropdown-item" role="menuitem"><strong>MoviSabio Smart City</strong> <span style="font-size: 0.7rem; color: var(--accent-success); font-weight: 700;">[Flagship]</span></a></li>
+                            <li><a href="traffic-signal-coordination.html" class="dropdown-item" role="menuitem" data-i18n="prod_aitcs_title">AI Traffic Signal Coordination</a></li>
+                            <li><a href="vehicle-detection.html" class="dropdown-item" role="menuitem"><span>Computer Vision Vehicle Detection</span> <span style="font-size: 0.68rem; color: var(--accent-warning); font-weight: 600;">[Phase 2]</span></a></li>
+                            <li><a href="public-transit-router.html" class="dropdown-item" role="menuitem"><strong>Smart Public Transit Router</strong> <span style="font-size: 0.68rem; color: var(--accent-secondary); font-weight: 600;">[Concept]</span></a></li>
+                            <li><a href="virtual-fencing.html" class="dropdown-item" role="menuitem"><span>Virtual Fencing AgriTech</span> <span style="font-size: 0.68rem; color: var(--accent-primary); font-weight: 600;">[Solution Concept]</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../platform.html" class="nav-link" data-i18n="nav_specs">Technical Specs</a></li>
+                    <li><a href="../index.html#audiences" class="nav-link" data-i18n="nav_audiences">Audiences</a></li>
+                    <li><a href="../index.html#economics" class="nav-link" data-i18n="nav_economics">Economics</a></li>
+                    <li><a href="../partners.html" class="nav-link" data-i18n="nav_submit_idea">Partners</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-select-wrapper">
+                    <select id="lang-select" class="lang-dropdown-enterprise" onchange="MoviSabioI18n.setLanguage(this.value)" aria-label="Select Language">
+                        <option value="en">EN • English</option>
+                        <option value="de">DE • Deutsch</option>
+                        <option value="pt">PT • Português</option>
+                        <option value="es">ES • Español</option>
+                        <option value="it">IT • Italiano</option>
+                        <option value="zh">ZH • 中文</option>
+                    </select>
+                </div>
+                <a href="../contact.html" class="btn btn-primary btn-sm" id="nav-cta-btn" data-i18n="nav_cta">Partner With Us</a>
+                <button type="button" class="mobile-toggle-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ================================================================== -->
+        <!-- 2. HERO SECTION                                                    -->
+        <!-- ================================================================== -->
+        <section class="hero-banner-product">
+            <div class="container">
+                <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+                    <div class="concept-badge" data-i18n="tag_transit_concept">
+                        Concept-Stage Product • R&D Innovation Track
+                    </div>
+                    
+                    <h1 style="font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 1.2rem; letter-spacing: -0.03em;" data-i18n="transit_hero_title">
+                        Smart Public Transit Router
+                    </h1>
+                    
+                    <p style="font-size: var(--font-size-md); line-height: 1.7; max-width: 860px; margin: 0 auto 2.5rem;" data-i18n="transit_hero_desc">
+                        A forward-looking concept exploring how artificial intelligence can optimize municipal bus routes, predict dynamic passenger demand, enhance transit accessibility in underserved neighborhoods, and coordinate multimodal urban mobility networks.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <a href="#concept-pillars" class="btn btn-primary btn-lg" style="background: var(--accent-secondary); color: #07111F;" data-i18n="btn_explore_concept">Explore Concept Pillars ↓</a>
+                        <a href="#demand-modeling" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);" data-i18n="btn_demand_model">Passenger Demand Modeling</a>
+                        <a href="../contact.html?type=research_consortium" class="btn btn-outline btn-lg" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);" data-i18n="btn_research_partner">Join University / R&D Pilot →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 3. HONEST CONCEPT DISCLOSURE & PILLARS                            -->
+        <!-- ================================================================== -->
+        <section id="concept-pillars" class="section-padding" style="background: var(--bg-primary);">
+            <div class="container">
+                
+                <div class="concept-disclaimer" role="note">
+                    <strong style="color: #013747;">Concept-Stage Product Specification:</strong>
+                    The Smart Public Transit Router is currently positioned in the research and exploratory concept phase. MoviSabio conducts algorithm modeling using General Transit Feed Specification (GTFS) open datasets to evaluate routing efficiencies. This page describes prospective architectural capabilities and technical models under active R&D evaluation.
+                </div>
+
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="transit_pillars_tag">Prospective Capabilities</div>
+                    <h2 class="section-title" data-i18n="transit_pillars_title">Core Areas of Innovation</h2>
+                    <p class="section-subtitle" data-i18n="transit_pillars_desc">
+                        Exploring how spatial territorial intelligence can bridge the gap between static timetable schedules and real-time passenger realities.
+                    </p>
+                </div>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px;">
+                    
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(54, 197, 240, 0.12); color: #027494;">🚏</div>
+                        <h3 class="card-title" data-i18n="pillar_route_title">1. Dynamic Route & Timetable Optimization</h3>
+                        <p class="card-desc" data-i18n="pillar_route_desc">
+                            Investigates graph-based neural routing (A* and contraction hierarchies) to dynamically adjust bus headway frequencies during unexpected congestion, sporting events, or inclement weather, preventing bus bunching.
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(74, 21, 75, 0.08); color: var(--accent-primary);">👥</div>
+                        <h3 class="card-title" data-i18n="pillar_demand_title">2. Predictive Passenger Demand Modeling</h3>
+                        <p class="card-desc" data-i18n="pillar_demand_desc">
+                            Combines anonymized cellular mobility matrices with historical smart card / farebox data to model origin-destination (O-D) passenger flows, highlighting overlooked high-density travel corridors.
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(46, 182, 125, 0.12); color: #065F46;">♿</div>
+                        <h3 class="card-title" data-i18n="pillar_access_title">3. Transit Equity & Neighborhood Accessibility</h3>
+                        <p class="card-desc" data-i18n="pillar_access_desc">
+                            Measures the 15-minute isochrone accessibility of essential services (hospitals, schools, employment centers) across peripheral neighborhoods, providing municipal leaders with evidence-based investment maps.
+                        </p>
+                    </div>
+
+                    <div class="card-enterprise">
+                        <div class="card-icon" style="background: rgba(236, 178, 46, 0.12); color: #9c6c00;">🚲</div>
+                        <h3 class="card-title" data-i18n="pillar_multi_title">4. Multimodal Mobility Planning</h3>
+                        <p class="card-desc" data-i18n="pillar_multi_desc">
+                            Integrates fixed-route bus and light-rail lines with micro-mobility (bike sharing, e-scooters) and pedestrian corridors, enabling seamless first-mile and last-mile connectivity.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- 4. AUDIENCE PATHWAYS                                               -->
+        <!-- ================================================================== -->
+        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Strategic Alignment</div>
+                    <h2 class="section-title">Stakeholder Value Horizons</h2>
+                    <p class="section-subtitle">How our public transit concept aligns with long-term urban and institutional priorities.</p>
+                </div>
+
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    <div class="audience-card audience-card-gov">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-gov">Transit Agencies</span>
+                        </div>
+                        <h3 class="audience-title">Municipal Transit Authorities</h3>
+                        <p class="audience-desc">
+                            Overcome declining bus ridership by identifying underserved routes and re-allocating fleet capacity toward proven high-demand commuter origins.
+                        </p>
+                        <div class="audience-actions">
+                            <a href="../contact.html?type=gtfs_study" class="btn btn-primary btn-sm" style="width: 100%;">Propose GTFS Pilot Analysis →</a>
+                        </div>
+                    </div>
+
+                    <div class="audience-card audience-card-enterprise">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-enterprise">Fleet Operators</span>
+                        </div>
+                        <h3 class="audience-title">Private Transit & Mobility Tech</h3>
+                        <p class="audience-desc">
+                            Incorporate predictive passenger demand APIs into microtransit dispatch platforms and on-demand corporate shuttle fleets.
+                        </p>
+                        <div class="audience-actions">
+                            <a href="../platform.html" class="btn btn-secondary btn-sm" style="width: 100%;">Review Spatial Ingestion Specs →</a>
+                        </div>
+                    </div>
+
+                    <div class="audience-card audience-card-investor">
+                        <div class="audience-header">
+                            <span class="audience-badge audience-badge-investor">Strategic Capital</span>
+                        </div>
+                        <h3 class="audience-title">Long-Term Platform Breadth</h3>
+                        <p class="audience-desc">
+                            Demonstrates MoviSabio's capability to expand beyond signalized intersections into the broader US$ 1.1T smart mobility and transit planning sector.
+                        </p>
+                        <div class="audience-actions">
+                            <a href="../index.html#economics" class="btn btn-outline btn-sm" style="width: 100%;">Inspect Category Creation TAM →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- 5. FOOTER                                                              -->
+    <!-- ====================================================================== -->
+    <footer class="footer-enterprise" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="brand-logo" style="color: #FFFFFF; margin-bottom: var(--space-md); display: inline-flex;">
+                        <span class="brand-dot" style="background: var(--accent-secondary); box-shadow: 0 0 12px var(--accent-secondary);"></span>
+                        <span>MoviSabio</span>
+                    </a>
+                    <p class="footer-brand-desc" data-i18n="footer_desc">
+                        AI & Quantum-Ready Territorial Intelligence Platform. Unifying adaptive signal timing, computer vision, digital twins, and climate analytics for urban and regional territories.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="nav_products">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="smart-city.html">MoviSabio Smart City</a></li>
+                        <li><a href="traffic-signal-coordination.html">AI Signal Coordination</a></li>
+                        <li><a href="vehicle-detection.html">Vehicle Detection (Phase 2)</a></li>
+                        <li><a href="public-transit-router.html">Public Transit Router (Concept)</a></li>
+                        <li><a href="virtual-fencing.html">Virtual Fencing AgriTech</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_quick_links">Platform Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#platform">Territorial Platform</a></li>
+                        <li><a href="../platform.html">Technical Specs (12 Modules)</a></li>
+                        <li><a href="../index.html#economics">Investor Economics</a></li>
+                        <li><a href="../partners.html">Partners & Pitch Deck</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_governance">Concept Stage Track</h4>
+                    <p style="font-size: var(--font-size-xs); line-height: 1.6; color: #d1bdd6; margin-bottom: 12px;">
+                        This product is in active exploratory concept R&D. Commercial deployments will follow verified institutional pilot studies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 MoviSabio Tech Solutions. <span data-i18n="footer_rights">All rights reserved.</span></div>
+                <div>Transit Intelligence Concept • R&D Track</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/i18n.js"></script>
+    <script>
+        function toggleMobileNav() {
+            var menu = document.getElementById('nav-menu');
+            if (menu) menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
