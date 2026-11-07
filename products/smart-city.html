@@ -90,23 +90,19 @@
                     <li><a href="../platform.html" class="nav-link" data-i18n="nav_specs">Technical Specs</a></li>
                     <li><a href="../index.html#audiences" class="nav-link" data-i18n="nav_audiences">Audiences</a></li>
                     
+                    <!-- More Dropdown -->
                     <li class="nav-item-dropdown">
                         <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                            <span data-i18n="nav_company">Company</span> <span class="dropdown-caret">▾</span>
+                            <span>More</span> <span class="dropdown-caret">▾</span>
                         </button>
-                        <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li class="dropdown-header" data-i18n="nav_company">Company</li>
                             <li><a href="../about.html" class="dropdown-item" data-i18n="nav_about" role="menuitem">About MoviSabio</a></li>
                             <li><a href="../leadership.html" class="dropdown-item" data-i18n="nav_leadership" role="menuitem">Executive Leadership</a></li>
                             <li><a href="../global.html" class="dropdown-item" data-i18n="nav_map" role="menuitem">Global Map & Digital Twins</a></li>
                             <li><a href="../research.html" class="dropdown-item" data-i18n="nav_research" role="menuitem">Research & ESG</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item-dropdown">
-                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                            <span data-i18n="nav_investor">Investor</span> <span class="dropdown-caret">▾</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-divider" role="separator"></li>
+                            <li class="dropdown-header" data-i18n="nav_investor">Investor</li>
                             <li><a href="../index.html#economics" class="dropdown-item" data-i18n="nav_economics" role="menuitem">Market Opportunity & Economics</a></li>
                             <li><a href="../partners.html" class="dropdown-item" data-i18n="nav_submit_idea" role="menuitem" style="color: var(--accent-success); font-weight: 700;">Partners & Pitch Deck</a></li>
                         </ul>
@@ -1413,6 +1409,7 @@
                                     <span class="feature-tech-pill">NTCIP 1202</span>
                                     <span class="feature-tech-pill">Inductive Loops</span>
                                     <span class="feature-tech-pill">LoRaWAN</span>
+                                    <span class="feature-tech-pill">GPS Collars</span>
                                 </div>
                             </div>
                             <div class="syseng-layer-body">
@@ -1558,37 +1555,72 @@
                                         </div>
                                     </div>
 
-                                    <!-- Module 5: LoRaWAN & GPS AgriTech Collars -->
+                                    <!-- Module 5: LoRaWAN Telemetry Mesh -->
                                     <div class="syseng-module-card">
                                         <div class="syseng-mod-top">
                                             <div class="syseng-mod-header">
-                                                <span class="syseng-mod-icon">🛰️</span>
-                                                <h5 class="syseng-mod-title">LoRaWAN & GPS AgriTech Collars</h5>
+                                                <span class="syseng-mod-icon">📶</span>
+                                                <h5 class="syseng-mod-title">LoRaWAN Telemetry Mesh</h5>
                                             </div>
                                             <p class="syseng-mod-desc">
-                                                Long-range low-power telemetry capturing virtual fencing coordinates, livestock proximity, and rural territorial assets.
+                                                Long-range, low-power wide-area wireless sensor network capturing microclimate, flood gauges, air quality, and rural territorial telemetry.
                                             </p>
                                         </div>
-                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect LoRaWAN & GPS AgriTech Collars specifications">
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect LoRaWAN Telemetry Mesh specifications">
                                             <span class="toggle-text">Inspect Specs</span>
                                             <span class="toggle-icon">▾</span>
                                         </button>
                                         <div class="syseng-spec-drawer">
                                             <div class="syseng-spec-row">
                                                 <span class="syseng-spec-label">Protocol:</span>
-                                                <span class="syseng-spec-value">LoRaWAN 1.0.4 / EU868 &amp; US915 / GNSS GPS</span>
+                                                <span class="syseng-spec-value">LoRaWAN 1.0.4 / EU868 &amp; US915 / Class A &amp; C</span>
                                             </div>
                                             <div class="syseng-spec-row">
                                                 <span class="syseng-spec-label">Latency:</span>
-                                                <span class="syseng-spec-value">15km Line-of-Sight / Sub-500 byte payloads</span>
+                                                <span class="syseng-spec-value">15km Line-of-Sight / Sub-second uplink packets</span>
                                             </div>
                                             <div class="syseng-spec-row">
                                                 <span class="syseng-spec-label">Fail-Safe:</span>
-                                                <span class="syseng-spec-value">Ultra-low-power sleep with local buffer</span>
+                                                <span class="syseng-spec-value">Adaptive Data Rate (ADR) &amp; localized flash buffering</span>
                                             </div>
                                             <div class="syseng-spec-row">
                                                 <span class="syseng-spec-label">Integration:</span>
-                                                <span class="syseng-spec-value">Rural gateway base stations &amp; boundary monitors</span>
+                                                <span class="syseng-spec-value">Solar outdoor gateways &amp; edge LoRa base stations</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Module 6: GPS AgriTech Collars -->
+                                    <div class="syseng-module-card">
+                                        <div class="syseng-mod-top">
+                                            <div class="syseng-mod-header">
+                                                <span class="syseng-mod-icon">🛰️</span>
+                                                <h5 class="syseng-mod-title">GPS AgriTech Collars</h5>
+                                            </div>
+                                            <p class="syseng-mod-desc">
+                                                Ruggedized smart livestock collars streaming multi-constellation GNSS positions, boundary containment alerts, and virtual fencing heartbeats.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="syseng-spec-toggle" aria-expanded="false" aria-label="Inspect GPS AgriTech Collars specifications">
+                                            <span class="toggle-text">Inspect Specs</span>
+                                            <span class="toggle-icon">▾</span>
+                                        </button>
+                                        <div class="syseng-spec-drawer">
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Protocol:</span>
+                                                <span class="syseng-spec-value">GNSS / GPS + GLONASS / LoRaWAN uplink</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Latency:</span>
+                                                <span class="syseng-spec-value">10m spatial accuracy / 60s dynamic positioning interval</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Fail-Safe:</span>
+                                                <span class="syseng-spec-value">On-collar acoustic &amp; haptic stimulus fail-safe logic</span>
+                                            </div>
+                                            <div class="syseng-spec-row">
+                                                <span class="syseng-spec-label">Integration:</span>
+                                                <span class="syseng-spec-value">Virtual Fencing AgriTech engine &amp; pasture cadastre</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2020,13 +2052,21 @@
                     <!-- COMPONENT B: GLOBAL GEOSPATIAL CAMERA MAP -->
                     <div class="osiris-map-card">
                         <div class="osiris-map-header">
-                            <h3 class="osiris-map-title">
-                                <span>🗺️</span> Global Geospatial Camera & Digital Twin Map
-                            </h3>
-                            <div class="osiris-map-legend">
-                                <span class="legend-item"><span class="legend-dot dot-territorial"></span> MoviSabio Digital Twins (Campinas, Montevideo, Munich, Berlin, Milan, Singapore)</span>
-                                <span class="legend-item"><span class="legend-dot dot-live"></span> Live Video Feeds</span>
-                                <span class="legend-item"><span class="legend-dot dot-snapshot"></span> Periodic Snapshot Feeds</span>
+                            <div class="osiris-map-header-main">
+                                <h3 class="osiris-map-title">
+                                    <span>🗺️</span> Global Geospatial Camera & Digital Twin Map
+                                </h3>
+                                <div class="osiris-map-legend">
+                                    <span class="legend-item"><span class="legend-dot dot-territorial"></span> MoviSabio Digital Twins (Campinas, Montevideo, Munich, Berlin, Milan, Singapore)</span>
+                                    <span class="legend-item"><span class="legend-dot dot-live"></span> Live Video Feeds</span>
+                                    <span class="legend-item"><span class="legend-dot dot-snapshot"></span> Periodic Snapshot Feeds</span>
+                                </div>
+                            </div>
+                            <div class="carto-basemap-selector" role="group" aria-label="CARTO Basemap Layer Selector">
+                                <span class="basemap-selector-label"><span style="font-size: 0.85rem;">🗺️</span> Basemap:</span>
+                                <button type="button" class="carto-basemap-btn active" data-basemap="dark" title="CARTO Dark Matter (Default Enterprise Operations)" aria-pressed="true">Dark Matter</button>
+                                <button type="button" class="carto-basemap-btn" data-basemap="voyager" title="CARTO Voyager (Detailed Geographic & Urban)" aria-pressed="false">Voyager</button>
+                                <button type="button" class="carto-basemap-btn" data-basemap="positron" title="CARTO Positron (Clean Light Geographic)" aria-pressed="false">Positron</button>
                             </div>
                         </div>
                         <div id="osiris-geospatial-map"></div>
@@ -3038,6 +3078,7 @@
     <script src="../assets/js/i18n.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="../assets/js/enterprise-smart-city.js"></script>
+    <script src="../assets/js/movisabio-map-config.js"></script>
     <script src="../assets/js/osiris-traffic-monitor.js"></script>
     <script>
         function toggleMobileNav() {

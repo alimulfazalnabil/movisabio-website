@@ -102,8 +102,12 @@
     let osirisCameras = [];
     let activeCamera = null;
     let leafletMap = null;
+    let currentTileLayer = null;
+    let currentBasemapKey = 'dark';
     let markersLayerGroup = null;
     let territorialMarkersGroup = null;
+    let territoryMarkerMap = {};
+    let cameraMarkerMap = {};
     let snapshotTimer = null;
     let countdownTimer = null;
     let secondsLeft = 8;
@@ -122,7 +126,7 @@
         startHudClock();
     });
 
-    // --- 3. LEAFLET MAP INITIALIZATION ---
+    // --- 3. LEAFLET MAP INITIALIZATION & CARTO BASEMAP INTEGRATION ---
     function initLeafletMap() {
         if (typeof L === 'undefined') {
             console.warn('Leaflet not loaded yet, retrying...');
@@ -133,32 +137,117 @@
         const mapEl = document.getElementById('osiris-geospatial-map');
         if (!mapEl || leafletMap) return;
 
-        // Center map showing global Atlantic/Europe/Americas overview
+        // Retrieve central CARTO configuration
+        const mapConfig = getMapConfig();
+
+        // Center map showing global overview
         leafletMap = L.map('osiris-geospatial-map', {
             center: [20.0, 0.0],
             zoom: 2,
             minZoom: 2,
-            maxZoom: 18,
+            maxZoom: mapConfig.maxZoom || 20,
             scrollWheelZoom: false,
             zoomControl: true
         });
 
-        // CartoDB Dark Matter Basemap Tiles
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: 'abcd',
-            maxZoom: 19
-        }).addTo(leafletMap);
-
+        // Layer groups for markers
         markersLayerGroup = L.layerGroup().addTo(leafletMap);
         territorialMarkersGroup = L.layerGroup().addTo(leafletMap);
 
+        // Apply default CARTO basemap
+        currentBasemapKey = mapConfig.defaultBasemap || 'dark';
+        applyBasemapLayer(currentBasemapKey);
+
         renderTerritorialNodes();
+    }
+
+    // Central Map Config Resolver
+    function getMapConfig() {
+        if (typeof window !== 'undefined' && window.MOVISABIO_MAP_CONFIG) {
+            return window.MOVISABIO_MAP_CONFIG;
+        }
+        return {
+            cartoAccountId: "238993",
+            cartoApiKey: "cb1_54ep_1_72ddc18234e075fcc4aee97a",
+            defaultBasemap: "dark",
+            basemaps: {
+                dark: {
+                    name: "CARTO Dark Matter",
+                    url: "https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png",
+                    subdomains: "abcd",
+                    maxZoom: 20
+                },
+                voyager: {
+                    name: "CARTO Voyager",
+                    url: "https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+                    subdomains: "abcd",
+                    maxZoom: 20
+                },
+                positron: {
+                    name: "CARTO Positron",
+                    url: "https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png",
+                    subdomains: "abcd",
+                    maxZoom: 20
+                }
+            },
+            maxZoom: 20,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener noreferrer">CARTO</a>'
+        };
+    }
+
+    // Apply CARTO Basemap Layer without recreating map or destroying markers
+    function applyBasemapLayer(basemapKey) {
+        if (!leafletMap) return;
+
+        const mapConfig = getMapConfig();
+        const key = (basemapKey && mapConfig.basemaps && mapConfig.basemaps[basemapKey]) 
+            ? basemapKey 
+            : (mapConfig.defaultBasemap || 'dark');
+        const basemap = mapConfig.basemaps[key];
+
+        // Format tile URL with API key query parameter
+        let tileUrl = '';
+        if (typeof mapConfig.getTileUrl === 'function') {
+            tileUrl = mapConfig.getTileUrl(key);
+        } else {
+            const baseUrl = basemap.url;
+            const apiKey = mapConfig.cartoApiKey;
+            if (apiKey) {
+                const separator = baseUrl.includes('?') ? '&' : '?';
+                tileUrl = `${baseUrl}${separator}key=${encodeURIComponent(apiKey)}`;
+            } else {
+                tileUrl = baseUrl;
+            }
+        }
+
+        // Remove previous basemap tile layer
+        if (currentTileLayer) {
+            leafletMap.removeLayer(currentTileLayer);
+        }
+
+        // Add new CARTO tile layer
+        currentTileLayer = L.tileLayer(tileUrl, {
+            attribution: mapConfig.attribution,
+            subdomains: basemap.subdomains || 'abcd',
+            maxZoom: basemap.maxZoom || mapConfig.maxZoom || 20
+        }).addTo(leafletMap);
+
+        // Keep tile layer underneath all marker layers
+        currentTileLayer.bringToBack();
+        currentBasemapKey = key;
+
+        // Update Basemap Selector UI
+        document.querySelectorAll('.carto-basemap-btn').forEach(btn => {
+            const isMatch = btn.getAttribute('data-basemap') === key;
+            btn.classList.toggle('active', isMatch);
+            btn.setAttribute('aria-pressed', isMatch ? 'true' : 'false');
+        });
     }
 
     // --- 4. RENDER TERRITORIAL NODES ON MAP ---
     function renderTerritorialNodes() {
         territorialMarkersGroup.clearLayers();
+        territoryMarkerMap = {};
 
         territorialNodes.forEach(node => {
             const iconHtml = `
@@ -193,7 +282,13 @@
 
             marker.bindPopup(popupContent);
             territorialMarkersGroup.addLayer(marker);
+            territoryMarkerMap[node.id] = marker;
         });
+    }
+
+    // Helper to resolve asset paths cleanly whether at root (index.html) or subdir (products/*.html)
+    function getAssetBasePath() {
+        return window.location.pathname.includes('/products/') ? '../' : '';
     }
 
     // --- 5. LOAD CAMERA DATASET ---
@@ -202,9 +297,16 @@
         if (statusEl) statusEl.textContent = 'Ingesting verified OSIRIS camera registry...';
 
         try {
-            // First load local high-performance curated dataset
-            const res = await fetch('../assets/data/osiris-traffic-cameras.json');
-            if (res.ok) {
+            // First load local high-performance curated dataset with dynamic path resolution
+            const primaryPath = getAssetBasePath() + 'assets/data/osiris-traffic-cameras.json';
+            let res;
+            try {
+                res = await fetch(primaryPath);
+            } catch (fetchErr) {
+                const altPath = primaryPath.startsWith('../') ? 'assets/data/osiris-traffic-cameras.json' : '../assets/data/osiris-traffic-cameras.json';
+                res = await fetch(altPath);
+            }
+            if (res && res.ok) {
                 const data = await res.json();
                 osirisCameras = data.cameras || [];
                 const totalAvailable = data.total_available_osiris || '46,763+';
@@ -213,7 +315,7 @@
                     statusEl.innerHTML = `<span class="live-dot-pulse"></span> <strong>${osirisCameras.length} Active Feeds Loaded</strong> (Indexed from ${totalAvailable.toLocaleString()} OSIRIS Public Feeds)`;
                 }
             } else {
-                throw new Error('Local dataset fetch returned ' + res.status);
+                throw new Error('Local dataset fetch returned ' + (res ? res.status : 'network error'));
             }
         } catch (err) {
             console.warn('Fallback: Loading embedded essential camera dataset', err);
@@ -268,6 +370,7 @@
     function renderCameraMapMarkers(cameras) {
         if (!markersLayerGroup) return;
         markersLayerGroup.clearLayers();
+        cameraMarkerMap = {};
 
         // If 'territorial-only' filter is active, stop here
         if (currentTypeFilter === 'territorial') return;
@@ -276,9 +379,10 @@
             const isLive = cam.stream_type && (cam.stream_type.includes('live') || cam.stream_type.includes('mp4'));
             const markerClass = isLive ? 'camera-pin-live' : 'camera-pin-snapshot';
             const iconGlyph = isLive ? '📹' : '📷';
+            const isActive = activeCamera && activeCamera.id === cam.id;
 
             const iconHtml = `
-                <div class="osiris-camera-marker ${markerClass}" id="marker-${cam.id}" title="${cam.name} (${cam.city}, ${cam.country})">
+                <div class="osiris-camera-marker ${markerClass} ${isActive ? 'active-cam-marker' : ''}" id="marker-${cam.id}" title="${cam.name} (${cam.city}, ${cam.country})">
                     <span>${iconGlyph}</span>
                 </div>
             `;
@@ -312,7 +416,14 @@
             `;
 
             marker.bindPopup(popupContent);
+
+            // Synchronize selection on marker click
+            marker.on('click', () => {
+                selectCamera(cam, false);
+            });
+
             markersLayerGroup.addLayer(marker);
+            cameraMarkerMap[cam.id] = marker;
         });
     }
 
@@ -345,14 +456,15 @@
             const statusBadgeClass = isLive ? 'tag-live' : 'tag-snapshot';
 
             // Preview image thumbnail
+            const fallbackCityImg = getAssetBasePath() + 'Connected%20Smart%20City%20at%20Dusk-1.png';
             let previewSrc = '';
             if (cam.feed_url) {
                 previewSrc = cam.feed_url;
             } else if (cam.stream_url && cam.stream_url.includes('youtube.com/embed/')) {
                 const ytid = cam.stream_url.split('/embed/')[1]?.split('?')[0];
-                previewSrc = ytid ? `https://img.youtube.com/vi/${ytid}/mqdefault.jpg` : '../Connected%20Smart%20City%20at%20Dusk-1.png';
+                previewSrc = ytid ? `https://img.youtube.com/vi/${ytid}/mqdefault.jpg` : fallbackCityImg;
             } else {
-                previewSrc = '../Connected%20Smart%20City%20at%20Dusk-1.png';
+                previewSrc = fallbackCityImg;
             }
 
             const card = document.createElement('div');
@@ -365,7 +477,7 @@
 
             card.innerHTML = `
                 <div class="thumb-img-wrap">
-                    <img src="${previewSrc}" alt="${cam.name}" class="thumb-preview-img" loading="lazy" onerror="this.src='../Connected%20Smart%20City%20at%20Dusk-1.png'">
+                    <img src="${previewSrc}" alt="${cam.name}" class="thumb-preview-img" loading="lazy" onerror="this.src='${fallbackCityImg}'">
                     <span class="thumb-status-badge ${statusBadgeClass}">${statusBadgeText}</span>
                 </div>
                 <div class="thumb-info">
@@ -384,14 +496,21 @@
 
         // Highlight card in thumbnails
         document.querySelectorAll('.camera-thumb-card').forEach(el => el.classList.remove('active'));
-        const matchedThumbs = document.querySelectorAll(`.camera-thumb-card`);
-        // update active class
         renderCameraThumbnails(osirisCameras.filter(c => {
             if (currentRegionFilter !== 'all' && c.region !== currentRegionFilter) return false;
             if (currentTypeFilter === 'live' && (!c.stream_type || (!c.stream_type.includes('live') && !c.stream_type.includes('mp4')))) return false;
             if (currentTypeFilter === 'snapshot' && c.stream_type !== 'snapshot') return false;
             return true;
         }));
+
+        // Highlight active camera marker on map
+        document.querySelectorAll('.osiris-camera-marker.active-cam-marker').forEach(el => {
+            el.classList.remove('active-cam-marker');
+        });
+        const markerEl = document.getElementById(`marker-${cam.id}`);
+        if (markerEl) {
+            markerEl.classList.add('active-cam-marker');
+        }
 
         // A. Update Monitoring Wall Main Player
         updatePlayerViewport(cam);
@@ -633,6 +752,15 @@
                 }
             });
         }
+
+        // CARTO Basemap Layer Selector Buttons
+        const basemapBtns = document.querySelectorAll('.carto-basemap-btn');
+        basemapBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const key = this.getAttribute('data-basemap');
+                applyBasemapLayer(key);
+            });
+        });
     }
 
     // --- 17. RUNNING HUD CLOCK ---
@@ -650,6 +778,12 @@
 
     // --- 18. GLOBAL WINDOW API FOR INLINE CALLS ---
     window.MoviSabioOsiris = {
+        setBasemap: function (key) {
+            applyBasemapLayer(key);
+        },
+        getCurrentBasemap: function () {
+            return currentBasemapKey;
+        },
         selectCameraById: function (id) {
             const cam = osirisCameras.find(c => c.id === id);
             if (cam) {
@@ -664,6 +798,10 @@
             const node = territorialNodes.find(n => n.id === nodeId);
             if (node && leafletMap) {
                 leafletMap.flyTo(node.coords, 12, { duration: 1.5 });
+                const marker = territoryMarkerMap[nodeId];
+                if (marker) {
+                    setTimeout(() => marker.openPopup(), 600);
+                }
             }
         },
         flyToTerritoryCoords: function (lat, lng, zoom = 12) {
@@ -693,7 +831,7 @@
         handleImgError: function (camId) {
             const img = document.getElementById('main-snapshot-img');
             if (img) {
-                img.src = '../Connected%20Smart%20City%20at%20Dusk-1.png';
+                img.src = getAssetBasePath() + 'Connected%20Smart%20City%20at%20Dusk-1.png';
             }
             const statusBadge = document.getElementById('active-cam-status-badge');
             if (statusBadge) {

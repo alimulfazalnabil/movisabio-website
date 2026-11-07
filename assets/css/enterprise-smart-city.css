@@ -1472,13 +1472,19 @@
 
 .osiris-map-header {
     background: #FAF7FB;
-    padding: 1rem 1.5rem;
+    padding: 0.9rem 1.25rem;
     border-bottom: 1px solid var(--border-subtle);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
+}
+
+.osiris-map-header-main {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .osiris-map-title {
@@ -1524,6 +1530,55 @@
 
 .legend-dot.dot-snapshot {
     background: #ECB22E;
+}
+
+/* CARTO Basemap Layer Selector */
+.carto-basemap-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-subtle);
+    padding: 3px 6px;
+    border-radius: var(--radius-full);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.basemap-selector-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+    padding: 0 6px 0 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.carto-basemap-btn {
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.74rem;
+    font-weight: 600;
+    font-family: inherit;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.carto-basemap-btn:hover {
+    color: var(--color-brand-primary);
+    background: rgba(74, 21, 75, 0.05);
+}
+
+.carto-basemap-btn.active {
+    background: var(--color-brand-primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(74, 21, 75, 0.25);
 }
 
 #osiris-geospatial-map {
@@ -1599,6 +1654,21 @@
     background: #6a4900;
     border: 2px solid #ECB22E;
     color: #FFFFFF;
+}
+
+/* Active Highlighted Camera Marker */
+.osiris-camera-marker.active-cam-marker {
+    transform: scale(1.35) !important;
+    z-index: 1000 !important;
+    border-color: #FFFFFF !important;
+    box-shadow: 0 0 0 3px #FFFFFF, 0 0 16px rgba(54, 197, 240, 0.95);
+    animation: activeMarkerPulse 1.8s infinite;
+}
+
+@keyframes activeMarkerPulse {
+    0% { box-shadow: 0 0 0 3px #FFFFFF, 0 0 10px rgba(54, 197, 240, 0.9); }
+    50% { box-shadow: 0 0 0 5px #FFFFFF, 0 0 20px rgba(54, 197, 240, 1); }
+    100% { box-shadow: 0 0 0 3px #FFFFFF, 0 0 10px rgba(54, 197, 240, 0.9); }
 }
 
 /* Leaflet Dark Popups */
@@ -2211,5 +2281,20 @@
     .camera-thumbnails-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         max-height: 300px;
+    }
+    .osiris-map-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .carto-basemap-selector {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .carto-basemap-btn {
+        flex: 1;
+        text-align: center;
+        padding: 5px 6px;
+        font-size: 0.72rem;
     }
 }

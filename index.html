@@ -99,6 +99,7 @@
     <link rel="stylesheet" href="assets/css/navigation.css">
     <link rel="stylesheet" href="assets/css/map.css">
     <link rel="stylesheet" href="assets/css/platform.css">
+    <link rel="stylesheet" href="assets/css/enterprise-smart-city.css">
 </head>
 <body>
 
@@ -135,27 +136,24 @@
                     </li>
 
                     <li><a href="#smart-city" onclick="scrollToSection('smart-city')" class="nav-link" data-i18n="nav_smart_city">Smart City</a></li>
-                    <li><a href="#audiences" onclick="scrollToSection('audiences')" class="nav-link" data-i18n="nav_audiences">Audiences</a></li>
-                    <li><a href="#architecture" onclick="scrollToSection('architecture')" class="nav-link" data-i18n="nav_architecture">Technology</a></li>
                     <li><a href="#solutions" onclick="scrollToSection('solutions')" class="nav-link" data-i18n="nav_solutions">Sectors</a></li>
-                    
+
+                    <!-- More Dropdown -->
                     <li class="nav-item-dropdown">
                         <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                            <span data-i18n="nav_company">Company</span> <span class="dropdown-caret">▾</span>
+                            <span>More</span> <span class="dropdown-caret">▾</span>
                         </button>
-                        <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="products/smart-city.html#system-engineering" class="dropdown-item" data-i18n="nav_architecture" role="menuitem">Technology</a></li>
+                            <li><a href="#audiences" onclick="scrollToSection('audiences')" class="dropdown-item" data-i18n="nav_audiences" role="menuitem">Audiences</a></li>
+                            <li class="dropdown-divider" role="separator"></li>
+                            <li class="dropdown-header" data-i18n="nav_company">Company</li>
                             <li><a href="#about" onclick="scrollToSection('about')" class="dropdown-item" data-i18n="nav_about" role="menuitem">About MoviSabio</a></li>
                             <li><a href="#leadership" onclick="scrollToSection('leadership')" class="dropdown-item" data-i18n="nav_leadership" role="menuitem">Executive Leadership</a></li>
                             <li><a href="#presence" onclick="scrollToSection('presence')" class="dropdown-item" data-i18n="nav_map" role="menuitem">Global Map & Digital Twins</a></li>
                             <li><a href="#research" onclick="scrollToSection('research')" class="dropdown-item" data-i18n="nav_research" role="menuitem">Research & ESG</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item-dropdown">
-                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                            <span data-i18n="nav_investor">Investor</span> <span class="dropdown-caret">▾</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-divider" role="separator"></li>
+                            <li class="dropdown-header" data-i18n="nav_investor">Investor</li>
                             <li><a href="#economics" onclick="scrollToSection('economics')" class="dropdown-item" data-i18n="nav_economics" role="menuitem">Market Opportunity & Economics</a></li>
                             <li><a href="#submit-idea" onclick="scrollToSection('submit-idea')" class="dropdown-item" data-i18n="sec_submit_idea" role="menuitem">Open Innovation Pitch</a></li>
                             <li><a href="partners.html" class="dropdown-item" data-i18n="nav_submit_idea" role="menuitem" style="color: var(--accent-success); font-weight: 700;">Partners & Pitch Deck</a></li>
@@ -471,7 +469,7 @@
                                 <a href="products/smart-city.html" class="btn btn-primary" style="background: var(--accent-primary); color: #FFFFFF; font-weight: 700;">Launch Enterprise Section (18 Chapters) 🚀</a>
                                 <button type="button" class="btn btn-secondary" onclick="openProject(5)">Quick Deck & Features Modal →</button>
                                 <a href="#platform" onclick="scrollToSection('platform')" class="btn btn-outline" data-i18n="platform_cta_back">← Platform Core</a>
-                                <a href="#architecture" onclick="scrollToSection('architecture')" class="btn btn-outline">Explore Architecture →</a>
+                                <a href="products/smart-city.html#system-engineering" class="btn btn-outline">Explore Architecture →</a>
                             </div>
                         </div>
                     </div>
@@ -532,7 +530,7 @@
                                 <li><span>✓</span> <div><strong>Implementation Partnerships:</strong> Commercial co-development, hardware certification, and regional distribution alliances.</div></li>
                             </ul>
                             <div class="audience-actions">
-                                <a href="#architecture" onclick="scrollToSection('architecture')" class="btn btn-primary btn-sm" data-i18n="cta_enterprise">Discuss Enterprise Solutions →</a>
+                                <a href="products/smart-city.html#system-engineering" class="btn btn-primary btn-sm" data-i18n="cta_enterprise">Discuss Enterprise Solutions →</a>
                                 <a href="#solutions" onclick="scrollToSection('solutions')" class="btn btn-outline btn-sm">View Tech Portfolio →</a>
                             </div>
                         </div>
@@ -563,83 +561,6 @@
                 </div>
             </section>
 
-<!-- ================================================================== -->
-            <!-- 5. MULTI-LAYER PLATFORM ARCHITECTURE                              -->
-            <!-- ================================================================== -->
-            <section id="architecture" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-tag">System Engineering</div>
-                        <h2 class="section-title">Cloud-Native & Edge Architecture</h2>
-                        <p class="section-subtitle">Engineered for extreme reliability, low latency, and zero hardware lock-in across smart municipalities and infrastructure networks.</p>
-                    </div>
-
-                    <div class="arch-stack">
-                        <div class="arch-layer">
-                            <div class="arch-layer-label">
-                                <span class="arch-layer-number">Layer 04</span>
-                                <span class="arch-layer-name">Command & Operations</span>
-                            </div>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">3D Digital Twin Command Center</span>
-                                <span class="arch-tag">City Hall Operations Dashboard</span>
-                                <span class="arch-tag">Emergency Dispatch Preemption</span>
-                                <span class="arch-tag">Citizen Hazard Reporting</span>
-                                <span class="arch-tag">REST & GraphQL APIs</span>
-                            </div>
-                        </div>
-
-                        <div class="arch-layer">
-                            <div class="arch-layer-label">
-                                <span class="arch-layer-number">Layer 03</span>
-                                <span class="arch-layer-name">AI & Simulation Engine</span>
-                            </div>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">Deep Reinforcement Learning (DQN)</span>
-                                <span class="arch-tag">MAXBAND Green-Wave Safety Bounds</span>
-                                <span class="arch-tag">SUMO & TraCI Digital Twin Simulator</span>
-                                <span class="arch-tag">LSTM / GRU Multi-Horizon Forecasting</span>
-                                <span class="arch-tag">Explainable AI (XAI) Safety Checks</span>
-                            </div>
-                        </div>
-
-                        <div class="arch-layer">
-                            <div class="arch-layer-label">
-                                <span class="arch-layer-number">Layer 02</span>
-                                <span class="arch-layer-name">Spatial & Streaming Core</span>
-                            </div>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">PostgreSQL / PostGIS Spatial Models</span>
-                                <span class="arch-tag">Redis In-Memory State Cache</span>
-                                <span class="arch-tag">Microsoft Azure Kubernetes Service (AKS)</span>
-                                <span class="arch-tag">MQTT Message Brokers</span>
-                                <span class="arch-tag">TLS / OAuth 2.0 / Zero-Trust Vault</span>
-                            </div>
-                        </div>
-
-                        <div class="arch-layer">
-                            <div class="arch-layer-label">
-                                <span class="arch-layer-number">Layer 01</span>
-                                <span class="arch-layer-name">Edge & Telemetry Ingestion</span>
-                            </div>
-                            <div class="arch-layer-tags">
-                                <span class="arch-tag">Municipal CCTV Feeds (RTSP)</span>
-                                <span class="arch-tag">YOLOv8 Edge Computer Vision</span>
-                                <span class="arch-tag">NTCIP 1202 Signal Controllers</span>
-                                <span class="arch-tag">Inductive Loop & Sensor Meshes</span>
-                                <span class="arch-tag">LoRaWAN & GPS AgriTech Collars</span>
-                            </div>
-                        </div>
-                                        <!-- Architecture to Solutions CTA Strip -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-subtle);">
-                        <div>
-                            <span style="font-weight: var(--font-weight-bold); color: var(--text-primary); font-size: var(--font-size-md);">Modular Solutions Built on This Architecture</span>
-                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">Explore our 7 modular territorial intelligence solutions addressing urban, transit, and rural environments.</p>
-                        </div>
-                        <a href="#solutions" onclick="scrollToSection('solutions')" class="btn btn-primary btn-sm" data-i18n="btn_view_portfolio">View Technology Portfolio →</a>
-                    </div>
-                </div>
-            </section>
 
 <!-- ================================================================== -->
             <!-- 4. MODULAR SOLUTIONS CATALOG                                       -->
@@ -659,7 +580,7 @@
             </section>
 
 <!-- ================================================================== -->
-            <!-- 7. GLOBAL PRESENCE & INTERACTIVE MAP                               -->
+            <!-- 7. GLOBAL PRESENCE & GEOSPATIAL OPERATIONS                         -->
             <!-- ================================================================== -->
             <section id="presence" class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
                 <div class="container">
@@ -669,88 +590,280 @@
                         <p class="section-subtitle">Interactive map of active simulation corridors, digital twin modeling nodes, and European expansion pipelines.</p>
                     </div>
 
-                    <!-- Leaflet Territorial Digital Twin Card -->
-                    <div class="map-card-wrapper">
-                        <div class="map-header-row">
+                    <!-- OSIRIS GEOSPATIAL OPERATIONS SUITE -->
+                    <div class="osiris-operations-container">
+
+                        <!-- Control & Filter Strip -->
+                        <div class="osiris-control-bar">
+                            <div class="osiris-control-top">
+                                <div class="osiris-search-wrap">
+                                    <input type="text" id="camera-search-input" class="osiris-search-input" placeholder="Search camera feeds by name, city, highway, or network (e.g. Berlin, London, Campinas, SR-20, TfL)..." aria-label="Search cameras">
+                                </div>
+                                <div class="osiris-status-indicator" id="camera-dataset-status">
+                                    <span class="live-dot-pulse"></span> Initializing OSIRIS Live Feeds...
+                                </div>
+                            </div>
+
+                            <div class="osiris-filter-row">
+                                <!-- Region Filter Buttons -->
+                                <div class="osiris-filter-group" role="group" aria-label="Region Filter">
+                                    <button type="button" class="cam-filter-btn cam-region-btn active" data-region="all">🌍 Global</button>
+                                    <button type="button" class="cam-filter-btn cam-region-btn" data-region="latam">🇧🇷 🇺🇾 LATAM</button>
+                                    <button type="button" class="cam-filter-btn cam-region-btn" data-region="europe">🇩🇪 🇮🇹 🇬🇧 Europe</button>
+                                    <button type="button" class="cam-filter-btn cam-region-btn" data-region="north-america">🇺🇸 🇨🇦 North America</button>
+                                    <button type="button" class="cam-filter-btn cam-region-btn" data-region="asia">🇸🇬 🇯🇵 🇹🇼 Asia-Pacific</button>
+                                    <button type="button" class="cam-filter-btn cam-region-btn" data-region="middle-east">Regional Hubs</button>
+                                </div>
+
+                                <!-- Feed Type Filter Buttons -->
+                                <div class="osiris-filter-group" role="group" aria-label="Feed Type Filter">
+                                    <button type="button" class="cam-filter-btn cam-type-btn active" data-type="all">All Feeds</button>
+                                    <button type="button" class="cam-filter-btn cam-type-btn" data-type="live">📹 Live Streams</button>
+                                    <button type="button" class="cam-filter-btn cam-type-btn" data-type="snapshot">📷 Snapshot Feeds</button>
+                                    <button type="button" class="cam-filter-btn cam-type-btn" data-type="territorial">🏢 Territorial Nodes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COMPONENT B: GLOBAL GEOSPATIAL CAMERA MAP -->
+                        <div class="osiris-map-card">
+                            <div class="osiris-map-header">
+                                <div class="osiris-map-header-main">
+                                    <h3 class="osiris-map-title">
+                                        <span>🗺️</span> Global Geospatial Camera & Digital Twin Map
+                                    </h3>
+                                    <div class="osiris-map-legend">
+                                        <span class="legend-item"><span class="legend-dot dot-territorial"></span> MoviSabio Digital Twins (Campinas, Montevideo, Munich, Berlin, Milan, Singapore)</span>
+                                        <span class="legend-item"><span class="legend-dot dot-live"></span> Live Video Feeds</span>
+                                        <span class="legend-item"><span class="legend-dot dot-snapshot"></span> Periodic Snapshot Feeds</span>
+                                    </div>
+                                </div>
+                                <div class="carto-basemap-selector" role="group" aria-label="CARTO Basemap Layer Selector">
+                                    <span class="basemap-selector-label"><span style="font-size: 0.85rem;">🗺️</span> Basemap:</span>
+                                    <button type="button" class="carto-basemap-btn active" data-basemap="dark" title="CARTO Dark Matter (Default Enterprise Operations)" aria-pressed="true">Dark Matter</button>
+                                    <button type="button" class="carto-basemap-btn" data-basemap="voyager" title="CARTO Voyager (Detailed Geographic & Urban)" aria-pressed="false">Voyager</button>
+                                    <button type="button" class="carto-basemap-btn" data-basemap="positron" title="CARTO Positron (Clean Light Geographic)" aria-pressed="false">Positron</button>
+                                </div>
+                            </div>
+                            <div id="osiris-geospatial-map"></div>
+                        </div>
+
+                        <!-- COMPONENT A: LIVE CAMERA MONITORING WALL -->
+                        <div class="osiris-wall-wrapper" id="live-camera-monitoring-wall">
+                            <div class="osiris-wall-header">
+                                <div class="wall-header-left">
+                                    <h3><span>📺</span> Live Camera Monitoring Wall</h3>
+                                    <p>Authorized real-time CCTV traffic monitoring, stream probe diagnostics, and high-resolution surveillance playback.</p>
+                                </div>
+                                <div class="wall-header-right">
+                                    <div class="hud-clock-badge">
+                                        <span>⏱️</span> <span id="hud-live-clock">--:--:-- UTC</span>
+                                    </div>
+                                    <span class="status-pill status-live-stream" id="active-cam-status-badge">
+                                        <span class="status-dot"></span> LIVE
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Main Active Player Viewport -->
+                            <div class="osiris-player-container">
+                                <div class="player-meta-bar">
+                                    <div class="active-cam-heading">
+                                        <h4 id="active-cam-title">Berlin - Alexanderplatz</h4>
+                                        <p id="active-cam-location">Berlin, Germany • Network: YouTube Live</p>
+                                    </div>
+                                    <div class="player-actions">
+                                        <span class="snapshot-refresh-indicator" id="snapshot-refresh-indicator" style="display:none; font-size: 0.75rem; color: #ECB22E; font-family: var(--font-mono); margin-right: 8px;">
+                                            ⏱️ Periodic Snapshot Active
+                                        </span>
+                                        <button type="button" class="btn btn-outline btn-xs" id="btn-fullscreen-player" style="color: #FFFFFF; border-color: rgba(255,255,255,0.3);">
+                                            ⛶ Full Screen
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="active-cam-viewport-box" id="active-cam-viewport">
+                                    <!-- Dynamic player content injected by osiris-traffic-monitor.js -->
+                                    <div class="unsupported-feed-box">
+                                        <p>Connecting to camera feed...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Thumbnail Grid Switcher -->
+                            <div class="camera-thumbnails-container">
+                                <div class="thumbnails-header">
+                                    <h5>Switch Active Feed</h5>
+                                    <span style="font-size: 0.78rem; color: #a1a1aa; font-family: var(--font-mono);" id="camera-filtered-count">Loading feeds...</span>
+                                </div>
+                                <div class="camera-thumbnails-grid" id="camera-thumbnails-grid">
+                                    <!-- Dynamic thumbnails injected by osiris-traffic-monitor.js -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COMPONENT C: CAMERA INFORMATION PANEL -->
+                        <div class="osiris-info-card" id="osiris-camera-info-panel">
+                            <div class="info-card-header">
+                                <h4><span>📋</span> Active Camera Telemetry & Technical Metadata</h4>
+                                <div id="cam-probe-result" style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-secondary);">
+                                    <span class="status-dot dot-green"></span> Ingestion Stream Active
+                                </div>
+                            </div>
+
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <span class="info-label">Camera Identifier</span>
+                                    <span class="info-value" id="info-cam-id">OSIRIS-DE-BERLIN-1</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Name & Location</span>
+                                    <span class="info-value" id="info-cam-name">Berlin - Alexanderplatz</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">City & Country</span>
+                                    <span class="info-value" id="info-cam-city">Berlin, Germany</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Geodetic Coordinates</span>
+                                    <span class="info-value" id="info-cam-coords">52.52000° N, 13.40500° E (WGS84 EPSG:4326)</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Source Provider Network</span>
+                                    <span class="info-value" id="info-cam-source">YouTube Live / Public Ingestion Mesh</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Transmission Format & Codec</span>
+                                    <span class="info-value" id="info-cam-format">H.264 / AVC YouTube Live Embed</span>
+                                </div>
+                                <div class="info-item" style="grid-column: 1 / -1;">
+                                    <span class="info-label">Last Successful Frame Timestamp</span>
+                                    <span class="info-value" id="info-cam-timestamp" style="color: var(--color-brand-primary);">Live Stream Synchronized</span>
+                                </div>
+                            </div>
+
+                            <div class="info-legal-notice">
+                                <strong>Attribution & Statutory Usage Policy:</strong>
+                                <span id="info-cam-attribution">OSIRIS Open Traffic Camera Telemetry Mesh.</span>
+                                Public camera streams are accessed strictly in accordance with open-access municipal transport guidelines. MoviSabio operates exclusively on optical density metrics and immediately purges raw pixel frames in edge memory—strictly prohibiting facial recognition or biometric individual tracking under GDPR (Regulation EU 2016/679) and LGPD (Lei 13.709/2018).
+                            </div>
+                        </div>
+
+                        <!-- COMPONENT D: TRAFFIC ANALYTICS PREPARATION (YOLOV8 STAGING AREA) -->
+                        <div class="yolo-staging-card" id="yolo-analytics-staging">
+                            <div class="yolo-staging-header">
+                                <h4 class="yolo-staging-title">
+                                    <span>⚡</span> Traffic Analytics Preparation — Edge YOLOv8 Perception Pipeline
+                                </h4>
+                                <span class="status-pill status-pipeline" style="font-size: 0.72rem;">
+                                    Staged Architecture • Ready for Roadside Deployment
+                                </span>
+                            </div>
+
+                            <div class="yolo-staging-banner">
+                                <strong>⚠️ AWAITING ROADSIDE YOLOV8 INFERENCE DEPLOYMENT:</strong>
+                                TensorRT YOLOv8 neural network weights and ByteTrack multi-object tracker pipelines are architecturally configured and ready for roadside edge container activation on this camera feed. Ground-plane homography calibration and tensor execution will activate upon physical traffic management center integration. <strong>Zero fabricated live detections are displayed.</strong>
+                                <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--color-brand-primary); margin-top: 6px;" id="analytics-camera-ref">
+                                    Target Feed: Berlin - Alexanderplatz (Berlin, Germany) • Sensor ID: de-berlin-1
+                                </div>
+                            </div>
+
+                            <div class="yolo-metrics-grid">
+                                <!-- Metric 1: Vehicle Detection -->
+                                <div class="yolo-metric-tile">
+                                    <div class="yolo-tile-top">
+                                        <div class="yolo-tile-title">Vehicle Detection</div>
+                                        <span class="yolo-tile-badge">YOLOv8x Tensor</span>
+                                    </div>
+                                    <p class="yolo-tile-spec">Bounding box localization running at INT8 precision on edge GPU acceleration (NVIDIA Jetson / x86).</p>
+                                    <div class="yolo-tile-status"><span>⚙️ Pipeline:</span> Staged (ONNX Runtime / TensorRT)</div>
+                                </div>
+
+                                <!-- Metric 2: Vehicle Classification -->
+                                <div class="yolo-metric-tile">
+                                    <div class="yolo-tile-top">
+                                        <div class="yolo-tile-title">Vehicle Classification</div>
+                                        <span class="yolo-tile-badge">6 Classes</span>
+                                    </div>
+                                    <p class="yolo-tile-spec">Multi-modal classification partitioning passenger cars, buses, commercial trucks, motorcycles, bicycles, and pedestrians.</p>
+                                    <div class="yolo-tile-status"><span>🏷️ Taxonomy:</span> Configured (COCO + Custom Road)</div>
+                                </div>
+
+                                <!-- Metric 3: Lane-Wise Counting -->
+                                <div class="yolo-metric-tile">
+                                    <div class="yolo-tile-top">
+                                        <div class="yolo-tile-title">Lane-Wise Counting</div>
+                                        <span class="yolo-tile-badge">Virtual Tripwires</span>
+                                    </div>
+                                    <p class="yolo-tile-spec">Directional vector tripwires calculating vehicle turnover across approach lanes and turning bays.</p>
+                                    <div class="yolo-tile-status"><span>📐 Geometry:</span> Polygon Coordinates Defined</div>
+                                </div>
+
+                                <!-- Metric 4: Vehicle Density -->
+                                <div class="yolo-metric-tile">
+                                    <div class="yolo-tile-top">
+                                        <div class="yolo-tile-title">Vehicle Density</div>
+                                        <span class="yolo-tile-badge">Occupancy %</span>
+                                    </div>
+                                    <p class="yolo-tile-spec">Spatial road segment occupancy estimation comparing stationary vehicle area against total lane capacity.</p>
+                                    <div class="yolo-tile-status"><span>📊 Buffer:</span> 50m Stopline Approach Buffer</div>
+                                </div>
+
+                                <!-- Metric 5: Queue Length -->
+                                <div class="yolo-metric-tile">
+                                    <div class="yolo-tile-top">
+                                        <div class="yolo-tile-title">Queue Length</div>
+                                        <span class="yolo-tile-badge">Spatial Accumulation</span>
+                                    </div>
+                                    <p class="yolo-tile-spec">Real-time meter-distance and vehicle-count standing queue accumulation tracking to prevent intersection spillback.</p>
+                                    <div class="yolo-tile-status"><span>⏱️ Window:</span> 15-Second Rolling Accumulator</div>
+                                </div>
+
+                                <!-- Metric 6: Speed Estimation -->
+                                <div class="yolo-metric-tile">
+                                    <div class="yolo-tile-top">
+                                        <div class="yolo-tile-title">Speed Estimation</div>
+                                        <span class="yolo-tile-badge">Homography Matrix</span>
+                                    </div>
+                                    <p class="yolo-tile-spec">Translates 2D pixel trajectory velocities into ground-plane km/h speed vectors where optical homography is calibrated.</p>
+                                    <div class="yolo-tile-status"><span>🎯 Calibration:</span> Pending Field GCP Verification</div>
+                                </div>
+
+                                <!-- Metric 7: Congestion Detection -->
+                                <div class="yolo-metric-tile" style="grid-column: 1 / -1;">
+                                    <div class="yolo-tile-top">
+                                        <div class="yolo-tile-title">Congestion & Bottleneck Detection (HCM Level of Service)</div>
+                                        <span class="yolo-tile-badge">LOS A–F Engine</span>
+                                    </div>
+                                    <p class="yolo-tile-spec">Continuous classification of intersection Level of Service based on volume-to-capacity (v/c) ratios and delay thresholds, automatically signaling upstream corridor metering when LOS degrades below threshold D.</p>
+                                    <div class="yolo-tile-status"><span>🚨 Alert Logic:</span> Standby for Roadside Cabinet Trigger</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UN SDG Impact Badges -->
+                        <div class="sdg-badge-container">
+                            <div class="sdg-badge" style="border-left-color: var(--accent-primary);">
+                                <span style="font-size: 1.4rem;">🏙️</span>
+                                <span><strong>UN SDG 11:</strong> Sustainable Cities & Resilient Communities</span>
+                            </div>
+                            <div class="sdg-badge" style="border-left-color: var(--accent-success);">
+                                <span style="font-size: 1.4rem;">🌍</span>
+                                <span><strong>UN SDG 13:</strong> Climate Action (Targeting 15–30% CO₂ Reduction)</span>
+                            </div>
+                        </div>
+
+                        <!-- Strategic Partner CTA Strip -->
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-subtle);">
                             <div>
-                                <h3 class="map-title">🗺️ Live Operations & Territorial Digital Twin Map</h3>
-                                <p class="map-subtitle">Real-time pilot corridors, digital twin simulations, and European expansion nodes.</p>
+                                <span style="font-weight: var(--font-weight-bold); color: var(--text-primary); font-size: var(--font-size-md);">Interested in a municipal pilot in your region?</span>
+                                <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">We partner with municipal transportation authorities, regional planning agencies, and university labs.</p>
                             </div>
-                            <div class="map-filter-group" role="group" aria-label="Map Territory Filter">
-                                <button type="button" class="map-filter-btn active" onclick="filterMap('all', this)">🌍 All Territories</button>
-                                <button type="button" class="map-filter-btn" onclick="filterMap('latam', this)">🇧🇷 🇺🇾 Active Pilots (LATAM)</button>
-                                <button type="button" class="map-filter-btn" onclick="filterMap('europe', this)">🇩🇪 🇮🇹 Expansion Hubs (Europe)</button>
-                                <button type="button" class="map-filter-btn" onclick="filterMap('asia', this)">🌏 Asia-Pacific</button>
-                            </div>
+                            <a href="#contact" onclick="selectInquiry('Municipal Partnership'); scrollToSection('contact')" class="btn btn-primary btn-sm" data-i18n="btn_become_partner">Become a Strategic Partner →</a>
                         </div>
 
-                        <!-- Leaflet Map Container -->
-                        <div id="territorial-map" role="region" aria-label="Territorial Map Viewer"></div>
-
-                        <!-- Quick Focus Cards -->
-                        <div class="territory-grid">
-                            <div class="territory-card" style="border-left-color: var(--accent-success);" onclick="flyToTerritory(-22.9099, -47.0626, 12)" tabindex="0" role="button" aria-label="Focus on Campinas, Brazil">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇧🇷 Campinas, Brazil</span>
-                                    <span class="status-pill status-live" style="padding: 2px 8px; font-size: 0.68rem;">Pilot Proposal</span>
-                                </div>
-                                <p class="territory-desc">10 Corridors • DQN Signal Coordination • -45% Delay Goal</p>
-                            </div>
-
-                            <div class="territory-card" style="border-left-color: var(--accent-primary);" onclick="flyToTerritory(-34.9011, -56.1645, 12)" tabindex="0" role="button" aria-label="Focus on Montevideo, Uruguay">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇺🇾 Montevideo, Uruguay</span>
-                                    <span class="status-pill status-active" style="padding: 2px 8px; font-size: 0.68rem;">Digital Twin</span>
-                                </div>
-                                <p class="territory-desc">OpenStreetMap Digital Twin • SUMO Traffic Simulation</p>
-                            </div>
-
-                            <div class="territory-card" style="border-left-color: var(--accent-warning);" onclick="flyToTerritory(48.1351, 11.5820, 10)" tabindex="0" role="button" aria-label="Focus on Munich and Berlin, Germany">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇩🇪 Munich & Berlin, DE</span>
-                                    <span class="status-pill status-pipeline" style="padding: 2px 8px; font-size: 0.68rem;">EU Target</span>
-                                </div>
-                                <p class="territory-desc">EIT Urban Mobility & Horizon Europe Grant Pipeline</p>
-                            </div>
-
-                            <div class="territory-card" style="border-left-color: var(--accent-secondary);" onclick="flyToTerritory(45.4642, 9.1900, 10)" tabindex="0" role="button" aria-label="Focus on Milan, Italy">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🇮🇹 Milan, Italy</span>
-                                    <span class="status-pill status-research" style="padding: 2px 8px; font-size: 0.68rem;">Expansion Hub</span>
-                                </div>
-                                <p class="territory-desc">Territorial Intelligence SaaS • LEZ & ESG Analytics</p>
-                            </div>
-
-                            <div class="territory-card" style="border-left-color: var(--accent-primary);" onclick="flyToTerritory(1.3521, 103.8198, 11)" tabindex="0" role="button" aria-label="Focus on Singapore and Asia-Pacific">
-                                <div class="territory-card-header">
-                                    <span class="territory-city">🌏 Singapore & Asia</span>
-                                    <span class="status-pill status-active" style="padding: 2px 8px; font-size: 0.68rem;">Scoping Node</span>
-                                </div>
-                                <p class="territory-desc">Multi-Modal Transit Graph • Smart Port Logistics</p>
-                            </div>
-                        </div>
                     </div>
-
-                    <!-- UN SDG Impact Badges -->
-                    <div class="sdg-badge-container">
-                        <div class="sdg-badge" style="border-left-color: var(--accent-primary);">
-                            <span style="font-size: 1.4rem;">🏙️</span>
-                            <span><strong>UN SDG 11:</strong> Sustainable Cities & Resilient Communities</span>
-                        </div>
-                        <div class="sdg-badge" style="border-left-color: var(--accent-success);">
-                            <span style="font-size: 1.4rem;">🌍</span>
-                            <span><strong>UN SDG 13:</strong> Climate Action (Targeting 15–30% CO₂ Reduction)</span>
-                        </div>
-                    </div>
-                                    <!-- Strategic Partner CTA Strip -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-subtle);">
-                        <div>
-                            <span style="font-weight: var(--font-weight-bold); color: var(--text-primary); font-size: var(--font-size-md);">Interested in a municipal pilot in your region?</span>
-                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">We partner with municipal transportation authorities, regional planning agencies, and university labs.</p>
-                        </div>
-                        <a href="#contact" onclick="selectInquiry('Municipal Partnership'); scrollToSection('contact')" class="btn btn-primary btn-sm" data-i18n="btn_become_partner">Become a Strategic Partner →</a>
-                    </div>
-            </div>
+                </div>
             </section>
 
 <!-- ================================================================== -->
@@ -1417,7 +1530,7 @@
                     <h4>Company</h4>
                     <ul class="footer-links">
                         <li><a onclick="scrollToSection('platform')">Platform Overview</a></li>
-                        <li><a onclick="scrollToSection('architecture')">Technical Architecture</a></li>
+                        <li><a href="products/smart-city.html#system-engineering">Technical Architecture</a></li>
                         <li><a onclick="scrollToSection('economics')">Market & Economics</a></li>
                         <li><a onclick="scrollToSection('presence')">Territorial Map</a></li>
                         <li><a onclick="scrollToSection('research')">Research & Grants</a></li>
@@ -2407,104 +2520,16 @@
             });
         }
 
-        // --- 7. LEAFLET MAP LOGIC (CARTODB DARK MATTER) ---
-        let territorialMap = null;
-        let mapMarkers = [];
-
-        function initTerritorialMap() {
-            const mapContainer = document.getElementById('territorial-map');
-            if (!mapContainer || territorialMap) return;
-
-            territorialMap = L.map('territorial-map', {
-                center: [10.0, -25.0],
-                zoom: 3,
-                minZoom: 2,
-                maxZoom: 18,
-                scrollWheelZoom: false
-            });
-
-            // Modern CartoDB Dark Matter Raster Tiles for Dark Theme
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-                subdomains: 'abcd',
-                maxZoom: 19
-            }).addTo(territorialMap);
-
-            renderMapMarkers('all');
-        }
-
-        function renderMapMarkers(filter) {
-            if (!territorialMap) return;
-
-            mapMarkers.forEach(m => territorialMap.removeLayer(m));
-            mapMarkers = [];
-
-            const filtered = filter === 'all' 
-                ? territoryData 
-                : territoryData.filter(t => t.region === filter);
-
-            filtered.forEach(item => {
-                const customIcon = L.divIcon({
-                    className: 'custom-pin-wrapper',
-                    html: `<div class="custom-pin" style="background:${item.color}; width:42px; height:42px; font-size:1.2rem;">${item.icon}</div>`,
-                    iconSize: [42, 42],
-                    iconAnchor: [21, 21],
-                    popupAnchor: [0, -22]
-                });
-
-                const metricsHTML = item.metrics.map(m => `
-                    <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px; border-left: 2px solid ${item.color};">
-                        <div style="font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">${m.label}</div>
-                        <div style="font-size: 0.85rem; color: var(--text-primary); font-weight: bold; margin-top: 2px;">${m.value}</div>
-                    </div>
-                `).join('');
-
-                const popupHTML = `
-                    <div style="min-width: 280px; max-width: 320px; padding: 4px 0;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                            <h4 style="margin: 0; color: var(--text-primary); font-size: 1.15rem; font-weight: 800;">${item.city}</h4>
-                            <span style="background: ${item.badgeBg}; color: ${item.badgeColor}; font-size: 0.68rem; font-weight: bold; padding: 3px 8px; border-radius: 12px;">${item.status}</span>
-                        </div>
-                        <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-primary); margin-bottom: 8px;">${item.country}</div>
-                        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">${item.description}</p>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-                            ${metricsHTML}
-                        </div>
-                    </div>
-                `;
-
-                const marker = L.marker(item.coords, { icon: customIcon })
-                    .bindPopup(popupHTML)
-                    .addTo(territorialMap);
-
-                marker.territoryId = item.id;
-                marker.territoryCoords = item.coords;
-                mapMarkers.push(marker);
-            });
-
-            if (mapMarkers.length > 0) {
-                const group = L.featureGroup(mapMarkers);
-                territorialMap.fitBounds(group.getBounds().pad(0.3));
-            }
-        }
-
-        function filterMap(region, btn) {
-            document.querySelectorAll('.map-filter-group .map-filter-btn').forEach(b => b.classList.remove('active'));
-            if (btn) btn.classList.add('active');
-            renderMapMarkers(region);
-        }
-
+        // --- 7. GEOSPATIAL & TERRITORIAL DELEGATES (HANDLED BY OSIRIS TRAFFIC MONITOR) ---
         function flyToTerritory(lat, lng, zoom) {
-            if (!territorialMap) return;
-            const mapCard = document.querySelector('.map-card-wrapper');
-            if (mapCard) {
-                mapCard.scrollIntoView({ behavior: 'smooth' });
+            if (window.MoviSabioOsiris && window.MoviSabioOsiris.flyToTerritoryCoords) {
+                window.MoviSabioOsiris.flyToTerritoryCoords(lat, lng, zoom);
             }
-            territorialMap.flyTo([lat, lng], zoom || 11, { duration: 1.5 });
-            setTimeout(() => {
-                const marker = mapMarkers.find(m => m.territoryCoords && Math.abs(m.territoryCoords[0] - lat) < 0.01 && Math.abs(m.territoryCoords[1] - lng) < 0.01);
-                if (marker) marker.openPopup();
-            }, 1200);
+        }
+        function filterMap(region, btn) {
+            if (window.MoviSabioOsiris && window.MoviSabioOsiris.resetFilters) {
+                window.MoviSabioOsiris.resetFilters();
+            }
         }
 
         // --- 8. PROJECT DETAIL NAVIGATION (SPA ROUTING) ---
@@ -2771,13 +2796,14 @@
         window.addEventListener('DOMContentLoaded', () => {
             renderSolutions();
             renderVideos();
-            initTerritorialMap();
             initSmartCitySlider();
         });
-
-        window.addEventListener('load', () => {
-            if (territorialMap) territorialMap.invalidateSize();
-        });
     </script>
+
+    <!-- CARTO Basemap & Central Geospatial Map Configuration -->
+    <script src="assets/js/movisabio-map-config.js"></script>
+
+    <!-- OSIRIS Traffic Camera Monitoring & Global Geospatial Operations Engine -->
+    <script src="assets/js/osiris-traffic-monitor.js"></script>
 </body>
 </html>

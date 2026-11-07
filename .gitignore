@@ -8,3 +8,4 @@ scratch_*
 /data/
 !assets/data/
 uploads/
+screencapture-*.png
