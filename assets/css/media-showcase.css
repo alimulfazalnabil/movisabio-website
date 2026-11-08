@@ -1,0 +1,579 @@
+/**
+ * MOVISABIO — HOMEPAGE PHOTO & VIDEO SHOWCASE SLIDER
+ * Continuous Right-to-Left Infinite Showcase Carousel
+ * 
+ * Enterprise-grade media showcase featuring 6 flagship projects,
+ * smooth continuous animation, touch/mouse drag, interactive modals,
+ * and complete accessibility support.
+ */
+
+/* ==========================================================================
+   1. Showcase Section Base Styling
+   ========================================================================== */
+.media-showcase-section {
+    padding: var(--space-4xl) 0;
+    background: linear-gradient(180deg, #0A0314 0%, #120522 50%, #0A0314 100%);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.media-showcase-section::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(74, 21, 75, 0.35) 0%, rgba(54, 197, 240, 0.08) 45%, transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.media-showcase-header-wrap {
+    position: relative;
+    z-index: 2;
+    margin-bottom: var(--space-2xl);
+}
+
+.media-showcase-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(74, 21, 75, 0.45);
+    border: 1px solid rgba(120, 223, 176, 0.35);
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #78DFB0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+    margin-bottom: var(--space-md);
+}
+
+.media-showcase-title {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 1.15;
+    margin: 0 0 var(--space-md) 0;
+    letter-spacing: -0.02em;
+}
+
+.media-showcase-subtitle {
+    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+    color: #D1BDD6;
+    max-width: 820px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ==========================================================================
+   2. Showcase Control Bar (Ticker, Buttons, Play/Pause)
+   ========================================================================== */
+.media-showcase-controls-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: var(--space-xl);
+    position: relative;
+    z-index: 2;
+}
+
+.media-showcase-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    color: #E2D3E5;
+}
+
+.media-showcase-dot-pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2EB67D;
+    display: inline-block;
+    box-shadow: 0 0 0 rgba(46, 182, 125, 0.5);
+    animation: showcaseDotPulse 2s infinite;
+}
+
+@keyframes showcaseDotPulse {
+    0% { box-shadow: 0 0 0 0 rgba(46, 182, 125, 0.7); }
+    70% { box-shadow: 0 0 0 8px rgba(46, 182, 125, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(46, 182, 125, 0); }
+}
+
+.media-showcase-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.media-control-btn {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all var(--transition-fast);
+    outline: none;
+    user-select: none;
+}
+
+.media-control-btn:hover,
+.media-control-btn:focus-visible {
+    background: rgba(74, 21, 75, 0.8);
+    border-color: #55D7E8;
+    color: #55D7E8;
+    transform: scale(1.08);
+    box-shadow: 0 0 14px rgba(85, 215, 232, 0.35);
+}
+
+.media-control-play-pause {
+    width: auto;
+    padding: 0 16px;
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    gap: 6px;
+}
+
+/* ==========================================================================
+   3. Continuous Slider Viewport & Infinite Track
+   ========================================================================== */
+.media-showcase-carousel-viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 24px 0;
+    z-index: 1;
+}
+
+/* Edge Gradient Vignettes */
+.showcase-edge-gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.showcase-edge-gradient.left {
+    left: 0;
+    background: linear-gradient(to right, #0A0314 0%, rgba(10, 3, 20, 0.85) 40%, transparent 100%);
+}
+
+.showcase-edge-gradient.right {
+    right: 0;
+    background: linear-gradient(to left, #0A0314 0%, rgba(10, 3, 20, 0.85) 40%, transparent 100%);
+}
+
+.media-showcase-track {
+    display: flex;
+    gap: 24px;
+    will-change: transform;
+    cursor: grab;
+    width: max-content;
+}
+
+.media-showcase-track.is-dragging {
+    cursor: grabbing;
+    user-select: none;
+}
+
+/* ==========================================================================
+   4. Media Card Architecture
+   ========================================================================== */
+.media-showcase-card {
+    flex: 0 0 380px;
+    width: 380px;
+    max-width: 86vw;
+    background: #140726;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+    position: relative;
+}
+
+.media-showcase-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(85, 215, 232, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(74, 21, 75, 0.45);
+}
+
+/* Thumbnail Visual Area */
+.media-card-thumbnail-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000000;
+    cursor: pointer;
+}
+
+.media-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.media-showcase-card:hover .media-card-img {
+    transform: scale(1.06);
+}
+
+/* Video Play Overlay Button */
+.media-card-play-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 3, 20, 0.3);
+    transition: background 0.3s ease;
+    z-index: 3;
+}
+
+.media-showcase-card:hover .media-card-play-overlay {
+    background: rgba(10, 3, 20, 0.15);
+}
+
+.media-play-pill {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(74, 21, 75, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+    padding-left: 3px;
+}
+
+.media-showcase-card:hover .media-play-pill {
+    transform: scale(1.15);
+    background: var(--color-brand-primary);
+    border-color: #55D7E8;
+    box-shadow: 0 0 24px rgba(85, 215, 232, 0.65);
+}
+
+/* Card Header Badges */
+.media-card-badge-top-left {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 4;
+}
+
+.media-card-badge-top-right {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 4;
+}
+
+.media-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+    letter-spacing: 0.04em;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+/* Card Body Content */
+.media-card-body {
+    padding: 20px 22px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.media-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    color: #A1A1AA;
+}
+
+.media-card-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #E2D3E5;
+}
+
+.media-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+}
+
+.media-card-desc {
+    font-size: 0.88rem;
+    color: #D1BDD6;
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+    flex-grow: 1;
+}
+
+/* Card Action Footer */
+.media-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.media-action-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #55D7E8;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.media-action-link:hover {
+    color: #FFFFFF;
+    transform: translateX(3px);
+}
+
+.media-action-photo-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #E2D3E5;
+    padding: 5px 10px;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.media-action-photo-btn:hover {
+    background: rgba(74, 21, 75, 0.6);
+    color: #FFFFFF;
+    border-color: #78DFB0;
+}
+
+/* ==========================================================================
+   5. Photo Lightbox Modal
+   ========================================================================== */
+.photo-lightbox-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(7, 2, 14, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-lightbox-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.photo-lightbox-content {
+    background: #140726;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-xl);
+    max-width: 960px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(74, 21, 75, 0.5);
+    position: relative;
+    animation: lightboxZoomIn 0.25s ease-out;
+}
+
+@keyframes lightboxZoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.photo-lightbox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.photo-lightbox-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.photo-lightbox-close {
+    background: transparent;
+    border: none;
+    color: #A1A1AA;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+    transition: color var(--transition-fast);
+}
+
+.photo-lightbox-close:hover {
+    color: #FFFFFF;
+}
+
+.photo-lightbox-img-wrap {
+    width: 100%;
+    max-height: 60vh;
+    overflow: hidden;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-lightbox-img-wrap img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.photo-lightbox-caption {
+    padding: 18px 24px 22px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #110520;
+}
+
+.photo-lightbox-caption p {
+    font-size: 0.9rem;
+    color: #D1BDD6;
+    line-height: 1.6;
+    margin: 0 0 8px 0;
+}
+
+.photo-lightbox-meta {
+    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    color: #78DFB0;
+    display: flex;
+    gap: 16px;
+}
+
+/* ==========================================================================
+   6. Responsive Layout Breakpoints
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .media-showcase-card {
+        flex: 0 0 340px;
+        width: 340px;
+    }
+    .showcase-edge-gradient {
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .media-showcase-section {
+        padding: var(--space-2xl) 0;
+    }
+    .media-showcase-controls-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .media-showcase-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .media-showcase-card {
+        flex: 0 0 300px;
+        width: 300px;
+        max-width: 86vw;
+    }
+    .showcase-edge-gradient {
+        width: 30px;
+    }
+    .photo-lightbox-content {
+        max-height: 94vh;
+    }
+    .photo-lightbox-img-wrap {
+        max-height: 50vh;
+    }
+}
+
+/* Reduced Motion Compliance */
+@media (prefers-reduced-motion: reduce) {
+    .media-showcase-track {
+        transition: none !important;
+    }
+    .media-showcase-dot-pulse {
+        animation: none !important;
+    }
+}

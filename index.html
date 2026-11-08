@@ -100,6 +100,7 @@
     <link rel="stylesheet" href="assets/css/map.css">
     <link rel="stylesheet" href="assets/css/platform.css">
     <link rel="stylesheet" href="assets/css/enterprise-smart-city.css">
+    <link rel="stylesheet" href="assets/css/media-showcase.css">
 </head>
 <body>
 
@@ -866,19 +867,47 @@
                 </div>
             </section>
 
-<!-- ================================================================== -->
+            <!-- ================================================================== -->
             <!-- 6. INTERACTIVE MEDIA & VIDEO SHOWCASE                             -->
             <!-- ================================================================== -->
-            <section id="videos" class="section-padding">
+            <section id="videos" class="media-showcase-section" aria-label="Project Media Showcase">
                 <div class="container">
-                    <div class="section-header">
-                        <div class="section-tag" data-i18n="sec_videos_tag">Simulation & Footage</div>
-                        <h2 class="section-title" data-i18n="sec_videos">Project Videos & Media</h2>
-                        <p class="section-subtitle">Explore our live simulations, traffic coordination demonstrations, and edge computer vision showcases.</p>
+                    <div class="media-showcase-header-wrap">
+                        <div class="media-showcase-tag" data-i18n="sec_videos_tag">Simulation & Footage</div>
+                        <h2 class="media-showcase-title">Project Media Showcase</h2>
+                        <p class="media-showcase-subtitle">
+                            Explore MoviSabio's AI-powered traffic simulations, digital twin environments, computer vision demonstrations, pilot projects, and engineering activities.
+                        </p>
                     </div>
 
-                    <div class="grid-3" id="video-grid">
-                        <!-- Populated dynamically via JavaScript with preserved video data -->
+                    <!-- Showcase Interactive Controls Bar -->
+                    <div class="media-showcase-controls-bar">
+                        <div class="media-showcase-status">
+                            <span class="media-showcase-dot-pulse" id="showcase-status-dot"></span>
+                            <span id="showcase-status-text">Continuous Stream (R → L)</span>
+                        </div>
+
+                        <div class="media-showcase-actions">
+                            <button type="button" class="media-control-btn media-control-play-pause" id="showcase-play-pause-btn" aria-label="Pause Continuous Slider">
+                                <span>⏸</span> <span>Pause</span>
+                            </button>
+                            <button type="button" class="media-control-btn" id="showcase-prev-btn" aria-label="Previous Slide">
+                                ‹
+                            </button>
+                            <button type="button" class="media-control-btn" id="showcase-next-btn" aria-label="Next Slide">
+                                ›
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continuous Right-to-Left Infinite Viewport -->
+                <div class="media-showcase-carousel-viewport" id="media-showcase-viewport">
+                    <div class="showcase-edge-gradient left" aria-hidden="true"></div>
+                    <div class="showcase-edge-gradient right" aria-hidden="true"></div>
+
+                    <div class="media-showcase-track" id="media-showcase-track">
+                        <!-- Populated dynamically and cloned for infinite wrap by media-showcase.js -->
                     </div>
                 </div>
             </section>
@@ -1468,6 +1497,25 @@
                 </div>
                 <div id="video-source-switcher" style="display: flex; gap: 10px; margin-top: var(--space-md);"></div>
                 <p id="modal-video-description" style="color: var(--text-secondary); margin-top: var(--space-md); font-size: var(--font-size-sm);"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================================================== -->
+    <!-- 13B. PHOTO LIGHTBOX MODAL                                              -->
+    <!-- ====================================================================== -->
+    <div id="photo-lightbox-modal" class="photo-lightbox-modal" onclick="if (event.target === this) window.MoviSabioShowcase.closePhotoModal();" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <div class="photo-lightbox-content">
+            <div class="photo-lightbox-header">
+                <h3 class="photo-lightbox-title" id="lightbox-title">Project Image</h3>
+                <button type="button" class="photo-lightbox-close" onclick="window.MoviSabioShowcase.closePhotoModal()" aria-label="Close photo viewer">&times;</button>
+            </div>
+            <div class="photo-lightbox-img-wrap">
+                <img id="lightbox-img" src="" alt="High-resolution project photograph">
+            </div>
+            <div class="photo-lightbox-caption">
+                <div class="photo-lightbox-meta" id="lightbox-meta"></div>
+                <p id="lightbox-desc"></p>
             </div>
         </div>
     </div>
@@ -2648,6 +2696,9 @@
             if (localVideo) { localVideo.pause(); localVideo.src = ''; localVideo.style.display = 'none'; }
             document.getElementById('video-modal').classList.remove('active');
             document.body.style.overflow = 'auto';
+            if (window.MoviSabioShowcase && window.MoviSabioShowcase.setModalOpenState) {
+                window.MoviSabioShowcase.setModalOpenState(false);
+            }
         }
 
         // --- 10. LEADERSHIP MODAL ---
@@ -2799,6 +2850,9 @@
             initSmartCitySlider();
         });
     </script>
+
+    <!-- Continuous Right-to-Left Media Showcase Slider Engine -->
+    <script src="assets/js/media-showcase.js"></script>
 
     <!-- CARTO Basemap & Central Geospatial Map Configuration -->
     <script src="assets/js/movisabio-map-config.js"></script>
