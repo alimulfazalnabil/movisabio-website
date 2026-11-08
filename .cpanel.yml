@@ -2,21 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/movisabi/public_html/
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R products $DEPLOYPATH
-    - /bin/cp -f *.html $DEPLOYPATH
-    - /bin/cp -f *.css $DEPLOYPATH
-    - /bin/cp -f *.js $DEPLOYPATH
-    - /bin/cp -f *.png $DEPLOYPATH
-    - /bin/cp -f *.jpg $DEPLOYPATH
-    - /bin/cp -f *.jpeg $DEPLOYPATH
-    - /bin/cp -f *.webp $DEPLOYPATH
-    - /bin/cp -f *.svg $DEPLOYPATH
-    - /bin/cp -f *.gif $DEPLOYPATH
-    - /bin/cp -f *.mp4 $DEPLOYPATH
-    - /bin/cp -f *.webm $DEPLOYPATH
-    - /bin/cp -f *.xml $DEPLOYPATH
-    - /bin/cp -f *.txt $DEPLOYPATH
-    - /bin/cp -f *.webmanifest $DEPLOYPATH
-    - /bin/cp -f .htaccess $DEPLOYPATH
-    - /bin/cp -f favicon.ico $DEPLOYPATH
+    - /usr/bin/rsync -a --exclude='.git/' --exclude='.cpanel.yml' --exclude='.gitignore' --exclude='.env' --exclude='.env.*' --exclude='node_modules/' --exclude='vendor/' --exclude='server/' --exclude='data/' --exclude='uploads/' --exclude='recovery/' --exclude='scratch/' ./ "$DEPLOYPATH"
