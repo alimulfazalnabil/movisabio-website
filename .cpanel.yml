@@ -1,0 +1,16 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/movisabi/public_html/
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R products $DEPLOYPATH
+    - /bin/cp -R server $DEPLOYPATH
+    - /bin/cp -R data $DEPLOYPATH
+    - /bin/cp -R uploads $DEPLOYPATH
+    - /bin/cp -R *.html $DEPLOYPATH
+    - /bin/cp -R *.css $DEPLOYPATH
+    - /bin/cp -R *.js $DEPLOYPATH
+    - /bin/cp -R *.json $DEPLOYPATH
+    - /bin/cp -R *.xml $DEPLOYPATH
+    - /bin/cp -R *.txt $DEPLOYPATH
+    - /bin/cp -R *.webmanifest $DEPLOYPATH
